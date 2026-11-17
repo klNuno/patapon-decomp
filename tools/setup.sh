@@ -47,17 +47,19 @@ if ! command -v mipsel-linux-gnu-as >/dev/null || [ -x "$T/bin/mipsel-linux-gnu-
 fi
 
 # Compiler kits and objdiff, checked by sha256
-for k in $DECOMPME_KITS; do fetch "https://github.com/decompme/compilers/releases/download/compilers/$k.tar.gz" "$k.tar.gz"; done
+for k in $DECOMPME_KITS $MWCCPSP_KITS; do fetch "https://github.com/decompme/compilers/releases/download/compilers/$k.tar.gz" "$k.tar.gz"; done
+fetch "https://github.com/decompals/wibo/releases/download/$WIBO_TAG/wibo-x86_64" "wibo-x86_64-$WIBO_TAG"
 fetch "https://github.com/encounter/objdiff/releases/download/$OBJDIFF_TAG/objdiff-cli-linux-x86_64" objdiff-cli-linux-x86_64
 fetch "https://deb.debian.org/debian/$LIBC6_I386_DEB" "$(basename "$LIBC6_I386_DEB")"
 if [ $LOCK = 1 ]; then sha256sum "$T"/dl/* > "$T/toolchain.sha256"; fi
 sha256sum -c --quiet "$T/toolchain.sha256"
 
-for k in $DECOMPME_KITS; do
+for k in $DECOMPME_KITS $MWCCPSP_KITS; do
   d="$T/compilers/$k"
   if [ ! -d "$d" ]; then mkdir -p "$d"; tar -xzf "$T/dl/$k.tar.gz" -C "$d"; fi
 done
 install -m 755 "$T/dl/objdiff-cli-linux-x86_64" "$T/bin/objdiff-cli"
+install -m 755 "$T/dl/wibo-x86_64-$WIBO_TAG" "$T/bin/wibo"
 # tools/bin/i386-run <program> [args]: runs a 32-bit x86 program (the psp-gcc kits' cc1) through the unpacked loader
 if [ ! -e "$T/i386/usr/lib/ld-linux.so.2" ]; then
   tmp=$(mktemp -d)
@@ -91,12 +93,22 @@ if [ -x "$T/bin/mipsel-linux-gnu-as" ]; then AS="$T/bin/mipsel-linux-gnu-as"; el
 "$AS" --version | head -1
 printf 'allegrex: '; printf 'ext $2,$3,4,8\n' | "$AS" -march=allegrex -o /dev/null - && echo ok
 probe=$(mktemp --suffix=.c); printf 'int f(int a, int b) { return a * b + 3; }\n' > "$probe"
-for k in $DECOMPME_KITS; do
+for k in $DECOMPME_KITS $MWCCPSP_KITS; do
   cc1=$(find "$T/compilers/$k" -path '*gcc-lib*' -name cc1 -type f | head -1)
+  exe=$(find "$T/compilers/$k" -maxdepth 1 \( -iname pspsnc.exe -o -iname mwccpsp.exe \) | head -1)
   if [ -n "$cc1" ]; then
     printf '%s: ' "$k"; "$T/bin/i386-run" "$cc1" -quiet -O2 -G0 "$probe" -o - | grep -c '^[[:space:]]*[a-z]' | sed 's/$/ asm lines from a probe/'
+  elif [ -n "$exe" ]; then
+    # Windows kit: compile the probe to an object under wibo; "runs" or the exact error
+    obj="${probe%.c}.o"; rm -f "$obj"
+    if out=$("$T/bin/wibo" "$exe" -c -O2 -o "$obj" "$probe" 2>&1) && [ -s "$obj" ]; then
+      echo "$k: runs (wibo $WIBO_TAG, $(basename "$exe"))"
+    else
+      echo "$k: fails under wibo $WIBO_TAG: $(printf '%s' "$out" | tr '\n' ' ' | cut -c1-200)"
+    fi
+    rm -f "$obj"
   else
-    printf '%s: Windows kit (%s), needs wibo or Wine, not run here\n' "$k" "$(ls "$T/compilers/$k" | grep -m1 -i 'snc.exe\|mwcc')"
+    echo "$k: no compiler found in $T/compilers/$k"
   fi
 done
 rm -f "$probe"
