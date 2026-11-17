@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Refuses game data, oversized files, protected-file edits and inline asm.
+# Wire once per clone: git config core.hooksPath tools/hooks
+set -euo pipefail
+fail=0
+
+while IFS= read -r -d '' f; do
+  case "$f" in
+    disks/README.md) ;;
+    disks/*|extract/*|asm/*|assets/*|build/*|expected/*|captures/*|linker/*|work/*|tools/dl/*|tools/bin/*|tools/compilers/*|tools/binutils/*|tools/i386/*|tools/src/*) echo "game data or toolchain staged: $f"; fail=1 ;;
+  esac
+  size=$(git cat-file -s ":$f" 2>/dev/null || echo 0)
+  if [ "$size" -gt 1048576 ]; then echo "file over 1 MB staged: $f"; fail=1; fi
+  # Executables and disc images by content, whatever their name: ELF, ~PSP, ISO 9660, CSO, PSF.
+  magic=$(git cat-file -p ":$f" 2>/dev/null | head -c 4 | od -An -tx1 | tr -d ' \n')
+  case "$magic" in
+    7f454c46|7e505350|4349534f|00505346) echo "game binary staged (magic $magic): $f"; fail=1 ;;
+  esac
+  if [ "$size" -gt 32774 ] && git cat-file -p ":$f" | tail -c +32770 | head -c 5 | grep -q 'CD001'; then
+    echo "ISO 9660 image staged: $f"; fail=1
+  fi
+done < <(git diff --cached --name-only -z --diff-filter=ACMR)
+
+# Target hashes, toolchain, build flags and these hooks change only on the maintainer's go (then PATA_PROTECTED_OK=1).
+protected='^(config/.*\.sha1|tools/versions\.env|tools/toolchain\.sha256|tools/requirements\.lock|Makefile|tools/hooks/.*)$'
+if [ "${PATA_PROTECTED_OK:-0}" != 1 ] && git rev-parse -q --verify HEAD >/dev/null; then
+  if git diff --cached --name-only | grep -qE "$protected"; then
+    echo "protected file changed: needs the maintainer's go, then commit with PATA_PROTECTED_OK=1"; fail=1
+  fi
+fi
+
+# C sources: no inline asm, no forced registers, except the INCLUDE_ASM header.
+if git diff --cached -U0 -- '*.c' '*.h' '*.cpp' ':!include/include_asm.h' | grep -E '^\+' \
+  | grep -qE '(__asm__|\basm)[[:space:]]*(volatile[[:space:]]*)?\(|register[^;]*\basm\b'; then
+  echo "inline asm or forced register in staged C"; fail=1
+fi
+
+exit $fail

@@ -1,0 +1,10 @@
+# Top-level Python tools. The exact set is pinned in requirements.lock.
+splat64[mips]
+pycdlib
+pycparser
+toml
+colorama
+ansiwrap
+watchdog
+levenshtein
+cxxfilt
