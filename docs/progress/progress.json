@@ -1,0 +1,79 @@
+{
+ "schema_version": 1,
+ "commit": "cf168da",
+ "tracked_tree_dirty": true,
+ "metric": "Code bytes of each function of BOOT.BIN .text (config/<VERSION>/functions.tsv). asm: still assembly; c: matching C with names left to find; read: every name ours.",
+ "totals": {
+  "game_functions": 9290,
+  "game_bytes": 1652060,
+  "levels": {
+   "asm": {
+    "functions": 9286,
+    "bytes": 1651752
+   },
+   "c": {
+    "functions": 4,
+    "bytes": 308
+   },
+   "read": {
+    "functions": 0,
+    "bytes": 0
+   }
+  },
+  "unknowns": {
+   "unk_fields": 1,
+   "m2c_names": 10,
+   "d_globals": 0,
+   "func_calls": 6
+  },
+  "sony_functions": 1778,
+  "sony_bytes": 262436,
+  "sony_c_functions": 0
+ },
+ "c_functions": [
+  {
+   "name": "func_08804000",
+   "address": "0x08804000",
+   "bytes": 108,
+   "file": "src/f/func_08804000.c",
+   "unk_fields": 0,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_088E2184",
+   "address": "0x088E2184",
+   "bytes": 76,
+   "file": "src/f/func_088E2184.c",
+   "unk_fields": 0,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_089506BC",
+   "address": "0x089506BC",
+   "bytes": 60,
+   "file": "src/f/func_089506BC.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BFC48",
+   "address": "0x089BFC48",
+   "bytes": 64,
+   "file": "src/f/func_089BFC48.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  }
+ ]
+}

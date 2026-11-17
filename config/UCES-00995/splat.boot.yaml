@@ -53,7 +53,14 @@ segments:
     subalign: 4 # GNU as aligns .text and .data on 16; the retail .data starts at ...114
     align: 4
     subsegments:
-      - [0x54, asm, text]
+      - [0x54, c, f/func_08804000]
+      - [0xC0, asm, text_0880406C]
+      - [0xDE1D8, c, f/func_088E2184]
+      - [0xDE224, asm, text_088E21D0]
+      - [0x14C710, c, f/func_089506BC]
+      - [0x14C74C, asm, text_089506F8]
+      - [0x1BBC9C, c, f/func_089BFC48]
+      - [0x1BBCDC, asm, text_089BFC88]
       - [0x1D3884, asm, sce_stub]
       - [0x1D3FEC, data, sce_tables]
       - [0x1D5168, data, data]

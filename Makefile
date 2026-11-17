@@ -28,6 +28,14 @@ OBJCOPY := $(CROSS)objcopy
 PSPTOOLS := tools/src/psp-decomp-tools
 
 ASFLAGS  := -march=allegrex -mabi=32 -EL -G0 -no-pad-sections -Iinclude
+
+# Metrowerks CodeWarrior for PSP, run by wibo. Builds 180 to 219 of mwccpsp 3.0.1 give the same code on every
+# calibration function (.agents/research/compiler.md); 121 to 151 do not. The linker, not the compiler, writes the
+# "MW MIPS C Compiler (2.4.1.01)" of the retail .comment. -O4,p is the runtime's level (loop rotation with
+# branch-likely); a unit can override it with MWCCFLAGS_<unit file name> in this Makefile.
+MWCC_VER  ?= mwccpsp_3.0.1_219
+MWCC      := tools/bin/wibo tools/compilers/$(MWCC_VER)/mwccpsp.exe
+MWCCFLAGS ?= -c -nostdinc -Iinclude -O4,p
 LDSCRIPT := $(BUILD)/boot.ld
 UNDEF    := $(BUILD)/undefined_syms_auto.txt $(BUILD)/undefined_funcs_auto.txt
 
@@ -88,6 +96,15 @@ link: $(BUILD)/boot.elf
 
 $(BUILD)/boot.elf: $(OBJS) $(LDSCRIPT) $(UNDEF)
 	$(LD) -EL $(foreach u,$(UNDEF),-T $(u)) -T $(LDSCRIPT) -Map $(@:.elf=.map) -o $@
+
+# One .text section per function, in source order; SUBALIGN(4) in the linker script keeps them packed.
+$(BUILD)/src/%.c.o: src/%.c $(wildcard include/*.h) Makefile
+	@mkdir -p $(@D)
+	$(MWCC) $(MWCCFLAGS) $(MWCCFLAGS_$(*F)) -o $@ $<
+
+$(BUILD)/src/%.cpp.o: src/%.cpp $(wildcard include/*.h) Makefile
+	@mkdir -p $(@D)
+	$(MWCC) $(MWCCFLAGS) $(MWCCFLAGS_$(*F)) -o $@ $<
 
 $(BUILD)/asm/%.s.o: asm/%.s
 	$(TOOLPY) $(PSPTOOLS)/assemble.py $(AS) $< $@ $(ASFLAGS)

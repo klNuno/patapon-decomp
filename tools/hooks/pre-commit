@@ -3,6 +3,8 @@
 # Wire once per clone: git config core.hooksPath tools/hooks
 set -euo pipefail
 fail=0
+blob=$(mktemp)
+trap 'rm -f "$blob"' EXIT
 
 while IFS= read -r -d '' f; do
   case "$f" in
@@ -12,11 +14,13 @@ while IFS= read -r -d '' f; do
   size=$(git cat-file -s ":$f" 2>/dev/null || echo 0)
   if [ "$size" -gt 1048576 ]; then echo "file over 1 MB staged: $f"; fail=1; fi
   # Executables and disc images by content, whatever their name: ELF, ~PSP, ISO 9660, CSO, PSF.
-  magic=$(git cat-file -p ":$f" 2>/dev/null | head -c 4 | od -An -tx1 | tr -d ' \n')
+  # The blob goes to a file first: under pipefail, `cat-file | head` dies of SIGPIPE on any blob over 64 KB.
+  git cat-file -p ":$f" > "$blob" 2>/dev/null || : > "$blob"
+  magic=$(head -c 4 "$blob" | od -An -tx1 | tr -d ' \n')
   case "$magic" in
     7f454c46|7e505350|4349534f|00505346) echo "game binary staged (magic $magic): $f"; fail=1 ;;
   esac
-  if [ "$size" -gt 32774 ] && git cat-file -p ":$f" | tail -c +32770 | head -c 5 | grep -q 'CD001'; then
+  if [ "$size" -gt 32774 ] && [ "$(tail -c +32770 "$blob" | head -c 5 | tr -d '\0')" = CD001 ]; then
     echo "ISO 9660 image staged: $f"; fail=1
   fi
 done < <(git diff --cached --name-only -z --diff-filter=ACMR)
