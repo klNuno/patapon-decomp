@@ -1,0 +1,9 @@
+# Settings read by psp-decomp-tools (tools/src/psp-decomp-tools/project.py).
+title = "Patapon"
+versions = ["UCES-00995"]
+binutils_prefix = "mipsel-linux-gnu-"
+
+[modules.boot]
+file = "BOOT.BIN"          # orig/<version>/BOOT.BIN, copied from the dump by make
+splat = "splat.boot.yaml"  # config/<version>/splat.boot.yaml
+relocatable = false

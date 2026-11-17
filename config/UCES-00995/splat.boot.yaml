@@ -1,0 +1,61 @@
+# splat config for PSP_GAME/SYSDIR/BOOT.BIN of UCES-00995 (Patapon, Europe, disc 1.00)
+#
+# BOOT.BIN is a plain static ELF (ET_EXEC, module 'Labo'): one PT_LOAD at 0x08804000,
+# no symbols, empty .rel.* sections, so the file is split as it lies (prx_info.py).
+#   0x000000  ELF header and the one program header
+#   0x000054  .text                       0x08804000
+#   0x1D3884  .sceStub.text (imports)      0x089D7830
+#   0x1D3FEC  .lib.ent*, .lib.stub*, .rodata.sce* (module tables)  0x089D7F98
+#   0x1D5168  .data                       0x089D9114
+#   0x245104  section headers, .shstrtab, .comment (not loaded)
+options:
+  platform: psp
+  basename: BOOT
+  base_path: ../..
+  target_path: orig/UCES-00995/BOOT.BIN
+  compiler: GCC # splat output style only; the linked file says "MW MIPS C Compiler (2.4.1.01)" in .comment
+  ld_script_path: build/UCES-00995/boot.ld
+  asm_path: asm/UCES-00995/boot
+  src_path: src
+  build_path: build/UCES-00995
+  asset_path: build/UCES-00995/bin
+  cache_path: build/UCES-00995/.splat_cache
+  symbol_addrs_path:
+    - config/UCES-00995/symbol_addrs.boot.txt
+  undefined_funcs_auto_path: build/UCES-00995/undefined_funcs_auto.txt
+  undefined_syms_auto_path: build/UCES-00995/undefined_syms_auto.txt
+  gp_value: 0x08A510A0 # .rodata.sceModuleInfo
+  add_set_gp_64: false
+  section_order: [.text, .rodata, .data, .bss]
+  find_file_boundaries: false
+  migrate_rodata_to_functions: false
+  disassemble_all: true
+  disasm_unknown: true
+  use_legacy_include_asm: false
+  asm_jtbl_label_macro: jlabel
+  ld_bss_is_noload: true
+  ld_align_segment_vram_end: false
+  ld_align_section_vram_end: false
+  create_undefined_funcs_auto: true
+  create_undefined_syms_auto: true
+  string_encoding: ASCII
+  data_string_encoding: ASCII
+  rodata_string_guesser_level: 0
+  data_string_guesser_level: 0
+
+segments:
+  - [0x0, bin, elf_header]
+  - name: main
+    type: code
+    start: 0x54
+    vram: 0x08804000
+    bss_size: 0x936D0 # memsz 0x2D8780 - filesz 0x2450B0
+    subalign: 4 # GNU as aligns .text and .data on 16; the retail .data starts at ...114
+    align: 4
+    subsegments:
+      - [0x54, asm, text]
+      - [0x1D3884, asm, sce_stub]
+      - [0x1D3FEC, data, sce_tables]
+      - [0x1D5168, data, data]
+  - [0x245104, bin, elf_sections]
+  - [0x245624]

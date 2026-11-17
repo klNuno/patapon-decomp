@@ -122,7 +122,7 @@ def redump_match(sha1):
                 continue
             cols = line.rstrip("\n").split("\t")
             if cols[-1] == sha1:
-                return "redump " + " ".join(cols[:-2])
+                return ("redump " if cols[3] != "-" else "known dump, not in redump: ") + " ".join(c for c in cols[:-2] if c != "-")
     return "no redump match"
 
 
