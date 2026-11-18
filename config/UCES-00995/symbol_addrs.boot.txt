@@ -313,3 +313,6 @@ sceNetResolverInit = 0x089D7D58; // type:func size:0x8
 __unexpected = 0x08804D24; // type:func
 __end__catch = 0x088048B0; // type:func
 __throw = 0x08805D44; // type:func
+// C++ pointer-to-member runtime: mwccpsp emits calls to these names for (obj->*pmf)(...) and a pmf test.
+__ptmf_scall = 0x08804728; // type:func
+__ptmf_test = 0x0880475C; // type:func
