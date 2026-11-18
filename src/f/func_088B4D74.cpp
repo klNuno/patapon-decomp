@@ -1,0 +1,40 @@
+#include "common.h"
+
+extern "C" {
+
+struct V0 {
+    virtual void vfunc_08();
+    virtual void vfunc_0C(s32, s32 *, s32);
+};
+
+typedef struct {
+    s32 unk_00;
+    V0 *unk_04;
+    s32 unk_08;
+    s32 *unk_0C;
+} H;
+
+void func_088B60B0(H *, s32, s32);
+typedef struct { u8 pad_00[0x54]; f32 unk_54; } T;
+T *func_088B773C(s32);
+void func_088899D8(s32, s32);
+
+f32 func_088B4D74(s32 *arg0, s32 arg1) {
+    H h;
+    f32 temp;
+    s32 c;
+
+    func_088B60B0(&h, *arg0, arg1);
+    temp = (f32)(s32)func_088B773C(h.unk_08)->unk_54;
+    if (h.unk_08 != 0) {
+        *h.unk_0C -= 1;
+        c = h.unk_0C != NULL ? *h.unk_0C : 0;
+        if (c == 0) {
+            h.unk_04->vfunc_0C(h.unk_08, *(s32 **)&h.unk_0C, h.unk_00);
+            func_088899D8(h.unk_08, h.unk_00);
+        }
+    }
+    return temp;
+}
+
+}
