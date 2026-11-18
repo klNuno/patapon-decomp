@@ -7,7 +7,7 @@ function per file, for tools/integrate.py (which checks each again with fmatch.p
                            [--max-calls 2] [-j 3] [--show FUNC]
 
 The compiler and flags are the Makefile's (MWCC_VER, MWCCFLAGS). The Sony library range
-0x08820000-0x0885FFFF is not Metrowerks code and is left out unless --start/--end name it.
+Sony library ranges (0x08820000-0x08826FFF, 0x08829000-0x0884DFFF and 0x08854000-0x08857FFF) are not Metrowerks code and are left out unless --start/--end name them.
 """
 import argparse
 import os
@@ -24,7 +24,7 @@ os.environ["PYTHONPATH"] = str(ROOT / "tools/src/m2c") + os.pathsep + os.environ
 sys.path.insert(0, str(ROOT / "tools/src/psp-decomp-tools"))
 import project  # noqa: E402
 
-RANGES = [(0x08804000, 0x08820000), (0x08860000, 0x089D7830)]
+RANGES = [(0x08804000, 0x08820000), (0x08827000, 0x08829000), (0x0884E000, 0x08854000), (0x08858000, 0x089D7830)]
 
 
 def make_var(name):

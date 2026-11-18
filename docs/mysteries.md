@@ -13,6 +13,7 @@ Questions about how the three games work that the community has not settled and 
 - [ ] 7. Which textures hide inside other textures: which parts of each sheet does the code never reference in its sprite tables?
 - [ ] 8. Leaf counts as a tier 5 stone, a tier the game has no use for: a wrong table entry, or a leftover of a five-tier design?
 - [ ] 9. The Japanese tutorial video before the title: removed by a region check in one shared executable, or a different executable per region?
+- [ ] 24. The beta's `DATA_TLK.BND` holds colony messages in Japanese and English; retail ships the file empty but still loads it (`func_088769F4`). What were these messages, where would they show, and what does retail do with the empty bank?
 
 ## Patapon 2
 

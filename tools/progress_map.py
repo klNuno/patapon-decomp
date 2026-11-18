@@ -12,7 +12,7 @@ Each function is at one of three levels:
   access, an m2c local or parameter (arg0, temp_s0, var_v0, sp10), a D_ global, a call to a func_;
   a function still called func_XXXXXXXX stays here too;
 - read: matching C where every name in its body is ours.
-0x08820000-0x0885FFFF holds Sony's libraries (GCC-shaped code, not Metrowerks): one bar below the map
+0x08820000-0x08826FFF, 0x08829000-0x0884DFFF and 0x08854000-0x08857FFF hold Sony's libraries (GCC-shaped code and a VFPU math library, not Metrowerks): one bar below the map
 shows their share of the code.
 """
 import argparse
@@ -24,7 +24,9 @@ import re
 import subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SONY_RANGE = (0x08820000, 0x08860000)
+# Metrowerks game code sits between them (0x08827000-0x08828FFF, 0x0884E000-0x08853FFF, 0x08858000-0x0885FFFF):
+# m2c drafts built with mwccpsp match functions of 0x20 bytes and more there and nowhere else in 0x0882-0x0885.
+SONY_RANGES = [(0x08820000, 0x08827000), (0x08829000, 0x0884E000), (0x08854000, 0x08858000)]
 WINDOW = 0x10000
 LEVELS = [  # key, label, fill (an ordinal ramp on the dark surface)
     ("asm", "Assembly", "#4a4f57"),
@@ -156,7 +158,7 @@ def collect():
                 bodies[name] = (body, str(p.relative_to(ROOT)))
     groups = {}
     for a, s, n in rows:
-        sony = SONY_RANGE[0] <= a < SONY_RANGE[1]
+        sony = any(lo <= a < hi for lo, hi in SONY_RANGES)
         f = {"name": n, "address": f"0x{a:08X}", "bytes": s}
         if n in bodies:
             body, path = bodies[n]
@@ -287,7 +289,7 @@ def svg(r):
                  f'fill="{SURFACE}" fill-opacity="0.82"/>')
     parts.append(f'<text x="{bx + 13}" y="{yb + 20}" font-size="13" fill="{INK}">{e(glab)}</text>')
     parts.append(f'<rect x="{bx + gw + 2:.2f}" y="{yb}" width="{bw - gw - 2:.2f}" height="{bar_h}" rx="4" fill="url(#hatch)">'
-                 f'<title>Sony libraries, 0x08820000-0x0885FFFF</title></rect>')
+                 f'<title>Sony libraries, 0x08820000-0x08826FFF, 0x08829000-0x0884DFFF and 0x08854000-0x08857FFF</title></rect>')
     slab = f"Sony libraries {100 * sony / (g + sony):.0f}%"
     parts.append(f'<rect x="{bx + gw + 8:.2f}" y="{yb + 5}" width="{7.4 * len(slab) + 14:.0f}" height="{bar_h - 10}" rx="3" '
                  f'fill="{SURFACE}" fill-opacity="0.82"/>')
