@@ -164,6 +164,13 @@ def cmd_diff(a):
     same = sum(1 for x, y in zip(cw, tw) if x == y)
     pct = 100.0 * same / max(len(cw), len(tw))
     if cand == tgt:
+        # Code the game does not have at this place (an inline destructor emitted out of line for an exception
+        # table, a static helper) would shift everything after the unit in the real link.
+        extra = sorted(k for k in defined if k != a.func and k not in funcs and not k.startswith("@"))
+        if extra and len(cand_all) > len(cand):
+            print(f"{a.func} matches but the object adds {len(cand_all) - len(cand)} bytes of other code "
+                  f"({', '.join(extra)}): write it without them")
+            sys.exit(1)
         print(f"MATCH {a.func} 100%")
         sys.exit(0)
     cl = [t for v, t in objdump_lines(elf) if v >= addr][:len(cw)]
