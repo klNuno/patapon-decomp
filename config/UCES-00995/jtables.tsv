@@ -1,5 +1,6 @@
 # unit	jump tables (VRAM)	size: switch tables a C unit links in place of the data segment's
 f/func_0887340C	089DD35C	2C
+f/func_0887A4BC	089DDAD8	18
 f/func_088DEC6C	089E14F0	18
 f/func_088FE198	089E49B4	18
 f/func_0892442C	089E68CC	18
