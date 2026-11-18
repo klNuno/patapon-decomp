@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "commit": "e8fd238",
+ "commit": "f5775b9",
  "tracked_tree_dirty": true,
  "metric": "Code bytes of each function of BOOT.BIN .text (config/<VERSION>/functions.tsv). asm: still assembly; c: matching C with names left to find; read: every name ours.",
  "totals": {
@@ -8,12 +8,12 @@
   "game_bytes": 1652060,
   "levels": {
    "asm": {
-    "functions": 6284,
-    "bytes": 1552828
+    "functions": 5792,
+    "bytes": 1527224
    },
    "c": {
-    "functions": 3006,
-    "bytes": 99232
+    "functions": 3498,
+    "bytes": 124836
    },
    "read": {
     "functions": 0,
@@ -21,10 +21,10 @@
    }
   },
   "unknowns": {
-   "unk_fields": 2494,
-   "m2c_names": 4724,
-   "d_globals": 139,
-   "func_calls": 1488
+   "unk_fields": 3364,
+   "m2c_names": 5483,
+   "d_globals": 224,
+   "func_calls": 1859
   },
   "sony_functions": 1778,
   "sony_bytes": 262436,
@@ -82,6 +82,50 @@
    "file": "src/f/func_08804674.cpp",
    "unk_fields": 0,
    "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08804778",
+   "address": "0x08804778",
+   "bytes": 156,
+   "file": "src/f/func_08804778.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08804814",
+   "address": "0x08804814",
+   "bytes": 156,
+   "file": "src/f/func_08804814.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08805E10",
+   "address": "0x08805E10",
+   "bytes": 156,
+   "file": "src/f/func_08805E10.c",
+   "unk_fields": 6,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08805F0C",
+   "address": "0x08805F0C",
+   "bytes": 156,
+   "file": "src/f/func_08805F0C.c",
+   "unk_fields": 10,
+   "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 1,
    "level": "c"
@@ -304,6 +348,17 @@
    "m2c_names": 3,
    "d_globals": 0,
    "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_08806860",
+   "address": "0x08806860",
+   "bytes": 148,
+   "file": "src/f/func_08806860.c",
+   "unk_fields": 2,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 6,
    "level": "c"
   },
   {
@@ -3024,6 +3079,17 @@
    "level": "c"
   },
   {
+   "name": "func_08810258",
+   "address": "0x08810258",
+   "bytes": 152,
+   "file": "src/f/func_08810258.c",
+   "unk_fields": 0,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 6,
+   "level": "c"
+  },
+  {
    "name": "func_088102F0",
    "address": "0x088102F0",
    "bytes": 28,
@@ -4113,6 +4179,17 @@
    "level": "c"
   },
   {
+   "name": "func_088120B4",
+   "address": "0x088120B4",
+   "bytes": 148,
+   "file": "src/f/func_088120B4.c",
+   "unk_fields": 4,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_08812148",
    "address": "0x08812148",
    "bytes": 8,
@@ -4960,6 +5037,28 @@
    "level": "c"
   },
   {
+   "name": "func_08861CD4",
+   "address": "0x08861CD4",
+   "bytes": 148,
+   "file": "src/f/func_08861CD4.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08861F68",
+   "address": "0x08861F68",
+   "bytes": 148,
+   "file": "src/f/func_08861F68.c",
+   "unk_fields": 4,
+   "m2c_names": 5,
+   "d_globals": 0,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
    "name": "func_08861FFC",
    "address": "0x08861FFC",
    "bytes": 128,
@@ -5012,6 +5111,17 @@
    "m2c_names": 4,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08864850",
+   "address": "0x08864850",
+   "bytes": 148,
+   "file": "src/f/func_08864850.c",
+   "unk_fields": 2,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 1,
    "level": "c"
   },
   {
@@ -5202,6 +5312,17 @@
    "level": "c"
   },
   {
+   "name": "func_08865EE0",
+   "address": "0x08865EE0",
+   "bytes": 152,
+   "file": "src/f/func_08865EE0.c",
+   "unk_fields": 30,
+   "m2c_names": 1,
+   "d_globals": 2,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_08865FE4",
    "address": "0x08865FE4",
    "bytes": 8,
@@ -5268,6 +5389,17 @@
    "level": "c"
   },
   {
+   "name": "func_08866754",
+   "address": "0x08866754",
+   "bytes": 156,
+   "file": "src/f/func_08866754.c",
+   "unk_fields": 3,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 6,
+   "level": "c"
+  },
+  {
    "name": "func_08866B54",
    "address": "0x08866B54",
    "bytes": 44,
@@ -5298,6 +5430,17 @@
    "m2c_names": 3,
    "d_globals": 0,
    "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08866BB4",
+   "address": "0x08866BB4",
+   "bytes": 152,
+   "file": "src/f/func_08866BB4.c",
+   "unk_fields": 4,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
    "level": "c"
   },
   {
@@ -5928,6 +6071,17 @@
    "level": "c"
   },
   {
+   "name": "func_0886CB58",
+   "address": "0x0886CB58",
+   "bytes": 156,
+   "file": "src/f/func_0886CB58.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 2,
+   "func_calls": 4,
+   "level": "c"
+  },
+  {
    "name": "func_0886CBF4",
    "address": "0x0886CBF4",
    "bytes": 24,
@@ -5936,6 +6090,50 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0886CC18",
+   "address": "0x0886CC18",
+   "bytes": 156,
+   "file": "src/f/func_0886CC18.cpp",
+   "unk_fields": 4,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_0886CCC0",
+   "address": "0x0886CCC0",
+   "bytes": 156,
+   "file": "src/f/func_0886CCC0.cpp",
+   "unk_fields": 4,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_0886CED8",
+   "address": "0x0886CED8",
+   "bytes": 156,
+   "file": "src/f/func_0886CED8.cpp",
+   "unk_fields": 4,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_0886CF80",
+   "address": "0x0886CF80",
+   "bytes": 156,
+   "file": "src/f/func_0886CF80.cpp",
+   "unk_fields": 4,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 3,
    "level": "c"
   },
   {
@@ -5958,6 +6156,17 @@
    "m2c_names": 3,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0886D8A8",
+   "address": "0x0886D8A8",
+   "bytes": 156,
+   "file": "src/f/func_0886D8A8.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 2,
+   "func_calls": 4,
    "level": "c"
   },
   {
@@ -6016,6 +6225,17 @@
    "level": "c"
   },
   {
+   "name": "func_0886D9D4",
+   "address": "0x0886D9D4",
+   "bytes": 156,
+   "file": "src/f/func_0886D9D4.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 2,
+   "func_calls": 4,
+   "level": "c"
+  },
+  {
    "name": "func_0886DA70",
    "address": "0x0886DA70",
    "bytes": 136,
@@ -6057,6 +6277,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0886DB10",
+   "address": "0x0886DB10",
+   "bytes": 156,
+   "file": "src/f/func_0886DB10.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 2,
+   "func_calls": 4,
    "level": "c"
   },
   {
@@ -6104,6 +6335,17 @@
    "level": "c"
   },
   {
+   "name": "func_0886DC20",
+   "address": "0x0886DC20",
+   "bytes": 156,
+   "file": "src/f/func_0886DC20.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 2,
+   "func_calls": 4,
+   "level": "c"
+  },
+  {
    "name": "func_0886DCBC",
    "address": "0x0886DCBC",
    "bytes": 92,
@@ -6145,6 +6387,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0886DD30",
+   "address": "0x0886DD30",
+   "bytes": 156,
+   "file": "src/f/func_0886DD30.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 2,
+   "func_calls": 4,
    "level": "c"
   },
   {
@@ -6431,6 +6684,17 @@
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0886EC30",
+   "address": "0x0886EC30",
+   "bytes": 152,
+   "file": "src/f/func_0886EC30.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
    "level": "c"
   },
   {
@@ -6797,6 +7061,17 @@
    "level": "c"
   },
   {
+   "name": "func_0887327C",
+   "address": "0x0887327C",
+   "bytes": 148,
+   "file": "src/f/func_0887327C.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 1,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_08873D08",
    "address": "0x08873D08",
    "bytes": 32,
@@ -7017,6 +7292,17 @@
    "level": "c"
   },
   {
+   "name": "func_08875184",
+   "address": "0x08875184",
+   "bytes": 152,
+   "file": "src/f/func_08875184.c",
+   "unk_fields": 4,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_0887521C",
    "address": "0x0887521C",
    "bytes": 68,
@@ -7025,6 +7311,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08875260",
+   "address": "0x08875260",
+   "bytes": 156,
+   "file": "src/f/func_08875260.c",
+   "unk_fields": 2,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 6,
    "level": "c"
   },
   {
@@ -7336,6 +7633,17 @@
    "level": "c"
   },
   {
+   "name": "func_08878520",
+   "address": "0x08878520",
+   "bytes": 148,
+   "file": "src/f/func_08878520.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 4,
+   "level": "c"
+  },
+  {
    "name": "func_08878A3C",
    "address": "0x08878A3C",
    "bytes": 8,
@@ -7410,6 +7718,17 @@
    "m2c_names": 4,
    "d_globals": 0,
    "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_0887949C",
+   "address": "0x0887949C",
+   "bytes": 152,
+   "file": "src/f/func_0887949C.c",
+   "unk_fields": 3,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 5,
    "level": "c"
   },
   {
@@ -8942,6 +9261,17 @@
    "level": "c"
   },
   {
+   "name": "func_08885980",
+   "address": "0x08885980",
+   "bytes": 156,
+   "file": "src/f/func_08885980.c",
+   "unk_fields": 5,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
    "name": "func_08885EC0",
    "address": "0x08885EC0",
    "bytes": 76,
@@ -9181,6 +9511,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0888914C",
+   "address": "0x0888914C",
+   "bytes": 152,
+   "file": "src/f/func_0888914C.cpp",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
    "level": "c"
   },
   {
@@ -11318,6 +11659,17 @@
    "level": "c"
   },
   {
+   "name": "func_0889B444",
+   "address": "0x0889B444",
+   "bytes": 156,
+   "file": "src/f/func_0889B444.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 2,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_0889B78C",
    "address": "0x0889B78C",
    "bytes": 8,
@@ -11414,6 +11766,17 @@
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0889CAA4",
+   "address": "0x0889CAA4",
+   "bytes": 156,
+   "file": "src/f/func_0889CAA4.c",
+   "unk_fields": 10,
+   "m2c_names": 4,
+   "d_globals": 2,
+   "func_calls": 4,
    "level": "c"
   },
   {
@@ -11557,6 +11920,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0889DFE0",
+   "address": "0x0889DFE0",
+   "bytes": 156,
+   "file": "src/f/func_0889DFE0.c",
+   "unk_fields": 7,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 2,
    "level": "c"
   },
   {
@@ -11725,6 +12099,17 @@
    "level": "c"
   },
   {
+   "name": "func_0889ED58",
+   "address": "0x0889ED58",
+   "bytes": 152,
+   "file": "src/f/func_0889ED58.c",
+   "unk_fields": 2,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_0889FF3C",
    "address": "0x0889FF3C",
    "bytes": 40,
@@ -11857,6 +12242,17 @@
    "level": "c"
   },
   {
+   "name": "func_088A17E8",
+   "address": "0x088A17E8",
+   "bytes": 148,
+   "file": "src/f/func_088A17E8.c",
+   "unk_fields": 9,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_088A1C18",
    "address": "0x088A1C18",
    "bytes": 88,
@@ -11887,6 +12283,17 @@
    "m2c_names": 7,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_088A1F54",
+   "address": "0x088A1F54",
+   "bytes": 156,
+   "file": "src/f/func_088A1F54.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
    "level": "c"
   },
   {
@@ -12451,6 +12858,17 @@
    "level": "c"
   },
   {
+   "name": "func_088A4838",
+   "address": "0x088A4838",
+   "bytes": 156,
+   "file": "src/f/func_088A4838.c",
+   "unk_fields": 4,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_088A4A88",
    "address": "0x088A4A88",
    "bytes": 20,
@@ -12459,6 +12877,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_088A4A9C",
+   "address": "0x088A4A9C",
+   "bytes": 148,
+   "file": "src/f/func_088A4A9C.c",
+   "unk_fields": 15,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
    "level": "c"
   },
   {
@@ -12668,6 +13097,17 @@
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_088A7774",
+   "address": "0x088A7774",
+   "bytes": 156,
+   "file": "src/f/func_088A7774.c",
+   "unk_fields": 6,
+   "m2c_names": 2,
+   "d_globals": 5,
+   "func_calls": 3,
    "level": "c"
   },
   {
@@ -12943,6 +13383,17 @@
    "m2c_names": 4,
    "d_globals": 5,
    "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_088A95AC",
+   "address": "0x088A95AC",
+   "bytes": 148,
+   "file": "src/f/func_088A95AC.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 4,
+   "func_calls": 2,
    "level": "c"
   },
   {
@@ -14035,6 +14486,17 @@
    "level": "c"
   },
   {
+   "name": "func_088BD3BC",
+   "address": "0x088BD3BC",
+   "bytes": 152,
+   "file": "src/f/func_088BD3BC.c",
+   "unk_fields": 4,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_088BD454",
    "address": "0x088BD454",
    "bytes": 68,
@@ -14384,6 +14846,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_088C35F0",
+   "address": "0x088C35F0",
+   "bytes": 152,
+   "file": "src/f/func_088C35F0.c",
+   "unk_fields": 7,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
    "level": "c"
   },
   {
@@ -15300,6 +15773,17 @@
    "level": "c"
   },
   {
+   "name": "func_088CE6EC",
+   "address": "0x088CE6EC",
+   "bytes": 148,
+   "file": "src/f/func_088CE6EC.cpp",
+   "unk_fields": 11,
+   "m2c_names": 1,
+   "d_globals": 1,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_088CEB94",
    "address": "0x088CEB94",
    "bytes": 44,
@@ -16004,6 +16488,17 @@
    "level": "c"
   },
   {
+   "name": "func_088D4ED4",
+   "address": "0x088D4ED4",
+   "bytes": 148,
+   "file": "src/f/func_088D4ED4.cpp",
+   "unk_fields": 19,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_088D4F68",
    "address": "0x088D4F68",
    "bytes": 8,
@@ -16231,6 +16726,17 @@
    "unk_fields": 2,
    "m2c_names": 2,
    "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_088D7134",
+   "address": "0x088D7134",
+   "bytes": 152,
+   "file": "src/f/func_088D7134.c",
+   "unk_fields": 7,
+   "m2c_names": 2,
+   "d_globals": 2,
    "func_calls": 0,
    "level": "c"
   },
@@ -16846,6 +17352,17 @@
    "file": "src/f/func_088DDABC.cpp",
    "unk_fields": 2,
    "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_088DDBEC",
+   "address": "0x088DDBEC",
+   "bytes": 148,
+   "file": "src/f/func_088DDBEC.cpp",
+   "unk_fields": 3,
+   "m2c_names": 3,
    "d_globals": 0,
    "func_calls": 0,
    "level": "c"
@@ -17841,6 +18358,17 @@
    "level": "c"
   },
   {
+   "name": "func_088E5B9C",
+   "address": "0x088E5B9C",
+   "bytes": 152,
+   "file": "src/f/func_088E5B9C.c",
+   "unk_fields": 0,
+   "m2c_names": 4,
+   "d_globals": 3,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_088E5C34",
    "address": "0x088E5C34",
    "bytes": 64,
@@ -17871,6 +18399,17 @@
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_088E5CDC",
+   "address": "0x088E5CDC",
+   "bytes": 152,
+   "file": "src/f/func_088E5CDC.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 3,
    "level": "c"
   },
   {
@@ -17937,6 +18476,17 @@
    "m2c_names": 5,
    "d_globals": 0,
    "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_088E61FC",
+   "address": "0x088E61FC",
+   "bytes": 152,
+   "file": "src/f/func_088E61FC.cpp",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 3,
    "level": "c"
   },
   {
@@ -18021,6 +18571,17 @@
    "address": "0x088E6878",
    "bytes": 136,
    "file": "src/f/func_088E6878.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_088E6900",
+   "address": "0x088E6900",
+   "bytes": 148,
+   "file": "src/f/func_088E6900.c",
    "unk_fields": 1,
    "m2c_names": 2,
    "d_globals": 0,
@@ -18201,6 +18762,17 @@
    "m2c_names": 0,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_088EEA20",
+   "address": "0x088EEA20",
+   "bytes": 152,
+   "file": "src/f/func_088EEA20.c",
+   "unk_fields": 11,
+   "m2c_names": 4,
+   "d_globals": 5,
+   "func_calls": 1,
    "level": "c"
   },
   {
@@ -18864,6 +19436,17 @@
    "level": "c"
   },
   {
+   "name": "func_088F920C",
+   "address": "0x088F920C",
+   "bytes": 148,
+   "file": "src/f/func_088F920C.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
    "name": "func_088F9344",
    "address": "0x088F9344",
    "bytes": 16,
@@ -19183,6 +19766,28 @@
    "level": "c"
   },
   {
+   "name": "func_088FD6A8",
+   "address": "0x088FD6A8",
+   "bytes": 148,
+   "file": "src/f/func_088FD6A8.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 5,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_088FD73C",
+   "address": "0x088FD73C",
+   "bytes": 152,
+   "file": "src/f/func_088FD73C.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_088FD8F8",
    "address": "0x088FD8F8",
    "bytes": 56,
@@ -19211,6 +19816,17 @@
    "file": "src/f/func_088FDF1C.c",
    "unk_fields": 2,
    "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 4,
+   "level": "c"
+  },
+  {
+   "name": "func_088FF44C",
+   "address": "0x088FF44C",
+   "bytes": 152,
+   "file": "src/f/func_088FF44C.c",
+   "unk_fields": 1,
+   "m2c_names": 4,
    "d_globals": 0,
    "func_calls": 4,
    "level": "c"
@@ -20107,6 +20723,17 @@
    "level": "c"
   },
   {
+   "name": "func_08911978",
+   "address": "0x08911978",
+   "bytes": 148,
+   "file": "src/f/func_08911978.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 4,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_08911BC0",
    "address": "0x08911BC0",
    "bytes": 136,
@@ -20357,6 +20984,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089144C0",
+   "address": "0x089144C0",
+   "bytes": 148,
+   "file": "src/f/func_089144C0.c",
+   "unk_fields": 6,
+   "m2c_names": 4,
+   "d_globals": 3,
+   "func_calls": 2,
    "level": "c"
   },
   {
@@ -21482,6 +22120,17 @@
    "level": "c"
   },
   {
+   "name": "func_0891E894",
+   "address": "0x0891E894",
+   "bytes": 148,
+   "file": "src/f/func_0891E894.c",
+   "unk_fields": 4,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_0891EBA8",
    "address": "0x0891EBA8",
    "bytes": 36,
@@ -22010,6 +22659,17 @@
    "level": "c"
   },
   {
+   "name": "func_08924640",
+   "address": "0x08924640",
+   "bytes": 148,
+   "file": "src/f/func_08924640.cpp",
+   "unk_fields": 4,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_089246D4",
    "address": "0x089246D4",
    "bytes": 132,
@@ -22018,6 +22678,17 @@
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08924758",
+   "address": "0x08924758",
+   "bytes": 148,
+   "file": "src/f/func_08924758.cpp",
+   "unk_fields": 7,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
    "level": "c"
   },
   {
@@ -23132,6 +23803,28 @@
    "level": "c"
   },
   {
+   "name": "func_0892CB1C",
+   "address": "0x0892CB1C",
+   "bytes": 152,
+   "file": "src/f/func_0892CB1C.c",
+   "unk_fields": 21,
+   "m2c_names": 1,
+   "d_globals": 1,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_0892CBB4",
+   "address": "0x0892CBB4",
+   "bytes": 152,
+   "file": "src/f/func_0892CBB4.c",
+   "unk_fields": 21,
+   "m2c_names": 1,
+   "d_globals": 1,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_0892CF4C",
    "address": "0x0892CF4C",
    "bytes": 52,
@@ -23204,6 +23897,17 @@
    "file": "src/f/func_0892E80C.cpp",
    "unk_fields": 3,
    "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0892E940",
+   "address": "0x0892E940",
+   "bytes": 148,
+   "file": "src/f/func_0892E940.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
    "level": "c"
@@ -23418,6 +24122,17 @@
    "level": "c"
   },
   {
+   "name": "func_08932544",
+   "address": "0x08932544",
+   "bytes": 152,
+   "file": "src/f/func_08932544.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_08932CD8",
    "address": "0x08932CD8",
    "bytes": 12,
@@ -23514,6 +24229,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089342C4",
+   "address": "0x089342C4",
+   "bytes": 148,
+   "file": "src/f/func_089342C4.cpp",
+   "unk_fields": 7,
+   "m2c_names": 1,
+   "d_globals": 3,
+   "func_calls": 3,
    "level": "c"
   },
   {
@@ -24375,6 +25101,17 @@
    "level": "c"
   },
   {
+   "name": "func_0893BAB8",
+   "address": "0x0893BAB8",
+   "bytes": 152,
+   "file": "src/f/func_0893BAB8.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_0893C334",
    "address": "0x0893C334",
    "bytes": 8,
@@ -24969,6 +25706,17 @@
    "level": "c"
   },
   {
+   "name": "func_0893FF34",
+   "address": "0x0893FF34",
+   "bytes": 152,
+   "file": "src/f/func_0893FF34.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_0893FFCC",
    "address": "0x0893FFCC",
    "bytes": 8,
@@ -25142,6 +25890,17 @@
    "m2c_names": 0,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08940968",
+   "address": "0x08940968",
+   "bytes": 152,
+   "file": "src/f/func_08940968.cpp",
+   "unk_fields": 5,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
    "level": "c"
   },
   {
@@ -26916,6 +27675,17 @@
    "level": "c"
   },
   {
+   "name": "func_0894E638",
+   "address": "0x0894E638",
+   "bytes": 152,
+   "file": "src/f/func_0894E638.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 5,
+   "level": "c"
+  },
+  {
    "name": "func_0894EF94",
    "address": "0x0894EF94",
    "bytes": 64,
@@ -27177,6 +27947,17 @@
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08953630",
+   "address": "0x08953630",
+   "bytes": 148,
+   "file": "src/f/func_08953630.cpp",
+   "unk_fields": 8,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 0,
    "level": "c"
   },
   {
@@ -27587,6 +28368,17 @@
    "level": "c"
   },
   {
+   "name": "func_08958E30",
+   "address": "0x08958E30",
+   "bytes": 152,
+   "file": "src/f/func_08958E30.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_089592A4",
    "address": "0x089592A4",
    "bytes": 48,
@@ -27780,6 +28572,17 @@
    "file": "src/f/func_0895A684.c",
    "unk_fields": 0,
    "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0895A7D0",
+   "address": "0x0895A7D0",
+   "bytes": 152,
+   "file": "src/f/func_0895A7D0.cpp",
+   "unk_fields": 4,
+   "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
    "level": "c"
@@ -28258,6 +29061,17 @@
    "level": "c"
   },
   {
+   "name": "func_0895CB9C",
+   "address": "0x0895CB9C",
+   "bytes": 144,
+   "file": "src/f/func_0895CB9C.c",
+   "unk_fields": 7,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_0895CC2C",
    "address": "0x0895CC2C",
    "bytes": 60,
@@ -28442,6 +29256,17 @@
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_0895F660",
+   "address": "0x0895F660",
+   "bytes": 148,
+   "file": "src/f/func_0895F660.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 3,
+   "func_calls": 4,
    "level": "c"
   },
   {
@@ -28907,6 +29732,17 @@
    "level": "c"
   },
   {
+   "name": "func_08962AC8",
+   "address": "0x08962AC8",
+   "bytes": 144,
+   "file": "src/f/func_08962AC8.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 5,
+   "level": "c"
+  },
+  {
    "name": "func_08962C20",
    "address": "0x08962C20",
    "bytes": 48,
@@ -28915,6 +29751,17 @@
    "m2c_names": 5,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08962C50",
+   "address": "0x08962C50",
+   "bytes": 148,
+   "file": "src/f/func_08962C50.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 5,
    "level": "c"
   },
   {
@@ -29408,6 +30255,17 @@
    "file": "src/f/func_089659F8.c",
    "unk_fields": 0,
    "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08965A10",
+   "address": "0x08965A10",
+   "bytes": 144,
+   "file": "src/f/func_08965A10.cpp",
+   "unk_fields": 3,
+   "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 0,
    "level": "c"
@@ -29985,6 +30843,17 @@
    "level": "c"
   },
   {
+   "name": "func_089692D8",
+   "address": "0x089692D8",
+   "bytes": 148,
+   "file": "src/f/func_089692D8.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 5,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
    "name": "func_0896936C",
    "address": "0x0896936C",
    "bytes": 8,
@@ -30128,6 +30997,17 @@
    "level": "c"
   },
   {
+   "name": "func_0896ACA8",
+   "address": "0x0896ACA8",
+   "bytes": 148,
+   "file": "src/f/func_0896ACA8.c",
+   "unk_fields": 3,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_0896AD3C",
    "address": "0x0896AD3C",
    "bytes": 16,
@@ -30144,6 +31024,17 @@
    "bytes": 140,
    "file": "src/f/func_0896B0F0.c",
    "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0896B708",
+   "address": "0x0896B708",
+   "bytes": 144,
+   "file": "src/f/func_0896B708.c",
+   "unk_fields": 2,
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 0,
@@ -30213,6 +31104,17 @@
    "m2c_names": 2,
    "d_globals": 3,
    "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_0896C870",
+   "address": "0x0896C870",
+   "bytes": 148,
+   "file": "src/f/func_0896C870.c",
+   "unk_fields": 3,
+   "m2c_names": 3,
+   "d_globals": 3,
+   "func_calls": 4,
    "level": "c"
   },
   {
@@ -30612,6 +31514,17 @@
    "level": "c"
   },
   {
+   "name": "func_08975A44",
+   "address": "0x08975A44",
+   "bytes": 144,
+   "file": "src/f/func_08975A44.cpp",
+   "unk_fields": 2,
+   "m2c_names": 5,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_08975B8C",
    "address": "0x08975B8C",
    "bytes": 8,
@@ -30840,6 +31753,17 @@
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089766B0",
+   "address": "0x089766B0",
+   "bytes": 148,
+   "file": "src/f/func_089766B0.c",
+   "unk_fields": 4,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
    "level": "c"
   },
   {
@@ -31148,6 +32072,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_08979D14",
+   "address": "0x08979D14",
+   "bytes": 152,
+   "file": "src/f/func_08979D14.cpp",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 3,
    "level": "c"
   },
   {
@@ -31580,6 +32515,17 @@
    "level": "c"
   },
   {
+   "name": "func_0897EB84",
+   "address": "0x0897EB84",
+   "bytes": 144,
+   "file": "src/f/func_0897EB84.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 6,
+   "level": "c"
+  },
+  {
    "name": "func_0897EE6C",
    "address": "0x0897EE6C",
    "bytes": 8,
@@ -31668,6 +32614,17 @@
    "level": "c"
   },
   {
+   "name": "func_0897F1A8",
+   "address": "0x0897F1A8",
+   "bytes": 152,
+   "file": "src/f/func_0897F1A8.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
    "name": "func_0897F5CC",
    "address": "0x0897F5CC",
    "bytes": 24,
@@ -31720,6 +32677,17 @@
    "m2c_names": 0,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08980550",
+   "address": "0x08980550",
+   "bytes": 152,
+   "file": "src/f/func_08980550.c",
+   "unk_fields": 6,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
    "level": "c"
   },
   {
@@ -32094,6 +33062,17 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089855BC",
+   "address": "0x089855BC",
+   "bytes": 152,
+   "file": "src/f/func_089855BC.cpp",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 1,
+   "func_calls": 1,
    "level": "c"
   },
   {
@@ -32823,6 +33802,171 @@
    "level": "c"
   },
   {
+   "name": "func_0898A324",
+   "address": "0x0898A324",
+   "bytes": 8,
+   "file": "src/f/func_0898A324.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898A32C",
+   "address": "0x0898A32C",
+   "bytes": 8,
+   "file": "src/f/func_0898A32C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898A678",
+   "address": "0x0898A678",
+   "bytes": 8,
+   "file": "src/f/func_0898A678.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0898A7CC",
+   "address": "0x0898A7CC",
+   "bytes": 8,
+   "file": "src/f/func_0898A7CC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898A7D4",
+   "address": "0x0898A7D4",
+   "bytes": 12,
+   "file": "src/f/func_0898A7D4.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898AA6C",
+   "address": "0x0898AA6C",
+   "bytes": 8,
+   "file": "src/f/func_0898AA6C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0898AD4C",
+   "address": "0x0898AD4C",
+   "bytes": 8,
+   "file": "src/f/func_0898AD4C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898AD54",
+   "address": "0x0898AD54",
+   "bytes": 8,
+   "file": "src/f/func_0898AD54.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898AD5C",
+   "address": "0x0898AD5C",
+   "bytes": 8,
+   "file": "src/f/func_0898AD5C.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898AD64",
+   "address": "0x0898AD64",
+   "bytes": 8,
+   "file": "src/f/func_0898AD64.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0898AD6C",
+   "address": "0x0898AD6C",
+   "bytes": 8,
+   "file": "src/f/func_0898AD6C.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0898B1DC",
+   "address": "0x0898B1DC",
+   "bytes": 32,
+   "file": "src/f/func_0898B1DC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0898B1FC",
+   "address": "0x0898B1FC",
+   "bytes": 32,
+   "file": "src/f/func_0898B1FC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0898B21C",
+   "address": "0x0898B21C",
+   "bytes": 64,
+   "file": "src/f/func_0898B21C.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898B5B8",
+   "address": "0x0898B5B8",
+   "bytes": 8,
+   "file": "src/f/func_0898B5B8.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_0898B780",
    "address": "0x0898B780",
    "bytes": 136,
@@ -32831,6 +33975,105 @@
    "m2c_names": 2,
    "d_globals": 2,
    "func_calls": 4,
+   "level": "c"
+  },
+  {
+   "name": "func_0898B808",
+   "address": "0x0898B808",
+   "bytes": 8,
+   "file": "src/f/func_0898B808.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898C0C4",
+   "address": "0x0898C0C4",
+   "bytes": 64,
+   "file": "src/f/func_0898C0C4.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0898C9A0",
+   "address": "0x0898C9A0",
+   "bytes": 8,
+   "file": "src/f/func_0898C9A0.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0898D060",
+   "address": "0x0898D060",
+   "bytes": 84,
+   "file": "src/f/func_0898D060.c",
+   "unk_fields": 0,
+   "m2c_names": 5,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898D144",
+   "address": "0x0898D144",
+   "bytes": 8,
+   "file": "src/f/func_0898D144.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898D14C",
+   "address": "0x0898D14C",
+   "bytes": 12,
+   "file": "src/f/func_0898D14C.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898D2A8",
+   "address": "0x0898D2A8",
+   "bytes": 16,
+   "file": "src/f/func_0898D2A8.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898D2B8",
+   "address": "0x0898D2B8",
+   "bytes": 8,
+   "file": "src/f/func_0898D2B8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898DAB4",
+   "address": "0x0898DAB4",
+   "bytes": 8,
+   "file": "src/f/func_0898DAB4.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
    "level": "c"
   },
   {
@@ -32845,6 +34088,402 @@
    "level": "c"
   },
   {
+   "name": "func_0898E194",
+   "address": "0x0898E194",
+   "bytes": 16,
+   "file": "src/f/func_0898E194.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898E1A4",
+   "address": "0x0898E1A4",
+   "bytes": 8,
+   "file": "src/f/func_0898E1A4.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898EA1C",
+   "address": "0x0898EA1C",
+   "bytes": 20,
+   "file": "src/f/func_0898EA1C.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898EA30",
+   "address": "0x0898EA30",
+   "bytes": 8,
+   "file": "src/f/func_0898EA30.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898EA38",
+   "address": "0x0898EA38",
+   "bytes": 8,
+   "file": "src/f/func_0898EA38.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898EF08",
+   "address": "0x0898EF08",
+   "bytes": 8,
+   "file": "src/f/func_0898EF08.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898EF10",
+   "address": "0x0898EF10",
+   "bytes": 12,
+   "file": "src/f/func_0898EF10.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898F430",
+   "address": "0x0898F430",
+   "bytes": 72,
+   "file": "src/f/func_0898F430.c",
+   "unk_fields": 10,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898F478",
+   "address": "0x0898F478",
+   "bytes": 24,
+   "file": "src/f/func_0898F478.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898F490",
+   "address": "0x0898F490",
+   "bytes": 8,
+   "file": "src/f/func_0898F490.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898F498",
+   "address": "0x0898F498",
+   "bytes": 24,
+   "file": "src/f/func_0898F498.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898F934",
+   "address": "0x0898F934",
+   "bytes": 24,
+   "file": "src/f/func_0898F934.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898F94C",
+   "address": "0x0898F94C",
+   "bytes": 48,
+   "file": "src/f/func_0898F94C.c",
+   "unk_fields": 2,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898F9B0",
+   "address": "0x0898F9B0",
+   "bytes": 152,
+   "file": "src/f/func_0898F9B0.c",
+   "unk_fields": 5,
+   "m2c_names": 5,
+   "d_globals": 0,
+   "func_calls": 6,
+   "level": "c"
+  },
+  {
+   "name": "func_0898FB90",
+   "address": "0x0898FB90",
+   "bytes": 28,
+   "file": "src/f/func_0898FB90.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898FF2C",
+   "address": "0x0898FF2C",
+   "bytes": 8,
+   "file": "src/f/func_0898FF2C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898FF34",
+   "address": "0x0898FF34",
+   "bytes": 8,
+   "file": "src/f/func_0898FF34.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898FF3C",
+   "address": "0x0898FF3C",
+   "bytes": 8,
+   "file": "src/f/func_0898FF3C.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0898FF44",
+   "address": "0x0898FF44",
+   "bytes": 8,
+   "file": "src/f/func_0898FF44.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089902D8",
+   "address": "0x089902D8",
+   "bytes": 8,
+   "file": "src/f/func_089902D8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089903CC",
+   "address": "0x089903CC",
+   "bytes": 88,
+   "file": "src/f/func_089903CC.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_08990A94",
+   "address": "0x08990A94",
+   "bytes": 40,
+   "file": "src/f/func_08990A94.c",
+   "unk_fields": 4,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08990ABC",
+   "address": "0x08990ABC",
+   "bytes": 64,
+   "file": "src/f/func_08990ABC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08990AFC",
+   "address": "0x08990AFC",
+   "bytes": 16,
+   "file": "src/f/func_08990AFC.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08990B0C",
+   "address": "0x08990B0C",
+   "bytes": 8,
+   "file": "src/f/func_08990B0C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08990B14",
+   "address": "0x08990B14",
+   "bytes": 8,
+   "file": "src/f/func_08990B14.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08990D20",
+   "address": "0x08990D20",
+   "bytes": 36,
+   "file": "src/f/func_08990D20.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08990D44",
+   "address": "0x08990D44",
+   "bytes": 28,
+   "file": "src/f/func_08990D44.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08990D60",
+   "address": "0x08990D60",
+   "bytes": 8,
+   "file": "src/f/func_08990D60.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08990D68",
+   "address": "0x08990D68",
+   "bytes": 92,
+   "file": "src/f/func_08990D68.c",
+   "unk_fields": 0,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089912A8",
+   "address": "0x089912A8",
+   "bytes": 24,
+   "file": "src/f/func_089912A8.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089912C0",
+   "address": "0x089912C0",
+   "bytes": 8,
+   "file": "src/f/func_089912C0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089912C8",
+   "address": "0x089912C8",
+   "bytes": 72,
+   "file": "src/f/func_089912C8.c",
+   "unk_fields": 0,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_08991310",
+   "address": "0x08991310",
+   "bytes": 144,
+   "file": "src/f/func_08991310.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089913A0",
+   "address": "0x089913A0",
+   "bytes": 88,
+   "file": "src/f/func_089913A0.c",
+   "unk_fields": 3,
+   "m2c_names": 5,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899159C",
+   "address": "0x0899159C",
+   "bytes": 120,
+   "file": "src/f/func_0899159C.cpp",
+   "unk_fields": 1,
+   "m2c_names": 5,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_08991614",
    "address": "0x08991614",
    "bytes": 136,
@@ -32853,6 +34492,72 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_08991C90",
+   "address": "0x08991C90",
+   "bytes": 56,
+   "file": "src/f/func_08991C90.c",
+   "unk_fields": 2,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08991CC8",
+   "address": "0x08991CC8",
+   "bytes": 8,
+   "file": "src/f/func_08991CC8.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089921B8",
+   "address": "0x089921B8",
+   "bytes": 16,
+   "file": "src/f/func_089921B8.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089921F8",
+   "address": "0x089921F8",
+   "bytes": 8,
+   "file": "src/f/func_089921F8.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899233C",
+   "address": "0x0899233C",
+   "bytes": 40,
+   "file": "src/f/func_0899233C.c",
+   "unk_fields": 8,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08992DB4",
+   "address": "0x08992DB4",
+   "bytes": 48,
+   "file": "src/f/func_08992DB4.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
    "level": "c"
   },
   {
@@ -32867,6 +34572,897 @@
    "level": "c"
   },
   {
+   "name": "func_089933C4",
+   "address": "0x089933C4",
+   "bytes": 44,
+   "file": "src/f/func_089933C4.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089933F0",
+   "address": "0x089933F0",
+   "bytes": 8,
+   "file": "src/f/func_089933F0.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089934F8",
+   "address": "0x089934F8",
+   "bytes": 40,
+   "file": "src/f/func_089934F8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08993F08",
+   "address": "0x08993F08",
+   "bytes": 16,
+   "file": "src/f/func_08993F08.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08993F18",
+   "address": "0x08993F18",
+   "bytes": 24,
+   "file": "src/f/func_08993F18.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08993F70",
+   "address": "0x08993F70",
+   "bytes": 32,
+   "file": "src/f/func_08993F70.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08993F90",
+   "address": "0x08993F90",
+   "bytes": 8,
+   "file": "src/f/func_08993F90.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899404C",
+   "address": "0x0899404C",
+   "bytes": 152,
+   "file": "src/f/func_0899404C.c",
+   "unk_fields": 12,
+   "m2c_names": 3,
+   "d_globals": 2,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_08994194",
+   "address": "0x08994194",
+   "bytes": 8,
+   "file": "src/f/func_08994194.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08994A74",
+   "address": "0x08994A74",
+   "bytes": 8,
+   "file": "src/f/func_08994A74.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08994FF0",
+   "address": "0x08994FF0",
+   "bytes": 8,
+   "file": "src/f/func_08994FF0.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089955CC",
+   "address": "0x089955CC",
+   "bytes": 8,
+   "file": "src/f/func_089955CC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089955D4",
+   "address": "0x089955D4",
+   "bytes": 8,
+   "file": "src/f/func_089955D4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08995710",
+   "address": "0x08995710",
+   "bytes": 16,
+   "file": "src/f/func_08995710.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08995720",
+   "address": "0x08995720",
+   "bytes": 8,
+   "file": "src/f/func_08995720.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08995728",
+   "address": "0x08995728",
+   "bytes": 8,
+   "file": "src/f/func_08995728.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089967F0",
+   "address": "0x089967F0",
+   "bytes": 12,
+   "file": "src/f/func_089967F0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089967FC",
+   "address": "0x089967FC",
+   "bytes": 12,
+   "file": "src/f/func_089967FC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08996808",
+   "address": "0x08996808",
+   "bytes": 8,
+   "file": "src/f/func_08996808.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08996810",
+   "address": "0x08996810",
+   "bytes": 8,
+   "file": "src/f/func_08996810.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08996818",
+   "address": "0x08996818",
+   "bytes": 8,
+   "file": "src/f/func_08996818.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089968C8",
+   "address": "0x089968C8",
+   "bytes": 8,
+   "file": "src/f/func_089968C8.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08996A20",
+   "address": "0x08996A20",
+   "bytes": 20,
+   "file": "src/f/func_08996A20.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08996A34",
+   "address": "0x08996A34",
+   "bytes": 28,
+   "file": "src/f/func_08996A34.c",
+   "unk_fields": 6,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08996A50",
+   "address": "0x08996A50",
+   "bytes": 8,
+   "file": "src/f/func_08996A50.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08996A58",
+   "address": "0x08996A58",
+   "bytes": 8,
+   "file": "src/f/func_08996A58.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08997A68",
+   "address": "0x08997A68",
+   "bytes": 8,
+   "file": "src/f/func_08997A68.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998080",
+   "address": "0x08998080",
+   "bytes": 28,
+   "file": "src/f/func_08998080.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899809C",
+   "address": "0x0899809C",
+   "bytes": 8,
+   "file": "src/f/func_0899809C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089985E4",
+   "address": "0x089985E4",
+   "bytes": 8,
+   "file": "src/f/func_089985E4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089985EC",
+   "address": "0x089985EC",
+   "bytes": 16,
+   "file": "src/f/func_089985EC.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089985FC",
+   "address": "0x089985FC",
+   "bytes": 8,
+   "file": "src/f/func_089985FC.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998A8C",
+   "address": "0x08998A8C",
+   "bytes": 20,
+   "file": "src/f/func_08998A8C.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998AA0",
+   "address": "0x08998AA0",
+   "bytes": 8,
+   "file": "src/f/func_08998AA0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998AA8",
+   "address": "0x08998AA8",
+   "bytes": 68,
+   "file": "src/f/func_08998AA8.c",
+   "unk_fields": 2,
+   "m2c_names": 6,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998AEC",
+   "address": "0x08998AEC",
+   "bytes": 72,
+   "file": "src/f/func_08998AEC.c",
+   "unk_fields": 2,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998BF8",
+   "address": "0x08998BF8",
+   "bytes": 16,
+   "file": "src/f/func_08998BF8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998D10",
+   "address": "0x08998D10",
+   "bytes": 8,
+   "file": "src/f/func_08998D10.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998D18",
+   "address": "0x08998D18",
+   "bytes": 16,
+   "file": "src/f/func_08998D18.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998D28",
+   "address": "0x08998D28",
+   "bytes": 8,
+   "file": "src/f/func_08998D28.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_08998D30",
+   "address": "0x08998D30",
+   "bytes": 152,
+   "file": "src/f/func_08998D30.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_089994B8",
+   "address": "0x089994B8",
+   "bytes": 76,
+   "file": "src/f/func_089994B8.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08999A3C",
+   "address": "0x08999A3C",
+   "bytes": 44,
+   "file": "src/f/func_08999A3C.c",
+   "unk_fields": 1,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08999A68",
+   "address": "0x08999A68",
+   "bytes": 72,
+   "file": "src/f/func_08999A68.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_08999AB0",
+   "address": "0x08999AB0",
+   "bytes": 152,
+   "file": "src/f/func_08999AB0.c",
+   "unk_fields": 6,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0899A8D8",
+   "address": "0x0899A8D8",
+   "bytes": 8,
+   "file": "src/f/func_0899A8D8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899A8E0",
+   "address": "0x0899A8E0",
+   "bytes": 8,
+   "file": "src/f/func_0899A8E0.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0899A8E8",
+   "address": "0x0899A8E8",
+   "bytes": 12,
+   "file": "src/f/func_0899A8E8.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899A8F4",
+   "address": "0x0899A8F4",
+   "bytes": 12,
+   "file": "src/f/func_0899A8F4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899A900",
+   "address": "0x0899A900",
+   "bytes": 8,
+   "file": "src/f/func_0899A900.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899A908",
+   "address": "0x0899A908",
+   "bytes": 20,
+   "file": "src/f/func_0899A908.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899A91C",
+   "address": "0x0899A91C",
+   "bytes": 8,
+   "file": "src/f/func_0899A91C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899A924",
+   "address": "0x0899A924",
+   "bytes": 8,
+   "file": "src/f/func_0899A924.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899A92C",
+   "address": "0x0899A92C",
+   "bytes": 8,
+   "file": "src/f/func_0899A92C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899AEB0",
+   "address": "0x0899AEB0",
+   "bytes": 48,
+   "file": "src/f/func_0899AEB0.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B040",
+   "address": "0x0899B040",
+   "bytes": 20,
+   "file": "src/f/func_0899B040.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B054",
+   "address": "0x0899B054",
+   "bytes": 8,
+   "file": "src/f/func_0899B054.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B05C",
+   "address": "0x0899B05C",
+   "bytes": 8,
+   "file": "src/f/func_0899B05C.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B064",
+   "address": "0x0899B064",
+   "bytes": 48,
+   "file": "src/f/func_0899B064.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B094",
+   "address": "0x0899B094",
+   "bytes": 16,
+   "file": "src/f/func_0899B094.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B0A4",
+   "address": "0x0899B0A4",
+   "bytes": 48,
+   "file": "src/f/func_0899B0A4.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B278",
+   "address": "0x0899B278",
+   "bytes": 68,
+   "file": "src/f/func_0899B278.c",
+   "unk_fields": 2,
+   "m2c_names": 6,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B2BC",
+   "address": "0x0899B2BC",
+   "bytes": 72,
+   "file": "src/f/func_0899B2BC.c",
+   "unk_fields": 2,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B304",
+   "address": "0x0899B304",
+   "bytes": 8,
+   "file": "src/f/func_0899B304.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899B34C",
+   "address": "0x0899B34C",
+   "bytes": 76,
+   "file": "src/f/func_0899B34C.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0899D0FC",
+   "address": "0x0899D0FC",
+   "bytes": 72,
+   "file": "src/f/func_0899D0FC.c",
+   "unk_fields": 10,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899D144",
+   "address": "0x0899D144",
+   "bytes": 72,
+   "file": "src/f/func_0899D144.c",
+   "unk_fields": 10,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899D18C",
+   "address": "0x0899D18C",
+   "bytes": 100,
+   "file": "src/f/func_0899D18C.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0899D404",
+   "address": "0x0899D404",
+   "bytes": 40,
+   "file": "src/f/func_0899D404.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0899D554",
+   "address": "0x0899D554",
+   "bytes": 48,
+   "file": "src/f/func_0899D554.c",
+   "unk_fields": 1,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E13C",
+   "address": "0x0899E13C",
+   "bytes": 8,
+   "file": "src/f/func_0899E13C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E144",
+   "address": "0x0899E144",
+   "bytes": 8,
+   "file": "src/f/func_0899E144.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E14C",
+   "address": "0x0899E14C",
+   "bytes": 32,
+   "file": "src/f/func_0899E14C.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E16C",
+   "address": "0x0899E16C",
+   "bytes": 24,
+   "file": "src/f/func_0899E16C.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E184",
+   "address": "0x0899E184",
+   "bytes": 24,
+   "file": "src/f/func_0899E184.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E19C",
+   "address": "0x0899E19C",
+   "bytes": 8,
+   "file": "src/f/func_0899E19C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E1A4",
+   "address": "0x0899E1A4",
+   "bytes": 56,
+   "file": "src/f/func_0899E1A4.c",
+   "unk_fields": 0,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E1DC",
+   "address": "0x0899E1DC",
+   "bytes": 32,
+   "file": "src/f/func_0899E1DC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E1FC",
+   "address": "0x0899E1FC",
+   "bytes": 120,
+   "file": "src/f/func_0899E1FC.c",
+   "unk_fields": 10,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E274",
+   "address": "0x0899E274",
+   "bytes": 20,
+   "file": "src/f/func_0899E274.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_0899E288",
+   "address": "0x0899E288",
+   "bytes": 8,
+   "file": "src/f/func_0899E288.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_0899EBC8",
    "address": "0x0899EBC8",
    "bytes": 140,
@@ -32875,6 +35471,39 @@
    "m2c_names": 2,
    "d_globals": 1,
    "func_calls": 4,
+   "level": "c"
+  },
+  {
+   "name": "func_0899EC54",
+   "address": "0x0899EC54",
+   "bytes": 112,
+   "file": "src/f/func_0899EC54.c",
+   "unk_fields": 12,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0899ED9C",
+   "address": "0x0899ED9C",
+   "bytes": 76,
+   "file": "src/f/func_0899ED9C.c",
+   "unk_fields": 0,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_0899F140",
+   "address": "0x0899F140",
+   "bytes": 8,
+   "file": "src/f/func_0899F140.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
    "level": "c"
   },
   {
@@ -32900,6 +35529,237 @@
    "level": "c"
   },
   {
+   "name": "func_0899F874",
+   "address": "0x0899F874",
+   "bytes": 68,
+   "file": "src/f/func_0899F874.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A04E4",
+   "address": "0x089A04E4",
+   "bytes": 12,
+   "file": "src/f/func_089A04E4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A04F0",
+   "address": "0x089A04F0",
+   "bytes": 12,
+   "file": "src/f/func_089A04F0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A04FC",
+   "address": "0x089A04FC",
+   "bytes": 8,
+   "file": "src/f/func_089A04FC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A05AC",
+   "address": "0x089A05AC",
+   "bytes": 16,
+   "file": "src/f/func_089A05AC.c",
+   "unk_fields": 3,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A05BC",
+   "address": "0x089A05BC",
+   "bytes": 8,
+   "file": "src/f/func_089A05BC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A05C4",
+   "address": "0x089A05C4",
+   "bytes": 16,
+   "file": "src/f/func_089A05C4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A1238",
+   "address": "0x089A1238",
+   "bytes": 8,
+   "file": "src/f/func_089A1238.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A1240",
+   "address": "0x089A1240",
+   "bytes": 8,
+   "file": "src/f/func_089A1240.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A1248",
+   "address": "0x089A1248",
+   "bytes": 8,
+   "file": "src/f/func_089A1248.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A1250",
+   "address": "0x089A1250",
+   "bytes": 8,
+   "file": "src/f/func_089A1250.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A1258",
+   "address": "0x089A1258",
+   "bytes": 16,
+   "file": "src/f/func_089A1258.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A1268",
+   "address": "0x089A1268",
+   "bytes": 16,
+   "file": "src/f/func_089A1268.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A1278",
+   "address": "0x089A1278",
+   "bytes": 32,
+   "file": "src/f/func_089A1278.c",
+   "unk_fields": 1,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A134C",
+   "address": "0x089A134C",
+   "bytes": 76,
+   "file": "src/f/func_089A134C.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A2BD8",
+   "address": "0x089A2BD8",
+   "bytes": 100,
+   "file": "src/f/func_089A2BD8.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A35D0",
+   "address": "0x089A35D0",
+   "bytes": 60,
+   "file": "src/f/func_089A35D0.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089A3E68",
+   "address": "0x089A3E68",
+   "bytes": 8,
+   "file": "src/f/func_089A3E68.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A4720",
+   "address": "0x089A4720",
+   "bytes": 12,
+   "file": "src/f/func_089A4720.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A472C",
+   "address": "0x089A472C",
+   "bytes": 60,
+   "file": "src/f/func_089A472C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A4DB0",
+   "address": "0x089A4DB0",
+   "bytes": 16,
+   "file": "src/f/func_089A4DB0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
    "name": "func_089A4DC0",
    "address": "0x089A4DC0",
    "bytes": 136,
@@ -32908,6 +35768,50 @@
    "m2c_names": 4,
    "d_globals": 0,
    "func_calls": 4,
+   "level": "c"
+  },
+  {
+   "name": "func_089A4FB0",
+   "address": "0x089A4FB0",
+   "bytes": 96,
+   "file": "src/f/func_089A4FB0.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A53F0",
+   "address": "0x089A53F0",
+   "bytes": 8,
+   "file": "src/f/func_089A53F0.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A5444",
+   "address": "0x089A5444",
+   "bytes": 8,
+   "file": "src/f/func_089A5444.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A5490",
+   "address": "0x089A5490",
+   "bytes": 12,
+   "file": "src/f/func_089A5490.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
    "level": "c"
   },
   {
@@ -32922,6 +35826,39 @@
    "level": "c"
   },
   {
+   "name": "func_089A6918",
+   "address": "0x089A6918",
+   "bytes": 12,
+   "file": "src/f/func_089A6918.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A6924",
+   "address": "0x089A6924",
+   "bytes": 64,
+   "file": "src/f/func_089A6924.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089A6964",
+   "address": "0x089A6964",
+   "bytes": 96,
+   "file": "src/f/func_089A6964.c",
+   "unk_fields": 2,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
    "name": "func_089A69C4",
    "address": "0x089A69C4",
    "bytes": 132,
@@ -32930,6 +35867,721 @@
    "m2c_names": 2,
    "d_globals": 0,
    "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_089A73DC",
+   "address": "0x089A73DC",
+   "bytes": 84,
+   "file": "src/f/func_089A73DC.c",
+   "unk_fields": 3,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089A77AC",
+   "address": "0x089A77AC",
+   "bytes": 108,
+   "file": "src/f/func_089A77AC.c",
+   "unk_fields": 3,
+   "m2c_names": 5,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089A78CC",
+   "address": "0x089A78CC",
+   "bytes": 12,
+   "file": "src/f/func_089A78CC.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A7A5C",
+   "address": "0x089A7A5C",
+   "bytes": 152,
+   "file": "src/f/func_089A7A5C.cpp",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089A7AF4",
+   "address": "0x089A7AF4",
+   "bytes": 144,
+   "file": "src/f/func_089A7AF4.cpp",
+   "unk_fields": 4,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089A7D18",
+   "address": "0x089A7D18",
+   "bytes": 76,
+   "file": "src/f/func_089A7D18.c",
+   "unk_fields": 1,
+   "m2c_names": 4,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089A8168",
+   "address": "0x089A8168",
+   "bytes": 16,
+   "file": "src/f/func_089A8168.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A81A8",
+   "address": "0x089A81A8",
+   "bytes": 8,
+   "file": "src/f/func_089A81A8.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A8A74",
+   "address": "0x089A8A74",
+   "bytes": 8,
+   "file": "src/f/func_089A8A74.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089A8A7C",
+   "address": "0x089A8A7C",
+   "bytes": 40,
+   "file": "src/f/func_089A8A7C.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089A8B48",
+   "address": "0x089A8B48",
+   "bytes": 20,
+   "file": "src/f/func_089A8B48.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A8D48",
+   "address": "0x089A8D48",
+   "bytes": 144,
+   "file": "src/f/func_089A8D48.c",
+   "unk_fields": 6,
+   "m2c_names": 3,
+   "d_globals": 2,
+   "func_calls": 4,
+   "level": "c"
+  },
+  {
+   "name": "func_089A8EBC",
+   "address": "0x089A8EBC",
+   "bytes": 8,
+   "file": "src/f/func_089A8EBC.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A8EC4",
+   "address": "0x089A8EC4",
+   "bytes": 8,
+   "file": "src/f/func_089A8EC4.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A8ECC",
+   "address": "0x089A8ECC",
+   "bytes": 8,
+   "file": "src/f/func_089A8ECC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A9DDC",
+   "address": "0x089A9DDC",
+   "bytes": 8,
+   "file": "src/f/func_089A9DDC.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A9DE4",
+   "address": "0x089A9DE4",
+   "bytes": 8,
+   "file": "src/f/func_089A9DE4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A9DEC",
+   "address": "0x089A9DEC",
+   "bytes": 28,
+   "file": "src/f/func_089A9DEC.c",
+   "unk_fields": 2,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089A9F6C",
+   "address": "0x089A9F6C",
+   "bytes": 76,
+   "file": "src/f/func_089A9F6C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089AA020",
+   "address": "0x089AA020",
+   "bytes": 16,
+   "file": "src/f/func_089AA020.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AD30C",
+   "address": "0x089AD30C",
+   "bytes": 100,
+   "file": "src/f/func_089AD30C.c",
+   "unk_fields": 1,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089AD67C",
+   "address": "0x089AD67C",
+   "bytes": 24,
+   "file": "src/f/func_089AD67C.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AD694",
+   "address": "0x089AD694",
+   "bytes": 48,
+   "file": "src/f/func_089AD694.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AD7F0",
+   "address": "0x089AD7F0",
+   "bytes": 8,
+   "file": "src/f/func_089AD7F0.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AD7F8",
+   "address": "0x089AD7F8",
+   "bytes": 8,
+   "file": "src/f/func_089AD7F8.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AD94C",
+   "address": "0x089AD94C",
+   "bytes": 8,
+   "file": "src/f/func_089AD94C.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089ADAA8",
+   "address": "0x089ADAA8",
+   "bytes": 8,
+   "file": "src/f/func_089ADAA8.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089ADC00",
+   "address": "0x089ADC00",
+   "bytes": 8,
+   "file": "src/f/func_089ADC00.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AE140",
+   "address": "0x089AE140",
+   "bytes": 40,
+   "file": "src/f/func_089AE140.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AE248",
+   "address": "0x089AE248",
+   "bytes": 16,
+   "file": "src/f/func_089AE248.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AE274",
+   "address": "0x089AE274",
+   "bytes": 8,
+   "file": "src/f/func_089AE274.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AE590",
+   "address": "0x089AE590",
+   "bytes": 8,
+   "file": "src/f/func_089AE590.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AE598",
+   "address": "0x089AE598",
+   "bytes": 12,
+   "file": "src/f/func_089AE598.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AE5A4",
+   "address": "0x089AE5A4",
+   "bytes": 12,
+   "file": "src/f/func_089AE5A4.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AE6F8",
+   "address": "0x089AE6F8",
+   "bytes": 48,
+   "file": "src/f/func_089AE6F8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089AEE04",
+   "address": "0x089AEE04",
+   "bytes": 8,
+   "file": "src/f/func_089AEE04.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AEEC8",
+   "address": "0x089AEEC8",
+   "bytes": 48,
+   "file": "src/f/func_089AEEC8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089AEEF8",
+   "address": "0x089AEEF8",
+   "bytes": 8,
+   "file": "src/f/func_089AEEF8.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089AF090",
+   "address": "0x089AF090",
+   "bytes": 8,
+   "file": "src/f/func_089AF090.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AF23C",
+   "address": "0x089AF23C",
+   "bytes": 48,
+   "file": "src/f/func_089AF23C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089AF26C",
+   "address": "0x089AF26C",
+   "bytes": 8,
+   "file": "src/f/func_089AF26C.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089AF584",
+   "address": "0x089AF584",
+   "bytes": 8,
+   "file": "src/f/func_089AF584.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089AF8FC",
+   "address": "0x089AF8FC",
+   "bytes": 52,
+   "file": "src/f/func_089AF8FC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089B0ADC",
+   "address": "0x089B0ADC",
+   "bytes": 8,
+   "file": "src/f/func_089B0ADC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B0AF8",
+   "address": "0x089B0AF8",
+   "bytes": 8,
+   "file": "src/f/func_089B0AF8.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B0FBC",
+   "address": "0x089B0FBC",
+   "bytes": 8,
+   "file": "src/f/func_089B0FBC.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B0FC4",
+   "address": "0x089B0FC4",
+   "bytes": 56,
+   "file": "src/f/func_089B0FC4.c",
+   "unk_fields": 6,
+   "m2c_names": 6,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B0FFC",
+   "address": "0x089B0FFC",
+   "bytes": 64,
+   "file": "src/f/func_089B0FFC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B1314",
+   "address": "0x089B1314",
+   "bytes": 8,
+   "file": "src/f/func_089B1314.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B131C",
+   "address": "0x089B131C",
+   "bytes": 8,
+   "file": "src/f/func_089B131C.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B1324",
+   "address": "0x089B1324",
+   "bytes": 20,
+   "file": "src/f/func_089B1324.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B135C",
+   "address": "0x089B135C",
+   "bytes": 24,
+   "file": "src/f/func_089B135C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B1374",
+   "address": "0x089B1374",
+   "bytes": 40,
+   "file": "src/f/func_089B1374.c",
+   "unk_fields": 5,
+   "m2c_names": 5,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B139C",
+   "address": "0x089B139C",
+   "bytes": 64,
+   "file": "src/f/func_089B139C.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B1704",
+   "address": "0x089B1704",
+   "bytes": 8,
+   "file": "src/f/func_089B1704.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B17F0",
+   "address": "0x089B17F0",
+   "bytes": 8,
+   "file": "src/f/func_089B17F0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B1CE4",
+   "address": "0x089B1CE4",
+   "bytes": 44,
+   "file": "src/f/func_089B1CE4.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2284",
+   "address": "0x089B2284",
+   "bytes": 20,
+   "file": "src/f/func_089B2284.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2298",
+   "address": "0x089B2298",
+   "bytes": 8,
+   "file": "src/f/func_089B2298.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B22A0",
+   "address": "0x089B22A0",
+   "bytes": 8,
+   "file": "src/f/func_089B22A0.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B22A8",
+   "address": "0x089B22A8",
+   "bytes": 8,
+   "file": "src/f/func_089B22A8.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2430",
+   "address": "0x089B2430",
+   "bytes": 76,
+   "file": "src/f/func_089B2430.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2528",
+   "address": "0x089B2528",
+   "bytes": 48,
+   "file": "src/f/func_089B2528.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2558",
+   "address": "0x089B2558",
+   "bytes": 8,
+   "file": "src/f/func_089B2558.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2790",
+   "address": "0x089B2790",
+   "bytes": 8,
+   "file": "src/f/func_089B2790.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
    "level": "c"
   },
   {
@@ -32944,6 +36596,83 @@
    "level": "c"
   },
   {
+   "name": "func_089B2A88",
+   "address": "0x089B2A88",
+   "bytes": 8,
+   "file": "src/f/func_089B2A88.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2A90",
+   "address": "0x089B2A90",
+   "bytes": 8,
+   "file": "src/f/func_089B2A90.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2A98",
+   "address": "0x089B2A98",
+   "bytes": 32,
+   "file": "src/f/func_089B2A98.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2BA8",
+   "address": "0x089B2BA8",
+   "bytes": 144,
+   "file": "src/f/func_089B2BA8.c",
+   "unk_fields": 5,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 4,
+   "level": "c"
+  },
+  {
+   "name": "func_089B2C78",
+   "address": "0x089B2C78",
+   "bytes": 8,
+   "file": "src/f/func_089B2C78.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B30D8",
+   "address": "0x089B30D8",
+   "bytes": 8,
+   "file": "src/f/func_089B30D8.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B31A8",
+   "address": "0x089B31A8",
+   "bytes": 152,
+   "file": "src/f/func_089B31A8.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 4,
+   "level": "c"
+  },
+  {
    "name": "func_089B3344",
    "address": "0x089B3344",
    "bytes": 136,
@@ -32951,6 +36680,391 @@
    "unk_fields": 5,
    "m2c_names": 2,
    "d_globals": 1,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B3448",
+   "address": "0x089B3448",
+   "bytes": 8,
+   "file": "src/f/func_089B3448.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B3450",
+   "address": "0x089B3450",
+   "bytes": 152,
+   "file": "src/f/func_089B3450.cpp",
+   "unk_fields": 4,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B3564",
+   "address": "0x089B3564",
+   "bytes": 8,
+   "file": "src/f/func_089B3564.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B3740",
+   "address": "0x089B3740",
+   "bytes": 8,
+   "file": "src/f/func_089B3740.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B3748",
+   "address": "0x089B3748",
+   "bytes": 8,
+   "file": "src/f/func_089B3748.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B3BCC",
+   "address": "0x089B3BCC",
+   "bytes": 64,
+   "file": "src/f/func_089B3BCC.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B3F8C",
+   "address": "0x089B3F8C",
+   "bytes": 8,
+   "file": "src/f/func_089B3F8C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B3F94",
+   "address": "0x089B3F94",
+   "bytes": 60,
+   "file": "src/f/func_089B3F94.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B3FD0",
+   "address": "0x089B3FD0",
+   "bytes": 60,
+   "file": "src/f/func_089B3FD0.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B400C",
+   "address": "0x089B400C",
+   "bytes": 56,
+   "file": "src/f/func_089B400C.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4044",
+   "address": "0x089B4044",
+   "bytes": 60,
+   "file": "src/f/func_089B4044.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4080",
+   "address": "0x089B4080",
+   "bytes": 60,
+   "file": "src/f/func_089B4080.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B40BC",
+   "address": "0x089B40BC",
+   "bytes": 56,
+   "file": "src/f/func_089B40BC.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B40F4",
+   "address": "0x089B40F4",
+   "bytes": 60,
+   "file": "src/f/func_089B40F4.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4130",
+   "address": "0x089B4130",
+   "bytes": 56,
+   "file": "src/f/func_089B4130.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4608",
+   "address": "0x089B4608",
+   "bytes": 8,
+   "file": "src/f/func_089B4608.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4610",
+   "address": "0x089B4610",
+   "bytes": 12,
+   "file": "src/f/func_089B4610.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B47D4",
+   "address": "0x089B47D4",
+   "bytes": 40,
+   "file": "src/f/func_089B47D4.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B47FC",
+   "address": "0x089B47FC",
+   "bytes": 24,
+   "file": "src/f/func_089B47FC.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4CBC",
+   "address": "0x089B4CBC",
+   "bytes": 32,
+   "file": "src/f/func_089B4CBC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4D90",
+   "address": "0x089B4D90",
+   "bytes": 12,
+   "file": "src/f/func_089B4D90.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4D9C",
+   "address": "0x089B4D9C",
+   "bytes": 16,
+   "file": "src/f/func_089B4D9C.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4DAC",
+   "address": "0x089B4DAC",
+   "bytes": 12,
+   "file": "src/f/func_089B4DAC.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4FDC",
+   "address": "0x089B4FDC",
+   "bytes": 8,
+   "file": "src/f/func_089B4FDC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B4FE4",
+   "address": "0x089B4FE4",
+   "bytes": 8,
+   "file": "src/f/func_089B4FE4.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B5398",
+   "address": "0x089B5398",
+   "bytes": 8,
+   "file": "src/f/func_089B5398.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B53A0",
+   "address": "0x089B53A0",
+   "bytes": 8,
+   "file": "src/f/func_089B53A0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B53A8",
+   "address": "0x089B53A8",
+   "bytes": 12,
+   "file": "src/f/func_089B53A8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B53B4",
+   "address": "0x089B53B4",
+   "bytes": 8,
+   "file": "src/f/func_089B53B4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B53CC",
+   "address": "0x089B53CC",
+   "bytes": 12,
+   "file": "src/f/func_089B53CC.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B53D8",
+   "address": "0x089B53D8",
+   "bytes": 12,
+   "file": "src/f/func_089B53D8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B53E4",
+   "address": "0x089B53E4",
+   "bytes": 12,
+   "file": "src/f/func_089B53E4.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B5490",
+   "address": "0x089B5490",
+   "bytes": 8,
+   "file": "src/f/func_089B5490.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B5498",
+   "address": "0x089B5498",
+   "bytes": 8,
+   "file": "src/f/func_089B5498.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B54A0",
+   "address": "0x089B54A0",
+   "bytes": 68,
+   "file": "src/f/func_089B54A0.c",
+   "unk_fields": 2,
+   "m2c_names": 2,
+   "d_globals": 0,
    "func_calls": 1,
    "level": "c"
   },
@@ -32966,6 +37080,765 @@
    "level": "c"
   },
   {
+   "name": "func_089B5568",
+   "address": "0x089B5568",
+   "bytes": 64,
+   "file": "src/f/func_089B5568.c",
+   "unk_fields": 4,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B5658",
+   "address": "0x089B5658",
+   "bytes": 52,
+   "file": "src/f/func_089B5658.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B57E4",
+   "address": "0x089B57E4",
+   "bytes": 8,
+   "file": "src/f/func_089B57E4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B57EC",
+   "address": "0x089B57EC",
+   "bytes": 152,
+   "file": "src/f/func_089B57EC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B5AD8",
+   "address": "0x089B5AD8",
+   "bytes": 40,
+   "file": "src/f/func_089B5AD8.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089B5BC8",
+   "address": "0x089B5BC8",
+   "bytes": 60,
+   "file": "src/f/func_089B5BC8.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089B663C",
+   "address": "0x089B663C",
+   "bytes": 100,
+   "file": "src/f/func_089B663C.c",
+   "unk_fields": 5,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B88A8",
+   "address": "0x089B88A8",
+   "bytes": 12,
+   "file": "src/f/func_089B88A8.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B88B4",
+   "address": "0x089B88B4",
+   "bytes": 12,
+   "file": "src/f/func_089B88B4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B88C0",
+   "address": "0x089B88C0",
+   "bytes": 8,
+   "file": "src/f/func_089B88C0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B8A64",
+   "address": "0x089B8A64",
+   "bytes": 8,
+   "file": "src/f/func_089B8A64.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B8A6C",
+   "address": "0x089B8A6C",
+   "bytes": 8,
+   "file": "src/f/func_089B8A6C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B8FC4",
+   "address": "0x089B8FC4",
+   "bytes": 12,
+   "file": "src/f/func_089B8FC4.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B926C",
+   "address": "0x089B926C",
+   "bytes": 8,
+   "file": "src/f/func_089B926C.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089B989C",
+   "address": "0x089B989C",
+   "bytes": 48,
+   "file": "src/f/func_089B989C.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089B9A1C",
+   "address": "0x089B9A1C",
+   "bytes": 48,
+   "file": "src/f/func_089B9A1C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089BA7B4",
+   "address": "0x089BA7B4",
+   "bytes": 8,
+   "file": "src/f/func_089BA7B4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BABF8",
+   "address": "0x089BABF8",
+   "bytes": 8,
+   "file": "src/f/func_089BABF8.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BAC00",
+   "address": "0x089BAC00",
+   "bytes": 8,
+   "file": "src/f/func_089BAC00.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BAC08",
+   "address": "0x089BAC08",
+   "bytes": 76,
+   "file": "src/f/func_089BAC08.cpp",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BAF1C",
+   "address": "0x089BAF1C",
+   "bytes": 44,
+   "file": "src/f/func_089BAF1C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BBBD0",
+   "address": "0x089BBBD0",
+   "bytes": 48,
+   "file": "src/f/func_089BBBD0.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BBC00",
+   "address": "0x089BBC00",
+   "bytes": 8,
+   "file": "src/f/func_089BBC00.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BCF3C",
+   "address": "0x089BCF3C",
+   "bytes": 92,
+   "file": "src/f/func_089BCF3C.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BCFE8",
+   "address": "0x089BCFE8",
+   "bytes": 8,
+   "file": "src/f/func_089BCFE8.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BCFF0",
+   "address": "0x089BCFF0",
+   "bytes": 8,
+   "file": "src/f/func_089BCFF0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD3D4",
+   "address": "0x089BD3D4",
+   "bytes": 8,
+   "file": "src/f/func_089BD3D4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD3DC",
+   "address": "0x089BD3DC",
+   "bytes": 8,
+   "file": "src/f/func_089BD3DC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD3E4",
+   "address": "0x089BD3E4",
+   "bytes": 8,
+   "file": "src/f/func_089BD3E4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD3EC",
+   "address": "0x089BD3EC",
+   "bytes": 8,
+   "file": "src/f/func_089BD3EC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD3F4",
+   "address": "0x089BD3F4",
+   "bytes": 8,
+   "file": "src/f/func_089BD3F4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD3FC",
+   "address": "0x089BD3FC",
+   "bytes": 8,
+   "file": "src/f/func_089BD3FC.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD404",
+   "address": "0x089BD404",
+   "bytes": 8,
+   "file": "src/f/func_089BD404.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD40C",
+   "address": "0x089BD40C",
+   "bytes": 16,
+   "file": "src/f/func_089BD40C.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD41C",
+   "address": "0x089BD41C",
+   "bytes": 8,
+   "file": "src/f/func_089BD41C.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD424",
+   "address": "0x089BD424",
+   "bytes": 8,
+   "file": "src/f/func_089BD424.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD42C",
+   "address": "0x089BD42C",
+   "bytes": 36,
+   "file": "src/f/func_089BD42C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD508",
+   "address": "0x089BD508",
+   "bytes": 8,
+   "file": "src/f/func_089BD508.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD764",
+   "address": "0x089BD764",
+   "bytes": 24,
+   "file": "src/f/func_089BD764.c",
+   "unk_fields": 2,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BD838",
+   "address": "0x089BD838",
+   "bytes": 64,
+   "file": "src/f/func_089BD838.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089BE3C0",
+   "address": "0x089BE3C0",
+   "bytes": 64,
+   "file": "src/f/func_089BE3C0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089BE6C8",
+   "address": "0x089BE6C8",
+   "bytes": 8,
+   "file": "src/f/func_089BE6C8.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BE6D0",
+   "address": "0x089BE6D0",
+   "bytes": 8,
+   "file": "src/f/func_089BE6D0.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED10",
+   "address": "0x089BED10",
+   "bytes": 8,
+   "file": "src/f/func_089BED10.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED18",
+   "address": "0x089BED18",
+   "bytes": 8,
+   "file": "src/f/func_089BED18.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED20",
+   "address": "0x089BED20",
+   "bytes": 8,
+   "file": "src/f/func_089BED20.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED28",
+   "address": "0x089BED28",
+   "bytes": 8,
+   "file": "src/f/func_089BED28.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED30",
+   "address": "0x089BED30",
+   "bytes": 8,
+   "file": "src/f/func_089BED30.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED38",
+   "address": "0x089BED38",
+   "bytes": 8,
+   "file": "src/f/func_089BED38.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED40",
+   "address": "0x089BED40",
+   "bytes": 8,
+   "file": "src/f/func_089BED40.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED48",
+   "address": "0x089BED48",
+   "bytes": 76,
+   "file": "src/f/func_089BED48.c",
+   "unk_fields": 15,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED94",
+   "address": "0x089BED94",
+   "bytes": 8,
+   "file": "src/f/func_089BED94.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BED9C",
+   "address": "0x089BED9C",
+   "bytes": 8,
+   "file": "src/f/func_089BED9C.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BEDA4",
+   "address": "0x089BEDA4",
+   "bytes": 36,
+   "file": "src/f/func_089BEDA4.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BEE6C",
+   "address": "0x089BEE6C",
+   "bytes": 8,
+   "file": "src/f/func_089BEE6C.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BEE74",
+   "address": "0x089BEE74",
+   "bytes": 8,
+   "file": "src/f/func_089BEE74.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF024",
+   "address": "0x089BF024",
+   "bytes": 8,
+   "file": "src/f/func_089BF024.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF02C",
+   "address": "0x089BF02C",
+   "bytes": 8,
+   "file": "src/f/func_089BF02C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF034",
+   "address": "0x089BF034",
+   "bytes": 8,
+   "file": "src/f/func_089BF034.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF03C",
+   "address": "0x089BF03C",
+   "bytes": 8,
+   "file": "src/f/func_089BF03C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF044",
+   "address": "0x089BF044",
+   "bytes": 8,
+   "file": "src/f/func_089BF044.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF04C",
+   "address": "0x089BF04C",
+   "bytes": 8,
+   "file": "src/f/func_089BF04C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF054",
+   "address": "0x089BF054",
+   "bytes": 8,
+   "file": "src/f/func_089BF054.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF05C",
+   "address": "0x089BF05C",
+   "bytes": 8,
+   "file": "src/f/func_089BF05C.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF064",
+   "address": "0x089BF064",
+   "bytes": 36,
+   "file": "src/f/func_089BF064.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF12C",
+   "address": "0x089BF12C",
+   "bytes": 8,
+   "file": "src/f/func_089BF12C.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF134",
+   "address": "0x089BF134",
+   "bytes": 8,
+   "file": "src/f/func_089BF134.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF350",
+   "address": "0x089BF350",
+   "bytes": 64,
+   "file": "src/f/func_089BF350.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089BF520",
+   "address": "0x089BF520",
+   "bytes": 8,
+   "file": "src/f/func_089BF520.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_089BFC48",
    "address": "0x089BFC48",
    "bytes": 64,
@@ -32974,6 +37847,193 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089C0568",
+   "address": "0x089C0568",
+   "bytes": 8,
+   "file": "src/f/func_089C0568.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C0570",
+   "address": "0x089C0570",
+   "bytes": 8,
+   "file": "src/f/func_089C0570.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C0578",
+   "address": "0x089C0578",
+   "bytes": 8,
+   "file": "src/f/func_089C0578.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089C0580",
+   "address": "0x089C0580",
+   "bytes": 8,
+   "file": "src/f/func_089C0580.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C0588",
+   "address": "0x089C0588",
+   "bytes": 8,
+   "file": "src/f/func_089C0588.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C0590",
+   "address": "0x089C0590",
+   "bytes": 8,
+   "file": "src/f/func_089C0590.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C0598",
+   "address": "0x089C0598",
+   "bytes": 8,
+   "file": "src/f/func_089C0598.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089C05A0",
+   "address": "0x089C05A0",
+   "bytes": 76,
+   "file": "src/f/func_089C05A0.c",
+   "unk_fields": 15,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C05EC",
+   "address": "0x089C05EC",
+   "bytes": 8,
+   "file": "src/f/func_089C05EC.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C05F4",
+   "address": "0x089C05F4",
+   "bytes": 8,
+   "file": "src/f/func_089C05F4.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C05FC",
+   "address": "0x089C05FC",
+   "bytes": 36,
+   "file": "src/f/func_089C05FC.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089C06D4",
+   "address": "0x089C06D4",
+   "bytes": 8,
+   "file": "src/f/func_089C06D4.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 1,
+   "level": "c"
+  },
+  {
+   "name": "func_089C06DC",
+   "address": "0x089C06DC",
+   "bytes": 8,
+   "file": "src/f/func_089C06DC.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C0BCC",
+   "address": "0x089C0BCC",
+   "bytes": 152,
+   "file": "src/f/func_089C0BCC.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 5,
+   "level": "c"
+  },
+  {
+   "name": "func_089C1A78",
+   "address": "0x089C1A78",
+   "bytes": 16,
+   "file": "src/f/func_089C1A78.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C1A88",
+   "address": "0x089C1A88",
+   "bytes": 8,
+   "file": "src/f/func_089C1A88.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C291C",
+   "address": "0x089C291C",
+   "bytes": 12,
+   "file": "src/f/func_089C291C.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
    "level": "c"
   },
   {
@@ -32988,6 +38048,17 @@
    "level": "c"
   },
   {
+   "name": "func_089C2D38",
+   "address": "0x089C2D38",
+   "bytes": 16,
+   "file": "src/f/func_089C2D38.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_089C3648",
    "address": "0x089C3648",
    "bytes": 136,
@@ -32999,6 +38070,182 @@
    "level": "c"
   },
   {
+   "name": "func_089C3D84",
+   "address": "0x089C3D84",
+   "bytes": 16,
+   "file": "src/f/func_089C3D84.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C3D94",
+   "address": "0x089C3D94",
+   "bytes": 8,
+   "file": "src/f/func_089C3D94.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C3D9C",
+   "address": "0x089C3D9C",
+   "bytes": 8,
+   "file": "src/f/func_089C3D9C.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C3DA4",
+   "address": "0x089C3DA4",
+   "bytes": 8,
+   "file": "src/f/func_089C3DA4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C3DAC",
+   "address": "0x089C3DAC",
+   "bytes": 8,
+   "file": "src/f/func_089C3DAC.c",
+   "unk_fields": 1,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C3EE4",
+   "address": "0x089C3EE4",
+   "bytes": 8,
+   "file": "src/f/func_089C3EE4.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C3F50",
+   "address": "0x089C3F50",
+   "bytes": 8,
+   "file": "src/f/func_089C3F50.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C430C",
+   "address": "0x089C430C",
+   "bytes": 84,
+   "file": "src/f/func_089C430C.c",
+   "unk_fields": 0,
+   "m2c_names": 5,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C43F0",
+   "address": "0x089C43F0",
+   "bytes": 8,
+   "file": "src/f/func_089C43F0.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C43F8",
+   "address": "0x089C43F8",
+   "bytes": 12,
+   "file": "src/f/func_089C43F8.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C44E4",
+   "address": "0x089C44E4",
+   "bytes": 16,
+   "file": "src/f/func_089C44E4.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C44F4",
+   "address": "0x089C44F4",
+   "bytes": 8,
+   "file": "src/f/func_089C44F4.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C50E0",
+   "address": "0x089C50E0",
+   "bytes": 8,
+   "file": "src/f/func_089C50E0.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C50E8",
+   "address": "0x089C50E8",
+   "bytes": 12,
+   "file": "src/f/func_089C50E8.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C52E4",
+   "address": "0x089C52E4",
+   "bytes": 8,
+   "file": "src/f/func_089C52E4.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C52EC",
+   "address": "0x089C52EC",
+   "bytes": 12,
+   "file": "src/f/func_089C52EC.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
    "name": "func_089C6138",
    "address": "0x089C6138",
    "bytes": 132,
@@ -33007,6 +38254,138 @@
    "m2c_names": 3,
    "d_globals": 1,
    "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6270",
+   "address": "0x089C6270",
+   "bytes": 8,
+   "file": "src/f/func_089C6270.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6278",
+   "address": "0x089C6278",
+   "bytes": 8,
+   "file": "src/f/func_089C6278.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6280",
+   "address": "0x089C6280",
+   "bytes": 8,
+   "file": "src/f/func_089C6280.c",
+   "unk_fields": 1,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6288",
+   "address": "0x089C6288",
+   "bytes": 8,
+   "file": "src/f/func_089C6288.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C635C",
+   "address": "0x089C635C",
+   "bytes": 8,
+   "file": "src/f/func_089C635C.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6364",
+   "address": "0x089C6364",
+   "bytes": 144,
+   "file": "src/f/func_089C6364.c",
+   "unk_fields": 4,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6424",
+   "address": "0x089C6424",
+   "bytes": 12,
+   "file": "src/f/func_089C6424.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6524",
+   "address": "0x089C6524",
+   "bytes": 36,
+   "file": "src/f/func_089C6524.c",
+   "unk_fields": 1,
+   "m2c_names": 3,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6548",
+   "address": "0x089C6548",
+   "bytes": 112,
+   "file": "src/f/func_089C6548.c",
+   "unk_fields": 7,
+   "m2c_names": 7,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6694",
+   "address": "0x089C6694",
+   "bytes": 84,
+   "file": "src/f/func_089C6694.c",
+   "unk_fields": 0,
+   "m2c_names": 2,
+   "d_globals": 0,
+   "func_calls": 2,
+   "level": "c"
+  },
+  {
+   "name": "func_089C66E8",
+   "address": "0x089C66E8",
+   "bytes": 8,
+   "file": "src/f/func_089C66E8.c",
+   "unk_fields": 0,
+   "m2c_names": 0,
+   "d_globals": 0,
+   "func_calls": 0,
+   "level": "c"
+  },
+  {
+   "name": "func_089C6854",
+   "address": "0x089C6854",
+   "bytes": 16,
+   "file": "src/f/func_089C6854.c",
+   "unk_fields": 0,
+   "m2c_names": 1,
+   "d_globals": 0,
+   "func_calls": 1,
    "level": "c"
   },
   {
@@ -33076,6 +38455,17 @@
    "level": "c"
   },
   {
+   "name": "func_089D0D04",
+   "address": "0x089D0D04",
+   "bytes": 148,
+   "file": "src/f/func_089D0D04.c",
+   "unk_fields": 3,
+   "m2c_names": 2,
+   "d_globals": 1,
+   "func_calls": 4,
+   "level": "c"
+  },
+  {
    "name": "func_089D3D14",
    "address": "0x089D3D14",
    "bytes": 140,
@@ -33095,6 +38485,28 @@
    "m2c_names": 1,
    "d_globals": 0,
    "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_089D6684",
+   "address": "0x089D6684",
+   "bytes": 144,
+   "file": "src/f/func_089D6684.c",
+   "unk_fields": 4,
+   "m2c_names": 3,
+   "d_globals": 2,
+   "func_calls": 3,
+   "level": "c"
+  },
+  {
+   "name": "func_089D6714",
+   "address": "0x089D6714",
+   "bytes": 144,
+   "file": "src/f/func_089D6714.c",
+   "unk_fields": 5,
+   "m2c_names": 3,
+   "d_globals": 1,
+   "func_calls": 2,
    "level": "c"
   }
  ]
