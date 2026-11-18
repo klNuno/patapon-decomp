@@ -1,0 +1,88 @@
+#include "common.h"
+
+typedef struct {
+    s32 unk_00;
+    s32 unk_04;
+    s32 unk_08;
+    s32 unk_0C;
+    s32 unk_10;
+    u8 pad_14[0xCC];
+    s32 unk_E0;
+    s32 unk_E4;
+    s32 unk_E8;
+    s32 unk_EC;
+    s32 unk_F0;
+    s32 unk_F4;
+    s32 unk_F8;
+    s32 unk_FC;
+    s32 unk_100;
+    u8 pad_104[0xC];
+    f32 unk_110;
+    f32 unk_114;
+    f32 unk_118;
+    f32 unk_11C;
+    f32 unk_120;
+    f32 unk_124;
+    f32 unk_128;
+    f32 unk_12C;
+    f32 unk_130;
+    f32 unk_134;
+    f32 unk_138;
+    f32 unk_13C;
+    f32 unk_140;
+    f32 unk_144;
+    f32 unk_148;
+    f32 unk_14C;
+    f32 unk_150;
+    f32 unk_154;
+    f32 unk_158;
+    f32 unk_15C;
+    f32 unk_160;
+    f32 unk_164;
+    s32 unk_168;
+    void *unk_16C;
+} S_088667F0;
+
+extern u8 D_08A44B98[];
+
+S_088667F0 *func_088667F0(S_088667F0 *arg0) {
+    arg0->unk_16C = D_08A44B98;
+    arg0->unk_00 = 0;
+    arg0->unk_04 = 0;
+    arg0->unk_08 = -1;
+    arg0->unk_0C = -1;
+    arg0->unk_10 = 0;
+    arg0->unk_E0 = -1;
+    arg0->unk_E4 = 0;
+    arg0->unk_E8 = 0;
+    arg0->unk_EC = 0;
+    arg0->unk_F0 = 0;
+    arg0->unk_F4 = 0;
+    arg0->unk_F8 = 0;
+    arg0->unk_FC = 0;
+    arg0->unk_100 = 0;
+    arg0->unk_110 = 0.0f;
+    arg0->unk_114 = 0.0f;
+    arg0->unk_118 = 0.0f;
+    arg0->unk_11C = 0.0f;
+    arg0->unk_120 = 0.0f;
+    arg0->unk_124 = 0.0f;
+    arg0->unk_128 = 1.0f;
+    arg0->unk_12C = 1.0f;
+    arg0->unk_130 = 0.0f;
+    arg0->unk_134 = 1.0f;
+    arg0->unk_138 = 0.0f;
+    arg0->unk_13C = 0.0f;
+    arg0->unk_140 = 1.0f;
+    arg0->unk_144 = 1.0f;
+    arg0->unk_148 = 0.0f;
+    arg0->unk_14C = 1.0f;
+    arg0->unk_150 = 0.0f;
+    arg0->unk_154 = 0.0f;
+    arg0->unk_158 = 1.0f;
+    arg0->unk_15C = 1.0f;
+    arg0->unk_160 = 0.0f;
+    arg0->unk_164 = 1.0f;
+    arg0->unk_168 = 0;
+    return arg0;
+}
