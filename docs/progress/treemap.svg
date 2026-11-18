@@ -6,13 +6,13 @@
 <rect width="1200" height="820" rx="16" fill="#1a1a19"/>
 <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
 <text x="28" y="44" font-size="25" font-weight="700" fill="#f0efec">Patapon (PSP, UCES-00995) · decompilation</text>
-<text x="28" y="72" font-size="14" fill="#c3c2b7">BOOT.BIN rebuilt byte for byte · ba4c576 + edits · 9,290 game functions, 1,652,060 code bytes</text>
-<text x="1172" y="44" text-anchor="end" font-size="30" font-weight="700" fill="#f0efec">4.5% in C · 0.0% read</text>
-<text x="1172" y="72" text-anchor="end" font-size="14" fill="#c3c2b7">2,307 of 9,290 functions are C</text>
+<text x="28" y="72" font-size="14" fill="#c3c2b7">BOOT.BIN rebuilt byte for byte · e8fd238 + edits · 9,290 game functions, 1,652,060 code bytes</text>
+<text x="1172" y="44" text-anchor="end" font-size="30" font-weight="700" fill="#f0efec">6.0% in C · 0.0% read</text>
+<text x="1172" y="72" text-anchor="end" font-size="14" fill="#c3c2b7">3,006 of 9,290 functions are C</text>
 <rect x="28" y="92" width="12" height="12" rx="2" fill="#4a4f57"/>
-<text x="47" y="103" font-size="14" fill="#f0efec">Assembly 95.5%</text>
+<text x="47" y="103" font-size="14" fill="#f0efec">Assembly 94.0%</text>
 <rect x="179.39999999999998" y="92" width="12" height="12" rx="2" fill="#3fa35a"/>
-<text x="198.39999999999998" y="103" font-size="14" fill="#f0efec">C, names left to find 4.5%</text>
+<text x="198.39999999999998" y="103" font-size="14" fill="#f0efec">C, names left to find 6.0%</text>
 <rect x="422.0" y="92" width="12" height="12" rx="2" fill="#8fe0a0"/>
 <text x="441.0" y="103" font-size="14" fill="#f0efec">Read: every name ours 0.0%</text>
 <rect x="28.0" y="124.0" width="32.3" height="56.3" class="asm"><title>func_0899B900 4464 B, Assembly</title></rect>
@@ -135,7 +135,7 @@
 <rect x="166.9" y="210.4" width="7.9" height="7.9" class="asm"><title>func_08998D30 152 B, Assembly</title></rect>
 <rect x="174.8" y="210.4" width="7.9" height="7.9" class="asm"><title>func_08999AB0 152 B, Assembly</title></rect>
 <rect x="182.7" y="210.4" width="7.5" height="7.9" class="asm"><title>func_08991310 144 B, Assembly</title></rect>
-<rect x="190.1" y="210.4" width="7.2" height="7.9" class="asm"><title>func_0899EBC8 140 B, Assembly</title></rect>
+<rect x="190.1" y="210.4" width="7.2" height="7.9" class="c"><title>func_0899EBC8 140 B, C, names left to find</title></rect>
 <rect x="197.4" y="210.4" width="7.0" height="7.9" class="c"><title>func_08991614 136 B, C, names left to find</title></rect>
 <rect x="204.4" y="210.4" width="7.0" height="7.9" class="asm"><title>func_089922B4 136 B, Assembly</title></rect>
 <rect x="151.0" y="218.3" width="7.0" height="7.9" class="c"><title>func_08992E44 136 B, C, names left to find</title></rect>
@@ -433,7 +433,7 @@
 <rect x="180.8" y="356.0" width="7.9" height="7.6" class="asm"><title>func_089CADE8 148 B, Assembly</title></rect>
 <rect x="188.6" y="356.0" width="7.7" height="7.6" class="asm"><title>func_089C2CA8 144 B, Assembly</title></rect>
 <rect x="196.3" y="356.0" width="7.7" height="7.6" class="asm"><title>func_089C6364 144 B, Assembly</title></rect>
-<rect x="204.0" y="356.0" width="7.5" height="7.6" class="asm"><title>func_089CA0E0 140 B, Assembly</title></rect>
+<rect x="204.0" y="356.0" width="7.5" height="7.6" class="c"><title>func_089CA0E0 140 B, C, names left to find</title></rect>
 <rect x="156.7" y="363.7" width="8.0" height="7.1" class="asm"><title>func_089CA388 140 B, Assembly</title></rect>
 <rect x="164.7" y="363.7" width="7.8" height="7.1" class="c"><title>func_089C2928 136 B, C, names left to find</title></rect>
 <rect x="172.5" y="363.7" width="7.8" height="7.1" class="c"><title>func_089C3648 136 B, C, names left to find</title></rect>
@@ -746,16 +746,16 @@
 <rect x="195.0" y="490.9" width="8.2" height="7.5" class="asm"><title>func_088EEA20 152 B, Assembly</title></rect>
 <rect x="203.2" y="490.9" width="8.2" height="7.5" class="asm"><title>func_088EEBA0 152 B, Assembly</title></rect>
 <rect x="136.9" y="498.5" width="7.8" height="7.7" class="asm"><title>func_088E6900 148 B, Assembly</title></rect>
-<rect x="136.9" y="506.2" width="7.8" height="7.5" class="asm"><title>func_088E1318 144 B, Assembly</title></rect>
-<rect x="136.9" y="513.7" width="7.8" height="7.5" class="asm"><title>func_088E4AD0 144 B, Assembly</title></rect>
+<rect x="136.9" y="506.2" width="7.8" height="7.5" class="c"><title>func_088E1318 144 B, C, names left to find</title></rect>
+<rect x="136.9" y="513.7" width="7.8" height="7.5" class="c"><title>func_088E4AD0 144 B, C, names left to find</title></rect>
 <rect x="136.9" y="521.1" width="7.8" height="7.5" class="asm"><title>func_088E503C 144 B, Assembly</title></rect>
-<rect x="136.9" y="528.6" width="7.8" height="7.5" class="asm"><title>func_088E634C 144 B, Assembly</title></rect>
+<rect x="136.9" y="528.6" width="7.8" height="7.5" class="c"><title>func_088E634C 144 B, C, names left to find</title></rect>
 <rect x="136.9" y="536.1" width="7.8" height="7.5" class="asm"><title>func_088EECE0 144 B, Assembly</title></rect>
-<rect x="136.9" y="543.6" width="7.8" height="7.5" class="asm"><title>func_088EF498 144 B, Assembly</title></rect>
+<rect x="136.9" y="543.6" width="7.8" height="7.5" class="c"><title>func_088EF498 144 B, C, names left to find</title></rect>
 <rect x="136.9" y="551.0" width="7.8" height="7.3" class="asm"><title>func_088E24BC 140 B, Assembly</title></rect>
 <rect x="136.9" y="558.3" width="7.8" height="7.3" class="asm"><title>func_088E6A18 140 B, Assembly</title></rect>
-<rect x="144.8" y="498.5" width="7.7" height="7.4" class="asm"><title>func_088E9F00 140 B, Assembly</title></rect>
-<rect x="152.5" y="498.5" width="7.7" height="7.4" class="asm"><title>func_088EBEEC 140 B, Assembly</title></rect>
+<rect x="144.8" y="498.5" width="7.7" height="7.4" class="c"><title>func_088E9F00 140 B, C, names left to find</title></rect>
+<rect x="152.5" y="498.5" width="7.7" height="7.4" class="c"><title>func_088EBEEC 140 B, C, names left to find</title></rect>
 <rect x="160.2" y="498.5" width="7.5" height="7.4" class="c"><title>func_088E116C 136 B, C, names left to find</title></rect>
 <rect x="167.6" y="498.5" width="7.5" height="7.4" class="c"><title>func_088E6878 136 B, C, names left to find</title></rect>
 <rect x="175.1" y="498.5" width="7.5" height="7.4" class="c"><title>func_088EC31C 136 B, C, names left to find</title></rect>
@@ -1078,8 +1078,8 @@
 <rect x="133.6" y="704.4" width="7.9" height="7.6" class="asm"><title>func_0895F660 148 B, Assembly</title></rect>
 <rect x="141.5" y="642.2" width="7.1" height="8.2" class="asm"><title>func_08956ABC 144 B, Assembly</title></rect>
 <rect x="141.5" y="650.4" width="7.1" height="8.2" class="asm"><title>func_0895CB9C 144 B, Assembly</title></rect>
-<rect x="141.5" y="658.7" width="7.1" height="8.0" class="asm"><title>func_0895A908 140 B, Assembly</title></rect>
-<rect x="141.5" y="666.7" width="7.1" height="8.0" class="asm"><title>func_0895CCAC 140 B, Assembly</title></rect>
+<rect x="141.5" y="658.7" width="7.1" height="8.0" class="c"><title>func_0895A908 140 B, C, names left to find</title></rect>
+<rect x="141.5" y="666.7" width="7.1" height="8.0" class="c"><title>func_0895CCAC 140 B, C, names left to find</title></rect>
 <rect x="141.5" y="674.7" width="7.1" height="7.8" class="c"><title>func_0895CE84 136 B, C, names left to find</title></rect>
 <rect x="141.5" y="682.5" width="7.1" height="7.6" class="c"><title>func_0895B430 132 B, C, names left to find</title></rect>
 <rect x="141.5" y="690.0" width="7.1" height="7.6" class="c"><title>func_0895CF0C 132 B, C, names left to find</title></rect>
@@ -1114,8 +1114,8 @@
 <rect x="155.3" y="655.6" width="6.6" height="6.4" class="asm"><title>func_0895BAC8 104 B, Assembly</title></rect>
 <rect x="161.9" y="655.6" width="6.6" height="6.4" class="asm"><title>func_0895FBB4 104 B, Assembly</title></rect>
 <rect x="168.5" y="655.6" width="6.4" height="6.4" class="asm"><title>func_08959558 100 B, Assembly</title></rect>
-<rect x="174.9" y="655.6" width="6.4" height="6.4" class="asm"><title>func_0895B3CC 100 B, Assembly</title></rect>
-<rect x="181.2" y="655.6" width="6.1" height="6.4" class="asm"></rect>
+<rect x="174.9" y="655.6" width="6.4" height="6.4" class="c"><title>func_0895B3CC 100 B, C, names left to find</title></rect>
+<rect x="181.2" y="655.6" width="6.1" height="6.4" class="c"></rect>
 <rect x="187.3" y="655.6" width="6.1" height="6.4" class="asm"></rect>
 <rect x="193.4" y="655.6" width="6.1" height="6.4" class="asm"></rect>
 <rect x="199.5" y="655.6" width="6.1" height="6.4" class="asm"></rect>
@@ -1128,182 +1128,182 @@
 <rect x="155.3" y="693.7" width="5.8" height="6.2" class="asm"></rect>
 <rect x="155.3" y="699.9" width="5.8" height="6.2" class="asm"></rect>
 <rect x="155.3" y="706.1" width="5.8" height="5.9" class="asm"></rect>
-<rect x="161.1" y="662.0" width="6.2" height="5.6" class="asm"></rect>
+<rect x="161.1" y="662.0" width="6.2" height="5.6" class="c"></rect>
 <rect x="161.1" y="667.5" width="6.2" height="5.6" class="asm"></rect>
 <rect x="161.1" y="673.1" width="6.2" height="5.6" class="asm"></rect>
-<rect x="161.1" y="678.6" width="6.2" height="5.6" class="asm"></rect>
-<rect x="161.1" y="684.2" width="6.2" height="5.6" class="asm"></rect>
-<rect x="161.1" y="689.8" width="6.2" height="5.6" class="asm"></rect>
-<rect x="161.1" y="695.3" width="6.2" height="5.6" class="asm"></rect>
-<rect x="161.1" y="700.9" width="6.2" height="5.6" class="asm"></rect>
-<rect x="161.1" y="706.4" width="6.2" height="5.6" class="asm"></rect>
+<rect x="161.1" y="678.6" width="6.2" height="5.6" class="c"></rect>
+<rect x="161.1" y="684.2" width="6.2" height="5.6" class="c"></rect>
+<rect x="161.1" y="689.8" width="6.2" height="5.6" class="c"></rect>
+<rect x="161.1" y="695.3" width="6.2" height="5.6" class="c"></rect>
+<rect x="161.1" y="700.9" width="6.2" height="5.6" class="c"></rect>
+<rect x="161.1" y="706.4" width="6.2" height="5.6" class="c"></rect>
 <rect x="167.2" y="662.0" width="5.6" height="6.1" class="asm"></rect>
 <rect x="172.9" y="662.0" width="5.6" height="6.1" class="asm"></rect>
-<rect x="178.5" y="662.0" width="5.6" height="6.1" class="asm"></rect>
+<rect x="178.5" y="662.0" width="5.6" height="6.1" class="c"></rect>
 <rect x="184.1" y="662.0" width="5.6" height="6.1" class="asm"></rect>
-<rect x="189.7" y="662.0" width="5.6" height="6.1" class="asm"></rect>
-<rect x="195.4" y="662.0" width="5.4" height="6.1" class="asm"></rect>
-<rect x="200.7" y="662.0" width="5.4" height="6.1" class="asm"></rect>
-<rect x="206.1" y="662.0" width="5.4" height="6.1" class="asm"></rect>
+<rect x="189.7" y="662.0" width="5.6" height="6.1" class="c"></rect>
+<rect x="195.4" y="662.0" width="5.4" height="6.1" class="c"></rect>
+<rect x="200.7" y="662.0" width="5.4" height="6.1" class="c"></rect>
+<rect x="206.1" y="662.0" width="5.4" height="6.1" class="c"></rect>
 <rect x="167.2" y="668.0" width="5.8" height="5.6" class="asm"></rect>
-<rect x="167.2" y="673.6" width="5.8" height="5.6" class="asm"></rect>
-<rect x="167.2" y="679.2" width="5.8" height="5.6" class="asm"></rect>
+<rect x="167.2" y="673.6" width="5.8" height="5.6" class="c"></rect>
+<rect x="167.2" y="679.2" width="5.8" height="5.6" class="c"></rect>
 <rect x="167.2" y="684.8" width="5.8" height="5.6" class="asm"></rect>
 <rect x="167.2" y="690.4" width="5.8" height="5.6" class="asm"></rect>
 <rect x="167.2" y="696.0" width="5.8" height="5.3" class="asm"></rect>
 <rect x="167.2" y="701.4" width="5.8" height="5.3" class="asm"></rect>
 <rect x="167.2" y="706.7" width="5.8" height="5.3" class="asm"></rect>
-<rect x="173.1" y="668.0" width="5.7" height="5.5" class="asm"></rect>
+<rect x="173.1" y="668.0" width="5.7" height="5.5" class="c"></rect>
 <rect x="178.7" y="668.0" width="5.7" height="5.5" class="asm"></rect>
 <rect x="184.4" y="668.0" width="5.7" height="5.5" class="asm"></rect>
-<rect x="190.0" y="668.0" width="5.4" height="5.5" class="asm"></rect>
+<rect x="190.0" y="668.0" width="5.4" height="5.5" class="c"></rect>
 <rect x="195.4" y="668.0" width="5.4" height="5.5" class="asm"></rect>
 <rect x="200.7" y="668.0" width="5.4" height="5.5" class="asm"></rect>
-<rect x="206.1" y="668.0" width="5.4" height="5.5" class="asm"></rect>
+<rect x="206.1" y="668.0" width="5.4" height="5.5" class="c"></rect>
 <rect x="173.1" y="673.5" width="5.7" height="5.1" class="asm"></rect>
 <rect x="178.8" y="673.5" width="5.7" height="5.1" class="asm"></rect>
 <rect x="184.5" y="673.5" width="5.4" height="5.1" class="asm"></rect>
-<rect x="189.9" y="673.5" width="5.4" height="5.1" class="asm"></rect>
-<rect x="195.3" y="673.5" width="5.4" height="5.1" class="asm"></rect>
+<rect x="189.9" y="673.5" width="5.4" height="5.1" class="c"></rect>
+<rect x="195.3" y="673.5" width="5.4" height="5.1" class="c"></rect>
 <rect x="200.7" y="673.5" width="5.4" height="5.1" class="asm"></rect>
-<rect x="206.0" y="673.5" width="5.4" height="5.1" class="asm"></rect>
+<rect x="206.0" y="673.5" width="5.4" height="5.1" class="c"></rect>
 <rect x="173.1" y="678.7" width="5.5" height="5.0" class="asm"></rect>
 <rect x="173.1" y="683.7" width="5.5" height="4.7" class="asm"></rect>
 <rect x="173.1" y="688.4" width="5.5" height="4.7" class="asm"></rect>
-<rect x="173.1" y="693.1" width="5.5" height="4.7" class="asm"></rect>
-<rect x="173.1" y="697.8" width="5.5" height="4.7" class="asm"></rect>
-<rect x="173.1" y="702.6" width="5.5" height="4.7" class="asm"></rect>
-<rect x="173.1" y="707.3" width="5.5" height="4.7" class="asm"></rect>
+<rect x="173.1" y="693.1" width="5.5" height="4.7" class="c"></rect>
+<rect x="173.1" y="697.8" width="5.5" height="4.7" class="c"></rect>
+<rect x="173.1" y="702.6" width="5.5" height="4.7" class="c"></rect>
+<rect x="173.1" y="707.3" width="5.5" height="4.7" class="c"></rect>
 <rect x="178.6" y="678.7" width="4.7" height="5.2" class="c"></rect>
-<rect x="183.3" y="678.7" width="4.7" height="5.2" class="asm"></rect>
+<rect x="183.3" y="678.7" width="4.7" height="5.2" class="c"></rect>
 <rect x="188.0" y="678.7" width="4.7" height="5.2" class="asm"></rect>
-<rect x="192.7" y="678.7" width="4.7" height="5.2" class="asm"></rect>
-<rect x="197.4" y="678.7" width="4.7" height="5.2" class="asm"></rect>
-<rect x="202.0" y="678.7" width="4.7" height="5.2" class="asm"></rect>
-<rect x="206.7" y="678.7" width="4.7" height="5.2" class="asm"></rect>
-<rect x="178.6" y="683.9" width="4.9" height="5.0" class="asm"></rect>
-<rect x="178.6" y="688.9" width="4.9" height="4.7" class="asm"></rect>
-<rect x="178.6" y="693.6" width="4.9" height="4.7" class="asm"></rect>
+<rect x="192.7" y="678.7" width="4.7" height="5.2" class="c"></rect>
+<rect x="197.4" y="678.7" width="4.7" height="5.2" class="c"></rect>
+<rect x="202.0" y="678.7" width="4.7" height="5.2" class="c"></rect>
+<rect x="206.7" y="678.7" width="4.7" height="5.2" class="c"></rect>
+<rect x="178.6" y="683.9" width="4.9" height="5.0" class="c"></rect>
+<rect x="178.6" y="688.9" width="4.9" height="4.7" class="c"></rect>
+<rect x="178.6" y="693.6" width="4.9" height="4.7" class="c"></rect>
 <rect x="178.6" y="698.3" width="4.9" height="4.7" class="asm"></rect>
-<rect x="178.6" y="703.0" width="4.9" height="4.7" class="asm"></rect>
-<rect x="178.6" y="707.6" width="4.9" height="4.4" class="asm"></rect>
-<rect x="183.4" y="683.9" width="4.9" height="4.3" class="asm"></rect>
-<rect x="188.4" y="683.9" width="4.9" height="4.3" class="asm"></rect>
-<rect x="193.3" y="683.9" width="4.5" height="4.3" class="asm"></rect>
-<rect x="197.8" y="683.9" width="4.5" height="4.3" class="asm"></rect>
-<rect x="202.4" y="683.9" width="4.5" height="4.3" class="asm"></rect>
-<rect x="206.9" y="683.9" width="4.5" height="4.3" class="asm"></rect>
-<rect x="183.4" y="688.2" width="4.0" height="4.8" class="asm"></rect>
-<rect x="183.4" y="693.0" width="4.0" height="4.8" class="asm"></rect>
-<rect x="183.4" y="697.9" width="4.0" height="4.8" class="asm"></rect>
-<rect x="183.4" y="702.7" width="4.0" height="4.8" class="asm"></rect>
+<rect x="178.6" y="703.0" width="4.9" height="4.7" class="c"></rect>
+<rect x="178.6" y="707.6" width="4.9" height="4.4" class="c"></rect>
+<rect x="183.4" y="683.9" width="4.9" height="4.3" class="c"></rect>
+<rect x="188.4" y="683.9" width="4.9" height="4.3" class="c"></rect>
+<rect x="193.3" y="683.9" width="4.5" height="4.3" class="c"></rect>
+<rect x="197.8" y="683.9" width="4.5" height="4.3" class="c"></rect>
+<rect x="202.4" y="683.9" width="4.5" height="4.3" class="c"></rect>
+<rect x="206.9" y="683.9" width="4.5" height="4.3" class="c"></rect>
+<rect x="183.4" y="688.2" width="4.0" height="4.8" class="c"></rect>
+<rect x="183.4" y="693.0" width="4.0" height="4.8" class="c"></rect>
+<rect x="183.4" y="697.9" width="4.0" height="4.8" class="c"></rect>
+<rect x="183.4" y="702.7" width="4.0" height="4.8" class="c"></rect>
 <rect x="183.4" y="707.6" width="4.0" height="4.4" class="asm"></rect>
 <rect x="187.5" y="688.2" width="3.9" height="4.6" class="asm"></rect>
-<rect x="187.5" y="692.8" width="3.9" height="4.2" class="asm"></rect>
+<rect x="187.5" y="692.8" width="3.9" height="4.2" class="c"></rect>
 <rect x="187.5" y="696.9" width="3.9" height="4.2" class="asm"></rect>
 <rect x="187.5" y="701.1" width="3.9" height="3.8" class="asm"></rect>
 <rect x="187.5" y="704.9" width="3.9" height="3.8" class="asm"></rect>
-<rect x="187.5" y="708.7" width="3.9" height="3.3" class="asm"></rect>
-<rect x="191.4" y="688.2" width="3.3" height="3.5" class="asm"></rect>
-<rect x="194.6" y="688.2" width="2.8" height="3.5" class="asm"></rect>
-<rect x="197.4" y="688.2" width="2.8" height="3.5" class="asm"></rect>
-<rect x="200.2" y="688.2" width="2.8" height="3.5" class="asm"></rect>
-<rect x="203.0" y="688.2" width="2.8" height="3.5" class="asm"></rect>
-<rect x="205.8" y="688.2" width="2.8" height="3.5" class="asm"></rect>
-<rect x="208.6" y="688.2" width="2.8" height="3.5" class="asm"></rect>
-<rect x="191.4" y="691.6" width="3.2" height="3.1" class="asm"></rect>
-<rect x="194.5" y="691.6" width="3.2" height="3.1" class="asm"></rect>
-<rect x="197.7" y="691.6" width="3.2" height="3.1" class="asm"></rect>
-<rect x="200.9" y="691.6" width="2.6" height="3.1" class="asm"></rect>
+<rect x="187.5" y="708.7" width="3.9" height="3.3" class="c"></rect>
+<rect x="191.4" y="688.2" width="3.3" height="3.5" class="c"></rect>
+<rect x="194.6" y="688.2" width="2.8" height="3.5" class="c"></rect>
+<rect x="197.4" y="688.2" width="2.8" height="3.5" class="c"></rect>
+<rect x="200.2" y="688.2" width="2.8" height="3.5" class="c"></rect>
+<rect x="203.0" y="688.2" width="2.8" height="3.5" class="c"></rect>
+<rect x="205.8" y="688.2" width="2.8" height="3.5" class="c"></rect>
+<rect x="208.6" y="688.2" width="2.8" height="3.5" class="c"></rect>
+<rect x="191.4" y="691.6" width="3.2" height="3.1" class="c"></rect>
+<rect x="194.5" y="691.6" width="3.2" height="3.1" class="c"></rect>
+<rect x="197.7" y="691.6" width="3.2" height="3.1" class="c"></rect>
+<rect x="200.9" y="691.6" width="2.6" height="3.1" class="c"></rect>
 <rect x="203.5" y="691.6" width="2.6" height="3.1" class="asm"></rect>
 <rect x="206.2" y="691.6" width="2.6" height="3.1" class="asm"></rect>
-<rect x="208.8" y="691.6" width="2.6" height="3.1" class="asm"></rect>
-<rect x="191.4" y="694.7" width="2.6" height="2.5" class="asm"></rect>
-<rect x="191.4" y="697.2" width="2.6" height="2.5" class="asm"></rect>
-<rect x="191.4" y="699.7" width="2.6" height="2.5" class="asm"></rect>
+<rect x="208.8" y="691.6" width="2.6" height="3.1" class="c"></rect>
+<rect x="191.4" y="694.7" width="2.6" height="2.5" class="c"></rect>
+<rect x="191.4" y="697.2" width="2.6" height="2.5" class="c"></rect>
+<rect x="191.4" y="699.7" width="2.6" height="2.5" class="c"></rect>
 <rect x="191.4" y="702.1" width="2.6" height="2.5" class="asm"></rect>
-<rect x="191.4" y="704.6" width="2.6" height="2.5" class="asm"></rect>
-<rect x="191.4" y="707.1" width="2.6" height="2.5" class="asm"></rect>
-<rect x="191.4" y="709.5" width="2.6" height="2.5" class="asm"></rect>
-<rect x="194.0" y="694.7" width="2.6" height="2.5" class="asm"></rect>
+<rect x="191.4" y="704.6" width="2.6" height="2.5" class="c"></rect>
+<rect x="191.4" y="707.1" width="2.6" height="2.5" class="c"></rect>
+<rect x="191.4" y="709.5" width="2.6" height="2.5" class="c"></rect>
+<rect x="194.0" y="694.7" width="2.6" height="2.5" class="c"></rect>
 <rect x="194.0" y="697.2" width="2.6" height="2.5" class="asm"></rect>
-<rect x="194.0" y="699.7" width="2.6" height="2.5" class="asm"></rect>
-<rect x="194.0" y="702.1" width="2.6" height="2.5" class="asm"></rect>
-<rect x="194.0" y="704.6" width="2.6" height="2.5" class="asm"></rect>
-<rect x="194.0" y="707.1" width="2.6" height="2.5" class="asm"></rect>
-<rect x="194.0" y="709.5" width="2.6" height="2.5" class="asm"></rect>
-<rect x="196.6" y="694.7" width="2.6" height="2.5" class="asm"></rect>
-<rect x="199.2" y="694.7" width="2.6" height="2.5" class="asm"></rect>
-<rect x="201.8" y="694.7" width="1.9" height="2.5" class="asm"></rect>
-<rect x="203.7" y="694.7" width="1.9" height="2.5" class="asm"></rect>
+<rect x="194.0" y="699.7" width="2.6" height="2.5" class="c"></rect>
+<rect x="194.0" y="702.1" width="2.6" height="2.5" class="c"></rect>
+<rect x="194.0" y="704.6" width="2.6" height="2.5" class="c"></rect>
+<rect x="194.0" y="707.1" width="2.6" height="2.5" class="c"></rect>
+<rect x="194.0" y="709.5" width="2.6" height="2.5" class="c"></rect>
+<rect x="196.6" y="694.7" width="2.6" height="2.5" class="c"></rect>
+<rect x="199.2" y="694.7" width="2.6" height="2.5" class="c"></rect>
+<rect x="201.8" y="694.7" width="1.9" height="2.5" class="c"></rect>
+<rect x="203.7" y="694.7" width="1.9" height="2.5" class="c"></rect>
 <rect x="205.6" y="694.7" width="1.9" height="2.5" class="asm"></rect>
-<rect x="207.6" y="694.7" width="1.9" height="2.5" class="asm"></rect>
-<rect x="209.5" y="694.7" width="1.9" height="2.5" class="asm"></rect>
-<rect x="196.6" y="697.3" width="2.0" height="2.5" class="asm"></rect>
+<rect x="207.6" y="694.7" width="1.9" height="2.5" class="c"></rect>
+<rect x="209.5" y="694.7" width="1.9" height="2.5" class="c"></rect>
+<rect x="196.6" y="697.3" width="2.0" height="2.5" class="c"></rect>
 <rect x="196.6" y="699.7" width="2.0" height="2.5" class="asm"></rect>
 <rect x="196.6" y="702.2" width="2.0" height="2.5" class="asm"></rect>
-<rect x="196.6" y="704.6" width="2.0" height="2.5" class="asm"></rect>
-<rect x="196.6" y="707.1" width="2.0" height="1.6" class="asm"></rect>
-<rect x="196.6" y="708.7" width="2.0" height="1.6" class="asm"></rect>
-<rect x="196.6" y="710.4" width="2.0" height="1.6" class="asm"></rect>
-<rect x="198.6" y="697.3" width="1.8" height="1.8" class="asm"></rect>
-<rect x="200.5" y="697.3" width="1.8" height="1.8" class="asm"></rect>
-<rect x="202.3" y="697.3" width="1.8" height="1.8" class="asm"></rect>
-<rect x="204.1" y="697.3" width="1.8" height="1.8" class="asm"></rect>
-<rect x="205.9" y="697.3" width="1.8" height="1.8" class="asm"></rect>
-<rect x="207.8" y="697.3" width="1.8" height="1.8" class="asm"></rect>
-<rect x="209.6" y="697.3" width="1.8" height="1.8" class="asm"></rect>
-<rect x="198.6" y="699.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="200.5" y="699.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="202.3" y="699.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="204.1" y="699.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="205.9" y="699.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="207.8" y="699.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="209.6" y="699.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="198.6" y="700.8" width="1.7" height="1.9" class="asm"></rect>
-<rect x="198.6" y="702.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="198.6" y="704.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="198.6" y="706.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="198.6" y="708.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="198.6" y="710.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="200.4" y="700.8" width="1.8" height="1.8" class="asm"></rect>
-<rect x="202.2" y="700.8" width="1.8" height="1.8" class="asm"></rect>
-<rect x="204.1" y="700.8" width="1.8" height="1.8" class="asm"></rect>
-<rect x="205.9" y="700.8" width="1.8" height="1.8" class="asm"></rect>
-<rect x="207.7" y="700.8" width="1.8" height="1.8" class="asm"></rect>
-<rect x="209.6" y="700.8" width="1.8" height="1.8" class="asm"></rect>
-<rect x="200.4" y="702.6" width="1.7" height="1.9" class="asm"></rect>
-<rect x="200.4" y="704.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="200.4" y="706.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="200.4" y="708.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="200.4" y="710.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="202.1" y="702.6" width="1.9" height="1.7" class="asm"></rect>
-<rect x="204.0" y="702.6" width="1.9" height="1.7" class="asm"></rect>
-<rect x="205.8" y="702.6" width="1.9" height="1.7" class="asm"></rect>
-<rect x="207.7" y="702.6" width="1.9" height="1.7" class="asm"></rect>
-<rect x="209.6" y="702.6" width="1.9" height="1.7" class="asm"></rect>
-<rect x="202.1" y="704.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="202.1" y="706.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="202.1" y="708.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="202.1" y="710.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="203.8" y="704.3" width="1.9" height="1.7" class="asm"></rect>
-<rect x="205.7" y="704.3" width="1.9" height="1.7" class="asm"></rect>
-<rect x="207.6" y="704.3" width="1.9" height="1.7" class="asm"></rect>
+<rect x="196.6" y="704.6" width="2.0" height="2.5" class="c"></rect>
+<rect x="196.6" y="707.1" width="2.0" height="1.6" class="c"></rect>
+<rect x="196.6" y="708.7" width="2.0" height="1.6" class="c"></rect>
+<rect x="196.6" y="710.4" width="2.0" height="1.6" class="c"></rect>
+<rect x="198.6" y="697.3" width="1.8" height="1.8" class="c"></rect>
+<rect x="200.5" y="697.3" width="1.8" height="1.8" class="c"></rect>
+<rect x="202.3" y="697.3" width="1.8" height="1.8" class="c"></rect>
+<rect x="204.1" y="697.3" width="1.8" height="1.8" class="c"></rect>
+<rect x="205.9" y="697.3" width="1.8" height="1.8" class="c"></rect>
+<rect x="207.8" y="697.3" width="1.8" height="1.8" class="c"></rect>
+<rect x="209.6" y="697.3" width="1.8" height="1.8" class="c"></rect>
+<rect x="198.6" y="699.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="200.5" y="699.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="202.3" y="699.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="204.1" y="699.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="205.9" y="699.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="207.8" y="699.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="209.6" y="699.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="198.6" y="700.8" width="1.7" height="1.9" class="c"></rect>
+<rect x="198.6" y="702.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="198.6" y="704.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="198.6" y="706.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="198.6" y="708.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="198.6" y="710.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="200.4" y="700.8" width="1.8" height="1.8" class="c"></rect>
+<rect x="202.2" y="700.8" width="1.8" height="1.8" class="c"></rect>
+<rect x="204.1" y="700.8" width="1.8" height="1.8" class="c"></rect>
+<rect x="205.9" y="700.8" width="1.8" height="1.8" class="c"></rect>
+<rect x="207.7" y="700.8" width="1.8" height="1.8" class="c"></rect>
+<rect x="209.6" y="700.8" width="1.8" height="1.8" class="c"></rect>
+<rect x="200.4" y="702.6" width="1.7" height="1.9" class="c"></rect>
+<rect x="200.4" y="704.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="200.4" y="706.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="200.4" y="708.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="200.4" y="710.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="202.1" y="702.6" width="1.9" height="1.7" class="c"></rect>
+<rect x="204.0" y="702.6" width="1.9" height="1.7" class="c"></rect>
+<rect x="205.8" y="702.6" width="1.9" height="1.7" class="c"></rect>
+<rect x="207.7" y="702.6" width="1.9" height="1.7" class="c"></rect>
+<rect x="209.6" y="702.6" width="1.9" height="1.7" class="c"></rect>
+<rect x="202.1" y="704.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="202.1" y="706.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="202.1" y="708.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="202.1" y="710.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="203.8" y="704.3" width="1.9" height="1.7" class="c"></rect>
+<rect x="205.7" y="704.3" width="1.9" height="1.7" class="c"></rect>
+<rect x="207.6" y="704.3" width="1.9" height="1.7" class="c"></rect>
 <rect x="209.5" y="704.3" width="1.9" height="1.7" class="asm"></rect>
 <rect x="203.8" y="706.0" width="1.6" height="2.0" class="asm"></rect>
-<rect x="203.8" y="708.0" width="1.6" height="2.0" class="asm"></rect>
-<rect x="203.8" y="710.0" width="1.6" height="2.0" class="asm"></rect>
+<rect x="203.8" y="708.0" width="1.6" height="2.0" class="c"></rect>
+<rect x="203.8" y="710.0" width="1.6" height="2.0" class="c"></rect>
 <rect x="205.4" y="706.0" width="1.6" height="2.0" class="asm"></rect>
-<rect x="205.4" y="708.0" width="1.6" height="2.0" class="asm"></rect>
-<rect x="205.4" y="710.0" width="1.6" height="2.0" class="asm"></rect>
-<rect x="207.1" y="706.0" width="2.2" height="1.5" class="asm"></rect>
-<rect x="209.3" y="706.0" width="2.2" height="1.5" class="asm"></rect>
-<rect x="207.1" y="707.5" width="2.2" height="1.5" class="asm"></rect>
-<rect x="209.3" y="707.5" width="2.2" height="1.5" class="asm"></rect>
-<rect x="207.1" y="709.0" width="2.2" height="1.5" class="asm"></rect>
+<rect x="205.4" y="708.0" width="1.6" height="2.0" class="c"></rect>
+<rect x="205.4" y="710.0" width="1.6" height="2.0" class="c"></rect>
+<rect x="207.1" y="706.0" width="2.2" height="1.5" class="c"></rect>
+<rect x="209.3" y="706.0" width="2.2" height="1.5" class="c"></rect>
+<rect x="207.1" y="707.5" width="2.2" height="1.5" class="c"></rect>
+<rect x="209.3" y="707.5" width="2.2" height="1.5" class="c"></rect>
+<rect x="207.1" y="709.0" width="2.2" height="1.5" class="c"></rect>
 <rect x="207.1" y="710.5" width="2.2" height="1.5" class="asm"></rect>
-<rect x="209.3" y="709.0" width="2.2" height="1.5" class="asm"></rect>
-<rect x="209.3" y="710.5" width="2.2" height="1.5" class="asm"></rect>
+<rect x="209.3" y="709.0" width="2.2" height="1.5" class="c"></rect>
+<rect x="209.3" y="710.5" width="2.2" height="1.5" class="c"></rect>
 <rect x="28.0" y="565.6" width="183.4" height="146.4" fill="none" stroke="#1a1a19" stroke-width="2.5"/>
 <rect x="211.4" y="124.0" width="33.2" height="34.3" class="asm"><title>func_088AF7D0 2800 B, Assembly</title></rect>
 <rect x="211.4" y="158.3" width="33.2" height="31.2" class="asm"><title>func_088AD8BC 2540 B, Assembly</title></rect>
@@ -1433,8 +1433,8 @@
 <rect x="318.9" y="227.2" width="8.0" height="7.5" class="asm"><title>func_088A4A9C 148 B, Assembly</title></rect>
 <rect x="318.9" y="234.6" width="8.0" height="7.5" class="asm"><title>func_088A95AC 148 B, Assembly</title></rect>
 <rect x="318.9" y="242.1" width="8.0" height="7.3" class="asm"><title>func_088A326C 144 B, Assembly</title></rect>
-<rect x="318.9" y="249.4" width="8.0" height="7.3" class="asm"><title>func_088A88C0 144 B, Assembly</title></rect>
-<rect x="318.9" y="256.7" width="8.0" height="7.3" class="asm"><title>func_088A94B0 144 B, Assembly</title></rect>
+<rect x="318.9" y="249.4" width="8.0" height="7.3" class="c"><title>func_088A88C0 144 B, C, names left to find</title></rect>
+<rect x="318.9" y="256.7" width="8.0" height="7.3" class="c"><title>func_088A94B0 144 B, C, names left to find</title></rect>
 <rect x="318.9" y="264.0" width="8.0" height="7.3" class="asm"><title>func_088AB6A8 144 B, Assembly</title></rect>
 <rect x="326.9" y="204.3" width="7.4" height="7.7" class="asm"><title>func_088A0A68 140 B, Assembly</title></rect>
 <rect x="334.3" y="204.3" width="7.4" height="7.7" class="asm"><title>func_088A207C 140 B, Assembly</title></rect>
@@ -1777,7 +1777,7 @@
 <rect x="337.1" y="362.0" width="6.9" height="7.5" class="asm"><title>func_0897F0D0 128 B, Assembly</title></rect>
 <rect x="337.1" y="369.5" width="6.9" height="7.3" class="asm"><title>func_08975CE0 124 B, Assembly</title></rect>
 <rect x="337.1" y="376.8" width="6.9" height="7.1" class="asm"><title>func_0897B82C 120 B, Assembly</title></rect>
-<rect x="337.1" y="383.8" width="6.9" height="7.1" class="asm"><title>func_0897CCA8 120 B, Assembly</title></rect>
+<rect x="337.1" y="383.8" width="6.9" height="7.1" class="c"><title>func_0897CCA8 120 B, C, names left to find</title></rect>
 <rect x="337.1" y="390.9" width="6.9" height="6.8" class="asm"><title>func_0897592C 116 B, Assembly</title></rect>
 <rect x="337.1" y="397.7" width="6.9" height="6.8" class="asm"><title>func_08975BF8 116 B, Assembly</title></rect>
 <rect x="337.1" y="404.6" width="6.9" height="6.8" class="asm"><title>func_08979940 116 B, Assembly</title></rect>
@@ -1788,163 +1788,163 @@
 <rect x="366.0" y="362.0" width="7.3" height="6.2" class="asm"><title>func_0897AEA0 112 B, Assembly</title></rect>
 <rect x="373.3" y="362.0" width="6.8" height="6.2" class="asm"><title>func_089732D4 104 B, Assembly</title></rect>
 <rect x="380.1" y="362.0" width="6.8" height="6.2" class="asm"><title>func_089737CC 104 B, Assembly</title></rect>
-<rect x="386.8" y="362.0" width="6.8" height="6.2" class="asm"><title>func_08973EB8 104 B, Assembly</title></rect>
-<rect x="344.0" y="368.2" width="6.3" height="6.8" class="asm"><title>func_08974068 104 B, Assembly</title></rect>
-<rect x="350.3" y="368.2" width="6.3" height="6.8" class="asm"><title>func_08975F58 104 B, Assembly</title></rect>
-<rect x="356.5" y="368.2" width="6.3" height="6.8" class="asm"><title>func_08979E84 104 B, Assembly</title></rect>
-<rect x="362.8" y="368.2" width="6.3" height="6.8" class="asm"><title>func_0897AD08 104 B, Assembly</title></rect>
+<rect x="386.8" y="362.0" width="6.8" height="6.2" class="c"><title>func_08973EB8 104 B, C, names left to find</title></rect>
+<rect x="344.0" y="368.2" width="6.3" height="6.8" class="c"><title>func_08974068 104 B, C, names left to find</title></rect>
+<rect x="350.3" y="368.2" width="6.3" height="6.8" class="c"><title>func_08975F58 104 B, C, names left to find</title></rect>
+<rect x="356.5" y="368.2" width="6.3" height="6.8" class="c"><title>func_08979E84 104 B, C, names left to find</title></rect>
+<rect x="362.8" y="368.2" width="6.3" height="6.8" class="c"><title>func_0897AD08 104 B, C, names left to find</title></rect>
 <rect x="369.1" y="368.2" width="6.3" height="6.8" class="asm"><title>func_0897B1D8 104 B, Assembly</title></rect>
 <rect x="375.3" y="368.2" width="6.3" height="6.8" class="asm"><title>func_0897B718 104 B, Assembly</title></rect>
 <rect x="381.6" y="368.2" width="6.0" height="6.8" class="asm"><title>func_08971308 100 B, Assembly</title></rect>
-<rect x="387.6" y="368.2" width="6.0" height="6.8" class="asm"><title>func_089756F8 100 B, Assembly</title></rect>
+<rect x="387.6" y="368.2" width="6.0" height="6.8" class="c"><title>func_089756F8 100 B, C, names left to find</title></rect>
 <rect x="344.0" y="375.0" width="6.3" height="6.4" class="asm"><title>func_089757B8 100 B, Assembly</title></rect>
 <rect x="344.0" y="381.4" width="6.3" height="6.4" class="asm"><title>func_0897A728 100 B, Assembly</title></rect>
 <rect x="344.0" y="387.8" width="6.3" height="6.4" class="asm"><title>func_0897C818 100 B, Assembly</title></rect>
-<rect x="344.0" y="394.3" width="6.3" height="6.2" class="asm"></rect>
+<rect x="344.0" y="394.3" width="6.3" height="6.2" class="c"></rect>
 <rect x="344.0" y="400.5" width="6.3" height="6.2" class="asm"></rect>
 <rect x="344.0" y="406.6" width="6.3" height="5.9" class="asm"></rect>
 <rect x="344.0" y="412.6" width="6.3" height="5.7" class="asm"></rect>
-<rect x="350.4" y="375.0" width="5.7" height="6.3" class="asm"></rect>
+<rect x="350.4" y="375.0" width="5.7" height="6.3" class="c"></rect>
 <rect x="350.4" y="381.2" width="5.7" height="6.3" class="asm"></rect>
 <rect x="350.4" y="387.5" width="5.7" height="6.3" class="asm"></rect>
 <rect x="350.4" y="393.7" width="5.7" height="6.3" class="asm"></rect>
 <rect x="350.4" y="400.0" width="5.7" height="6.3" class="asm"></rect>
 <rect x="350.4" y="406.3" width="5.7" height="6.0" class="asm"></rect>
-<rect x="350.4" y="412.2" width="5.7" height="6.0" class="asm"></rect>
-<rect x="356.1" y="375.0" width="6.4" height="5.3" class="asm"></rect>
+<rect x="350.4" y="412.2" width="5.7" height="6.0" class="c"></rect>
+<rect x="356.1" y="375.0" width="6.4" height="5.3" class="c"></rect>
 <rect x="362.5" y="375.0" width="6.4" height="5.3" class="asm"></rect>
-<rect x="368.9" y="375.0" width="6.4" height="5.3" class="asm"></rect>
+<rect x="368.9" y="375.0" width="6.4" height="5.3" class="c"></rect>
 <rect x="375.3" y="375.0" width="6.4" height="5.3" class="asm"></rect>
-<rect x="381.7" y="375.0" width="6.1" height="5.3" class="asm"></rect>
+<rect x="381.7" y="375.0" width="6.1" height="5.3" class="c"></rect>
 <rect x="387.8" y="375.0" width="5.8" height="5.3" class="asm"></rect>
 <rect x="356.1" y="380.3" width="5.6" height="5.5" class="asm"></rect>
 <rect x="361.7" y="380.3" width="5.6" height="5.5" class="asm"></rect>
-<rect x="367.3" y="380.3" width="5.3" height="5.5" class="asm"></rect>
+<rect x="367.3" y="380.3" width="5.3" height="5.5" class="c"></rect>
 <rect x="372.6" y="380.3" width="5.3" height="5.5" class="asm"></rect>
 <rect x="378.0" y="380.3" width="5.3" height="5.5" class="asm"></rect>
 <rect x="383.3" y="380.3" width="5.3" height="5.5" class="asm"></rect>
-<rect x="388.6" y="380.3" width="5.0" height="5.5" class="asm"></rect>
-<rect x="356.1" y="385.8" width="4.8" height="5.4" class="asm"></rect>
-<rect x="356.1" y="391.2" width="4.8" height="5.4" class="asm"></rect>
-<rect x="356.1" y="396.6" width="4.8" height="5.4" class="asm"></rect>
+<rect x="388.6" y="380.3" width="5.0" height="5.5" class="c"></rect>
+<rect x="356.1" y="385.8" width="4.8" height="5.4" class="c"></rect>
+<rect x="356.1" y="391.2" width="4.8" height="5.4" class="c"></rect>
+<rect x="356.1" y="396.6" width="4.8" height="5.4" class="c"></rect>
 <rect x="356.1" y="402.0" width="4.8" height="5.4" class="asm"></rect>
 <rect x="356.1" y="407.4" width="4.8" height="5.4" class="asm"></rect>
-<rect x="356.1" y="412.8" width="4.8" height="5.4" class="asm"></rect>
-<rect x="360.9" y="385.8" width="5.3" height="4.6" class="asm"></rect>
-<rect x="360.9" y="390.4" width="5.3" height="4.6" class="asm"></rect>
+<rect x="356.1" y="412.8" width="4.8" height="5.4" class="c"></rect>
+<rect x="360.9" y="385.8" width="5.3" height="4.6" class="c"></rect>
+<rect x="360.9" y="390.4" width="5.3" height="4.6" class="c"></rect>
 <rect x="360.9" y="395.1" width="5.3" height="4.6" class="asm"></rect>
 <rect x="360.9" y="399.7" width="5.3" height="4.6" class="asm"></rect>
 <rect x="360.9" y="404.3" width="5.3" height="4.6" class="asm"></rect>
-<rect x="360.9" y="409.0" width="5.3" height="4.6" class="asm"></rect>
-<rect x="360.9" y="413.6" width="5.3" height="4.6" class="asm"></rect>
+<rect x="360.9" y="409.0" width="5.3" height="4.6" class="c"></rect>
+<rect x="360.9" y="413.6" width="5.3" height="4.6" class="c"></rect>
 <rect x="366.2" y="385.8" width="4.7" height="4.9" class="asm"></rect>
 <rect x="370.9" y="385.8" width="4.7" height="4.9" class="asm"></rect>
 <rect x="375.6" y="385.8" width="4.7" height="4.9" class="asm"></rect>
 <rect x="380.2" y="385.8" width="4.7" height="4.9" class="asm"></rect>
-<rect x="384.9" y="385.8" width="4.4" height="4.9" class="asm"></rect>
-<rect x="389.3" y="385.8" width="4.4" height="4.9" class="asm"></rect>
+<rect x="384.9" y="385.8" width="4.4" height="4.9" class="c"></rect>
+<rect x="389.3" y="385.8" width="4.4" height="4.9" class="c"></rect>
 <rect x="366.2" y="390.7" width="4.9" height="4.3" class="asm"></rect>
 <rect x="371.1" y="390.7" width="4.5" height="4.3" class="asm"></rect>
-<rect x="375.6" y="390.7" width="4.5" height="4.3" class="asm"></rect>
-<rect x="380.1" y="390.7" width="4.5" height="4.3" class="asm"></rect>
-<rect x="384.6" y="390.7" width="4.5" height="4.3" class="asm"></rect>
-<rect x="389.1" y="390.7" width="4.5" height="4.3" class="asm"></rect>
-<rect x="366.2" y="395.0" width="4.5" height="4.4" class="asm"></rect>
-<rect x="366.2" y="399.4" width="4.5" height="4.0" class="asm"></rect>
-<rect x="366.2" y="403.3" width="4.5" height="4.0" class="asm"></rect>
-<rect x="366.2" y="407.3" width="4.5" height="3.6" class="asm"></rect>
-<rect x="366.2" y="411.0" width="4.5" height="3.6" class="asm"></rect>
-<rect x="366.2" y="414.6" width="4.5" height="3.6" class="asm"></rect>
+<rect x="375.6" y="390.7" width="4.5" height="4.3" class="c"></rect>
+<rect x="380.1" y="390.7" width="4.5" height="4.3" class="c"></rect>
+<rect x="384.6" y="390.7" width="4.5" height="4.3" class="c"></rect>
+<rect x="389.1" y="390.7" width="4.5" height="4.3" class="c"></rect>
+<rect x="366.2" y="395.0" width="4.5" height="4.4" class="c"></rect>
+<rect x="366.2" y="399.4" width="4.5" height="4.0" class="c"></rect>
+<rect x="366.2" y="403.3" width="4.5" height="4.0" class="c"></rect>
+<rect x="366.2" y="407.3" width="4.5" height="3.6" class="c"></rect>
+<rect x="366.2" y="411.0" width="4.5" height="3.6" class="c"></rect>
+<rect x="366.2" y="414.6" width="4.5" height="3.6" class="c"></rect>
 <rect x="370.7" y="395.0" width="4.1" height="4.0" class="asm"></rect>
 <rect x="374.8" y="395.0" width="4.1" height="4.0" class="asm"></rect>
-<rect x="378.9" y="395.0" width="3.7" height="4.0" class="asm"></rect>
+<rect x="378.9" y="395.0" width="3.7" height="4.0" class="c"></rect>
 <rect x="382.6" y="395.0" width="3.7" height="4.0" class="asm"></rect>
 <rect x="386.2" y="395.0" width="3.7" height="4.0" class="asm"></rect>
-<rect x="389.9" y="395.0" width="3.7" height="4.0" class="asm"></rect>
-<rect x="370.7" y="399.0" width="3.3" height="3.9" class="asm"></rect>
+<rect x="389.9" y="395.0" width="3.7" height="4.0" class="c"></rect>
+<rect x="370.7" y="399.0" width="3.3" height="3.9" class="c"></rect>
 <rect x="370.7" y="402.9" width="3.3" height="3.9" class="asm"></rect>
-<rect x="370.7" y="406.9" width="3.3" height="3.9" class="asm"></rect>
+<rect x="370.7" y="406.9" width="3.3" height="3.9" class="c"></rect>
 <rect x="370.7" y="410.8" width="3.3" height="3.9" class="asm"></rect>
-<rect x="370.7" y="414.8" width="3.3" height="3.5" class="asm"></rect>
-<rect x="374.0" y="399.0" width="3.0" height="3.2" class="asm"></rect>
-<rect x="374.0" y="402.2" width="3.0" height="3.2" class="asm"></rect>
+<rect x="370.7" y="414.8" width="3.3" height="3.5" class="c"></rect>
+<rect x="374.0" y="399.0" width="3.0" height="3.2" class="c"></rect>
+<rect x="374.0" y="402.2" width="3.0" height="3.2" class="c"></rect>
 <rect x="374.0" y="405.4" width="3.0" height="3.2" class="asm"></rect>
-<rect x="374.0" y="408.6" width="3.0" height="3.2" class="asm"></rect>
+<rect x="374.0" y="408.6" width="3.0" height="3.2" class="c"></rect>
 <rect x="374.0" y="411.8" width="3.0" height="3.2" class="asm"></rect>
-<rect x="374.0" y="415.0" width="3.0" height="3.2" class="asm"></rect>
-<rect x="377.0" y="399.0" width="3.2" height="3.0" class="asm"></rect>
-<rect x="380.2" y="399.0" width="2.7" height="3.0" class="asm"></rect>
-<rect x="382.9" y="399.0" width="2.7" height="3.0" class="asm"></rect>
-<rect x="385.6" y="399.0" width="2.7" height="3.0" class="asm"></rect>
-<rect x="388.3" y="399.0" width="2.7" height="3.0" class="asm"></rect>
-<rect x="390.9" y="399.0" width="2.7" height="3.0" class="asm"></rect>
-<rect x="377.0" y="402.0" width="2.4" height="2.7" class="asm"></rect>
-<rect x="377.0" y="404.7" width="2.4" height="2.7" class="asm"></rect>
-<rect x="377.0" y="407.4" width="2.4" height="2.7" class="asm"></rect>
-<rect x="377.0" y="410.1" width="2.4" height="2.7" class="asm"></rect>
-<rect x="377.0" y="412.8" width="2.4" height="2.7" class="asm"></rect>
-<rect x="377.0" y="415.5" width="2.4" height="2.7" class="asm"></rect>
-<rect x="379.4" y="402.0" width="2.7" height="2.4" class="asm"></rect>
-<rect x="382.1" y="402.0" width="2.7" height="2.4" class="asm"></rect>
-<rect x="384.8" y="402.0" width="2.7" height="2.4" class="asm"></rect>
-<rect x="387.5" y="402.0" width="2.0" height="2.4" class="asm"></rect>
-<rect x="389.6" y="402.0" width="2.0" height="2.4" class="asm"></rect>
-<rect x="391.6" y="402.0" width="2.0" height="2.4" class="asm"></rect>
-<rect x="379.4" y="404.4" width="2.1" height="2.3" class="asm"></rect>
-<rect x="379.4" y="406.7" width="2.1" height="2.3" class="asm"></rect>
-<rect x="379.4" y="409.0" width="2.1" height="2.3" class="asm"></rect>
-<rect x="379.4" y="411.3" width="2.1" height="2.3" class="asm"></rect>
-<rect x="379.4" y="413.6" width="2.1" height="2.3" class="asm"></rect>
-<rect x="379.4" y="415.9" width="2.1" height="2.3" class="asm"></rect>
-<rect x="381.6" y="404.4" width="2.6" height="1.9" class="asm"></rect>
-<rect x="384.2" y="404.4" width="2.6" height="1.9" class="asm"></rect>
-<rect x="386.7" y="404.4" width="2.6" height="1.9" class="asm"></rect>
-<rect x="389.3" y="404.4" width="2.6" height="1.9" class="asm"></rect>
-<rect x="391.9" y="404.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="381.6" y="406.3" width="1.9" height="1.7" class="asm"></rect>
-<rect x="381.6" y="408.0" width="1.9" height="1.7" class="asm"></rect>
-<rect x="381.6" y="409.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="381.6" y="411.4" width="1.9" height="1.7" class="asm"></rect>
-<rect x="381.6" y="413.1" width="1.9" height="1.7" class="asm"></rect>
-<rect x="381.6" y="414.8" width="1.9" height="1.7" class="asm"></rect>
-<rect x="381.6" y="416.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="383.5" y="406.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="385.2" y="406.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="386.9" y="406.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="388.6" y="406.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="390.2" y="406.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="391.9" y="406.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="383.5" y="408.3" width="2.0" height="1.7" class="asm"></rect>
-<rect x="383.5" y="409.9" width="2.0" height="1.7" class="asm"></rect>
-<rect x="383.5" y="411.6" width="2.0" height="1.7" class="asm"></rect>
-<rect x="383.5" y="413.2" width="2.0" height="1.7" class="asm"></rect>
-<rect x="383.5" y="414.9" width="2.0" height="1.7" class="asm"></rect>
-<rect x="383.5" y="416.6" width="2.0" height="1.7" class="asm"></rect>
-<rect x="385.4" y="408.3" width="1.6" height="2.0" class="asm"></rect>
-<rect x="387.1" y="408.3" width="1.6" height="2.0" class="asm"></rect>
-<rect x="388.7" y="408.3" width="1.6" height="2.0" class="asm"></rect>
-<rect x="390.4" y="408.3" width="1.6" height="2.0" class="asm"></rect>
-<rect x="392.0" y="408.3" width="1.6" height="2.0" class="asm"></rect>
-<rect x="385.4" y="410.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="385.4" y="412.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="385.4" y="414.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="385.4" y="416.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="387.1" y="410.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="388.7" y="410.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="390.4" y="410.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="392.0" y="410.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="387.1" y="412.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="387.1" y="414.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="387.1" y="416.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="388.7" y="412.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="390.4" y="412.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="392.0" y="412.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="388.7" y="414.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="388.7" y="416.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="390.4" y="414.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="392.0" y="414.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="390.4" y="416.2" width="1.6" height="2.0" class="asm"></rect>
-<rect x="392.0" y="416.2" width="1.6" height="2.0" class="asm"></rect>
+<rect x="374.0" y="415.0" width="3.0" height="3.2" class="c"></rect>
+<rect x="377.0" y="399.0" width="3.2" height="3.0" class="c"></rect>
+<rect x="380.2" y="399.0" width="2.7" height="3.0" class="c"></rect>
+<rect x="382.9" y="399.0" width="2.7" height="3.0" class="c"></rect>
+<rect x="385.6" y="399.0" width="2.7" height="3.0" class="c"></rect>
+<rect x="388.3" y="399.0" width="2.7" height="3.0" class="c"></rect>
+<rect x="390.9" y="399.0" width="2.7" height="3.0" class="c"></rect>
+<rect x="377.0" y="402.0" width="2.4" height="2.7" class="c"></rect>
+<rect x="377.0" y="404.7" width="2.4" height="2.7" class="c"></rect>
+<rect x="377.0" y="407.4" width="2.4" height="2.7" class="c"></rect>
+<rect x="377.0" y="410.1" width="2.4" height="2.7" class="c"></rect>
+<rect x="377.0" y="412.8" width="2.4" height="2.7" class="c"></rect>
+<rect x="377.0" y="415.5" width="2.4" height="2.7" class="c"></rect>
+<rect x="379.4" y="402.0" width="2.7" height="2.4" class="c"></rect>
+<rect x="382.1" y="402.0" width="2.7" height="2.4" class="c"></rect>
+<rect x="384.8" y="402.0" width="2.7" height="2.4" class="c"></rect>
+<rect x="387.5" y="402.0" width="2.0" height="2.4" class="c"></rect>
+<rect x="389.6" y="402.0" width="2.0" height="2.4" class="c"></rect>
+<rect x="391.6" y="402.0" width="2.0" height="2.4" class="c"></rect>
+<rect x="379.4" y="404.4" width="2.1" height="2.3" class="c"></rect>
+<rect x="379.4" y="406.7" width="2.1" height="2.3" class="c"></rect>
+<rect x="379.4" y="409.0" width="2.1" height="2.3" class="c"></rect>
+<rect x="379.4" y="411.3" width="2.1" height="2.3" class="c"></rect>
+<rect x="379.4" y="413.6" width="2.1" height="2.3" class="c"></rect>
+<rect x="379.4" y="415.9" width="2.1" height="2.3" class="c"></rect>
+<rect x="381.6" y="404.4" width="2.6" height="1.9" class="c"></rect>
+<rect x="384.2" y="404.4" width="2.6" height="1.9" class="c"></rect>
+<rect x="386.7" y="404.4" width="2.6" height="1.9" class="c"></rect>
+<rect x="389.3" y="404.4" width="2.6" height="1.9" class="c"></rect>
+<rect x="391.9" y="404.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="381.6" y="406.3" width="1.9" height="1.7" class="c"></rect>
+<rect x="381.6" y="408.0" width="1.9" height="1.7" class="c"></rect>
+<rect x="381.6" y="409.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="381.6" y="411.4" width="1.9" height="1.7" class="c"></rect>
+<rect x="381.6" y="413.1" width="1.9" height="1.7" class="c"></rect>
+<rect x="381.6" y="414.8" width="1.9" height="1.7" class="c"></rect>
+<rect x="381.6" y="416.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="383.5" y="406.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="385.2" y="406.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="386.9" y="406.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="388.6" y="406.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="390.2" y="406.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="391.9" y="406.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="383.5" y="408.3" width="2.0" height="1.7" class="c"></rect>
+<rect x="383.5" y="409.9" width="2.0" height="1.7" class="c"></rect>
+<rect x="383.5" y="411.6" width="2.0" height="1.7" class="c"></rect>
+<rect x="383.5" y="413.2" width="2.0" height="1.7" class="c"></rect>
+<rect x="383.5" y="414.9" width="2.0" height="1.7" class="c"></rect>
+<rect x="383.5" y="416.6" width="2.0" height="1.7" class="c"></rect>
+<rect x="385.4" y="408.3" width="1.6" height="2.0" class="c"></rect>
+<rect x="387.1" y="408.3" width="1.6" height="2.0" class="c"></rect>
+<rect x="388.7" y="408.3" width="1.6" height="2.0" class="c"></rect>
+<rect x="390.4" y="408.3" width="1.6" height="2.0" class="c"></rect>
+<rect x="392.0" y="408.3" width="1.6" height="2.0" class="c"></rect>
+<rect x="385.4" y="410.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="385.4" y="412.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="385.4" y="414.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="385.4" y="416.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="387.1" y="410.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="388.7" y="410.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="390.4" y="410.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="392.0" y="410.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="387.1" y="412.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="387.1" y="414.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="387.1" y="416.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="388.7" y="412.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="390.4" y="412.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="392.0" y="412.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="388.7" y="414.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="388.7" y="416.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="390.4" y="414.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="392.0" y="414.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="390.4" y="416.2" width="1.6" height="2.0" class="c"></rect>
+<rect x="392.0" y="416.2" width="1.6" height="2.0" class="c"></rect>
 <rect x="211.4" y="271.3" width="182.2" height="146.9" fill="none" stroke="#1a1a19" stroke-width="2.5"/>
 <rect x="211.4" y="418.2" width="24.4" height="48.3" class="asm"><title>func_0890C2AC 2900 B, Assembly</title></rect>
 <rect x="211.4" y="466.5" width="24.4" height="17.5" class="asm"><title>func_089058FC 1048 B, Assembly</title></rect>
@@ -2097,10 +2097,10 @@
 <rect x="334.9" y="497.1" width="7.6" height="8.0" class="asm"><title>func_0890A5EC 148 B, Assembly</title></rect>
 <rect x="342.5" y="497.1" width="7.4" height="8.0" class="asm"><title>func_08906AD0 144 B, Assembly</title></rect>
 <rect x="349.8" y="497.1" width="7.4" height="8.0" class="asm"><title>func_08907AA0 144 B, Assembly</title></rect>
-<rect x="357.2" y="497.1" width="7.4" height="8.0" class="asm"><title>func_0890A1A8 144 B, Assembly</title></rect>
-<rect x="364.6" y="497.1" width="7.4" height="8.0" class="asm"><title>func_0890DE5C 144 B, Assembly</title></rect>
-<rect x="371.9" y="497.1" width="7.4" height="8.0" class="asm"><title>func_0890E830 144 B, Assembly</title></rect>
-<rect x="379.3" y="497.1" width="7.2" height="8.0" class="asm"><title>func_0890424C 140 B, Assembly</title></rect>
+<rect x="357.2" y="497.1" width="7.4" height="8.0" class="c"><title>func_0890A1A8 144 B, C, names left to find</title></rect>
+<rect x="364.6" y="497.1" width="7.4" height="8.0" class="c"><title>func_0890DE5C 144 B, C, names left to find</title></rect>
+<rect x="371.9" y="497.1" width="7.4" height="8.0" class="c"><title>func_0890E830 144 B, C, names left to find</title></rect>
+<rect x="379.3" y="497.1" width="7.2" height="8.0" class="c"><title>func_0890424C 140 B, C, names left to find</title></rect>
 <rect x="386.5" y="497.1" width="7.2" height="8.0" class="asm"><title>func_0890988C 140 B, Assembly</title></rect>
 <rect x="327.1" y="505.1" width="7.3" height="7.8" class="asm"><title>func_0890B198 140 B, Assembly</title></rect>
 <rect x="327.1" y="512.9" width="7.3" height="7.6" class="asm"><title>func_089001BC 136 B, Assembly</title></rect>
@@ -2402,16 +2402,16 @@
 <rect x="301.1" y="697.0" width="8.0" height="7.5" class="asm"><title>func_089342C4 148 B, Assembly</title></rect>
 <rect x="301.1" y="704.5" width="8.0" height="7.5" class="asm"><title>func_08937D9C 148 B, Assembly</title></rect>
 <rect x="309.1" y="626.9" width="8.0" height="7.6" class="asm"><title>func_0893B5F4 148 B, Assembly</title></rect>
-<rect x="317.1" y="626.9" width="7.8" height="7.6" class="asm"><title>func_08930214 144 B, Assembly</title></rect>
-<rect x="324.9" y="626.9" width="7.8" height="7.6" class="asm"><title>func_089302A4 144 B, Assembly</title></rect>
-<rect x="332.6" y="626.9" width="7.8" height="7.6" class="asm"><title>func_08937320 144 B, Assembly</title></rect>
+<rect x="317.1" y="626.9" width="7.8" height="7.6" class="c"><title>func_08930214 144 B, C, names left to find</title></rect>
+<rect x="324.9" y="626.9" width="7.8" height="7.6" class="c"><title>func_089302A4 144 B, C, names left to find</title></rect>
+<rect x="332.6" y="626.9" width="7.8" height="7.6" class="c"><title>func_08937320 144 B, C, names left to find</title></rect>
 <rect x="340.4" y="626.9" width="7.8" height="7.6" class="asm"><title>func_089382B4 144 B, Assembly</title></rect>
 <rect x="348.1" y="626.9" width="7.8" height="7.6" class="asm"><title>func_08939AFC 144 B, Assembly</title></rect>
 <rect x="355.9" y="626.9" width="7.5" height="7.6" class="asm"><title>func_08931448 140 B, Assembly</title></rect>
-<rect x="363.4" y="626.9" width="7.5" height="7.6" class="asm"><title>func_089320AC 140 B, Assembly</title></rect>
+<rect x="363.4" y="626.9" width="7.5" height="7.6" class="c"><title>func_089320AC 140 B, C, names left to find</title></rect>
 <rect x="371.0" y="626.9" width="7.5" height="7.6" class="asm"><title>func_08936E38 140 B, Assembly</title></rect>
-<rect x="378.5" y="626.9" width="7.5" height="7.6" class="asm"><title>func_089373B0 140 B, Assembly</title></rect>
-<rect x="386.1" y="626.9" width="7.5" height="7.6" class="asm"><title>func_0893CD18 140 B, Assembly</title></rect>
+<rect x="378.5" y="626.9" width="7.5" height="7.6" class="c"><title>func_089373B0 140 B, C, names left to find</title></rect>
+<rect x="386.1" y="626.9" width="7.5" height="7.6" class="c"><title>func_0893CD18 140 B, C, names left to find</title></rect>
 <rect x="309.1" y="634.4" width="7.0" height="7.9" class="c"><title>func_08930060 136 B, C, names left to find</title></rect>
 <rect x="309.1" y="642.3" width="7.0" height="7.9" class="asm"><title>func_089391F8 136 B, Assembly</title></rect>
 <rect x="309.1" y="650.2" width="7.0" height="7.9" class="c"><title>func_089394E4 136 B, C, names left to find</title></rect>
@@ -2872,7 +2872,7 @@
 <rect x="538.7" y="206.7" width="7.6" height="8.1" class="asm"><title>func_0889ED58 152 B, Assembly</title></rect>
 <rect x="546.3" y="206.7" width="7.4" height="8.1" class="asm"><title>func_08895458 148 B, Assembly</title></rect>
 <rect x="553.7" y="206.7" width="7.4" height="8.1" class="asm"><title>func_08895ABC 148 B, Assembly</title></rect>
-<rect x="561.2" y="206.7" width="7.2" height="8.1" class="asm"><title>func_0889CBBC 144 B, Assembly</title></rect>
+<rect x="561.2" y="206.7" width="7.2" height="8.1" class="c"><title>func_0889CBBC 144 B, C, names left to find</title></rect>
 <rect x="568.4" y="206.7" width="7.0" height="8.1" class="c"><title>func_08893E38 140 B, C, names left to find</title></rect>
 <rect x="515.5" y="214.8" width="7.6" height="7.5" class="asm"><title>func_08895BE4 140 B, Assembly</title></rect>
 <rect x="515.5" y="222.4" width="7.6" height="7.3" class="c"><title>func_0889A33C 136 B, C, names left to find</title></rect>
@@ -3186,7 +3186,7 @@
 <rect x="552.9" y="350.5" width="7.5" height="8.2" class="asm"><title>func_088C35F0 152 B, Assembly</title></rect>
 <rect x="560.5" y="350.5" width="7.5" height="8.2" class="asm"><title>func_088CDF18 152 B, Assembly</title></rect>
 <rect x="568.0" y="350.5" width="7.3" height="8.2" class="asm"><title>func_088CE6EC 148 B, Assembly</title></rect>
-<rect x="513.6" y="358.7" width="7.1" height="8.0" class="asm"><title>func_088CE0C0 140 B, Assembly</title></rect>
+<rect x="513.6" y="358.7" width="7.1" height="8.0" class="c"><title>func_088CE0C0 140 B, C, names left to find</title></rect>
 <rect x="513.6" y="366.7" width="7.1" height="7.8" class="asm"><title>func_088C73BC 136 B, Assembly</title></rect>
 <rect x="513.6" y="374.5" width="7.1" height="7.6" class="asm"><title>func_088C8410 132 B, Assembly</title></rect>
 <rect x="513.6" y="382.1" width="7.1" height="7.3" class="asm"><title>func_088C7460 128 B, Assembly</title></rect>
@@ -3870,7 +3870,7 @@
 <rect x="492.6" y="666.0" width="7.7" height="8.1" class="asm"><title>func_08940968 152 B, Assembly</title></rect>
 <rect x="492.6" y="674.1" width="7.7" height="8.1" class="asm"><title>func_089436B4 152 B, Assembly</title></rect>
 <rect x="492.6" y="682.1" width="7.7" height="8.1" class="asm"><title>func_0894E638 152 B, Assembly</title></rect>
-<rect x="492.6" y="690.2" width="7.7" height="7.4" class="asm"><title>func_08948970 140 B, Assembly</title></rect>
+<rect x="492.6" y="690.2" width="7.7" height="7.4" class="c"><title>func_08948970 140 B, C, names left to find</title></rect>
 <rect x="492.6" y="697.6" width="7.7" height="7.2" class="c"><title>func_089406E0 136 B, C, names left to find</title></rect>
 <rect x="492.6" y="704.8" width="7.7" height="7.2" class="c"><title>func_08941ABC 136 B, C, names left to find</title></rect>
 <rect x="500.3" y="632.5" width="7.8" height="7.1" class="asm"><title>func_08941B44 136 B, Assembly</title></rect>
@@ -3901,7 +3901,7 @@
 <rect x="541.3" y="639.7" width="6.8" height="6.9" class="asm"><title>func_08949098 116 B, Assembly</title></rect>
 <rect x="548.1" y="639.7" width="6.8" height="6.9" class="asm"><title>func_0894BF40 116 B, Assembly</title></rect>
 <rect x="554.9" y="639.7" width="6.8" height="6.9" class="asm"><title>func_0894C130 116 B, Assembly</title></rect>
-<rect x="561.7" y="639.7" width="6.8" height="6.9" class="asm"><title>func_0894D514 116 B, Assembly</title></rect>
+<rect x="561.7" y="639.7" width="6.8" height="6.9" class="c"><title>func_0894D514 116 B, C, names left to find</title></rect>
 <rect x="568.5" y="639.7" width="6.8" height="6.9" class="asm"><title>func_0894E448 116 B, Assembly</title></rect>
 <rect x="507.2" y="646.6" width="6.9" height="6.6" class="asm"><title>func_08940670 112 B, Assembly</title></rect>
 <rect x="507.2" y="653.2" width="6.9" height="6.6" class="asm"><title>func_08942FF0 112 B, Assembly</title></rect>
@@ -3918,15 +3918,15 @@
 <rect x="528.0" y="646.6" width="7.0" height="6.3" class="asm"><title>func_0894B550 108 B, Assembly</title></rect>
 <rect x="535.0" y="646.6" width="7.0" height="6.3" class="asm"><title>func_0894D058 108 B, Assembly</title></rect>
 <rect x="542.0" y="646.6" width="6.7" height="6.3" class="asm"><title>func_08943F3C 104 B, Assembly</title></rect>
-<rect x="548.7" y="646.6" width="6.7" height="6.3" class="asm"><title>func_08944CD8 104 B, Assembly</title></rect>
+<rect x="548.7" y="646.6" width="6.7" height="6.3" class="c"><title>func_08944CD8 104 B, C, names left to find</title></rect>
 <rect x="555.4" y="646.6" width="6.7" height="6.3" class="asm"><title>func_08945234 104 B, Assembly</title></rect>
 <rect x="562.2" y="646.6" width="6.7" height="6.3" class="asm"><title>func_08947050 104 B, Assembly</title></rect>
 <rect x="568.9" y="646.6" width="6.5" height="6.3" class="asm"><title>func_0894046C 100 B, Assembly</title></rect>
 <rect x="514.0" y="652.9" width="6.2" height="6.6" class="asm"><title>func_08941FA8 100 B, Assembly</title></rect>
 <rect x="514.0" y="659.4" width="6.2" height="6.6" class="asm"><title>func_089424C0 100 B, Assembly</title></rect>
 <rect x="514.0" y="666.0" width="6.2" height="6.6" class="asm"><title>func_08943A18 100 B, Assembly</title></rect>
-<rect x="514.0" y="672.6" width="6.2" height="6.6" class="asm"><title>func_089447B4 100 B, Assembly</title></rect>
-<rect x="514.0" y="679.2" width="6.2" height="6.6" class="asm"><title>func_0894485C 100 B, Assembly</title></rect>
+<rect x="514.0" y="672.6" width="6.2" height="6.6" class="c"><title>func_089447B4 100 B, C, names left to find</title></rect>
+<rect x="514.0" y="679.2" width="6.2" height="6.6" class="c"><title>func_0894485C 100 B, C, names left to find</title></rect>
 <rect x="514.0" y="685.7" width="6.2" height="6.6" class="asm"><title>func_0894645C 100 B, Assembly</title></rect>
 <rect x="514.0" y="692.3" width="6.2" height="6.6" class="asm"><title>func_08946D54 100 B, Assembly</title></rect>
 <rect x="514.0" y="698.9" width="6.2" height="6.6" class="asm"><title>func_08947700 100 B, Assembly</title></rect>
@@ -3936,7 +3936,7 @@
 <rect x="532.8" y="652.9" width="6.3" height="6.5" class="asm"><title>func_0894C824 100 B, Assembly</title></rect>
 <rect x="539.0" y="652.9" width="6.3" height="6.5" class="asm"><title>func_0894E5D4 100 B, Assembly</title></rect>
 <rect x="545.3" y="652.9" width="6.0" height="6.5" class="asm"></rect>
-<rect x="551.3" y="652.9" width="6.0" height="6.5" class="asm"></rect>
+<rect x="551.3" y="652.9" width="6.0" height="6.5" class="c"></rect>
 <rect x="557.3" y="652.9" width="6.0" height="6.5" class="asm"></rect>
 <rect x="563.3" y="652.9" width="6.0" height="6.5" class="asm"></rect>
 <rect x="569.4" y="652.9" width="6.0" height="6.5" class="asm"></rect>
@@ -3952,45 +3952,45 @@
 <rect x="532.6" y="659.4" width="6.2" height="5.8" class="asm"></rect>
 <rect x="538.8" y="659.4" width="6.2" height="5.8" class="asm"></rect>
 <rect x="545.0" y="659.4" width="6.2" height="5.8" class="asm"></rect>
-<rect x="551.2" y="659.4" width="6.2" height="5.8" class="asm"></rect>
+<rect x="551.2" y="659.4" width="6.2" height="5.8" class="c"></rect>
 <rect x="557.3" y="659.4" width="6.2" height="5.8" class="asm"></rect>
 <rect x="563.5" y="659.4" width="5.9" height="5.8" class="asm"></rect>
 <rect x="569.5" y="659.4" width="5.9" height="5.8" class="asm"></rect>
-<rect x="526.1" y="665.2" width="5.8" height="5.9" class="asm"></rect>
-<rect x="526.1" y="671.0" width="5.8" height="5.9" class="asm"></rect>
-<rect x="526.1" y="676.9" width="5.8" height="5.9" class="asm"></rect>
-<rect x="526.1" y="682.7" width="5.8" height="5.9" class="asm"></rect>
+<rect x="526.1" y="665.2" width="5.8" height="5.9" class="c"></rect>
+<rect x="526.1" y="671.0" width="5.8" height="5.9" class="c"></rect>
+<rect x="526.1" y="676.9" width="5.8" height="5.9" class="c"></rect>
+<rect x="526.1" y="682.7" width="5.8" height="5.9" class="c"></rect>
 <rect x="526.1" y="688.6" width="5.8" height="5.9" class="asm"></rect>
 <rect x="526.1" y="694.4" width="5.8" height="5.9" class="asm"></rect>
 <rect x="526.1" y="700.3" width="5.8" height="5.9" class="asm"></rect>
 <rect x="526.1" y="706.1" width="5.8" height="5.9" class="asm"></rect>
 <rect x="531.9" y="665.2" width="5.7" height="5.7" class="asm"></rect>
-<rect x="537.7" y="665.2" width="5.7" height="5.7" class="asm"></rect>
+<rect x="537.7" y="665.2" width="5.7" height="5.7" class="c"></rect>
 <rect x="543.4" y="665.2" width="5.7" height="5.7" class="asm"></rect>
-<rect x="549.1" y="665.2" width="5.4" height="5.7" class="asm"></rect>
-<rect x="554.5" y="665.2" width="5.4" height="5.7" class="asm"></rect>
+<rect x="549.1" y="665.2" width="5.4" height="5.7" class="c"></rect>
+<rect x="554.5" y="665.2" width="5.4" height="5.7" class="c"></rect>
 <rect x="559.9" y="665.2" width="5.1" height="5.7" class="asm"></rect>
 <rect x="565.1" y="665.2" width="5.1" height="5.7" class="asm"></rect>
-<rect x="570.2" y="665.2" width="5.1" height="5.7" class="asm"></rect>
+<rect x="570.2" y="665.2" width="5.1" height="5.7" class="c"></rect>
 <rect x="531.9" y="670.9" width="5.6" height="5.3" class="asm"></rect>
-<rect x="531.9" y="676.1" width="5.6" height="5.3" class="asm"></rect>
-<rect x="531.9" y="681.4" width="5.6" height="5.3" class="asm"></rect>
-<rect x="531.9" y="686.6" width="5.6" height="5.3" class="asm"></rect>
+<rect x="531.9" y="676.1" width="5.6" height="5.3" class="c"></rect>
+<rect x="531.9" y="681.4" width="5.6" height="5.3" class="c"></rect>
+<rect x="531.9" y="686.6" width="5.6" height="5.3" class="c"></rect>
 <rect x="531.9" y="691.9" width="5.6" height="5.3" class="asm"></rect>
 <rect x="531.9" y="697.1" width="5.6" height="5.0" class="asm"></rect>
-<rect x="531.9" y="702.1" width="5.6" height="5.0" class="asm"></rect>
-<rect x="531.9" y="707.0" width="5.6" height="5.0" class="asm"></rect>
+<rect x="531.9" y="702.1" width="5.6" height="5.0" class="c"></rect>
+<rect x="531.9" y="707.0" width="5.6" height="5.0" class="c"></rect>
 <rect x="537.5" y="670.9" width="5.6" height="4.9" class="asm"></rect>
 <rect x="543.2" y="670.9" width="5.6" height="4.9" class="asm"></rect>
 <rect x="548.8" y="670.9" width="5.3" height="4.9" class="c"></rect>
 <rect x="554.1" y="670.9" width="5.3" height="4.9" class="asm"></rect>
-<rect x="559.4" y="670.9" width="5.3" height="4.9" class="asm"></rect>
-<rect x="564.7" y="670.9" width="5.3" height="4.9" class="asm"></rect>
+<rect x="559.4" y="670.9" width="5.3" height="4.9" class="c"></rect>
+<rect x="564.7" y="670.9" width="5.3" height="4.9" class="c"></rect>
 <rect x="570.1" y="670.9" width="5.3" height="4.9" class="asm"></rect>
-<rect x="537.5" y="675.8" width="4.9" height="5.3" class="asm"></rect>
+<rect x="537.5" y="675.8" width="4.9" height="5.3" class="c"></rect>
 <rect x="537.5" y="681.1" width="4.9" height="5.3" class="asm"></rect>
-<rect x="537.5" y="686.4" width="4.9" height="5.3" class="asm"></rect>
-<rect x="537.5" y="691.7" width="4.9" height="5.3" class="asm"></rect>
+<rect x="537.5" y="686.4" width="4.9" height="5.3" class="c"></rect>
+<rect x="537.5" y="691.7" width="4.9" height="5.3" class="c"></rect>
 <rect x="537.5" y="697.0" width="4.9" height="5.0" class="asm"></rect>
 <rect x="537.5" y="702.0" width="4.9" height="5.0" class="asm"></rect>
 <rect x="537.5" y="707.0" width="4.9" height="5.0" class="asm"></rect>
@@ -3998,20 +3998,20 @@
 <rect x="547.3" y="675.8" width="4.8" height="5.0" class="asm"></rect>
 <rect x="552.1" y="675.8" width="4.8" height="5.0" class="asm"></rect>
 <rect x="557.0" y="675.8" width="4.8" height="5.0" class="asm"></rect>
-<rect x="561.8" y="675.8" width="4.8" height="5.0" class="asm"></rect>
-<rect x="566.6" y="675.8" width="4.5" height="5.0" class="asm"></rect>
-<rect x="571.2" y="675.8" width="4.2" height="5.0" class="asm"></rect>
+<rect x="561.8" y="675.8" width="4.8" height="5.0" class="c"></rect>
+<rect x="566.6" y="675.8" width="4.5" height="5.0" class="c"></rect>
+<rect x="571.2" y="675.8" width="4.2" height="5.0" class="c"></rect>
 <rect x="542.4" y="680.8" width="4.4" height="4.5" class="c"></rect>
 <rect x="542.4" y="685.3" width="4.4" height="4.5" class="asm"></rect>
 <rect x="542.4" y="689.7" width="4.4" height="4.5" class="asm"></rect>
 <rect x="542.4" y="694.2" width="4.4" height="4.5" class="asm"></rect>
 <rect x="542.4" y="698.6" width="4.4" height="4.5" class="asm"></rect>
-<rect x="542.4" y="703.1" width="4.4" height="4.5" class="asm"></rect>
-<rect x="542.4" y="707.5" width="4.4" height="4.5" class="asm"></rect>
+<rect x="542.4" y="703.1" width="4.4" height="4.5" class="c"></rect>
+<rect x="542.4" y="707.5" width="4.4" height="4.5" class="c"></rect>
 <rect x="546.8" y="680.8" width="4.3" height="4.2" class="c"></rect>
-<rect x="551.1" y="680.8" width="4.3" height="4.2" class="asm"></rect>
-<rect x="555.4" y="680.8" width="4.3" height="4.2" class="asm"></rect>
-<rect x="559.7" y="680.8" width="4.3" height="4.2" class="asm"></rect>
+<rect x="551.1" y="680.8" width="4.3" height="4.2" class="c"></rect>
+<rect x="555.4" y="680.8" width="4.3" height="4.2" class="c"></rect>
+<rect x="559.7" y="680.8" width="4.3" height="4.2" class="c"></rect>
 <rect x="564.0" y="680.8" width="3.9" height="4.2" class="c"></rect>
 <rect x="567.9" y="680.8" width="3.9" height="4.2" class="asm"></rect>
 <rect x="571.8" y="680.8" width="3.5" height="4.2" class="c"></rect>
@@ -4021,9 +4021,9 @@
 <rect x="546.8" y="696.8" width="3.4" height="3.8" class="c"></rect>
 <rect x="546.8" y="700.6" width="3.4" height="3.8" class="c"></rect>
 <rect x="546.8" y="704.4" width="3.4" height="3.8" class="c"></rect>
-<rect x="546.8" y="708.2" width="3.4" height="3.8" class="asm"></rect>
+<rect x="546.8" y="708.2" width="3.4" height="3.8" class="c"></rect>
 <rect x="550.2" y="685.0" width="3.6" height="3.2" class="c"></rect>
-<rect x="553.8" y="685.0" width="3.6" height="3.2" class="asm"></rect>
+<rect x="553.8" y="685.0" width="3.6" height="3.2" class="c"></rect>
 <rect x="557.4" y="685.0" width="3.1" height="3.2" class="c"></rect>
 <rect x="560.5" y="685.0" width="3.1" height="3.2" class="asm"></rect>
 <rect x="563.6" y="685.0" width="3.1" height="3.2" class="asm"></rect>
@@ -4032,56 +4032,56 @@
 <rect x="572.8" y="685.0" width="2.6" height="3.2" class="c"></rect>
 <rect x="550.2" y="688.1" width="2.7" height="3.0" class="c"></rect>
 <rect x="550.2" y="691.1" width="2.7" height="3.0" class="asm"></rect>
-<rect x="550.2" y="694.1" width="2.7" height="3.0" class="asm"></rect>
+<rect x="550.2" y="694.1" width="2.7" height="3.0" class="c"></rect>
 <rect x="550.2" y="697.1" width="2.7" height="3.0" class="asm"></rect>
-<rect x="550.2" y="700.1" width="2.7" height="3.0" class="asm"></rect>
+<rect x="550.2" y="700.1" width="2.7" height="3.0" class="c"></rect>
 <rect x="550.2" y="703.1" width="2.7" height="3.0" class="asm"></rect>
 <rect x="550.2" y="706.0" width="2.7" height="3.0" class="asm"></rect>
-<rect x="550.2" y="709.0" width="2.7" height="3.0" class="asm"></rect>
-<rect x="553.0" y="688.1" width="2.9" height="2.8" class="asm"></rect>
+<rect x="550.2" y="709.0" width="2.7" height="3.0" class="c"></rect>
+<rect x="553.0" y="688.1" width="2.9" height="2.8" class="c"></rect>
 <rect x="555.9" y="688.1" width="2.9" height="2.8" class="asm"></rect>
-<rect x="558.9" y="688.1" width="2.9" height="2.8" class="asm"></rect>
-<rect x="561.8" y="688.1" width="2.9" height="2.8" class="asm"></rect>
-<rect x="564.8" y="688.1" width="2.9" height="2.8" class="asm"></rect>
-<rect x="567.7" y="688.1" width="2.9" height="2.8" class="asm"></rect>
+<rect x="558.9" y="688.1" width="2.9" height="2.8" class="c"></rect>
+<rect x="561.8" y="688.1" width="2.9" height="2.8" class="c"></rect>
+<rect x="564.8" y="688.1" width="2.9" height="2.8" class="c"></rect>
+<rect x="567.7" y="688.1" width="2.9" height="2.8" class="c"></rect>
 <rect x="570.7" y="688.1" width="2.4" height="2.8" class="c"></rect>
 <rect x="573.0" y="688.1" width="2.4" height="2.8" class="c"></rect>
 <rect x="553.0" y="690.9" width="2.5" height="2.6" class="c"></rect>
 <rect x="553.0" y="693.5" width="2.5" height="2.6" class="c"></rect>
-<rect x="553.0" y="696.2" width="2.5" height="2.6" class="asm"></rect>
+<rect x="553.0" y="696.2" width="2.5" height="2.6" class="c"></rect>
 <rect x="553.0" y="698.8" width="2.5" height="2.6" class="asm"></rect>
-<rect x="553.0" y="701.5" width="2.5" height="2.6" class="asm"></rect>
-<rect x="553.0" y="704.1" width="2.5" height="2.6" class="asm"></rect>
-<rect x="553.0" y="706.7" width="2.5" height="2.6" class="asm"></rect>
-<rect x="553.0" y="709.4" width="2.5" height="2.6" class="asm"></rect>
+<rect x="553.0" y="701.5" width="2.5" height="2.6" class="c"></rect>
+<rect x="553.0" y="704.1" width="2.5" height="2.6" class="c"></rect>
+<rect x="553.0" y="706.7" width="2.5" height="2.6" class="c"></rect>
+<rect x="553.0" y="709.4" width="2.5" height="2.6" class="c"></rect>
 <rect x="555.4" y="690.9" width="2.5" height="2.6" class="asm"></rect>
-<rect x="557.9" y="690.9" width="2.5" height="2.6" class="asm"></rect>
-<rect x="560.4" y="690.9" width="2.5" height="2.6" class="asm"></rect>
-<rect x="562.9" y="690.9" width="2.5" height="2.6" class="asm"></rect>
-<rect x="565.4" y="690.9" width="2.5" height="2.6" class="asm"></rect>
-<rect x="567.9" y="690.9" width="2.5" height="2.6" class="asm"></rect>
+<rect x="557.9" y="690.9" width="2.5" height="2.6" class="c"></rect>
+<rect x="560.4" y="690.9" width="2.5" height="2.6" class="c"></rect>
+<rect x="562.9" y="690.9" width="2.5" height="2.6" class="c"></rect>
+<rect x="565.4" y="690.9" width="2.5" height="2.6" class="c"></rect>
+<rect x="567.9" y="690.9" width="2.5" height="2.6" class="c"></rect>
 <rect x="570.4" y="690.9" width="2.5" height="2.6" class="asm"></rect>
-<rect x="572.9" y="690.9" width="2.5" height="2.6" class="asm"></rect>
+<rect x="572.9" y="690.9" width="2.5" height="2.6" class="c"></rect>
 <rect x="555.4" y="693.5" width="2.1" height="2.3" class="c"></rect>
 <rect x="555.4" y="695.8" width="2.1" height="2.3" class="asm"></rect>
 <rect x="555.4" y="698.1" width="2.1" height="2.3" class="c"></rect>
 <rect x="555.4" y="700.5" width="2.1" height="2.3" class="c"></rect>
 <rect x="555.4" y="702.8" width="2.1" height="2.3" class="c"></rect>
-<rect x="555.4" y="705.1" width="2.1" height="2.3" class="asm"></rect>
+<rect x="555.4" y="705.1" width="2.1" height="2.3" class="c"></rect>
 <rect x="555.4" y="707.4" width="2.1" height="2.3" class="asm"></rect>
 <rect x="555.4" y="709.7" width="2.1" height="2.3" class="asm"></rect>
 <rect x="557.6" y="693.5" width="2.2" height="2.2" class="asm"></rect>
-<rect x="559.8" y="693.5" width="2.2" height="2.2" class="asm"></rect>
-<rect x="562.0" y="693.5" width="2.2" height="2.2" class="asm"></rect>
-<rect x="564.2" y="693.5" width="2.2" height="2.2" class="asm"></rect>
-<rect x="566.5" y="693.5" width="2.2" height="2.2" class="asm"></rect>
-<rect x="568.7" y="693.5" width="2.2" height="2.2" class="asm"></rect>
-<rect x="570.9" y="693.5" width="2.2" height="2.2" class="asm"></rect>
-<rect x="573.1" y="693.5" width="2.2" height="2.2" class="asm"></rect>
-<rect x="557.6" y="695.7" width="2.0" height="2.4" class="asm"></rect>
-<rect x="557.6" y="698.2" width="2.0" height="2.4" class="asm"></rect>
-<rect x="557.6" y="700.6" width="2.0" height="2.4" class="asm"></rect>
-<rect x="557.6" y="703.0" width="2.0" height="2.4" class="asm"></rect>
+<rect x="559.8" y="693.5" width="2.2" height="2.2" class="c"></rect>
+<rect x="562.0" y="693.5" width="2.2" height="2.2" class="c"></rect>
+<rect x="564.2" y="693.5" width="2.2" height="2.2" class="c"></rect>
+<rect x="566.5" y="693.5" width="2.2" height="2.2" class="c"></rect>
+<rect x="568.7" y="693.5" width="2.2" height="2.2" class="c"></rect>
+<rect x="570.9" y="693.5" width="2.2" height="2.2" class="c"></rect>
+<rect x="573.1" y="693.5" width="2.2" height="2.2" class="c"></rect>
+<rect x="557.6" y="695.7" width="2.0" height="2.4" class="c"></rect>
+<rect x="557.6" y="698.2" width="2.0" height="2.4" class="c"></rect>
+<rect x="557.6" y="700.6" width="2.0" height="2.4" class="c"></rect>
+<rect x="557.6" y="703.0" width="2.0" height="2.4" class="c"></rect>
 <rect x="557.6" y="705.5" width="2.0" height="1.6" class="c"></rect>
 <rect x="557.6" y="707.1" width="2.0" height="1.6" class="c"></rect>
 <rect x="557.6" y="708.7" width="2.0" height="1.6" class="c"></rect>
@@ -4099,72 +4099,72 @@
 <rect x="559.6" y="699.4" width="1.8" height="1.8" class="c"></rect>
 <rect x="559.6" y="701.2" width="1.8" height="1.8" class="c"></rect>
 <rect x="559.6" y="703.0" width="1.8" height="1.8" class="c"></rect>
-<rect x="559.6" y="704.8" width="1.8" height="1.8" class="asm"></rect>
-<rect x="559.6" y="706.6" width="1.8" height="1.8" class="asm"></rect>
-<rect x="559.6" y="708.4" width="1.8" height="1.8" class="asm"></rect>
-<rect x="559.6" y="710.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="561.4" y="697.6" width="1.8" height="1.9" class="asm"></rect>
-<rect x="563.1" y="697.6" width="1.8" height="1.9" class="asm"></rect>
-<rect x="564.9" y="697.6" width="1.8" height="1.9" class="asm"></rect>
-<rect x="566.6" y="697.6" width="1.8" height="1.9" class="asm"></rect>
-<rect x="568.4" y="697.6" width="1.8" height="1.9" class="asm"></rect>
-<rect x="570.1" y="697.6" width="1.8" height="1.9" class="asm"></rect>
-<rect x="571.9" y="697.6" width="1.8" height="1.9" class="asm"></rect>
-<rect x="573.6" y="697.6" width="1.8" height="1.9" class="asm"></rect>
-<rect x="561.4" y="699.4" width="1.8" height="1.8" class="asm"></rect>
-<rect x="561.4" y="701.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="561.4" y="703.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="561.4" y="704.8" width="1.8" height="1.8" class="asm"></rect>
-<rect x="561.4" y="706.6" width="1.8" height="1.8" class="asm"></rect>
-<rect x="561.4" y="708.4" width="1.8" height="1.8" class="asm"></rect>
-<rect x="561.4" y="710.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="563.2" y="699.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="564.9" y="699.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="566.7" y="699.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="568.4" y="699.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="570.1" y="699.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="571.9" y="699.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="573.6" y="699.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="563.2" y="701.3" width="1.8" height="1.8" class="asm"></rect>
-<rect x="563.2" y="703.1" width="1.8" height="1.8" class="asm"></rect>
-<rect x="563.2" y="704.9" width="1.8" height="1.8" class="asm"></rect>
-<rect x="563.2" y="706.7" width="1.8" height="1.8" class="asm"></rect>
-<rect x="563.2" y="708.4" width="1.8" height="1.8" class="asm"></rect>
-<rect x="563.2" y="710.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="565.0" y="701.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="566.7" y="701.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="568.5" y="701.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="570.2" y="701.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="571.9" y="701.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="573.6" y="701.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="565.0" y="703.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="565.0" y="705.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="565.0" y="706.7" width="1.8" height="1.8" class="asm"></rect>
-<rect x="565.0" y="708.5" width="1.8" height="1.8" class="asm"></rect>
-<rect x="565.0" y="710.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="566.9" y="703.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="568.6" y="703.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="570.3" y="703.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="572.0" y="703.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="573.7" y="703.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="566.9" y="705.1" width="1.9" height="1.7" class="asm"></rect>
-<rect x="566.9" y="706.8" width="1.9" height="1.7" class="asm"></rect>
-<rect x="566.9" y="708.6" width="1.9" height="1.7" class="asm"></rect>
-<rect x="566.9" y="710.3" width="1.9" height="1.7" class="asm"></rect>
-<rect x="568.7" y="705.1" width="1.7" height="2.0" class="asm"></rect>
-<rect x="570.4" y="705.1" width="1.7" height="2.0" class="asm"></rect>
-<rect x="572.1" y="705.1" width="1.7" height="2.0" class="asm"></rect>
-<rect x="573.7" y="705.1" width="1.7" height="2.0" class="asm"></rect>
-<rect x="568.7" y="707.1" width="2.0" height="1.6" class="asm"></rect>
-<rect x="568.7" y="708.7" width="2.0" height="1.6" class="asm"></rect>
-<rect x="568.7" y="710.4" width="2.0" height="1.6" class="asm"></rect>
-<rect x="570.7" y="707.1" width="1.5" height="2.1" class="asm"></rect>
-<rect x="572.3" y="707.1" width="1.5" height="2.1" class="asm"></rect>
-<rect x="573.8" y="707.1" width="1.5" height="2.1" class="asm"></rect>
-<rect x="570.7" y="709.2" width="2.3" height="1.4" class="asm"></rect>
-<rect x="570.7" y="710.6" width="2.3" height="1.4" class="asm"></rect>
-<rect x="573.0" y="709.2" width="2.3" height="1.4" class="asm"></rect>
-<rect x="573.0" y="710.6" width="2.3" height="1.4" class="asm"></rect>
+<rect x="559.6" y="704.8" width="1.8" height="1.8" class="c"></rect>
+<rect x="559.6" y="706.6" width="1.8" height="1.8" class="c"></rect>
+<rect x="559.6" y="708.4" width="1.8" height="1.8" class="c"></rect>
+<rect x="559.6" y="710.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="561.4" y="697.6" width="1.8" height="1.9" class="c"></rect>
+<rect x="563.1" y="697.6" width="1.8" height="1.9" class="c"></rect>
+<rect x="564.9" y="697.6" width="1.8" height="1.9" class="c"></rect>
+<rect x="566.6" y="697.6" width="1.8" height="1.9" class="c"></rect>
+<rect x="568.4" y="697.6" width="1.8" height="1.9" class="c"></rect>
+<rect x="570.1" y="697.6" width="1.8" height="1.9" class="c"></rect>
+<rect x="571.9" y="697.6" width="1.8" height="1.9" class="c"></rect>
+<rect x="573.6" y="697.6" width="1.8" height="1.9" class="c"></rect>
+<rect x="561.4" y="699.4" width="1.8" height="1.8" class="c"></rect>
+<rect x="561.4" y="701.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="561.4" y="703.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="561.4" y="704.8" width="1.8" height="1.8" class="c"></rect>
+<rect x="561.4" y="706.6" width="1.8" height="1.8" class="c"></rect>
+<rect x="561.4" y="708.4" width="1.8" height="1.8" class="c"></rect>
+<rect x="561.4" y="710.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="563.2" y="699.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="564.9" y="699.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="566.7" y="699.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="568.4" y="699.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="570.1" y="699.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="571.9" y="699.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="573.6" y="699.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="563.2" y="701.3" width="1.8" height="1.8" class="c"></rect>
+<rect x="563.2" y="703.1" width="1.8" height="1.8" class="c"></rect>
+<rect x="563.2" y="704.9" width="1.8" height="1.8" class="c"></rect>
+<rect x="563.2" y="706.7" width="1.8" height="1.8" class="c"></rect>
+<rect x="563.2" y="708.4" width="1.8" height="1.8" class="c"></rect>
+<rect x="563.2" y="710.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="565.0" y="701.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="566.7" y="701.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="568.5" y="701.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="570.2" y="701.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="571.9" y="701.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="573.6" y="701.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="565.0" y="703.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="565.0" y="705.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="565.0" y="706.7" width="1.8" height="1.8" class="c"></rect>
+<rect x="565.0" y="708.5" width="1.8" height="1.8" class="c"></rect>
+<rect x="565.0" y="710.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="566.9" y="703.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="568.6" y="703.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="570.3" y="703.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="572.0" y="703.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="573.7" y="703.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="566.9" y="705.1" width="1.9" height="1.7" class="c"></rect>
+<rect x="566.9" y="706.8" width="1.9" height="1.7" class="c"></rect>
+<rect x="566.9" y="708.6" width="1.9" height="1.7" class="c"></rect>
+<rect x="566.9" y="710.3" width="1.9" height="1.7" class="c"></rect>
+<rect x="568.7" y="705.1" width="1.7" height="2.0" class="c"></rect>
+<rect x="570.4" y="705.1" width="1.7" height="2.0" class="c"></rect>
+<rect x="572.1" y="705.1" width="1.7" height="2.0" class="c"></rect>
+<rect x="573.7" y="705.1" width="1.7" height="2.0" class="c"></rect>
+<rect x="568.7" y="707.1" width="2.0" height="1.6" class="c"></rect>
+<rect x="568.7" y="708.7" width="2.0" height="1.6" class="c"></rect>
+<rect x="568.7" y="710.4" width="2.0" height="1.6" class="c"></rect>
+<rect x="570.7" y="707.1" width="1.5" height="2.1" class="c"></rect>
+<rect x="572.3" y="707.1" width="1.5" height="2.1" class="c"></rect>
+<rect x="573.8" y="707.1" width="1.5" height="2.1" class="c"></rect>
+<rect x="570.7" y="709.2" width="2.3" height="1.4" class="c"></rect>
+<rect x="570.7" y="710.6" width="2.3" height="1.4" class="c"></rect>
+<rect x="573.0" y="709.2" width="2.3" height="1.4" class="c"></rect>
+<rect x="573.0" y="710.6" width="2.3" height="1.4" class="c"></rect>
 <rect x="393.6" y="565.1" width="181.7" height="146.9" fill="none" stroke="#1a1a19" stroke-width="2.5"/>
 <rect x="575.4" y="124.0" width="26.0" height="33.1" class="asm"><title>func_08886120 2112 B, Assembly</title></rect>
 <rect x="575.4" y="157.1" width="26.0" height="24.2" class="asm"><title>func_0888926C 1548 B, Assembly</title></rect>
@@ -4312,7 +4312,7 @@
 <rect x="684.6" y="242.3" width="8.4" height="7.5" class="asm"><title>func_08885980 156 B, Assembly</title></rect>
 <rect x="684.6" y="249.8" width="8.4" height="7.4" class="asm"><title>func_0888914C 152 B, Assembly</title></rect>
 <rect x="684.6" y="257.2" width="8.4" height="7.0" class="asm"><title>func_08887830 144 B, Assembly</title></rect>
-<rect x="684.6" y="264.1" width="8.4" height="7.0" class="asm"><title>func_088878C0 144 B, Assembly</title></rect>
+<rect x="684.6" y="264.1" width="8.4" height="7.0" class="c"><title>func_088878C0 144 B, C, names left to find</title></rect>
 <rect x="693.0" y="201.0" width="7.6" height="7.7" class="asm"><title>func_08888C88 144 B, Assembly</title></rect>
 <rect x="700.6" y="201.0" width="7.6" height="7.7" class="asm"><title>func_08888D18 144 B, Assembly</title></rect>
 <rect x="708.2" y="201.0" width="7.4" height="7.7" class="c"><title>func_0888A728 140 B, C, names left to find</title></rect>
@@ -4681,12 +4681,12 @@
 <rect x="718.3" y="339.5" width="7.8" height="7.7" class="asm"><title>func_0887327C 148 B, Assembly</title></rect>
 <rect x="726.1" y="339.5" width="7.8" height="7.7" class="asm"><title>func_08878520 148 B, Assembly</title></rect>
 <rect x="733.9" y="339.5" width="7.8" height="7.7" class="asm"><title>func_0887EFB0 148 B, Assembly</title></rect>
-<rect x="741.7" y="339.5" width="7.6" height="7.7" class="asm"><title>func_08874610 144 B, Assembly</title></rect>
-<rect x="749.3" y="339.5" width="7.6" height="7.7" class="asm"><title>func_08874AD4 144 B, Assembly</title></rect>
-<rect x="685.7" y="347.3" width="7.3" height="8.0" class="asm"><title>func_08875BAC 144 B, Assembly</title></rect>
+<rect x="741.7" y="339.5" width="7.6" height="7.7" class="c"><title>func_08874610 144 B, C, names left to find</title></rect>
+<rect x="749.3" y="339.5" width="7.6" height="7.7" class="c"><title>func_08874AD4 144 B, C, names left to find</title></rect>
+<rect x="685.7" y="347.3" width="7.3" height="8.0" class="c"><title>func_08875BAC 144 B, C, names left to find</title></rect>
 <rect x="685.7" y="355.3" width="7.3" height="8.0" class="asm"><title>func_08877A80 144 B, Assembly</title></rect>
 <rect x="685.7" y="363.3" width="7.3" height="8.0" class="asm"><title>func_0887B8F0 144 B, Assembly</title></rect>
-<rect x="685.7" y="371.3" width="7.3" height="8.0" class="asm"><title>func_0887C68C 144 B, Assembly</title></rect>
+<rect x="685.7" y="371.3" width="7.3" height="8.0" class="c"><title>func_0887C68C 144 B, C, names left to find</title></rect>
 <rect x="685.7" y="379.2" width="7.3" height="7.8" class="c"><title>func_08874ED0 140 B, C, names left to find</title></rect>
 <rect x="685.7" y="387.0" width="7.3" height="7.8" class="c"><title>func_08874F74 140 B, C, names left to find</title></rect>
 <rect x="685.7" y="394.8" width="7.3" height="7.8" class="c"><title>func_08875050 140 B, C, names left to find</title></rect>
@@ -5057,8 +5057,8 @@
 <rect x="683.8" y="508.4" width="7.3" height="8.3" class="asm"><title>func_088D4ED4 148 B, Assembly</title></rect>
 <rect x="683.8" y="516.7" width="7.3" height="8.3" class="asm"><title>func_088DDBEC 148 B, Assembly</title></rect>
 <rect x="683.8" y="524.9" width="7.3" height="8.3" class="asm"><title>func_088DFB60 148 B, Assembly</title></rect>
-<rect x="683.8" y="533.2" width="7.3" height="8.0" class="asm"><title>func_088D4F70 144 B, Assembly</title></rect>
-<rect x="683.8" y="541.2" width="7.3" height="8.0" class="asm"><title>func_088D7FD8 144 B, Assembly</title></rect>
+<rect x="683.8" y="533.2" width="7.3" height="8.0" class="c"><title>func_088D4F70 144 B, C, names left to find</title></rect>
+<rect x="683.8" y="541.2" width="7.3" height="8.0" class="c"><title>func_088D7FD8 144 B, C, names left to find</title></rect>
 <rect x="683.8" y="549.2" width="7.3" height="8.0" class="asm"><title>func_088DDB48 144 B, Assembly</title></rect>
 <rect x="683.8" y="557.3" width="7.3" height="7.8" class="asm"><title>func_088DF5B8 140 B, Assembly</title></rect>
 <rect x="691.1" y="499.9" width="7.3" height="7.6" class="c"><title>func_088D8880 136 B, C, names left to find</title></rect>
@@ -5421,10 +5421,10 @@
 <rect x="719.0" y="642.0" width="7.7" height="7.8" class="asm"><title>func_08924758 148 B, Assembly</title></rect>
 <rect x="726.7" y="642.0" width="7.7" height="7.8" class="asm"><title>func_0892E940 148 B, Assembly</title></rect>
 <rect x="734.4" y="642.0" width="7.5" height="7.8" class="asm"><title>func_0892B6F8 144 B, Assembly</title></rect>
-<rect x="741.9" y="642.0" width="7.5" height="7.8" class="asm"><title>func_0892F544 144 B, Assembly</title></rect>
-<rect x="749.4" y="642.0" width="7.5" height="7.8" class="asm"><title>func_0892F710 144 B, Assembly</title></rect>
-<rect x="687.6" y="649.8" width="7.1" height="8.2" class="asm"><title>func_0892F854 144 B, Assembly</title></rect>
-<rect x="687.6" y="658.0" width="7.1" height="8.0" class="asm"><title>func_08923D54 140 B, Assembly</title></rect>
+<rect x="741.9" y="642.0" width="7.5" height="7.8" class="c"><title>func_0892F544 144 B, C, names left to find</title></rect>
+<rect x="749.4" y="642.0" width="7.5" height="7.8" class="c"><title>func_0892F710 144 B, C, names left to find</title></rect>
+<rect x="687.6" y="649.8" width="7.1" height="8.2" class="c"><title>func_0892F854 144 B, C, names left to find</title></rect>
+<rect x="687.6" y="658.0" width="7.1" height="8.0" class="c"><title>func_08923D54 140 B, C, names left to find</title></rect>
 <rect x="687.6" y="666.0" width="7.1" height="7.8" class="c"><title>func_08928C9C 136 B, C, names left to find</title></rect>
 <rect x="687.6" y="673.8" width="7.1" height="7.8" class="c"><title>func_089292CC 136 B, C, names left to find</title></rect>
 <rect x="687.6" y="681.6" width="7.1" height="7.8" class="c"><title>func_0892E80C 136 B, C, names left to find</title></rect>
@@ -5788,7 +5788,7 @@
 <rect x="865.8" y="254.9" width="7.6" height="7.3" class="asm"><title>func_0898C73C 136 B, Assembly</title></rect>
 <rect x="873.3" y="254.9" width="7.6" height="7.3" class="asm"><title>func_0898DB10 136 B, Assembly</title></rect>
 <rect x="880.9" y="254.9" width="7.6" height="7.3" class="c"><title>func_0898DB98 136 B, C, names left to find</title></rect>
-<rect x="888.5" y="254.9" width="6.9" height="7.3" class="asm"><title>func_08980ED0 124 B, Assembly</title></rect>
+<rect x="888.5" y="254.9" width="6.9" height="7.3" class="c"><title>func_08980ED0 124 B, C, names left to find</title></rect>
 <rect x="835.5" y="262.2" width="7.4" height="6.9" class="asm"><title>func_08985408 124 B, Assembly</title></rect>
 <rect x="835.5" y="269.1" width="7.4" height="6.9" class="asm"><title>func_08985884 124 B, Assembly</title></rect>
 <rect x="835.5" y="275.9" width="7.4" height="6.9" class="asm"><title>func_0898AFCC 124 B, Assembly</title></rect>
@@ -5796,7 +5796,7 @@
 <rect x="835.5" y="289.6" width="7.4" height="6.6" class="asm"><title>func_0898609C 120 B, Assembly</title></rect>
 <rect x="835.5" y="296.3" width="7.4" height="6.6" class="asm"><title>func_08987048 120 B, Assembly</title></rect>
 <rect x="835.5" y="302.9" width="7.4" height="6.6" class="asm"><title>func_0898A388 120 B, Assembly</title></rect>
-<rect x="835.5" y="309.6" width="7.4" height="6.4" class="asm"><title>func_08981EA0 116 B, Assembly</title></rect>
+<rect x="835.5" y="309.6" width="7.4" height="6.4" class="c"><title>func_08981EA0 116 B, C, names left to find</title></rect>
 <rect x="842.9" y="262.2" width="6.7" height="7.1" class="asm"><title>func_08986114 116 B, Assembly</title></rect>
 <rect x="849.5" y="262.2" width="6.7" height="7.1" class="asm"><title>func_08988824 116 B, Assembly</title></rect>
 <rect x="856.2" y="262.2" width="6.7" height="7.1" class="asm"><title>func_0898A7E0 116 B, Assembly</title></rect>
@@ -5808,15 +5808,15 @@
 <rect x="842.9" y="269.3" width="6.4" height="6.9" class="asm"><title>func_08980F4C 108 B, Assembly</title></rect>
 <rect x="842.9" y="276.1" width="6.4" height="6.9" class="asm"><title>func_089822F4 108 B, Assembly</title></rect>
 <rect x="842.9" y="283.0" width="6.4" height="6.9" class="asm"><title>func_08989974 108 B, Assembly</title></rect>
-<rect x="842.9" y="289.8" width="6.4" height="6.6" class="asm"><title>func_089801AC 104 B, Assembly</title></rect>
+<rect x="842.9" y="289.8" width="6.4" height="6.6" class="c"><title>func_089801AC 104 B, C, names left to find</title></rect>
 <rect x="842.9" y="296.4" width="6.4" height="6.6" class="asm"><title>func_0898D0B4 104 B, Assembly</title></rect>
 <rect x="842.9" y="303.0" width="6.4" height="6.6" class="asm"><title>func_0898E628 104 B, Assembly</title></rect>
-<rect x="842.9" y="309.6" width="6.4" height="6.3" class="asm"><title>func_08989F2C 100 B, Assembly</title></rect>
+<rect x="842.9" y="309.6" width="6.4" height="6.3" class="c"><title>func_08989F2C 100 B, C, names left to find</title></rect>
 <rect x="849.3" y="269.3" width="6.9" height="5.9" class="asm"><title>func_0898A96C 100 B, Assembly</title></rect>
 <rect x="856.2" y="269.3" width="6.9" height="5.9" class="asm"><title>func_0898E300 100 B, Assembly</title></rect>
 <rect x="863.1" y="269.3" width="6.9" height="5.9" class="asm"><title>func_0898F0A8 100 B, Assembly</title></rect>
-<rect x="870.0" y="269.3" width="6.3" height="5.9" class="asm"></rect>
-<rect x="876.3" y="269.3" width="6.3" height="5.9" class="asm"></rect>
+<rect x="870.0" y="269.3" width="6.3" height="5.9" class="c"></rect>
+<rect x="876.3" y="269.3" width="6.3" height="5.9" class="c"></rect>
 <rect x="882.7" y="269.3" width="6.3" height="5.9" class="asm"></rect>
 <rect x="889.0" y="269.3" width="6.3" height="5.9" class="asm"></rect>
 <rect x="849.3" y="275.2" width="6.0" height="6.0" class="asm"></rect>
@@ -5829,143 +5829,143 @@
 <rect x="855.3" y="275.2" width="5.9" height="5.8" class="asm"></rect>
 <rect x="861.2" y="275.2" width="5.9" height="5.8" class="asm"></rect>
 <rect x="867.0" y="275.2" width="5.9" height="5.8" class="asm"></rect>
-<rect x="872.9" y="275.2" width="5.6" height="5.8" class="asm"></rect>
-<rect x="878.5" y="275.2" width="5.6" height="5.8" class="asm"></rect>
+<rect x="872.9" y="275.2" width="5.6" height="5.8" class="c"></rect>
+<rect x="878.5" y="275.2" width="5.6" height="5.8" class="c"></rect>
 <rect x="884.2" y="275.2" width="5.6" height="5.8" class="asm"></rect>
 <rect x="889.8" y="275.2" width="5.6" height="5.8" class="asm"></rect>
 <rect x="855.3" y="281.0" width="5.2" height="5.9" class="asm"></rect>
-<rect x="855.3" y="286.9" width="5.2" height="5.9" class="asm"></rect>
-<rect x="855.3" y="292.9" width="5.2" height="5.9" class="asm"></rect>
+<rect x="855.3" y="286.9" width="5.2" height="5.9" class="c"></rect>
+<rect x="855.3" y="292.9" width="5.2" height="5.9" class="c"></rect>
 <rect x="855.3" y="298.8" width="5.2" height="5.9" class="asm"></rect>
-<rect x="855.3" y="304.7" width="5.2" height="5.6" class="asm"></rect>
+<rect x="855.3" y="304.7" width="5.2" height="5.6" class="c"></rect>
 <rect x="855.3" y="310.4" width="5.2" height="5.6" class="asm"></rect>
-<rect x="860.5" y="281.0" width="5.3" height="5.2" class="asm"></rect>
-<rect x="865.8" y="281.0" width="5.3" height="5.2" class="asm"></rect>
+<rect x="860.5" y="281.0" width="5.3" height="5.2" class="c"></rect>
+<rect x="865.8" y="281.0" width="5.3" height="5.2" class="c"></rect>
 <rect x="871.2" y="281.0" width="5.0" height="5.2" class="asm"></rect>
 <rect x="876.2" y="281.0" width="5.0" height="5.2" class="asm"></rect>
-<rect x="881.2" y="281.0" width="4.7" height="5.2" class="asm"></rect>
-<rect x="885.9" y="281.0" width="4.7" height="5.2" class="asm"></rect>
-<rect x="890.7" y="281.0" width="4.7" height="5.2" class="asm"></rect>
+<rect x="881.2" y="281.0" width="4.7" height="5.2" class="c"></rect>
+<rect x="885.9" y="281.0" width="4.7" height="5.2" class="c"></rect>
+<rect x="890.7" y="281.0" width="4.7" height="5.2" class="c"></rect>
 <rect x="860.5" y="286.2" width="4.6" height="5.3" class="asm"></rect>
 <rect x="860.5" y="291.5" width="4.6" height="5.3" class="asm"></rect>
-<rect x="860.5" y="296.8" width="4.6" height="5.0" class="asm"></rect>
+<rect x="860.5" y="296.8" width="4.6" height="5.0" class="c"></rect>
 <rect x="860.5" y="301.8" width="4.6" height="5.0" class="asm"></rect>
 <rect x="860.5" y="306.8" width="4.6" height="4.6" class="asm"></rect>
 <rect x="860.5" y="311.4" width="4.6" height="4.6" class="asm"></rect>
 <rect x="865.1" y="286.2" width="4.7" height="4.5" class="asm"></rect>
 <rect x="865.1" y="290.7" width="4.7" height="4.5" class="asm"></rect>
-<rect x="865.1" y="295.2" width="4.7" height="4.2" class="asm"></rect>
-<rect x="865.1" y="299.3" width="4.7" height="4.2" class="asm"></rect>
-<rect x="865.1" y="303.5" width="4.7" height="4.2" class="asm"></rect>
-<rect x="865.1" y="307.7" width="4.7" height="4.2" class="asm"></rect>
+<rect x="865.1" y="295.2" width="4.7" height="4.2" class="c"></rect>
+<rect x="865.1" y="299.3" width="4.7" height="4.2" class="c"></rect>
+<rect x="865.1" y="303.5" width="4.7" height="4.2" class="c"></rect>
+<rect x="865.1" y="307.7" width="4.7" height="4.2" class="c"></rect>
 <rect x="865.1" y="311.8" width="4.7" height="4.2" class="asm"></rect>
-<rect x="869.8" y="286.2" width="4.6" height="3.9" class="asm"></rect>
-<rect x="874.4" y="286.2" width="4.6" height="3.9" class="asm"></rect>
-<rect x="879.0" y="286.2" width="4.2" height="3.9" class="asm"></rect>
+<rect x="869.8" y="286.2" width="4.6" height="3.9" class="c"></rect>
+<rect x="874.4" y="286.2" width="4.6" height="3.9" class="c"></rect>
+<rect x="879.0" y="286.2" width="4.2" height="3.9" class="c"></rect>
 <rect x="883.2" y="286.2" width="4.2" height="3.9" class="asm"></rect>
 <rect x="887.4" y="286.2" width="4.2" height="3.9" class="asm"></rect>
-<rect x="891.6" y="286.2" width="3.8" height="3.9" class="asm"></rect>
+<rect x="891.6" y="286.2" width="3.8" height="3.9" class="c"></rect>
 <rect x="869.8" y="290.0" width="4.0" height="3.7" class="asm"></rect>
 <rect x="873.7" y="290.0" width="4.0" height="3.7" class="asm"></rect>
-<rect x="877.7" y="290.0" width="3.5" height="3.7" class="asm"></rect>
+<rect x="877.7" y="290.0" width="3.5" height="3.7" class="c"></rect>
 <rect x="881.2" y="290.0" width="3.5" height="3.7" class="asm"></rect>
-<rect x="884.8" y="290.0" width="3.5" height="3.7" class="asm"></rect>
-<rect x="888.3" y="290.0" width="3.5" height="3.7" class="asm"></rect>
+<rect x="884.8" y="290.0" width="3.5" height="3.7" class="c"></rect>
+<rect x="888.3" y="290.0" width="3.5" height="3.7" class="c"></rect>
 <rect x="891.8" y="290.0" width="3.5" height="3.7" class="asm"></rect>
-<rect x="869.8" y="293.7" width="3.4" height="3.8" class="asm"></rect>
-<rect x="869.8" y="297.5" width="3.4" height="3.8" class="asm"></rect>
+<rect x="869.8" y="293.7" width="3.4" height="3.8" class="c"></rect>
+<rect x="869.8" y="297.5" width="3.4" height="3.8" class="c"></rect>
 <rect x="869.8" y="301.3" width="3.4" height="3.8" class="asm"></rect>
 <rect x="869.8" y="305.1" width="3.4" height="3.8" class="asm"></rect>
 <rect x="869.8" y="308.9" width="3.4" height="3.8" class="asm"></rect>
 <rect x="869.8" y="312.7" width="3.4" height="3.3" class="asm"></rect>
 <rect x="873.2" y="293.7" width="3.6" height="3.2" class="asm"></rect>
-<rect x="876.8" y="293.7" width="3.1" height="3.2" class="asm"></rect>
+<rect x="876.8" y="293.7" width="3.1" height="3.2" class="c"></rect>
 <rect x="879.9" y="293.7" width="3.1" height="3.2" class="asm"></rect>
-<rect x="883.0" y="293.7" width="3.1" height="3.2" class="asm"></rect>
+<rect x="883.0" y="293.7" width="3.1" height="3.2" class="c"></rect>
 <rect x="886.1" y="293.7" width="3.1" height="3.2" class="asm"></rect>
 <rect x="889.2" y="293.7" width="3.1" height="3.2" class="asm"></rect>
 <rect x="892.3" y="293.7" width="3.1" height="3.2" class="asm"></rect>
-<rect x="873.2" y="296.9" width="3.0" height="2.7" class="asm"></rect>
-<rect x="873.2" y="299.6" width="3.0" height="2.7" class="asm"></rect>
+<rect x="873.2" y="296.9" width="3.0" height="2.7" class="c"></rect>
+<rect x="873.2" y="299.6" width="3.0" height="2.7" class="c"></rect>
 <rect x="873.2" y="302.3" width="3.0" height="2.7" class="asm"></rect>
-<rect x="873.2" y="305.1" width="3.0" height="2.7" class="asm"></rect>
+<rect x="873.2" y="305.1" width="3.0" height="2.7" class="c"></rect>
 <rect x="873.2" y="307.8" width="3.0" height="2.7" class="asm"></rect>
 <rect x="873.2" y="310.5" width="3.0" height="2.7" class="asm"></rect>
 <rect x="873.2" y="313.3" width="3.0" height="2.7" class="asm"></rect>
-<rect x="876.2" y="296.9" width="2.4" height="2.7" class="asm"></rect>
-<rect x="876.2" y="299.6" width="2.4" height="2.7" class="asm"></rect>
-<rect x="876.2" y="302.3" width="2.4" height="2.7" class="asm"></rect>
-<rect x="876.2" y="305.1" width="2.4" height="2.7" class="asm"></rect>
-<rect x="876.2" y="307.8" width="2.4" height="2.7" class="asm"></rect>
+<rect x="876.2" y="296.9" width="2.4" height="2.7" class="c"></rect>
+<rect x="876.2" y="299.6" width="2.4" height="2.7" class="c"></rect>
+<rect x="876.2" y="302.3" width="2.4" height="2.7" class="c"></rect>
+<rect x="876.2" y="305.1" width="2.4" height="2.7" class="c"></rect>
+<rect x="876.2" y="307.8" width="2.4" height="2.7" class="c"></rect>
 <rect x="876.2" y="310.5" width="2.4" height="2.7" class="asm"></rect>
 <rect x="876.2" y="313.3" width="2.4" height="2.7" class="asm"></rect>
 <rect x="878.6" y="296.9" width="2.1" height="2.3" class="asm"></rect>
-<rect x="880.7" y="296.9" width="2.1" height="2.3" class="asm"></rect>
-<rect x="882.8" y="296.9" width="2.1" height="2.3" class="asm"></rect>
-<rect x="884.9" y="296.9" width="2.1" height="2.3" class="asm"></rect>
-<rect x="887.0" y="296.9" width="2.1" height="2.3" class="asm"></rect>
-<rect x="889.1" y="296.9" width="2.1" height="2.3" class="asm"></rect>
-<rect x="891.2" y="296.9" width="2.1" height="2.3" class="asm"></rect>
+<rect x="880.7" y="296.9" width="2.1" height="2.3" class="c"></rect>
+<rect x="882.8" y="296.9" width="2.1" height="2.3" class="c"></rect>
+<rect x="884.9" y="296.9" width="2.1" height="2.3" class="c"></rect>
+<rect x="887.0" y="296.9" width="2.1" height="2.3" class="c"></rect>
+<rect x="889.1" y="296.9" width="2.1" height="2.3" class="c"></rect>
+<rect x="891.2" y="296.9" width="2.1" height="2.3" class="c"></rect>
 <rect x="893.3" y="296.9" width="2.1" height="2.3" class="asm"></rect>
-<rect x="878.6" y="299.2" width="2.0" height="2.4" class="asm"></rect>
+<rect x="878.6" y="299.2" width="2.0" height="2.4" class="c"></rect>
 <rect x="878.6" y="301.6" width="2.0" height="2.4" class="asm"></rect>
 <rect x="878.6" y="304.0" width="2.0" height="2.4" class="asm"></rect>
 <rect x="878.6" y="306.4" width="2.0" height="2.4" class="asm"></rect>
 <rect x="878.6" y="308.8" width="2.0" height="2.4" class="asm"></rect>
-<rect x="878.6" y="311.2" width="2.0" height="1.6" class="asm"></rect>
-<rect x="878.6" y="312.8" width="2.0" height="1.6" class="asm"></rect>
-<rect x="878.6" y="314.4" width="2.0" height="1.6" class="asm"></rect>
-<rect x="880.6" y="299.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="882.5" y="299.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="884.3" y="299.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="886.1" y="299.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="888.0" y="299.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="889.8" y="299.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="891.7" y="299.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="893.5" y="299.2" width="1.8" height="1.8" class="asm"></rect>
-<rect x="880.6" y="301.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="882.5" y="301.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="884.3" y="301.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="886.1" y="301.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="888.0" y="301.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="889.8" y="301.0" width="1.8" height="1.8" class="asm"></rect>
+<rect x="878.6" y="311.2" width="2.0" height="1.6" class="c"></rect>
+<rect x="878.6" y="312.8" width="2.0" height="1.6" class="c"></rect>
+<rect x="878.6" y="314.4" width="2.0" height="1.6" class="c"></rect>
+<rect x="880.6" y="299.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="882.5" y="299.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="884.3" y="299.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="886.1" y="299.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="888.0" y="299.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="889.8" y="299.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="891.7" y="299.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="893.5" y="299.2" width="1.8" height="1.8" class="c"></rect>
+<rect x="880.6" y="301.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="882.5" y="301.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="884.3" y="301.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="886.1" y="301.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="888.0" y="301.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="889.8" y="301.0" width="1.8" height="1.8" class="c"></rect>
 <rect x="891.7" y="301.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="893.5" y="301.0" width="1.8" height="1.8" class="asm"></rect>
-<rect x="880.6" y="302.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="880.6" y="304.6" width="1.7" height="1.9" class="asm"></rect>
-<rect x="880.6" y="306.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="880.6" y="308.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="880.6" y="310.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="880.6" y="312.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="880.6" y="314.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="882.3" y="302.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="884.2" y="302.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="886.1" y="302.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="887.9" y="302.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="889.8" y="302.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="891.7" y="302.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="893.5" y="302.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="882.3" y="304.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="882.3" y="306.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="882.3" y="308.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="882.3" y="310.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="882.3" y="312.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="882.3" y="314.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="884.0" y="304.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="885.9" y="304.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="887.8" y="304.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="889.7" y="304.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="891.6" y="304.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="893.5" y="304.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="884.0" y="306.2" width="1.7" height="2.0" class="asm"></rect>
-<rect x="884.0" y="308.2" width="1.7" height="2.0" class="asm"></rect>
-<rect x="884.0" y="310.1" width="1.7" height="2.0" class="asm"></rect>
-<rect x="884.0" y="312.1" width="1.7" height="2.0" class="asm"></rect>
-<rect x="884.0" y="314.0" width="1.7" height="2.0" class="asm"></rect>
-<rect x="885.7" y="306.2" width="1.9" height="1.7" class="asm"></rect>
-<rect x="887.6" y="306.2" width="1.9" height="1.7" class="asm"></rect>
-<rect x="889.6" y="306.2" width="1.9" height="1.7" class="asm"></rect>
-<rect x="891.5" y="306.2" width="1.9" height="1.7" class="asm"></rect>
+<rect x="893.5" y="301.0" width="1.8" height="1.8" class="c"></rect>
+<rect x="880.6" y="302.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="880.6" y="304.6" width="1.7" height="1.9" class="c"></rect>
+<rect x="880.6" y="306.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="880.6" y="308.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="880.6" y="310.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="880.6" y="312.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="880.6" y="314.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="882.3" y="302.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="884.2" y="302.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="886.1" y="302.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="887.9" y="302.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="889.8" y="302.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="891.7" y="302.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="893.5" y="302.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="882.3" y="304.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="882.3" y="306.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="882.3" y="308.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="882.3" y="310.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="882.3" y="312.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="882.3" y="314.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="884.0" y="304.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="885.9" y="304.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="887.8" y="304.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="889.7" y="304.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="891.6" y="304.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="893.5" y="304.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="884.0" y="306.2" width="1.7" height="2.0" class="c"></rect>
+<rect x="884.0" y="308.2" width="1.7" height="2.0" class="c"></rect>
+<rect x="884.0" y="310.1" width="1.7" height="2.0" class="c"></rect>
+<rect x="884.0" y="312.1" width="1.7" height="2.0" class="c"></rect>
+<rect x="884.0" y="314.0" width="1.7" height="2.0" class="c"></rect>
+<rect x="885.7" y="306.2" width="1.9" height="1.7" class="c"></rect>
+<rect x="887.6" y="306.2" width="1.9" height="1.7" class="c"></rect>
+<rect x="889.6" y="306.2" width="1.9" height="1.7" class="c"></rect>
+<rect x="891.5" y="306.2" width="1.9" height="1.7" class="c"></rect>
 <rect x="893.4" y="306.2" width="1.9" height="1.7" class="asm"></rect>
 <rect x="885.7" y="307.9" width="2.0" height="1.6" class="asm"></rect>
 <rect x="885.7" y="309.5" width="2.0" height="1.6" class="asm"></rect>
@@ -6132,7 +6132,7 @@
 <rect x="955.8" y="236.9" width="8.1" height="7.4" class="asm"><title>func_08861CD4 148 B, Assembly</title></rect>
 <rect x="963.9" y="236.9" width="8.1" height="7.4" class="asm"><title>func_08861F68 148 B, Assembly</title></rect>
 <rect x="972.0" y="236.9" width="8.1" height="7.4" class="asm"><title>func_08864850 148 B, Assembly</title></rect>
-<rect x="980.1" y="236.9" width="7.9" height="7.4" class="asm"><title>func_0886A614 144 B, Assembly</title></rect>
+<rect x="980.1" y="236.9" width="7.9" height="7.4" class="c"><title>func_0886A614 144 B, C, names left to find</title></rect>
 <rect x="988.0" y="236.9" width="7.7" height="7.4" class="c"><title>func_08861924 140 B, C, names left to find</title></rect>
 <rect x="995.7" y="236.9" width="7.7" height="7.4" class="c"><title>func_0886AA10 140 B, C, names left to find</title></rect>
 <rect x="1003.3" y="236.9" width="7.7" height="7.4" class="c"><title>func_0886AAB4 140 B, C, names left to find</title></rect>
@@ -6561,9 +6561,9 @@
 <rect x="1098.8" y="264.9" width="8.0" height="7.5" class="asm"><title>func_088F920C 148 B, Assembly</title></rect>
 <rect x="1098.8" y="272.4" width="8.0" height="7.5" class="asm"><title>func_088FCD2C 148 B, Assembly</title></rect>
 <rect x="1098.8" y="279.9" width="8.0" height="7.5" class="asm"><title>func_088FD6A8 148 B, Assembly</title></rect>
-<rect x="1098.8" y="287.4" width="8.0" height="7.3" class="asm"><title>func_088F697C 144 B, Assembly</title></rect>
-<rect x="1098.8" y="294.7" width="8.0" height="7.3" class="asm"><title>func_088FDAC8 144 B, Assembly</title></rect>
-<rect x="1098.8" y="302.0" width="8.0" height="7.1" class="asm"><title>func_088FDF1C 140 B, Assembly</title></rect>
+<rect x="1098.8" y="287.4" width="8.0" height="7.3" class="c"><title>func_088F697C 144 B, C, names left to find</title></rect>
+<rect x="1098.8" y="294.7" width="8.0" height="7.3" class="c"><title>func_088FDAC8 144 B, C, names left to find</title></rect>
+<rect x="1098.8" y="302.0" width="8.0" height="7.1" class="c"><title>func_088FDF1C 140 B, C, names left to find</title></rect>
 <rect x="1098.8" y="309.1" width="8.0" height="6.9" class="c"><title>func_088F06D4 136 B, C, names left to find</title></rect>
 <rect x="1106.8" y="249.5" width="7.7" height="7.2" class="asm"><title>func_088F8248 136 B, Assembly</title></rect>
 <rect x="1114.5" y="249.5" width="7.2" height="7.2" class="c"><title>func_088F2104 128 B, C, names left to find</title></rect>
@@ -6896,9 +6896,9 @@
 <rect x="868.7" y="437.2" width="7.3" height="8.0" class="asm"><title>func_0891BF6C 144 B, Assembly</title></rect>
 <rect x="876.0" y="437.2" width="7.3" height="8.0" class="asm"><title>func_0891CE20 144 B, Assembly</title></rect>
 <rect x="883.4" y="437.2" width="7.3" height="8.0" class="asm"><title>func_0891D954 144 B, Assembly</title></rect>
-<rect x="816.6" y="445.3" width="7.3" height="7.8" class="asm"><title>func_089109A8 140 B, Assembly</title></rect>
-<rect x="816.6" y="453.1" width="7.3" height="7.8" class="asm"><title>func_08910A34 140 B, Assembly</title></rect>
-<rect x="816.6" y="460.9" width="7.3" height="7.8" class="asm"><title>func_08912C38 140 B, Assembly</title></rect>
+<rect x="816.6" y="445.3" width="7.3" height="7.8" class="c"><title>func_089109A8 140 B, C, names left to find</title></rect>
+<rect x="816.6" y="453.1" width="7.3" height="7.8" class="c"><title>func_08910A34 140 B, C, names left to find</title></rect>
+<rect x="816.6" y="460.9" width="7.3" height="7.8" class="c"><title>func_08912C38 140 B, C, names left to find</title></rect>
 <rect x="816.6" y="468.7" width="7.3" height="7.6" class="c"><title>func_08911884 136 B, C, names left to find</title></rect>
 <rect x="816.6" y="476.2" width="7.3" height="7.6" class="c"><title>func_08911BC0 136 B, C, names left to find</title></rect>
 <rect x="816.6" y="483.8" width="7.3" height="7.6" class="c"><title>func_08911C48 136 B, C, names left to find</title></rect>
@@ -7767,8 +7767,8 @@
 <rect x="1024.1" y="427.0" width="7.4" height="7.9" class="asm"><title>func_08962AC8 144 B, Assembly</title></rect>
 <rect x="954.6" y="434.9" width="7.2" height="8.1" class="asm"><title>func_08965A10 144 B, Assembly</title></rect>
 <rect x="954.6" y="443.0" width="7.2" height="8.1" class="asm"><title>func_0896B708 144 B, Assembly</title></rect>
-<rect x="954.6" y="451.1" width="7.2" height="7.9" class="asm"><title>func_0896B0F0 140 B, Assembly</title></rect>
-<rect x="954.6" y="459.0" width="7.2" height="7.9" class="asm"><title>func_0896C7E4 140 B, Assembly</title></rect>
+<rect x="954.6" y="451.1" width="7.2" height="7.9" class="c"><title>func_0896B0F0 140 B, C, names left to find</title></rect>
+<rect x="954.6" y="459.0" width="7.2" height="7.9" class="c"><title>func_0896C7E4 140 B, C, names left to find</title></rect>
 <rect x="954.6" y="466.8" width="7.2" height="7.4" class="c"><title>func_08961740 132 B, C, names left to find</title></rect>
 <rect x="954.6" y="474.2" width="7.2" height="7.4" class="c"><title>func_08969254 132 B, C, names left to find</title></rect>
 <rect x="954.6" y="481.7" width="7.2" height="7.4" class="c"><title>func_0896A02C 132 B, C, names left to find</title></rect>
@@ -7801,25 +7801,25 @@
 <rect x="1000.9" y="441.5" width="6.3" height="6.8" class="asm"><title>func_089660B4 104 B, Assembly</title></rect>
 <rect x="1007.1" y="441.5" width="6.3" height="6.8" class="asm"><title>func_0896C4E4 104 B, Assembly</title></rect>
 <rect x="1013.4" y="441.5" width="6.0" height="6.8" class="asm"><title>func_08960BB4 100 B, Assembly</title></rect>
-<rect x="1019.4" y="441.5" width="6.0" height="6.8" class="asm"><title>func_08960C18 100 B, Assembly</title></rect>
+<rect x="1019.4" y="441.5" width="6.0" height="6.8" class="c"><title>func_08960C18 100 B, C, names left to find</title></rect>
 <rect x="1025.4" y="441.5" width="6.0" height="6.8" class="asm"><title>func_08960C7C 100 B, Assembly</title></rect>
-<rect x="969.1" y="448.2" width="6.6" height="6.2" class="asm"><title>func_08960CE0 100 B, Assembly</title></rect>
+<rect x="969.1" y="448.2" width="6.6" height="6.2" class="c"><title>func_08960CE0 100 B, C, names left to find</title></rect>
 <rect x="969.1" y="454.4" width="6.6" height="6.2" class="asm"><title>func_08960D44 100 B, Assembly</title></rect>
-<rect x="969.1" y="460.6" width="6.6" height="6.2" class="asm"><title>func_08960DA8 100 B, Assembly</title></rect>
+<rect x="969.1" y="460.6" width="6.6" height="6.2" class="c"><title>func_08960DA8 100 B, C, names left to find</title></rect>
 <rect x="969.1" y="466.8" width="6.6" height="6.2" class="asm"><title>func_08960E0C 100 B, Assembly</title></rect>
-<rect x="969.1" y="473.0" width="6.6" height="6.2" class="asm"><title>func_08960E70 100 B, Assembly</title></rect>
+<rect x="969.1" y="473.0" width="6.6" height="6.2" class="c"><title>func_08960E70 100 B, C, names left to find</title></rect>
 <rect x="969.1" y="479.2" width="6.6" height="6.2" class="asm"><title>func_08961318 100 B, Assembly</title></rect>
-<rect x="969.1" y="485.3" width="6.6" height="6.2" class="asm"><title>func_08967AEC 100 B, Assembly</title></rect>
+<rect x="969.1" y="485.3" width="6.6" height="6.2" class="c"><title>func_08967AEC 100 B, C, names left to find</title></rect>
 <rect x="969.1" y="491.5" width="6.6" height="6.2" class="asm"><title>func_08967CF0 100 B, Assembly</title></rect>
-<rect x="969.1" y="497.7" width="6.6" height="6.2" class="asm"><title>func_08968C18 100 B, Assembly</title></rect>
-<rect x="975.7" y="448.2" width="6.3" height="6.4" class="asm"><title>func_0896EB7C 100 B, Assembly</title></rect>
-<rect x="975.7" y="454.7" width="6.3" height="6.4" class="asm"><title>func_0896ED08 100 B, Assembly</title></rect>
+<rect x="969.1" y="497.7" width="6.6" height="6.2" class="c"><title>func_08968C18 100 B, C, names left to find</title></rect>
+<rect x="975.7" y="448.2" width="6.3" height="6.4" class="c"><title>func_0896EB7C 100 B, C, names left to find</title></rect>
+<rect x="975.7" y="454.7" width="6.3" height="6.4" class="c"><title>func_0896ED08 100 B, C, names left to find</title></rect>
 <rect x="975.7" y="461.1" width="6.3" height="6.2" class="asm"></rect>
 <rect x="975.7" y="467.3" width="6.3" height="6.2" class="asm"></rect>
 <rect x="975.7" y="473.5" width="6.3" height="6.2" class="asm"></rect>
 <rect x="975.7" y="479.7" width="6.3" height="6.2" class="asm"></rect>
 <rect x="975.7" y="485.9" width="6.3" height="6.2" class="asm"></rect>
-<rect x="975.7" y="492.0" width="6.3" height="5.9" class="asm"></rect>
+<rect x="975.7" y="492.0" width="6.3" height="5.9" class="c"></rect>
 <rect x="975.7" y="498.0" width="6.3" height="5.9" class="asm"></rect>
 <rect x="982.0" y="448.2" width="6.3" height="5.9" class="asm"></rect>
 <rect x="988.3" y="448.2" width="6.3" height="5.9" class="asm"></rect>
@@ -7839,28 +7839,28 @@
 <rect x="1025.5" y="454.1" width="6.0" height="5.7" class="asm"></rect>
 <rect x="982.0" y="459.8" width="6.2" height="5.5" class="asm"></rect>
 <rect x="982.0" y="465.3" width="6.2" height="5.5" class="asm"></rect>
-<rect x="982.0" y="470.9" width="6.2" height="5.5" class="asm"></rect>
-<rect x="982.0" y="476.4" width="6.2" height="5.5" class="asm"></rect>
-<rect x="982.0" y="481.9" width="6.2" height="5.5" class="asm"></rect>
-<rect x="982.0" y="487.4" width="6.2" height="5.5" class="asm"></rect>
+<rect x="982.0" y="470.9" width="6.2" height="5.5" class="c"></rect>
+<rect x="982.0" y="476.4" width="6.2" height="5.5" class="c"></rect>
+<rect x="982.0" y="481.9" width="6.2" height="5.5" class="c"></rect>
+<rect x="982.0" y="487.4" width="6.2" height="5.5" class="c"></rect>
 <rect x="982.0" y="492.9" width="6.2" height="5.5" class="asm"></rect>
-<rect x="982.0" y="498.4" width="6.2" height="5.5" class="asm"></rect>
+<rect x="982.0" y="498.4" width="6.2" height="5.5" class="c"></rect>
 <rect x="988.2" y="459.8" width="6.4" height="5.3" class="asm"></rect>
 <rect x="994.6" y="459.8" width="6.4" height="5.3" class="asm"></rect>
 <rect x="1001.0" y="459.8" width="6.4" height="5.3" class="asm"></rect>
 <rect x="1007.4" y="459.8" width="6.1" height="5.3" class="asm"></rect>
-<rect x="1013.5" y="459.8" width="6.1" height="5.3" class="asm"></rect>
+<rect x="1013.5" y="459.8" width="6.1" height="5.3" class="c"></rect>
 <rect x="1019.6" y="459.8" width="6.1" height="5.3" class="asm"></rect>
 <rect x="1025.7" y="459.8" width="5.8" height="5.3" class="asm"></rect>
 <rect x="988.2" y="465.2" width="5.1" height="5.8" class="asm"></rect>
 <rect x="988.2" y="470.9" width="5.1" height="5.8" class="asm"></rect>
-<rect x="988.2" y="476.7" width="5.1" height="5.4" class="asm"></rect>
-<rect x="988.2" y="482.1" width="5.1" height="5.4" class="asm"></rect>
-<rect x="988.2" y="487.6" width="5.1" height="5.4" class="asm"></rect>
-<rect x="988.2" y="493.0" width="5.1" height="5.4" class="asm"></rect>
-<rect x="988.2" y="498.5" width="5.1" height="5.4" class="asm"></rect>
-<rect x="993.3" y="465.2" width="5.7" height="4.9" class="asm"></rect>
-<rect x="999.0" y="465.2" width="5.7" height="4.9" class="asm"></rect>
+<rect x="988.2" y="476.7" width="5.1" height="5.4" class="c"></rect>
+<rect x="988.2" y="482.1" width="5.1" height="5.4" class="c"></rect>
+<rect x="988.2" y="487.6" width="5.1" height="5.4" class="c"></rect>
+<rect x="988.2" y="493.0" width="5.1" height="5.4" class="c"></rect>
+<rect x="988.2" y="498.5" width="5.1" height="5.4" class="c"></rect>
+<rect x="993.3" y="465.2" width="5.7" height="4.9" class="c"></rect>
+<rect x="999.0" y="465.2" width="5.7" height="4.9" class="c"></rect>
 <rect x="1004.7" y="465.2" width="5.4" height="4.9" class="asm"></rect>
 <rect x="1010.0" y="465.2" width="5.4" height="4.9" class="asm"></rect>
 <rect x="1015.4" y="465.2" width="5.4" height="4.9" class="asm"></rect>
@@ -7869,182 +7869,182 @@
 <rect x="993.3" y="470.0" width="5.3" height="4.9" class="asm"></rect>
 <rect x="993.3" y="475.0" width="5.3" height="4.9" class="asm"></rect>
 <rect x="993.3" y="479.9" width="5.3" height="4.9" class="asm"></rect>
-<rect x="993.3" y="484.8" width="5.3" height="4.9" class="asm"></rect>
-<rect x="993.3" y="489.7" width="5.3" height="4.9" class="asm"></rect>
-<rect x="993.3" y="494.7" width="5.3" height="4.6" class="asm"></rect>
-<rect x="993.3" y="499.3" width="5.3" height="4.6" class="asm"></rect>
+<rect x="993.3" y="484.8" width="5.3" height="4.9" class="c"></rect>
+<rect x="993.3" y="489.7" width="5.3" height="4.9" class="c"></rect>
+<rect x="993.3" y="494.7" width="5.3" height="4.6" class="c"></rect>
+<rect x="993.3" y="499.3" width="5.3" height="4.6" class="c"></rect>
 <rect x="998.6" y="470.0" width="5.2" height="4.7" class="asm"></rect>
 <rect x="1003.8" y="470.0" width="5.2" height="4.7" class="asm"></rect>
 <rect x="1009.0" y="470.0" width="4.8" height="4.7" class="asm"></rect>
-<rect x="1013.8" y="470.0" width="4.8" height="4.7" class="asm"></rect>
+<rect x="1013.8" y="470.0" width="4.8" height="4.7" class="c"></rect>
 <rect x="1018.7" y="470.0" width="4.5" height="4.7" class="asm"></rect>
-<rect x="1023.2" y="470.0" width="4.2" height="4.7" class="asm"></rect>
+<rect x="1023.2" y="470.0" width="4.2" height="4.7" class="c"></rect>
 <rect x="1027.3" y="470.0" width="4.2" height="4.7" class="asm"></rect>
-<rect x="998.6" y="474.7" width="4.3" height="4.5" class="asm"></rect>
-<rect x="998.6" y="479.3" width="4.3" height="4.5" class="asm"></rect>
-<rect x="998.6" y="483.8" width="4.3" height="4.2" class="asm"></rect>
-<rect x="998.6" y="488.0" width="4.3" height="4.2" class="asm"></rect>
-<rect x="998.6" y="492.2" width="4.3" height="4.2" class="asm"></rect>
+<rect x="998.6" y="474.7" width="4.3" height="4.5" class="c"></rect>
+<rect x="998.6" y="479.3" width="4.3" height="4.5" class="c"></rect>
+<rect x="998.6" y="483.8" width="4.3" height="4.2" class="c"></rect>
+<rect x="998.6" y="488.0" width="4.3" height="4.2" class="c"></rect>
+<rect x="998.6" y="492.2" width="4.3" height="4.2" class="c"></rect>
 <rect x="998.6" y="496.3" width="4.3" height="3.8" class="asm"></rect>
 <rect x="998.6" y="500.1" width="4.3" height="3.8" class="asm"></rect>
 <rect x="1002.9" y="474.7" width="4.4" height="3.7" class="asm"></rect>
 <rect x="1007.3" y="474.7" width="4.4" height="3.7" class="asm"></rect>
 <rect x="1011.7" y="474.7" width="4.0" height="3.7" class="asm"></rect>
-<rect x="1015.6" y="474.7" width="4.0" height="3.7" class="asm"></rect>
+<rect x="1015.6" y="474.7" width="4.0" height="3.7" class="c"></rect>
 <rect x="1019.6" y="474.7" width="4.0" height="3.7" class="asm"></rect>
 <rect x="1023.5" y="474.7" width="4.0" height="3.7" class="asm"></rect>
 <rect x="1027.5" y="474.7" width="4.0" height="3.7" class="asm"></rect>
 <rect x="1002.9" y="478.4" width="3.4" height="4.3" class="asm"></rect>
-<rect x="1002.9" y="482.8" width="3.4" height="3.4" class="asm"></rect>
+<rect x="1002.9" y="482.8" width="3.4" height="3.4" class="c"></rect>
 <rect x="1002.9" y="486.1" width="3.4" height="3.4" class="asm"></rect>
-<rect x="1002.9" y="489.5" width="3.4" height="2.9" class="asm"></rect>
-<rect x="1002.9" y="492.4" width="3.4" height="2.9" class="asm"></rect>
-<rect x="1002.9" y="495.3" width="3.4" height="2.9" class="asm"></rect>
-<rect x="1002.9" y="498.1" width="3.4" height="2.9" class="asm"></rect>
-<rect x="1002.9" y="501.0" width="3.4" height="2.9" class="asm"></rect>
-<rect x="1006.3" y="478.4" width="3.2" height="3.1" class="asm"></rect>
-<rect x="1009.4" y="478.4" width="3.2" height="3.1" class="asm"></rect>
-<rect x="1012.6" y="478.4" width="3.2" height="3.1" class="asm"></rect>
-<rect x="1015.7" y="478.4" width="3.2" height="3.1" class="asm"></rect>
-<rect x="1018.9" y="478.4" width="3.2" height="3.1" class="asm"></rect>
-<rect x="1022.0" y="478.4" width="3.2" height="3.1" class="asm"></rect>
-<rect x="1025.2" y="478.4" width="3.2" height="3.1" class="asm"></rect>
-<rect x="1028.3" y="478.4" width="3.2" height="3.1" class="asm"></rect>
+<rect x="1002.9" y="489.5" width="3.4" height="2.9" class="c"></rect>
+<rect x="1002.9" y="492.4" width="3.4" height="2.9" class="c"></rect>
+<rect x="1002.9" y="495.3" width="3.4" height="2.9" class="c"></rect>
+<rect x="1002.9" y="498.1" width="3.4" height="2.9" class="c"></rect>
+<rect x="1002.9" y="501.0" width="3.4" height="2.9" class="c"></rect>
+<rect x="1006.3" y="478.4" width="3.2" height="3.1" class="c"></rect>
+<rect x="1009.4" y="478.4" width="3.2" height="3.1" class="c"></rect>
+<rect x="1012.6" y="478.4" width="3.2" height="3.1" class="c"></rect>
+<rect x="1015.7" y="478.4" width="3.2" height="3.1" class="c"></rect>
+<rect x="1018.9" y="478.4" width="3.2" height="3.1" class="c"></rect>
+<rect x="1022.0" y="478.4" width="3.2" height="3.1" class="c"></rect>
+<rect x="1025.2" y="478.4" width="3.2" height="3.1" class="c"></rect>
+<rect x="1028.3" y="478.4" width="3.2" height="3.1" class="c"></rect>
 <rect x="1006.3" y="481.6" width="3.1" height="3.2" class="asm"></rect>
 <rect x="1006.3" y="484.7" width="3.1" height="3.2" class="asm"></rect>
-<rect x="1006.3" y="487.9" width="3.1" height="3.2" class="asm"></rect>
-<rect x="1006.3" y="491.1" width="3.1" height="3.2" class="asm"></rect>
-<rect x="1006.3" y="494.3" width="3.1" height="3.2" class="asm"></rect>
+<rect x="1006.3" y="487.9" width="3.1" height="3.2" class="c"></rect>
+<rect x="1006.3" y="491.1" width="3.1" height="3.2" class="c"></rect>
+<rect x="1006.3" y="494.3" width="3.1" height="3.2" class="c"></rect>
 <rect x="1006.3" y="497.5" width="3.1" height="3.2" class="asm"></rect>
 <rect x="1006.3" y="500.7" width="3.1" height="3.2" class="asm"></rect>
 <rect x="1009.3" y="481.6" width="3.4" height="2.9" class="asm"></rect>
 <rect x="1012.7" y="481.6" width="2.8" height="2.9" class="asm"></rect>
-<rect x="1015.6" y="481.6" width="2.3" height="2.9" class="asm"></rect>
-<rect x="1017.8" y="481.6" width="2.3" height="2.9" class="asm"></rect>
-<rect x="1020.1" y="481.6" width="2.3" height="2.9" class="asm"></rect>
-<rect x="1022.4" y="481.6" width="2.3" height="2.9" class="asm"></rect>
-<rect x="1024.6" y="481.6" width="2.3" height="2.9" class="asm"></rect>
-<rect x="1026.9" y="481.6" width="2.3" height="2.9" class="asm"></rect>
-<rect x="1029.2" y="481.6" width="2.3" height="2.9" class="asm"></rect>
-<rect x="1009.3" y="484.4" width="2.7" height="2.4" class="asm"></rect>
-<rect x="1009.3" y="486.9" width="2.7" height="2.4" class="asm"></rect>
+<rect x="1015.6" y="481.6" width="2.3" height="2.9" class="c"></rect>
+<rect x="1017.8" y="481.6" width="2.3" height="2.9" class="c"></rect>
+<rect x="1020.1" y="481.6" width="2.3" height="2.9" class="c"></rect>
+<rect x="1022.4" y="481.6" width="2.3" height="2.9" class="c"></rect>
+<rect x="1024.6" y="481.6" width="2.3" height="2.9" class="c"></rect>
+<rect x="1026.9" y="481.6" width="2.3" height="2.9" class="c"></rect>
+<rect x="1029.2" y="481.6" width="2.3" height="2.9" class="c"></rect>
+<rect x="1009.3" y="484.4" width="2.7" height="2.4" class="c"></rect>
+<rect x="1009.3" y="486.9" width="2.7" height="2.4" class="c"></rect>
 <rect x="1009.3" y="489.3" width="2.7" height="2.4" class="asm"></rect>
 <rect x="1009.3" y="491.7" width="2.7" height="2.4" class="asm"></rect>
-<rect x="1009.3" y="494.2" width="2.7" height="2.4" class="asm"></rect>
-<rect x="1009.3" y="496.6" width="2.7" height="2.4" class="asm"></rect>
-<rect x="1009.3" y="499.0" width="2.7" height="2.4" class="asm"></rect>
-<rect x="1009.3" y="501.5" width="2.7" height="2.4" class="asm"></rect>
-<rect x="1012.0" y="484.4" width="2.9" height="2.3" class="asm"></rect>
-<rect x="1014.9" y="484.4" width="2.9" height="2.3" class="asm"></rect>
-<rect x="1017.8" y="484.4" width="2.9" height="2.3" class="asm"></rect>
-<rect x="1020.6" y="484.4" width="2.2" height="2.3" class="asm"></rect>
-<rect x="1022.8" y="484.4" width="2.2" height="2.3" class="asm"></rect>
-<rect x="1025.0" y="484.4" width="2.2" height="2.3" class="asm"></rect>
-<rect x="1027.1" y="484.4" width="2.2" height="2.3" class="asm"></rect>
+<rect x="1009.3" y="494.2" width="2.7" height="2.4" class="c"></rect>
+<rect x="1009.3" y="496.6" width="2.7" height="2.4" class="c"></rect>
+<rect x="1009.3" y="499.0" width="2.7" height="2.4" class="c"></rect>
+<rect x="1009.3" y="501.5" width="2.7" height="2.4" class="c"></rect>
+<rect x="1012.0" y="484.4" width="2.9" height="2.3" class="c"></rect>
+<rect x="1014.9" y="484.4" width="2.9" height="2.3" class="c"></rect>
+<rect x="1017.8" y="484.4" width="2.9" height="2.3" class="c"></rect>
+<rect x="1020.6" y="484.4" width="2.2" height="2.3" class="c"></rect>
+<rect x="1022.8" y="484.4" width="2.2" height="2.3" class="c"></rect>
+<rect x="1025.0" y="484.4" width="2.2" height="2.3" class="c"></rect>
+<rect x="1027.1" y="484.4" width="2.2" height="2.3" class="c"></rect>
 <rect x="1029.3" y="484.4" width="2.2" height="2.3" class="asm"></rect>
-<rect x="1012.0" y="486.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1012.0" y="488.4" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1012.0" y="490.1" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1012.0" y="491.8" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1012.0" y="493.6" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1012.0" y="495.3" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1012.0" y="497.0" width="1.9" height="1.7" class="asm"></rect>
+<rect x="1012.0" y="486.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="1012.0" y="488.4" width="1.9" height="1.7" class="c"></rect>
+<rect x="1012.0" y="490.1" width="1.9" height="1.7" class="c"></rect>
+<rect x="1012.0" y="491.8" width="1.9" height="1.7" class="c"></rect>
+<rect x="1012.0" y="493.6" width="1.9" height="1.7" class="c"></rect>
+<rect x="1012.0" y="495.3" width="1.9" height="1.7" class="c"></rect>
+<rect x="1012.0" y="497.0" width="1.9" height="1.7" class="c"></rect>
 <rect x="1012.0" y="498.7" width="1.9" height="1.7" class="asm"></rect>
 <rect x="1012.0" y="500.5" width="1.9" height="1.7" class="asm"></rect>
 <rect x="1012.0" y="502.2" width="1.9" height="1.7" class="asm"></rect>
 <rect x="1013.9" y="486.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1013.9" y="488.4" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1013.9" y="490.1" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1013.9" y="491.8" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1013.9" y="493.6" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1013.9" y="495.3" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1013.9" y="497.0" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1013.9" y="498.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1013.9" y="500.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1013.9" y="502.2" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1015.8" y="486.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1017.5" y="486.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1019.3" y="486.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1021.0" y="486.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1022.7" y="486.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1024.5" y="486.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1026.2" y="486.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1028.0" y="486.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1029.7" y="486.7" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1015.8" y="488.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1015.8" y="490.3" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1015.8" y="492.0" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1015.8" y="493.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1015.8" y="495.4" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1015.8" y="497.1" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1015.8" y="498.8" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1015.8" y="500.5" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1015.8" y="502.2" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1017.7" y="488.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1019.4" y="488.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1021.1" y="488.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1022.8" y="488.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1024.6" y="488.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1026.3" y="488.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1028.0" y="488.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1029.7" y="488.5" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1017.7" y="490.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1017.7" y="492.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1017.7" y="494.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1017.7" y="496.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1017.7" y="498.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1017.7" y="500.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1017.7" y="502.0" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1019.4" y="490.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1021.1" y="490.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1022.8" y="490.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1024.6" y="490.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1026.3" y="490.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1028.0" y="490.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1029.7" y="490.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1019.4" y="492.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1019.4" y="494.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1019.4" y="496.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1019.4" y="498.1" width="1.7" height="1.9" class="asm"></rect>
+<rect x="1013.9" y="488.4" width="1.9" height="1.7" class="c"></rect>
+<rect x="1013.9" y="490.1" width="1.9" height="1.7" class="c"></rect>
+<rect x="1013.9" y="491.8" width="1.9" height="1.7" class="c"></rect>
+<rect x="1013.9" y="493.6" width="1.9" height="1.7" class="c"></rect>
+<rect x="1013.9" y="495.3" width="1.9" height="1.7" class="c"></rect>
+<rect x="1013.9" y="497.0" width="1.9" height="1.7" class="c"></rect>
+<rect x="1013.9" y="498.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="1013.9" y="500.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="1013.9" y="502.2" width="1.9" height="1.7" class="c"></rect>
+<rect x="1015.8" y="486.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="1017.5" y="486.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="1019.3" y="486.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="1021.0" y="486.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="1022.7" y="486.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="1024.5" y="486.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="1026.2" y="486.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="1028.0" y="486.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="1029.7" y="486.7" width="1.7" height="1.9" class="c"></rect>
+<rect x="1015.8" y="488.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="1015.8" y="490.3" width="1.9" height="1.7" class="c"></rect>
+<rect x="1015.8" y="492.0" width="1.9" height="1.7" class="c"></rect>
+<rect x="1015.8" y="493.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="1015.8" y="495.4" width="1.9" height="1.7" class="c"></rect>
+<rect x="1015.8" y="497.1" width="1.9" height="1.7" class="c"></rect>
+<rect x="1015.8" y="498.8" width="1.9" height="1.7" class="c"></rect>
+<rect x="1015.8" y="500.5" width="1.9" height="1.7" class="c"></rect>
+<rect x="1015.8" y="502.2" width="1.9" height="1.7" class="c"></rect>
+<rect x="1017.7" y="488.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="1019.4" y="488.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="1021.1" y="488.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="1022.8" y="488.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="1024.6" y="488.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="1026.3" y="488.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="1028.0" y="488.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="1029.7" y="488.5" width="1.7" height="1.9" class="c"></rect>
+<rect x="1017.7" y="490.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1017.7" y="492.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1017.7" y="494.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1017.7" y="496.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="1017.7" y="498.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="1017.7" y="500.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="1017.7" y="502.0" width="1.7" height="1.9" class="c"></rect>
+<rect x="1019.4" y="490.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1021.1" y="490.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1022.8" y="490.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1024.6" y="490.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1026.3" y="490.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1028.0" y="490.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1029.7" y="490.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1019.4" y="492.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1019.4" y="494.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1019.4" y="496.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="1019.4" y="498.1" width="1.7" height="1.9" class="c"></rect>
 <rect x="1019.4" y="500.0" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1019.4" y="502.0" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1021.1" y="492.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1022.8" y="492.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1024.5" y="492.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1026.3" y="492.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1028.0" y="492.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1029.7" y="492.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1021.1" y="494.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1021.1" y="496.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1021.1" y="498.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1021.1" y="500.0" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1021.1" y="502.0" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1022.7" y="494.2" width="1.7" height="1.9" class="asm"></rect>
+<rect x="1019.4" y="502.0" width="1.7" height="1.9" class="c"></rect>
+<rect x="1021.1" y="492.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1022.8" y="492.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1024.5" y="492.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1026.3" y="492.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1028.0" y="492.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1029.7" y="492.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1021.1" y="494.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="1021.1" y="496.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="1021.1" y="498.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="1021.1" y="500.0" width="1.7" height="1.9" class="c"></rect>
+<rect x="1021.1" y="502.0" width="1.7" height="1.9" class="c"></rect>
+<rect x="1022.7" y="494.2" width="1.7" height="1.9" class="c"></rect>
 <rect x="1024.5" y="494.2" width="1.7" height="1.9" class="asm"></rect>
 <rect x="1026.2" y="494.2" width="1.7" height="1.9" class="asm"></rect>
 <rect x="1028.0" y="494.2" width="1.7" height="1.9" class="asm"></rect>
 <rect x="1029.7" y="494.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1022.7" y="496.1" width="1.7" height="2.0" class="asm"></rect>
-<rect x="1022.7" y="498.0" width="1.7" height="2.0" class="asm"></rect>
-<rect x="1022.7" y="500.0" width="1.7" height="2.0" class="asm"></rect>
-<rect x="1022.7" y="501.9" width="1.7" height="2.0" class="asm"></rect>
-<rect x="1024.4" y="496.1" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1026.2" y="496.1" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1027.9" y="496.1" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1029.7" y="496.1" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1024.4" y="497.9" width="1.6" height="2.0" class="asm"></rect>
-<rect x="1024.4" y="499.9" width="1.6" height="2.0" class="asm"></rect>
-<rect x="1024.4" y="501.9" width="1.6" height="2.0" class="asm"></rect>
+<rect x="1022.7" y="496.1" width="1.7" height="2.0" class="c"></rect>
+<rect x="1022.7" y="498.0" width="1.7" height="2.0" class="c"></rect>
+<rect x="1022.7" y="500.0" width="1.7" height="2.0" class="c"></rect>
+<rect x="1022.7" y="501.9" width="1.7" height="2.0" class="c"></rect>
+<rect x="1024.4" y="496.1" width="1.8" height="1.8" class="c"></rect>
+<rect x="1026.2" y="496.1" width="1.8" height="1.8" class="c"></rect>
+<rect x="1027.9" y="496.1" width="1.8" height="1.8" class="c"></rect>
+<rect x="1029.7" y="496.1" width="1.8" height="1.8" class="c"></rect>
+<rect x="1024.4" y="497.9" width="1.6" height="2.0" class="c"></rect>
+<rect x="1024.4" y="499.9" width="1.6" height="2.0" class="c"></rect>
+<rect x="1024.4" y="501.9" width="1.6" height="2.0" class="c"></rect>
 <rect x="1026.0" y="497.9" width="1.8" height="1.8" class="asm"></rect>
 <rect x="1027.8" y="497.9" width="1.8" height="1.8" class="asm"></rect>
 <rect x="1029.7" y="497.9" width="1.8" height="1.8" class="asm"></rect>
 <rect x="1026.0" y="499.7" width="1.6" height="2.1" class="asm"></rect>
-<rect x="1026.0" y="501.8" width="1.6" height="2.1" class="asm"></rect>
-<rect x="1027.6" y="499.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1029.5" y="499.7" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1027.6" y="501.4" width="1.3" height="2.5" class="asm"></rect>
-<rect x="1028.9" y="501.4" width="1.3" height="2.5" class="asm"></rect>
-<rect x="1030.2" y="501.4" width="1.3" height="2.5" class="asm"></rect>
+<rect x="1026.0" y="501.8" width="1.6" height="2.1" class="c"></rect>
+<rect x="1027.6" y="499.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="1029.5" y="499.7" width="1.9" height="1.7" class="c"></rect>
+<rect x="1027.6" y="501.4" width="1.3" height="2.5" class="c"></rect>
+<rect x="1028.9" y="501.4" width="1.3" height="2.5" class="c"></rect>
+<rect x="1030.2" y="501.4" width="1.3" height="2.5" class="c"></rect>
 <rect x="890.7" y="316.0" width="140.8" height="187.9" fill="none" stroke="#1a1a19" stroke-width="2.5"/>
 <rect x="1031.5" y="316.0" width="50.9" height="32.1" class="asm"><title>func_088BA51C 4012 B, Assembly</title></rect>
 <rect x="1082.4" y="316.0" width="24.9" height="32.1" class="asm"><title>func_088B0EAC 1964 B, Assembly</title></rect>
@@ -8176,13 +8176,13 @@
 <rect x="1104.3" y="467.0" width="8.2" height="7.6" class="asm"><title>func_088B4E10 152 B, Assembly</title></rect>
 <rect x="1104.3" y="474.6" width="8.2" height="7.6" class="asm"><title>func_088BD3BC 152 B, Assembly</title></rect>
 <rect x="1104.3" y="482.2" width="8.2" height="7.4" class="asm"><title>func_088BB9E4 148 B, Assembly</title></rect>
-<rect x="1104.3" y="489.5" width="8.2" height="7.2" class="asm"><title>func_088B27CC 144 B, Assembly</title></rect>
-<rect x="1104.3" y="496.7" width="8.2" height="7.2" class="asm"><title>func_088BD078 144 B, Assembly</title></rect>
+<rect x="1104.3" y="489.5" width="8.2" height="7.2" class="c"><title>func_088B27CC 144 B, C, names left to find</title></rect>
+<rect x="1104.3" y="496.7" width="8.2" height="7.2" class="c"><title>func_088BD078 144 B, C, names left to find</title></rect>
 <rect x="1112.5" y="444.2" width="7.5" height="7.6" class="asm"><title>func_088BA294 140 B, Assembly</title></rect>
 <rect x="1120.0" y="444.2" width="7.5" height="7.6" class="c"><title>func_088BD108 140 B, C, names left to find</title></rect>
 <rect x="1127.5" y="444.2" width="7.5" height="7.6" class="c"><title>func_088BD1AC 140 B, C, names left to find</title></rect>
-<rect x="1135.0" y="444.2" width="7.5" height="7.6" class="asm"><title>func_088BD288 140 B, Assembly</title></rect>
-<rect x="1142.5" y="444.2" width="7.5" height="7.6" class="asm"><title>func_088BD330 140 B, Assembly</title></rect>
+<rect x="1135.0" y="444.2" width="7.5" height="7.6" class="c"><title>func_088BD288 140 B, C, names left to find</title></rect>
+<rect x="1142.5" y="444.2" width="7.5" height="7.6" class="c"><title>func_088BD330 140 B, C, names left to find</title></rect>
 <rect x="1150.1" y="444.2" width="7.3" height="7.6" class="c"><title>func_088B3A04 136 B, C, names left to find</title></rect>
 <rect x="1157.4" y="444.2" width="7.3" height="7.6" class="c"><title>func_088BD9B0 136 B, C, names left to find</title></rect>
 <rect x="1164.7" y="444.2" width="7.3" height="7.6" class="c"><title>func_088BE950 136 B, C, names left to find</title></rect>
@@ -8713,8 +8713,8 @@
 <rect x="1074.4" y="626.3" width="8.1" height="7.8" class="asm"><title>func_0880AC0C 156 B, Assembly</title></rect>
 <rect x="1082.5" y="537.0" width="8.2" height="7.8" class="asm"><title>func_0880AF14 156 B, Assembly</title></rect>
 <rect x="1090.7" y="537.0" width="7.8" height="7.8" class="asm"><title>func_08806860 148 B, Assembly</title></rect>
-<rect x="1098.5" y="537.0" width="7.6" height="7.8" class="asm"><title>func_08809224 144 B, Assembly</title></rect>
-<rect x="1106.1" y="537.0" width="7.6" height="7.8" class="asm"><title>func_088094BC 144 B, Assembly</title></rect>
+<rect x="1098.5" y="537.0" width="7.6" height="7.8" class="c"><title>func_08809224 144 B, C, names left to find</title></rect>
+<rect x="1106.1" y="537.0" width="7.6" height="7.8" class="c"><title>func_088094BC 144 B, C, names left to find</title></rect>
 <rect x="1113.6" y="537.0" width="7.3" height="7.8" class="asm"><title>func_08808DCC 140 B, Assembly</title></rect>
 <rect x="1121.0" y="537.0" width="7.3" height="7.8" class="asm"><title>func_08808F8C 140 B, Assembly</title></rect>
 <rect x="1128.3" y="537.0" width="7.3" height="7.8" class="asm"><title>func_0880DEF0 140 B, Assembly</title></rect>
@@ -9210,8 +9210,8 @@
 <rect x="1164.3" y="654.1" width="7.7" height="7.8" class="asm"><title>func_089D0D04 148 B, Assembly</title></rect>
 <rect x="1122.2" y="661.8" width="7.5" height="7.8" class="asm"><title>func_089D6684 144 B, Assembly</title></rect>
 <rect x="1129.7" y="661.8" width="7.5" height="7.8" class="asm"><title>func_089D6714 144 B, Assembly</title></rect>
-<rect x="1137.2" y="661.8" width="7.3" height="7.8" class="asm"><title>func_089D3D14 140 B, Assembly</title></rect>
-<rect x="1144.5" y="661.8" width="7.3" height="7.8" class="asm"><title>func_089D5F4C 140 B, Assembly</title></rect>
+<rect x="1137.2" y="661.8" width="7.3" height="7.8" class="c"><title>func_089D3D14 140 B, C, names left to find</title></rect>
+<rect x="1144.5" y="661.8" width="7.3" height="7.8" class="c"><title>func_089D5F4C 140 B, C, names left to find</title></rect>
 <rect x="1151.8" y="661.8" width="6.9" height="7.8" class="asm"><title>func_089D4460 132 B, Assembly</title></rect>
 <rect x="1158.7" y="661.8" width="6.7" height="7.8" class="asm"><title>func_089D1874 128 B, Assembly</title></rect>
 <rect x="1165.3" y="661.8" width="6.7" height="7.8" class="asm"><title>func_089D5920 128 B, Assembly</title></rect>
@@ -9384,8 +9384,8 @@
 <rect x="1021.5" y="639.1" width="90" height="21" rx="4" fill="#1a1a19" fill-opacity="0.82"/>
 <text x="1028.5" y="654.1" font-size="12.5" fill="#f0efec">0x089D0000</text>
 <text x="28" y="737" font-size="13" fill="#c3c2b7">All the code of BOOT.BIN</text>
-<rect x="28.00" y="746" width="44.19" height="30" fill="#3fa35a"/>
-<rect x="72.19" y="746" width="940.99" height="30" fill="#4a4f57"/>
+<rect x="28.00" y="746" width="59.18" height="30" fill="#3fa35a"/>
+<rect x="87.18" y="746" width="926.01" height="30" fill="#4a4f57"/>
 <rect x="34" y="751" width="214" height="20" rx="3" fill="#1a1a19" fill-opacity="0.82"/>
 <text x="41" y="766" font-size="13" fill="#f0efec">Game code 86%: mapped above</text>
 <rect x="1017.18" y="746" width="154.82" height="30" rx="4" fill="url(#hatch)"><title>Sony libraries, 0x08820000-0x0885FFFF</title></rect>
