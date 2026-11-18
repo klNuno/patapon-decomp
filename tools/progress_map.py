@@ -203,10 +203,16 @@ def main():
     }
     out = ROOT / args.output
     out.mkdir(parents=True, exist_ok=True)
-    # progress.json: totals, then one row per function in C (asm is everything else in functions.tsv)
-    small = dict(report, units=None, c_functions=[f for u in units for f in u["functions"] if f["level"] != "asm"])
-    del small["units"]
-    (out / "progress.json").write_text(json.dumps(small, indent=1) + "\n")
+    # progress.json: totals, then one row per function in C (asm is everything else in functions.tsv), one line
+    # each as a list under c_columns, so the file stays small with every function in C
+    cols = ["name", "address", "bytes", "file", "unk_fields", "m2c_names", "d_globals", "func_calls", "level"]
+    rows = [[f[c] for c in cols] for u in units for f in u["functions"] if f["level"] != "asm"]
+    head = {k: v for k, v in report.items() if k != "units"}
+    head["schema_version"] = 2
+    text = json.dumps(dict(head, c_columns=cols, c_functions=[]), indent=1)
+    body = ",\n".join("  " + json.dumps(r, separators=(",", ":")) for r in rows)
+    text = text.replace('"c_functions": []', '"c_functions": [\n' + body + "\n ]") if rows else text
+    (out / "progress.json").write_text(text + "\n")
     (out / "treemap.svg").write_text(svg(report))
     in_c = by_level["c"]["bytes"] + by_level["read"]["bytes"]
     print(f"{len(gfuncs)} game functions, {gbytes} bytes: in C {len(cfuncs)} ({100 * in_c / gbytes:.2f} % of bytes), "

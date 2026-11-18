@@ -9,7 +9,7 @@ No game data is in this repository. You need an image of your own UMD.
 
 [![Progress map: one rectangle per function of BOOT.BIN, sized by its code bytes](docs/progress/treemap.svg)](docs/progress/treemap.svg)
 
-One rectangle per function, sized by its code bytes and grouped by 64 KB of address. Grey is still assembly, mid green is matching C whose body still uses names we did not choose (`unk_` fields, m2c locals, `D_` globals, calls to `func_`), light green is C where every name is ours. The bar under the map places the game code beside Sony's libraries (0x08820000-0x08826FFF, 0x08829000-0x0884DFFF and 0x08854000-0x08857FFF, built with another compiler). Open the map to hover each function; `docs/progress/progress.json` holds the totals and the list of C functions. `tools/progress_map.py` regenerates both after a green `make check`.
+One rectangle per function, sized by its code bytes and grouped by 64 KB of address. Grey is still assembly, mid green is matching C whose body still uses names we did not choose (`unk_` fields, m2c locals, `D_` globals, calls to `func_`), light green is C where every name is ours. The bar under the map places the game code beside Sony's libraries (0x08820000-0x08826FFF, 0x08829000-0x0884DFFF and 0x08854000-0x08857FFF, built with another compiler). Open the map to hover each function; `docs/progress/progress.json` holds the totals and the list of C functions, one row each under `c_columns`. `tools/progress_map.py` regenerates both after a green `make check`.
 
 ## Build
 ```sh
