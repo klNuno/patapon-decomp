@@ -1,0 +1,55 @@
+#include "common.h"
+
+extern "C" {
+
+struct A_088FF140 {
+    virtual void vfunc_08();
+    virtual void vfunc_0C(s32, void *, s32);
+};
+
+void func_088E478C(s32, s32);
+
+struct H_088FF140 {
+    s32 unk_00;
+    A_088FF140 *unk_04;
+    s32 unk_08;
+    s32 *unk_0C;
+    s32 count() { return (unk_0C != NULL) ? *unk_0C : 0; }
+    void release() {
+        if (unk_08 != 0) {
+            *unk_0C -= 1;
+            if (count() == 0) {
+                unk_04->vfunc_0C(unk_08, *(void **)&unk_0C, unk_00);
+                func_088E478C(unk_08, unk_00);
+            }
+        }
+    }
+};
+
+typedef struct {
+    u8 pad_00[0x10];
+    u8 *unk_10;
+} T_088FF140;
+
+void func_08852F00(void *, s32);
+s32 *func_0885356C(void *, s32, s32, s32);
+s32 func_088C6454(s32);
+void func_088E44CC(H_088FF140 *, s32, s32);
+s32 func_088E4F90(s32);
+
+void func_088FF140(T_088FF140 *arg0, void *arg1) {
+    H_088FF140 h;
+    s32 g;
+    s32 *a;
+    s32 *b;
+
+    g = func_088C6454((s32)&arg0->unk_10[0x506F0]);
+    a = func_0885356C(arg1, 0, 1, 4);
+    b = func_0885356C(arg1, 1, 1, 4);
+    func_088E44CC(&h, g, *a);
+    *b = func_088E4F90(h.unk_08);
+    func_08852F00(arg1, 0);
+    h.release();
+}
+
+}

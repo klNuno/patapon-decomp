@@ -1,0 +1,59 @@
+#include "common.h"
+
+typedef struct {
+    void *unk_00;
+    u8 pad_04[0xA24];
+    s32 unk_A28;
+    s32 unk_A2C;
+    u8 unk_A30;
+} Sub_0886AD10;
+
+typedef struct {
+    u8 pad_00[0x2888];
+    u8 unk_2888;
+} A_089BEB5C;
+
+typedef struct {
+    void *unk_00;
+    s32 unk_04;
+    s32 unk_08;
+    Sub_0886AD10 unk_0C;
+    A_089BEB5C *unk_A40;
+    u8 unk_A44[4];
+} Obj_089BEB5C;
+
+s32 func_088586E8(void);
+s32 func_089B53D8(s32);
+s32 func_08858BC0(void);
+void func_0886B4CC(Sub_0886AD10 *);
+void func_089BE18C(void *, A_089BEB5C *, s32);
+void func_089BE3C0(void *);
+void func_089BE400(void *, s32);
+extern u8 D_08A478D8[];
+extern u8 D_08A48024[];
+extern u8 D_08A48BA4[];
+
+Obj_089BEB5C *func_089BEB5C(Obj_089BEB5C *arg0, A_089BEB5C *arg1, s32 arg2, s32 arg3) {
+    s32 a;
+    s32 b;
+    Sub_0886AD10 *sub;
+
+    arg0->unk_00 = D_08A478D8;
+    arg0->unk_04 = 5;
+    arg0->unk_00 = D_08A48BA4;
+    arg0->unk_08 = arg3;
+    a = func_089B53D8(func_088586E8());
+    b = func_08858BC0();
+    sub = &arg0->unk_0C;
+    func_0886B4CC(sub);
+    sub->unk_00 = D_08A48024;
+    sub->unk_A28 = b;
+    sub->unk_A2C = a + 0xBB8;
+    sub->unk_A30 = 0;
+    arg0->unk_A40 = arg1;
+    func_089BE18C(arg0->unk_A44, arg1, arg2);
+    func_089BE3C0(arg0->unk_A44);
+    func_089BE400(arg0->unk_A44, arg3);
+    arg0->unk_A40->unk_2888 = 1;
+    return arg0;
+}

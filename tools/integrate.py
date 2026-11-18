@@ -9,6 +9,10 @@
   tools/integrate.py --rebuild-yaml
       Rewrite the subsegment block from the units already in src/ (after removing one by hand).
 
+A switch jump table the unit compiles to .rodata (fmatch checks it against the original jtbl_) is kept in
+config/<VERSION>/jtables.tsv (unit, address, size): the data segment is split there and the unit's
+.rodata is linked in place of the table.
+
 A unit file may hold several contiguous functions, in address order: src/f/<FIRST>.c, every function
 it defines must follow the previous one in functions.tsv.
 """
@@ -56,6 +60,24 @@ def unit_range(path, table):
     return start, end
 
 
+def jump_tables():
+    """(unit, address, size) of each unit's jump tables, address order."""
+    path = os.path.join(ROOT, f"config/{version()}/jtables.tsv")
+    if not os.path.exists(path):
+        return []
+    rows = [l.split() for l in open(path) if l.strip() and not l.startswith("#")]
+    return sorted(((n, int(a, 16), int(z, 16)) for n, a, z in rows), key=lambda r: r[1])
+
+
+def add_jump_table(unit, addr, size):
+    path = os.path.join(ROOT, f"config/{version()}/jtables.tsv")
+    rows = [r for r in jump_tables() if r[0] != unit] + [(unit, addr, size)]
+    rows.sort(key=lambda r: r[1])
+    with open(path, "w") as f:
+        f.write("# unit\tjump tables (VRAM)\tsize: switch tables a C unit links in place of the data segment's\n")
+        f.writelines(f"{n}\t{a:08X}\t{z:X}\n" for n, a, z in rows)
+
+
 def rebuild_yaml():
     table = functions()
     units = []
@@ -76,11 +98,19 @@ def rebuild_yaml():
         nxt = units[i + 1][0] if i + 1 < len(units) else None
         if nxt != end:
             lines.append(f"      - [{end - TEXT_VRAM + TEXT_OFF:#X}, asm, text_{end:08X}]\n".replace("0X", "0x"))
+    lines += ["      - [0x1D3884, asm, sce_stub]\n", "      - [0x1D3FEC, data, sce_tables]\n", "      - [0x1D5168, data, data]\n"]
+    for name, addr, size in jump_tables():
+        if not os.path.exists(os.path.join(ROOT, "src", name + ".c")) and not os.path.exists(os.path.join(ROOT, "src", name + ".cpp")):
+            continue
+        off = addr - TEXT_VRAM + TEXT_OFF
+        # linked among the .data pieces, at the table's place, not with the other units' .rodata
+        lines.append(f"      - {{start: {off:#X}, type: .rodata, name: {name}, linker_section_order: .data}}\n".replace("0X", "0x"))
+        lines.append(f"      - [{off + size:#X}, data, data_{addr + size:08X}]\n".replace("0X", "0x"))
     path = os.path.join(ROOT, f"config/{version()}/splat.boot.yaml")
     txt = open(path).read()
     head, rest = txt.split("    subsegments:\n", 1)
-    stub = rest.index("      - [0x1D3884, asm, sce_stub]")
-    open(path, "w").write(head + "    subsegments:\n" + "".join(lines) + rest[stub:])
+    tail = rest.index("  - [0x245104, bin, elf_sections]")
+    open(path, "w").write(head + "    subsegments:\n" + "".join(lines) + rest[tail:])
     print(f"{len(units)} C units in {os.path.relpath(path, ROOT)}")
 
 
@@ -108,6 +138,8 @@ def main():
             if r.returncode:
                 print(f"skip {f}: {r.stdout.splitlines()[0] if r.stdout else r.stderr.strip()}")
                 continue
+            if m := re.search(r"jump tables (0x[0-9a-f]+) (0x[0-9a-f]+)", r.stdout):
+                add_jump_table("f/" + func, int(m.group(1), 16), int(m.group(2), 16))
         os.makedirs(os.path.dirname(dst), exist_ok=True)
         shutil.copyfile(f, dst)
         added.append(func)

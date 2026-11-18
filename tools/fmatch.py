@@ -59,6 +59,16 @@ def named_symbols():
     return out
 
 
+def jump_table_only(obj, size):
+    """True when every word of the object's .rodata is a R_MIPS_32 relocation (switch jump tables)."""
+    rel = run([os.path.join(BIN, "mipsel-linux-gnu-readelf"), "-r", "-W", obj]).stdout
+    m = re.search(r"Relocation section '\.rel\.rodata'.*?\n(.*?)(?:\n\n|\Z)", rel, re.S)
+    if not m:
+        return False
+    offs = {int(l.split()[0], 16) for l in m.group(1).splitlines() if "R_MIPS_32" in l}
+    return size % 4 == 0 and offs == set(range(0, size, 4))
+
+
 def asm_text(func):
     """FUNC's lines from the splat output: a text chunk, or matchings/ once it is C."""
     pat = re.compile(r"^(?:nonmatching %s, .*?|glabel %s\n.*?)^endlabel %s$" % (func, func, func), re.S | re.M)
@@ -108,13 +118,26 @@ def cmd_diff(a):
     if r.returncode or not os.path.exists(obj):
         print(r.stdout + r.stderr)
         sys.exit(2)
-    # Data the C file would add to the image: refuse it, data comes from the asm side.
+    # Data the C file would add to the image: refuse it, data comes from the asm side. The one exception is
+    # a .rodata made only of switch jump tables (one R_MIPS_32 per word): it is linked at the original
+    # jtbl_ address and compared byte for byte, and integrate.py splits the data segment there.
     sec = run([os.path.join(BIN, "mipsel-linux-gnu-readelf"), "-S", "-W", obj]).stdout
+    jt_size = 0
     for m in re.finditer(r"\]\s+(\S+)\s+\S+\s+[0-9a-f]+\s+[0-9a-f]+\s+([0-9a-f]+)\s+\S+\s+(\S*)", sec):
         name, sz, flg = m.group(1), int(m.group(2), 16), m.group(3)
         if "A" in flg and name not in (".text", ".exceptix", ".exception") and sz:
+            if name == ".rodata" and jump_table_only(obj, sz):
+                jt_size = sz
+                continue
             print(f"{a.file} defines data ({name}, {sz} bytes): use extern D_ symbols, no literals or initialized globals")
             sys.exit(2)
+    jt_addr = None
+    if jt_size:
+        tables = re.findall(r"%hi\((jtbl_[0-9A-F]{8})\)", asm_text(a.func)[1])
+        if not tables:
+            print(f"{a.file} has a switch jump table where the original {a.func} has none: write it as if/else")
+            sys.exit(1)
+        jt_addr = min(int(t[5:], 16) for t in tables)
     nm = run([os.path.join(BIN, "mipsel-linux-gnu-nm"), obj]).stdout
     undef = [l.split()[-1] for l in nm.splitlines() if l.split()[0] == "U"]
     named = named_symbols()
@@ -138,7 +161,8 @@ def cmd_diff(a):
         script = os.path.join(work, "cand.ld")
         with open(script, "w") as f:
             f.write("\n".join(syms) + "\n")
-            f.write(f"SECTIONS {{ .text {base:#x} : SUBALIGN(4) {{ *(.text) }} /DISCARD/ : {{ *(.mwcats) *(.exceptix) *(.exception) *(.comment) *(.rodata) *(.data) *(.bss) *(.sdata) *(.sbss) }} }}\n")
+            ro = f".rodata {jt_addr:#x} : {{ *(.rodata) }} " if jt_addr else ""
+            f.write(f"SECTIONS {{ .text {base:#x} : SUBALIGN(4) {{ *(.text) }} {ro}/DISCARD/ : {{ *(.mwcats) *(.exceptix) *(.exception) *(.comment) *(.rodata) *(.data) *(.bss) *(.sdata) *(.sbss) }} }}\n")
         r = run([os.path.join(BIN, "mipsel-linux-gnu-ld"), "-EL", "-T", script, "-o", elf, obj])
         if r.returncode:
             print(r.stderr)
@@ -163,6 +187,14 @@ def cmd_diff(a):
     tw = [tgt[i:i + 4] for i in range(0, len(tgt), 4)]
     same = sum(1 for x, y in zip(cw, tw) if x == y)
     pct = 100.0 * same / max(len(cw), len(tw))
+    if cand == tgt and jt_addr:
+        jraw = os.path.join(work, "cand.rodata.bin")
+        run([os.path.join(BIN, "mipsel-linux-gnu-objcopy"), "-O", "binary", "-j", ".rodata", elf, jraw])
+        with open(orig_path, "rb") as f:
+            f.seek(jt_addr - TEXT_VRAM + TEXT_OFF)
+            if open(jraw, "rb").read() != f.read(jt_size):
+                print(f"{a.func} code matches but its jump tables differ from jtbl_{jt_addr:08X} ({jt_size} bytes)")
+                sys.exit(1)
     if cand == tgt:
         # Code the game does not have at this place (an inline destructor emitted out of line for an exception
         # table, a static helper) would shift everything after the unit in the real link.
@@ -171,7 +203,8 @@ def cmd_diff(a):
             print(f"{a.func} matches but the object adds {len(cand_all) - len(cand)} bytes of other code "
                   f"({', '.join(extra)}): write it without them")
             sys.exit(1)
-        print(f"MATCH {a.func} 100%")
+        jt = f" (jump tables {jt_addr:#010x} {jt_size:#x})" if jt_addr else ""
+        print(f"MATCH {a.func} 100%{jt}")
         sys.exit(0)
     cl = [t for v, t in objdump_lines(elf) if v >= addr][:len(cw)]
     tl = [t for _, t in objdump_lines(tpath, addr)]

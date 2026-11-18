@@ -308,3 +308,8 @@ sceNetInetTerm = 0x089D7D48; // type:func size:0x8
 // Imports from sceNetResolver
 sceNetResolverTerm = 0x089D7D50; // type:func size:0x8
 sceNetResolverInit = 0x089D7D58; // type:func size:0x8
+// C++ exception runtime: mwccpsp emits calls to these names for throw specs and catch (...) { throw; },
+// and the original calls these addresses at the same places.
+__unexpected = 0x08804D24; // type:func
+__end__catch = 0x088048B0; // type:func
+__throw = 0x08805D44; // type:func
