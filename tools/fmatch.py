@@ -99,6 +99,8 @@ def cmd_diff(a):
     flags = make_var("MWCCFLAGS")
     if a.flags:
         flags = re.sub(r"-O\S*", a.flags, flags)
+    if a.file.endswith(".cpp"):
+        flags += " " + make_var("MWCCPPFLAGS")
     for f in (obj, elf, raw):
         if os.path.exists(f):
             os.remove(f)
@@ -110,7 +112,7 @@ def cmd_diff(a):
     sec = run([os.path.join(BIN, "mipsel-linux-gnu-readelf"), "-S", "-W", obj]).stdout
     for m in re.finditer(r"\]\s+(\S+)\s+\S+\s+[0-9a-f]+\s+[0-9a-f]+\s+([0-9a-f]+)\s+\S+\s+(\S*)", sec):
         name, sz, flg = m.group(1), int(m.group(2), 16), m.group(3)
-        if "A" in flg and name != ".text" and sz:
+        if "A" in flg and name not in (".text", ".exceptix") and sz:
             print(f"{a.file} defines data ({name}, {sz} bytes): use extern D_ symbols, no literals or initialized globals")
             sys.exit(2)
     nm = run([os.path.join(BIN, "mipsel-linux-gnu-nm"), obj]).stdout
@@ -136,7 +138,7 @@ def cmd_diff(a):
         script = os.path.join(work, "cand.ld")
         with open(script, "w") as f:
             f.write("\n".join(syms) + "\n")
-            f.write(f"SECTIONS {{ .text {base:#x} : SUBALIGN(4) {{ *(.text) }} /DISCARD/ : {{ *(.mwcats) *(.comment) *(.rodata) *(.data) *(.bss) *(.sdata) *(.sbss) }} }}\n")
+            f.write(f"SECTIONS {{ .text {base:#x} : SUBALIGN(4) {{ *(.text) }} /DISCARD/ : {{ *(.mwcats) *(.exceptix) *(.comment) *(.rodata) *(.data) *(.bss) *(.sdata) *(.sbss) }} }}\n")
         r = run([os.path.join(BIN, "mipsel-linux-gnu-ld"), "-EL", "-T", script, "-o", elf, obj])
         if r.returncode:
             print(r.stderr)

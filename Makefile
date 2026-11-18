@@ -36,6 +36,10 @@ ASFLAGS  := -march=allegrex -mabi=32 -EL -G0 -no-pad-sections -Iinclude
 MWCC_VER  ?= mwccpsp_3.0.1_219
 MWCC      := tools/bin/wibo tools/compilers/$(MWCC_VER)/mwccpsp.exe
 MWCCFLAGS ?= -c -nostdinc -Iinclude -O4,p
+# C++ units: exceptions on (the compiler's default) keeps the stack frame of a forwarding call where off and C give a
+# tail call `j`; most game code has no tail calls. Their .exceptix tables are dropped by the link (/DISCARD/ in boot.ld).
+# A unit built with exceptions off sets MWCCFLAGS_<unit> = -Cpp_exceptions off.
+MWCCPPFLAGS ?= -Cpp_exceptions on
 LDSCRIPT := $(BUILD)/boot.ld
 UNDEF    := $(BUILD)/undefined_syms_auto.txt $(BUILD)/undefined_funcs_auto.txt
 
@@ -104,7 +108,7 @@ $(BUILD)/src/%.c.o: src/%.c $(wildcard include/*.h) Makefile
 
 $(BUILD)/src/%.cpp.o: src/%.cpp $(wildcard include/*.h) Makefile
 	@mkdir -p $(@D)
-	$(MWCC) $(MWCCFLAGS) $(MWCCFLAGS_$(*F)) -o $@ $<
+	$(MWCC) $(MWCCFLAGS) $(MWCCPPFLAGS) $(MWCCFLAGS_$(*F)) -o $@ $<
 
 $(BUILD)/asm/%.s.o: asm/%.s
 	$(TOOLPY) $(PSPTOOLS)/assemble.py $(AS) $< $@ $(ASFLAGS)

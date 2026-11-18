@@ -1,0 +1,17 @@
+typedef int s32;
+
+extern s32 func_08811284(s32);
+
+s32 func_08811240(s32 arg0, s32 arg1) {
+    s32 temp_s0;
+    s32 temp_v1;
+    s32 var_v0;
+
+    temp_s0 = func_08811284(arg0);
+    temp_v1 = temp_s0 - func_08811284(arg1);
+    var_v0 = temp_v1 >> 4;
+    if (temp_v1 < 0) {
+        var_v0 = (s32) (temp_v1 + 0xF) >> 4;
+    }
+    return var_v0;
+}

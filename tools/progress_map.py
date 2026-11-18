@@ -61,12 +61,21 @@ def c_functions(path):
     end with a semicolon: K&R definitions are covered, prototypes, struct bodies and initializers are not."""
     code = strip_comments(path.read_text(encoding="utf-8", errors="surrogateescape"))
     funcs, depth, start, last, head = {}, 0, 0, 0, ""
+    linkage = []  # `extern "C" {` blocks (the string is blanked by strip_comments): contents count as top level
     for i, ch in enumerate(code):
         if ch == "{":
+            if depth == 0 and re.search(r'\bextern\s*$', code[last:i]):
+                linkage.append(depth)
+                last = i + 1
+                continue
             if depth == 0:
                 head, start = code[last:i], i
             depth += 1
         elif ch == "}":
+            if depth == 0 and linkage:
+                linkage.pop()
+                last = i + 1
+                continue
             depth -= 1
             if depth == 0:
                 tail = head.rstrip().split("\n")[-1].rstrip()
