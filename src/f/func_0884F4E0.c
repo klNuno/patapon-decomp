@@ -1,0 +1,21 @@
+#pragma divbyzerocheck on
+#include "common.h"
+
+void func_08852F00(void *, s32);
+s32 *func_0885356C(void *, s32, s32, s32);
+void func_0885369C(void *, s32);
+
+void func_0884F4E0(void *arg0, void *arg1) {
+    s32 *a;
+    s32 *b;
+
+    a = func_0885356C(arg1, 0, 1, 4);
+    b = func_0885356C(arg1, 1, 1, 4);
+    func_0885369C(arg1, 0);
+    func_0885369C(arg1, 1);
+    if (*b != 0) {
+        *a = *a % *b;
+    }
+    func_0885369C(arg1, 0);
+    func_08852F00(arg1, 0);
+}

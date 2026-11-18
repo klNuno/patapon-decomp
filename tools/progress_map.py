@@ -291,9 +291,10 @@ def svg(r):
     parts.append(f'<rect x="{bx + gw + 2:.2f}" y="{yb}" width="{bw - gw - 2:.2f}" height="{bar_h}" rx="4" fill="url(#hatch)">'
                  f'<title>Sony libraries, 0x08820000-0x08826FFF, 0x08829000-0x0884DFFF and 0x08854000-0x08857FFF</title></rect>')
     slab = f"Sony libraries {100 * sony / (g + sony):.0f}%"
-    parts.append(f'<rect x="{bx + gw + 8:.2f}" y="{yb + 5}" width="{7.4 * len(slab) + 14:.0f}" height="{bar_h - 10}" rx="3" '
+    sl = min(bx + gw + 8, bx + bw - 6 - (7.4 * len(slab) + 14))  # right-aligned when the hatch is narrower than its label
+    parts.append(f'<rect x="{sl:.2f}" y="{yb + 5}" width="{7.4 * len(slab) + 14:.0f}" height="{bar_h - 10}" rx="3" '
                  f'fill="{SURFACE}" fill-opacity="0.82"/>')
-    parts.append(f'<text x="{bx + gw + 15:.2f}" y="{yb + 20}" font-size="13" fill="{INK}">{e(slab)}</text>')
+    parts.append(f'<text x="{sl + 7:.2f}" y="{yb + 20}" font-size="13" fill="{INK}">{e(slab)}</text>')
     parts.append(f'<text x="{pad}" y="{H - 15}" font-size="12" fill="{INK3}">Area = code bytes · groups = 64 KB of '
                  f'address · open the file and hover each function · Sony\'s libraries (GCC-built) sit apart</text>')
     parts.append("</g></svg>")
