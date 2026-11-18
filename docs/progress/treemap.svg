@@ -6,13 +6,13 @@
 <rect width="1200" height="820" rx="16" fill="#1a1a19"/>
 <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
 <text x="28" y="44" font-size="25" font-weight="700" fill="#f0efec">Patapon (PSP, UCES-00995) · decompilation</text>
-<text x="28" y="72" font-size="14" fill="#c3c2b7">BOOT.BIN rebuilt byte for byte · f5775b9 + edits · 9,290 game functions, 1,652,060 code bytes</text>
-<text x="1172" y="44" text-anchor="end" font-size="30" font-weight="700" fill="#f0efec">7.6% in C · 0.0% read</text>
-<text x="1172" y="72" text-anchor="end" font-size="14" fill="#c3c2b7">3,498 of 9,290 functions are C</text>
+<text x="28" y="72" font-size="14" fill="#c3c2b7">BOOT.BIN rebuilt byte for byte · 1d64d86 + edits · 9,290 game functions, 1,652,060 code bytes</text>
+<text x="1172" y="44" text-anchor="end" font-size="30" font-weight="700" fill="#f0efec">8.3% in C · 0.0% read</text>
+<text x="1172" y="72" text-anchor="end" font-size="14" fill="#c3c2b7">3,656 of 9,290 functions are C</text>
 <rect x="28" y="92" width="12" height="12" rx="2" fill="#4a4f57"/>
-<text x="47" y="103" font-size="14" fill="#f0efec">Assembly 92.4%</text>
+<text x="47" y="103" font-size="14" fill="#f0efec">Assembly 91.7%</text>
 <rect x="179.39999999999998" y="92" width="12" height="12" rx="2" fill="#3fa35a"/>
-<text x="198.39999999999998" y="103" font-size="14" fill="#f0efec">C, names left to find 7.6%</text>
+<text x="198.39999999999998" y="103" font-size="14" fill="#f0efec">C, names left to find 8.3%</text>
 <rect x="422.0" y="92" width="12" height="12" rx="2" fill="#8fe0a0"/>
 <text x="441.0" y="103" font-size="14" fill="#f0efec">Read: every name ours 0.0%</text>
 <rect x="28.0" y="124.0" width="32.3" height="56.3" class="asm"><title>func_0899B900 4464 B, Assembly</title></rect>
@@ -426,7 +426,7 @@
 <rect x="148.1" y="388.0" width="8.5" height="8.0" class="asm"><title>func_089CC1D0 168 B, Assembly</title></rect>
 <rect x="148.1" y="396.1" width="8.5" height="7.8" class="asm"><title>func_089C761C 164 B, Assembly</title></rect>
 <rect x="148.1" y="403.9" width="8.5" height="7.6" class="asm"><title>func_089C20D4 160 B, Assembly</title></rect>
-<rect x="148.1" y="411.5" width="8.5" height="7.4" class="asm"><title>func_089CBF70 156 B, Assembly</title></rect>
+<rect x="148.1" y="411.5" width="8.5" height="7.4" class="c"><title>func_089CBF70 156 B, C, names left to find</title></rect>
 <rect x="156.7" y="356.0" width="8.1" height="7.6" class="c"><title>func_089C0BCC 152 B, C, names left to find</title></rect>
 <rect x="164.8" y="356.0" width="8.1" height="7.6" class="asm"><title>func_089CF11C 152 B, Assembly</title></rect>
 <rect x="172.9" y="356.0" width="7.9" height="7.6" class="asm"><title>func_089C3CF0 148 B, Assembly</title></rect>
@@ -467,8 +467,8 @@
 <rect x="191.5" y="377.8" width="6.6" height="5.9" class="asm"></rect>
 <rect x="198.1" y="377.8" width="6.6" height="5.9" class="asm"></rect>
 <rect x="204.8" y="377.8" width="6.6" height="5.9" class="asm"></rect>
-<rect x="170.7" y="383.6" width="6.4" height="6.1" class="asm"></rect>
-<rect x="170.7" y="389.8" width="6.4" height="6.1" class="asm"></rect>
+<rect x="170.7" y="383.6" width="6.4" height="6.1" class="c"></rect>
+<rect x="170.7" y="389.8" width="6.4" height="6.1" class="c"></rect>
 <rect x="170.7" y="395.9" width="6.4" height="5.9" class="asm"></rect>
 <rect x="170.7" y="401.8" width="6.4" height="5.9" class="asm"></rect>
 <rect x="170.7" y="407.7" width="6.4" height="5.6" class="asm"></rect>
@@ -477,9 +477,9 @@
 <rect x="182.8" y="383.6" width="5.7" height="6.0" class="asm"></rect>
 <rect x="188.6" y="383.6" width="5.7" height="6.0" class="c"></rect>
 <rect x="194.3" y="383.6" width="5.7" height="6.0" class="asm"></rect>
-<rect x="200.0" y="383.6" width="5.7" height="6.0" class="asm"></rect>
+<rect x="200.0" y="383.6" width="5.7" height="6.0" class="c"></rect>
 <rect x="205.7" y="383.6" width="5.7" height="6.0" class="asm"></rect>
-<rect x="177.1" y="389.6" width="5.8" height="5.9" class="asm"></rect>
+<rect x="177.1" y="389.6" width="5.8" height="5.9" class="c"></rect>
 <rect x="177.1" y="395.5" width="5.8" height="5.9" class="asm"></rect>
 <rect x="177.1" y="401.3" width="5.8" height="5.9" class="asm"></rect>
 <rect x="177.1" y="407.2" width="5.8" height="5.9" class="asm"></rect>
@@ -488,27 +488,27 @@
 <rect x="188.8" y="389.6" width="5.9" height="5.3" class="asm"></rect>
 <rect x="194.7" y="389.6" width="5.6" height="5.3" class="asm"></rect>
 <rect x="200.3" y="389.6" width="5.6" height="5.3" class="asm"></rect>
-<rect x="205.9" y="389.6" width="5.6" height="5.3" class="asm"></rect>
+<rect x="205.9" y="389.6" width="5.6" height="5.3" class="c"></rect>
 <rect x="182.9" y="394.9" width="5.3" height="5.2" class="asm"></rect>
 <rect x="182.9" y="400.1" width="5.3" height="4.9" class="asm"></rect>
 <rect x="182.9" y="405.1" width="5.3" height="4.9" class="asm"></rect>
-<rect x="182.9" y="410.0" width="5.3" height="4.6" class="asm"></rect>
-<rect x="182.9" y="414.6" width="5.3" height="4.3" class="asm"></rect>
+<rect x="182.9" y="410.0" width="5.3" height="4.6" class="c"></rect>
+<rect x="182.9" y="414.6" width="5.3" height="4.3" class="c"></rect>
 <rect x="188.2" y="394.9" width="5.0" height="4.2" class="asm"></rect>
 <rect x="193.3" y="394.9" width="5.0" height="4.2" class="asm"></rect>
 <rect x="198.3" y="394.9" width="4.6" height="4.2" class="asm"></rect>
-<rect x="202.9" y="394.9" width="4.6" height="4.2" class="asm"></rect>
+<rect x="202.9" y="394.9" width="4.6" height="4.2" class="c"></rect>
 <rect x="207.6" y="394.9" width="3.9" height="4.2" class="asm"></rect>
 <rect x="188.2" y="399.1" width="3.9" height="4.2" class="asm"></rect>
 <rect x="188.2" y="403.3" width="3.9" height="4.2" class="asm"></rect>
 <rect x="188.2" y="407.5" width="3.9" height="3.8" class="c"></rect>
 <rect x="188.2" y="411.3" width="3.9" height="3.8" class="asm"></rect>
 <rect x="188.2" y="415.1" width="3.9" height="3.8" class="c"></rect>
-<rect x="192.1" y="399.1" width="4.1" height="3.6" class="asm"></rect>
+<rect x="192.1" y="399.1" width="4.1" height="3.6" class="c"></rect>
 <rect x="196.1" y="399.1" width="4.1" height="3.6" class="asm"></rect>
 <rect x="200.2" y="399.1" width="4.1" height="3.6" class="asm"></rect>
-<rect x="204.2" y="399.1" width="3.6" height="3.6" class="asm"></rect>
-<rect x="207.8" y="399.1" width="3.6" height="3.6" class="asm"></rect>
+<rect x="204.2" y="399.1" width="3.6" height="3.6" class="c"></rect>
+<rect x="207.8" y="399.1" width="3.6" height="3.6" class="c"></rect>
 <rect x="192.1" y="402.7" width="2.9" height="3.4" class="asm"></rect>
 <rect x="192.1" y="406.1" width="2.9" height="3.4" class="asm"></rect>
 <rect x="192.1" y="409.4" width="2.9" height="3.4" class="asm"></rect>
@@ -520,23 +520,23 @@
 <rect x="195.0" y="411.1" width="2.5" height="2.6" class="c"></rect>
 <rect x="195.0" y="413.7" width="2.5" height="2.6" class="c"></rect>
 <rect x="195.0" y="416.3" width="2.5" height="2.6" class="c"></rect>
-<rect x="197.5" y="402.7" width="2.8" height="2.3" class="asm"></rect>
-<rect x="200.3" y="402.7" width="2.8" height="2.3" class="asm"></rect>
-<rect x="203.1" y="402.7" width="2.8" height="2.3" class="asm"></rect>
-<rect x="205.9" y="402.7" width="2.8" height="2.3" class="asm"></rect>
-<rect x="208.6" y="402.7" width="2.8" height="2.3" class="asm"></rect>
-<rect x="197.5" y="405.0" width="2.5" height="2.6" class="asm"></rect>
-<rect x="197.5" y="407.7" width="2.5" height="2.6" class="asm"></rect>
-<rect x="197.5" y="410.3" width="2.5" height="2.6" class="asm"></rect>
+<rect x="197.5" y="402.7" width="2.8" height="2.3" class="c"></rect>
+<rect x="200.3" y="402.7" width="2.8" height="2.3" class="c"></rect>
+<rect x="203.1" y="402.7" width="2.8" height="2.3" class="c"></rect>
+<rect x="205.9" y="402.7" width="2.8" height="2.3" class="c"></rect>
+<rect x="208.6" y="402.7" width="2.8" height="2.3" class="c"></rect>
+<rect x="197.5" y="405.0" width="2.5" height="2.6" class="c"></rect>
+<rect x="197.5" y="407.7" width="2.5" height="2.6" class="c"></rect>
+<rect x="197.5" y="410.3" width="2.5" height="2.6" class="c"></rect>
 <rect x="197.5" y="413.0" width="2.5" height="2.0" class="c"></rect>
 <rect x="197.5" y="415.0" width="2.5" height="2.0" class="c"></rect>
 <rect x="197.5" y="417.0" width="2.5" height="2.0" class="c"></rect>
 <rect x="200.0" y="405.0" width="2.3" height="2.1" class="c"></rect>
 <rect x="202.3" y="405.0" width="2.3" height="2.1" class="c"></rect>
-<rect x="204.5" y="405.0" width="2.3" height="2.1" class="asm"></rect>
-<rect x="206.8" y="405.0" width="2.3" height="2.1" class="asm"></rect>
-<rect x="209.1" y="405.0" width="2.3" height="2.1" class="asm"></rect>
-<rect x="200.0" y="407.2" width="2.3" height="2.1" class="asm"></rect>
+<rect x="204.5" y="405.0" width="2.3" height="2.1" class="c"></rect>
+<rect x="206.8" y="405.0" width="2.3" height="2.1" class="c"></rect>
+<rect x="209.1" y="405.0" width="2.3" height="2.1" class="c"></rect>
+<rect x="200.0" y="407.2" width="2.3" height="2.1" class="c"></rect>
 <rect x="202.3" y="407.2" width="1.5" height="2.1" class="c"></rect>
 <rect x="203.8" y="407.2" width="1.5" height="2.1" class="c"></rect>
 <rect x="205.3" y="407.2" width="1.5" height="2.1" class="c"></rect>
@@ -565,18 +565,18 @@
 <rect x="205.0" y="411.3" width="1.6" height="2.0" class="c"></rect>
 <rect x="206.6" y="411.3" width="1.6" height="2.0" class="c"></rect>
 <rect x="208.2" y="411.3" width="1.6" height="2.0" class="c"></rect>
-<rect x="209.8" y="411.3" width="1.6" height="2.0" class="asm"></rect>
-<rect x="205.0" y="413.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="205.0" y="415.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="205.0" y="417.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="206.8" y="413.3" width="1.6" height="2.1" class="asm"></rect>
-<rect x="208.3" y="413.3" width="1.6" height="2.1" class="asm"></rect>
-<rect x="209.9" y="413.3" width="1.6" height="2.1" class="asm"></rect>
-<rect x="206.8" y="415.4" width="1.9" height="1.7" class="asm"></rect>
-<rect x="206.8" y="417.2" width="1.9" height="1.7" class="asm"></rect>
-<rect x="208.6" y="415.4" width="1.4" height="2.3" class="asm"></rect>
-<rect x="210.0" y="415.4" width="1.4" height="2.3" class="asm"></rect>
-<rect x="208.6" y="417.8" width="2.8" height="1.2" class="asm"></rect>
+<rect x="209.8" y="411.3" width="1.6" height="2.0" class="c"></rect>
+<rect x="205.0" y="413.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="205.0" y="415.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="205.0" y="417.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="206.8" y="413.3" width="1.6" height="2.1" class="c"></rect>
+<rect x="208.3" y="413.3" width="1.6" height="2.1" class="c"></rect>
+<rect x="209.9" y="413.3" width="1.6" height="2.1" class="c"></rect>
+<rect x="206.8" y="415.4" width="1.9" height="1.7" class="c"></rect>
+<rect x="206.8" y="417.2" width="1.9" height="1.7" class="c"></rect>
+<rect x="208.6" y="415.4" width="1.4" height="2.3" class="c"></rect>
+<rect x="210.0" y="415.4" width="1.4" height="2.3" class="c"></rect>
+<rect x="208.6" y="417.8" width="2.8" height="1.2" class="c"></rect>
 <rect x="28.0" y="272.1" width="183.4" height="146.8" fill="none" stroke="#1a1a19" stroke-width="2.5"/>
 <rect x="28.0" y="418.9" width="18.9" height="25.2" class="asm"><title>func_088E272C 1168 B, Assembly</title></rect>
 <rect x="28.0" y="444.1" width="18.9" height="23.7" class="asm"><title>func_088EB094 1100 B, Assembly</title></rect>
@@ -729,16 +729,16 @@
 <rect x="128.6" y="557.5" width="8.3" height="8.1" class="asm"><title>func_088E9F8C 164 B, Assembly</title></rect>
 <rect x="136.9" y="483.1" width="8.5" height="7.8" class="asm"><title>func_088EB6D8 164 B, Assembly</title></rect>
 <rect x="145.4" y="483.1" width="8.5" height="7.8" class="asm"><title>func_088EDDA0 164 B, Assembly</title></rect>
-<rect x="153.9" y="483.1" width="8.3" height="7.8" class="asm"><title>func_088EA030 160 B, Assembly</title></rect>
-<rect x="162.2" y="483.1" width="8.3" height="7.8" class="asm"><title>func_088EAF30 160 B, Assembly</title></rect>
-<rect x="170.5" y="483.1" width="8.3" height="7.8" class="asm"><title>func_088EC6CC 160 B, Assembly</title></rect>
-<rect x="178.9" y="483.1" width="8.3" height="7.8" class="asm"><title>func_088ED230 160 B, Assembly</title></rect>
-<rect x="187.2" y="483.1" width="8.1" height="7.8" class="asm"><title>func_088E13A8 156 B, Assembly</title></rect>
-<rect x="195.2" y="483.1" width="8.1" height="7.8" class="asm"><title>func_088E1464 156 B, Assembly</title></rect>
-<rect x="203.3" y="483.1" width="8.1" height="7.8" class="asm"><title>func_088E1558 156 B, Assembly</title></rect>
-<rect x="136.9" y="490.9" width="8.4" height="7.5" class="asm"><title>func_088E1618 156 B, Assembly</title></rect>
+<rect x="153.9" y="483.1" width="8.3" height="7.8" class="c"><title>func_088EA030 160 B, C, names left to find</title></rect>
+<rect x="162.2" y="483.1" width="8.3" height="7.8" class="c"><title>func_088EAF30 160 B, C, names left to find</title></rect>
+<rect x="170.5" y="483.1" width="8.3" height="7.8" class="c"><title>func_088EC6CC 160 B, C, names left to find</title></rect>
+<rect x="178.9" y="483.1" width="8.3" height="7.8" class="c"><title>func_088ED230 160 B, C, names left to find</title></rect>
+<rect x="187.2" y="483.1" width="8.1" height="7.8" class="c"><title>func_088E13A8 156 B, C, names left to find</title></rect>
+<rect x="195.2" y="483.1" width="8.1" height="7.8" class="c"><title>func_088E1464 156 B, C, names left to find</title></rect>
+<rect x="203.3" y="483.1" width="8.1" height="7.8" class="c"><title>func_088E1558 156 B, C, names left to find</title></rect>
+<rect x="136.9" y="490.9" width="8.4" height="7.5" class="c"><title>func_088E1618 156 B, C, names left to find</title></rect>
 <rect x="145.3" y="490.9" width="8.4" height="7.5" class="asm"><title>func_088E4F98 156 B, Assembly</title></rect>
-<rect x="153.8" y="490.9" width="8.4" height="7.5" class="asm"><title>func_088E5DA8 156 B, Assembly</title></rect>
+<rect x="153.8" y="490.9" width="8.4" height="7.5" class="c"><title>func_088E5DA8 156 B, C, names left to find</title></rect>
 <rect x="162.2" y="490.9" width="8.2" height="7.5" class="c"><title>func_088E5B9C 152 B, C, names left to find</title></rect>
 <rect x="170.4" y="490.9" width="8.2" height="7.5" class="c"><title>func_088E5CDC 152 B, C, names left to find</title></rect>
 <rect x="178.6" y="490.9" width="8.2" height="7.5" class="c"><title>func_088E61FC 152 B, C, names left to find</title></rect>
@@ -1066,8 +1066,8 @@
 <rect x="181.1" y="633.7" width="7.8" height="8.5" class="asm"><title>func_0895C3A8 164 B, Assembly</title></rect>
 <rect x="188.9" y="633.7" width="7.6" height="8.5" class="asm"><title>func_08952660 160 B, Assembly</title></rect>
 <rect x="196.6" y="633.7" width="7.4" height="8.5" class="asm"><title>func_08958888 156 B, Assembly</title></rect>
-<rect x="204.0" y="633.7" width="7.4" height="8.5" class="asm"><title>func_08959C14 156 B, Assembly</title></rect>
-<rect x="133.6" y="642.2" width="7.9" height="8.0" class="asm"><title>func_0895E290 156 B, Assembly</title></rect>
+<rect x="204.0" y="633.7" width="7.4" height="8.5" class="c"><title>func_08959C14 156 B, C, names left to find</title></rect>
+<rect x="133.6" y="642.2" width="7.9" height="8.0" class="c"><title>func_0895E290 156 B, C, names left to find</title></rect>
 <rect x="133.6" y="650.2" width="7.9" height="8.0" class="asm"><title>func_0895E9E0 156 B, Assembly</title></rect>
 <rect x="133.6" y="658.2" width="7.9" height="7.8" class="asm"><title>func_089506F8 152 B, Assembly</title></rect>
 <rect x="133.6" y="666.0" width="7.9" height="7.8" class="c"><title>func_08958E30 152 B, C, names left to find</title></rect>
@@ -1426,8 +1426,8 @@
 <rect x="361.7" y="196.3" width="8.0" height="8.0" class="c"><title>func_088A1F54 156 B, C, names left to find</title></rect>
 <rect x="369.7" y="196.3" width="8.0" height="8.0" class="c"><title>func_088A4838 156 B, C, names left to find</title></rect>
 <rect x="377.6" y="196.3" width="8.0" height="8.0" class="c"><title>func_088A7774 156 B, C, names left to find</title></rect>
-<rect x="385.6" y="196.3" width="8.0" height="8.0" class="asm"><title>func_088AC9A8 156 B, Assembly</title></rect>
-<rect x="318.9" y="204.3" width="8.0" height="7.9" class="asm"><title>func_088AF260 156 B, Assembly</title></rect>
+<rect x="385.6" y="196.3" width="8.0" height="8.0" class="c"><title>func_088AC9A8 156 B, C, names left to find</title></rect>
+<rect x="318.9" y="204.3" width="8.0" height="7.9" class="c"><title>func_088AF260 156 B, C, names left to find</title></rect>
 <rect x="318.9" y="212.2" width="8.0" height="7.5" class="asm"><title>func_088A09D4 148 B, Assembly</title></rect>
 <rect x="318.9" y="219.7" width="8.0" height="7.5" class="c"><title>func_088A17E8 148 B, C, names left to find</title></rect>
 <rect x="318.9" y="227.2" width="8.0" height="7.5" class="c"><title>func_088A4A9C 148 B, C, names left to find</title></rect>
@@ -1756,8 +1756,8 @@
 <rect x="321.5" y="378.9" width="8.1" height="8.0" class="asm"><title>func_08970820 160 B, Assembly</title></rect>
 <rect x="321.5" y="386.9" width="8.1" height="7.8" class="asm"><title>func_08973238 156 B, Assembly</title></rect>
 <rect x="321.5" y="394.7" width="8.1" height="7.8" class="asm"><title>func_08975570 156 B, Assembly</title></rect>
-<rect x="321.5" y="402.6" width="8.1" height="7.8" class="asm"><title>func_08975EBC 156 B, Assembly</title></rect>
-<rect x="321.5" y="410.4" width="8.1" height="7.8" class="asm"><title>func_0897EA44 156 B, Assembly</title></rect>
+<rect x="321.5" y="402.6" width="8.1" height="7.8" class="c"><title>func_08975EBC 156 B, C, names left to find</title></rect>
+<rect x="321.5" y="410.4" width="8.1" height="7.8" class="c"><title>func_0897EA44 156 B, C, names left to find</title></rect>
 <rect x="329.6" y="354.2" width="7.5" height="8.2" class="c"><title>func_08979D14 152 B, C, names left to find</title></rect>
 <rect x="329.6" y="362.4" width="7.5" height="8.2" class="c"><title>func_0897F1A8 152 B, C, names left to find</title></rect>
 <rect x="329.6" y="370.7" width="7.5" height="8.0" class="asm"><title>func_08973610 148 B, Assembly</title></rect>
@@ -2089,9 +2089,9 @@
 <rect x="319.5" y="505.9" width="7.6" height="8.8" class="asm"><title>func_0890A680 164 B, Assembly</title></rect>
 <rect x="319.5" y="514.7" width="7.6" height="8.6" class="asm"><title>func_0890263C 160 B, Assembly</title></rect>
 <rect x="319.5" y="523.2" width="7.6" height="8.6" class="asm"><title>func_08904E64 160 B, Assembly</title></rect>
-<rect x="319.5" y="531.8" width="7.6" height="8.6" class="asm"><title>func_0890DDBC 160 B, Assembly</title></rect>
+<rect x="319.5" y="531.8" width="7.6" height="8.6" class="c"><title>func_0890DDBC 160 B, C, names left to find</title></rect>
 <rect x="319.5" y="540.3" width="7.6" height="8.3" class="asm"><title>func_08901EE4 156 B, Assembly</title></rect>
-<rect x="319.5" y="548.7" width="7.6" height="8.3" class="asm"><title>func_08907B30 156 B, Assembly</title></rect>
+<rect x="319.5" y="548.7" width="7.6" height="8.3" class="c"><title>func_08907B30 156 B, C, names left to find</title></rect>
 <rect x="319.5" y="557.0" width="7.6" height="8.1" class="asm"><title>func_08904408 152 B, Assembly</title></rect>
 <rect x="327.1" y="497.1" width="7.8" height="8.0" class="asm"><title>func_089076A8 152 B, Assembly</title></rect>
 <rect x="334.9" y="497.1" width="7.6" height="8.0" class="asm"><title>func_0890A5EC 148 B, Assembly</title></rect>
@@ -2393,7 +2393,7 @@
 <rect x="301.1" y="626.9" width="8.0" height="7.9" class="asm"><title>func_08935B44 156 B, Assembly</title></rect>
 <rect x="301.1" y="634.8" width="8.0" height="7.9" class="asm"><title>func_0893AC98 156 B, Assembly</title></rect>
 <rect x="301.1" y="642.7" width="8.0" height="7.9" class="asm"><title>func_0893AFEC 156 B, Assembly</title></rect>
-<rect x="301.1" y="650.6" width="8.0" height="7.9" class="asm"><title>func_0893D67C 156 B, Assembly</title></rect>
+<rect x="301.1" y="650.6" width="8.0" height="7.9" class="c"><title>func_0893D67C 156 B, C, names left to find</title></rect>
 <rect x="301.1" y="658.5" width="8.0" height="7.7" class="c"><title>func_08932544 152 B, C, names left to find</title></rect>
 <rect x="301.1" y="666.2" width="8.0" height="7.7" class="asm"><title>func_089398D4 152 B, Assembly</title></rect>
 <rect x="301.1" y="673.9" width="8.0" height="7.7" class="c"><title>func_0893BAB8 152 B, C, names left to find</title></rect>
@@ -2860,7 +2860,7 @@
 <rect x="567.3" y="198.4" width="8.0" height="8.3" class="asm"><title>func_08890CEC 164 B, Assembly</title></rect>
 <rect x="507.4" y="206.7" width="8.1" height="8.3" class="asm"><title>func_08890D90 164 B, Assembly</title></rect>
 <rect x="507.4" y="215.0" width="8.1" height="8.3" class="asm"><title>func_0889B6E8 164 B, Assembly</title></rect>
-<rect x="507.4" y="223.2" width="8.1" height="8.1" class="asm"><title>func_0889A3C4 160 B, Assembly</title></rect>
+<rect x="507.4" y="223.2" width="8.1" height="8.1" class="c"><title>func_0889A3C4 160 B, C, names left to find</title></rect>
 <rect x="507.4" y="231.3" width="8.1" height="8.1" class="asm"><title>func_0889B794 160 B, Assembly</title></rect>
 <rect x="507.4" y="239.4" width="8.1" height="8.1" class="asm"><title>func_0889BE68 160 B, Assembly</title></rect>
 <rect x="507.4" y="247.4" width="8.1" height="8.1" class="asm"><title>func_0889C004 160 B, Assembly</title></rect>
@@ -3177,12 +3177,12 @@
 <rect x="505.3" y="385.3" width="8.3" height="8.5" class="asm"><title>func_088C69D8 172 B, Assembly</title></rect>
 <rect x="505.3" y="393.8" width="8.3" height="8.5" class="asm"><title>func_088CF308 172 B, Assembly</title></rect>
 <rect x="505.3" y="402.2" width="8.3" height="8.1" class="asm"><title>func_088CB34C 164 B, Assembly</title></rect>
-<rect x="505.3" y="410.3" width="8.3" height="7.9" class="asm"><title>func_088C5714 160 B, Assembly</title></rect>
+<rect x="505.3" y="410.3" width="8.3" height="7.9" class="c"><title>func_088C5714 160 B, C, names left to find</title></rect>
 <rect x="513.6" y="350.5" width="7.9" height="8.2" class="asm"><title>func_088C95AC 160 B, Assembly</title></rect>
-<rect x="521.5" y="350.5" width="7.9" height="8.2" class="asm"><title>func_088CE14C 160 B, Assembly</title></rect>
-<rect x="529.5" y="350.5" width="7.9" height="8.2" class="asm"><title>func_088CE64C 160 B, Assembly</title></rect>
-<rect x="537.4" y="350.5" width="7.7" height="8.2" class="asm"><title>func_088C57C0 156 B, Assembly</title></rect>
-<rect x="545.2" y="350.5" width="7.7" height="8.2" class="asm"><title>func_088C5920 156 B, Assembly</title></rect>
+<rect x="521.5" y="350.5" width="7.9" height="8.2" class="c"><title>func_088CE14C 160 B, C, names left to find</title></rect>
+<rect x="529.5" y="350.5" width="7.9" height="8.2" class="c"><title>func_088CE64C 160 B, C, names left to find</title></rect>
+<rect x="537.4" y="350.5" width="7.7" height="8.2" class="c"><title>func_088C57C0 156 B, C, names left to find</title></rect>
+<rect x="545.2" y="350.5" width="7.7" height="8.2" class="c"><title>func_088C5920 156 B, C, names left to find</title></rect>
 <rect x="552.9" y="350.5" width="7.5" height="8.2" class="c"><title>func_088C35F0 152 B, C, names left to find</title></rect>
 <rect x="560.5" y="350.5" width="7.5" height="8.2" class="asm"><title>func_088CDF18 152 B, Assembly</title></rect>
 <rect x="568.0" y="350.5" width="7.3" height="8.2" class="c"><title>func_088CE6EC 148 B, C, names left to find</title></rect>
@@ -3531,7 +3531,7 @@
 <rect x="505.4" y="510.5" width="8.2" height="8.2" class="asm"><title>func_089BF390 164 B, Assembly</title></rect>
 <rect x="505.4" y="518.7" width="8.2" height="8.0" class="asm"><title>func_089B26F0 160 B, Assembly</title></rect>
 <rect x="505.4" y="526.6" width="8.2" height="8.0" class="asm"><title>func_089B3620 160 B, Assembly</title></rect>
-<rect x="505.4" y="534.6" width="8.2" height="7.8" class="asm"><title>func_089B568C 156 B, Assembly</title></rect>
+<rect x="505.4" y="534.6" width="8.2" height="7.8" class="c"><title>func_089B568C 156 B, C, names left to find</title></rect>
 <rect x="505.4" y="542.4" width="8.2" height="7.6" class="c"><title>func_089B31A8 152 B, C, names left to find</title></rect>
 <rect x="505.4" y="549.9" width="8.2" height="7.6" class="c"><title>func_089B3450 152 B, C, names left to find</title></rect>
 <rect x="505.4" y="557.5" width="8.2" height="7.6" class="c"><title>func_089B57EC 152 B, C, names left to find</title></rect>
@@ -3865,7 +3865,7 @@
 <rect x="567.4" y="624.4" width="8.0" height="8.1" class="asm"><title>func_0894828C 160 B, Assembly</title></rect>
 <rect x="492.6" y="632.5" width="7.7" height="8.5" class="asm"><title>func_0894A2C8 160 B, Assembly</title></rect>
 <rect x="492.6" y="641.0" width="7.7" height="8.5" class="asm"><title>func_0894C4E0 160 B, Assembly</title></rect>
-<rect x="492.6" y="649.5" width="7.7" height="8.3" class="asm"><title>func_08947BF0 156 B, Assembly</title></rect>
+<rect x="492.6" y="649.5" width="7.7" height="8.3" class="c"><title>func_08947BF0 156 B, C, names left to find</title></rect>
 <rect x="492.6" y="657.7" width="7.7" height="8.3" class="asm"><title>func_0894B664 156 B, Assembly</title></rect>
 <rect x="492.6" y="666.0" width="7.7" height="8.1" class="c"><title>func_08940968 152 B, C, names left to find</title></rect>
 <rect x="492.6" y="674.1" width="7.7" height="8.1" class="asm"><title>func_089436B4 152 B, Assembly</title></rect>
@@ -5050,9 +5050,9 @@
 <rect x="710.2" y="491.3" width="8.2" height="8.6" class="asm"><title>func_088D2624 172 B, Assembly</title></rect>
 <rect x="718.4" y="491.3" width="8.2" height="8.6" class="asm"><title>func_088D7C74 172 B, Assembly</title></rect>
 <rect x="726.5" y="491.3" width="8.0" height="8.6" class="asm"><title>func_088DEBA8 168 B, Assembly</title></rect>
-<rect x="734.5" y="491.3" width="7.6" height="8.6" class="asm"><title>func_088DFA90 160 B, Assembly</title></rect>
-<rect x="742.1" y="491.3" width="7.4" height="8.6" class="asm"><title>func_088D91D4 156 B, Assembly</title></rect>
-<rect x="749.5" y="491.3" width="7.4" height="8.6" class="asm"><title>func_088DD3B0 156 B, Assembly</title></rect>
+<rect x="734.5" y="491.3" width="7.6" height="8.6" class="c"><title>func_088DFA90 160 B, C, names left to find</title></rect>
+<rect x="742.1" y="491.3" width="7.4" height="8.6" class="c"><title>func_088D91D4 156 B, C, names left to find</title></rect>
+<rect x="749.5" y="491.3" width="7.4" height="8.6" class="c"><title>func_088DD3B0 156 B, C, names left to find</title></rect>
 <rect x="683.8" y="499.9" width="7.3" height="8.5" class="c"><title>func_088D7134 152 B, C, names left to find</title></rect>
 <rect x="683.8" y="508.4" width="7.3" height="8.3" class="c"><title>func_088D4ED4 148 B, C, names left to find</title></rect>
 <rect x="683.8" y="516.7" width="7.3" height="8.3" class="c"><title>func_088DDBEC 148 B, C, names left to find</title></rect>
@@ -5408,12 +5408,12 @@
 <rect x="679.0" y="642.0" width="8.5" height="8.2" class="asm"><title>func_0892E894 172 B, Assembly</title></rect>
 <rect x="679.0" y="650.2" width="8.5" height="8.2" class="asm"><title>func_0892F098 172 B, Assembly</title></rect>
 <rect x="679.0" y="658.4" width="8.5" height="8.0" class="asm"><title>func_0892E524 168 B, Assembly</title></rect>
-<rect x="679.0" y="666.5" width="8.5" height="7.7" class="asm"><title>func_08923B30 160 B, Assembly</title></rect>
+<rect x="679.0" y="666.5" width="8.5" height="7.7" class="c"><title>func_08923B30 160 B, C, names left to find</title></rect>
 <rect x="679.0" y="674.1" width="8.5" height="7.7" class="asm"><title>func_08923BD0 160 B, Assembly</title></rect>
 <rect x="679.0" y="681.8" width="8.5" height="7.7" class="asm"><title>func_089259F0 160 B, Assembly</title></rect>
-<rect x="679.0" y="689.4" width="8.5" height="7.7" class="asm"><title>func_089293A4 160 B, Assembly</title></rect>
-<rect x="679.0" y="697.1" width="8.5" height="7.5" class="asm"><title>func_08927D18 156 B, Assembly</title></rect>
-<rect x="679.0" y="704.5" width="8.5" height="7.5" class="asm"><title>func_0892E094 156 B, Assembly</title></rect>
+<rect x="679.0" y="689.4" width="8.5" height="7.7" class="c"><title>func_089293A4 160 B, C, names left to find</title></rect>
+<rect x="679.0" y="697.1" width="8.5" height="7.5" class="c"><title>func_08927D18 156 B, C, names left to find</title></rect>
+<rect x="679.0" y="704.5" width="8.5" height="7.5" class="c"><title>func_0892E094 156 B, C, names left to find</title></rect>
 <rect x="687.6" y="642.0" width="7.9" height="7.8" class="c"><title>func_0892CB1C 152 B, C, names left to find</title></rect>
 <rect x="695.5" y="642.0" width="7.9" height="7.8" class="c"><title>func_0892CBB4 152 B, C, names left to find</title></rect>
 <rect x="703.4" y="642.0" width="7.9" height="7.8" class="asm"><title>func_0892CF98 152 B, Assembly</title></rect>
@@ -5770,8 +5770,8 @@
 <rect x="845.3" y="247.2" width="8.5" height="7.7" class="asm"><title>func_08985AD0 160 B, Assembly</title></rect>
 <rect x="853.8" y="247.2" width="8.5" height="7.7" class="asm"><title>func_0898A170 160 B, Assembly</title></rect>
 <rect x="862.3" y="247.2" width="8.5" height="7.7" class="asm"><title>func_0898C4D8 160 B, Assembly</title></rect>
-<rect x="870.8" y="247.2" width="8.3" height="7.7" class="asm"><title>func_08984294 156 B, Assembly</title></rect>
-<rect x="879.1" y="247.2" width="8.3" height="7.7" class="asm"><title>func_0898A9D0 156 B, Assembly</title></rect>
+<rect x="870.8" y="247.2" width="8.3" height="7.7" class="c"><title>func_08984294 156 B, C, names left to find</title></rect>
+<rect x="879.1" y="247.2" width="8.3" height="7.7" class="c"><title>func_0898A9D0 156 B, C, names left to find</title></rect>
 <rect x="887.3" y="247.2" width="8.1" height="7.7" class="c"><title>func_08980550 152 B, C, names left to find</title></rect>
 <rect x="827.7" y="254.9" width="7.8" height="8.0" class="c"><title>func_089855BC 152 B, C, names left to find</title></rect>
 <rect x="827.7" y="262.9" width="7.8" height="8.0" class="asm"><title>func_08986240 152 B, Assembly</title></rect>
@@ -6109,9 +6109,9 @@
 <rect x="939.5" y="299.1" width="8.4" height="8.5" class="asm"><title>func_0886B91C 176 B, Assembly</title></rect>
 <rect x="939.5" y="307.6" width="8.4" height="8.3" class="asm"><title>func_0886DE40 172 B, Assembly</title></rect>
 <rect x="947.9" y="228.6" width="8.3" height="8.3" class="asm"><title>func_088663BC 168 B, Assembly</title></rect>
-<rect x="956.2" y="228.6" width="7.9" height="8.3" class="asm"><title>func_0886CE2C 160 B, Assembly</title></rect>
-<rect x="964.0" y="228.6" width="7.9" height="8.3" class="asm"><title>func_0886D338 160 B, Assembly</title></rect>
-<rect x="971.9" y="228.6" width="7.9" height="8.3" class="asm"><title>func_0886D3E4 160 B, Assembly</title></rect>
+<rect x="956.2" y="228.6" width="7.9" height="8.3" class="c"><title>func_0886CE2C 160 B, C, names left to find</title></rect>
+<rect x="964.0" y="228.6" width="7.9" height="8.3" class="c"><title>func_0886D338 160 B, C, names left to find</title></rect>
+<rect x="971.9" y="228.6" width="7.9" height="8.3" class="c"><title>func_0886D3E4 160 B, C, names left to find</title></rect>
 <rect x="979.8" y="228.6" width="7.9" height="8.3" class="asm"><title>func_0886EE30 160 B, Assembly</title></rect>
 <rect x="987.7" y="228.6" width="7.7" height="8.3" class="c"><title>func_08866754 156 B, C, names left to find</title></rect>
 <rect x="995.3" y="228.6" width="7.7" height="8.3" class="c"><title>func_0886CB58 156 B, C, names left to find</title></rect>
@@ -6139,8 +6139,8 @@
 <rect x="1011.0" y="236.9" width="7.7" height="7.4" class="c"><title>func_0886AB90 140 B, C, names left to find</title></rect>
 <rect x="1018.6" y="236.9" width="7.7" height="7.4" class="c"><title>func_0886AC38 140 B, C, names left to find</title></rect>
 <rect x="1026.3" y="236.9" width="7.4" height="7.4" class="c"><title>func_08861624 136 B, C, names left to find</title></rect>
-<rect x="955.8" y="244.4" width="7.6" height="7.3" class="asm"><title>func_08864E80 136 B, Assembly</title></rect>
-<rect x="955.8" y="251.6" width="7.6" height="7.3" class="asm"><title>func_08864F08 136 B, Assembly</title></rect>
+<rect x="955.8" y="244.4" width="7.6" height="7.3" class="c"><title>func_08864E80 136 B, C, names left to find</title></rect>
+<rect x="955.8" y="251.6" width="7.6" height="7.3" class="c"><title>func_08864F08 136 B, C, names left to find</title></rect>
 <rect x="955.8" y="258.9" width="7.6" height="7.3" class="c"><title>func_0886B1D8 136 B, C, names left to find</title></rect>
 <rect x="955.8" y="266.2" width="7.6" height="7.3" class="c"><title>func_0886DA70 136 B, C, names left to find</title></rect>
 <rect x="955.8" y="273.4" width="7.6" height="7.3" class="c"><title>func_0886E08C 136 B, C, names left to find</title></rect>
@@ -6552,10 +6552,10 @@
 <rect x="1115.4" y="241.4" width="8.2" height="8.1" class="asm"><title>func_088F232C 164 B, Assembly</title></rect>
 <rect x="1123.6" y="241.4" width="8.2" height="8.1" class="asm"><title>func_088F2F40 164 B, Assembly</title></rect>
 <rect x="1131.9" y="241.4" width="8.2" height="8.1" class="asm"><title>func_088F92A0 164 B, Assembly</title></rect>
-<rect x="1140.1" y="241.4" width="8.0" height="8.1" class="asm"><title>func_088F23D0 160 B, Assembly</title></rect>
+<rect x="1140.1" y="241.4" width="8.0" height="8.1" class="c"><title>func_088F23D0 160 B, C, names left to find</title></rect>
 <rect x="1148.1" y="241.4" width="8.0" height="8.1" class="asm"><title>func_088F98E4 160 B, Assembly</title></rect>
 <rect x="1156.1" y="241.4" width="8.0" height="8.1" class="asm"><title>func_088FC078 160 B, Assembly</title></rect>
-<rect x="1164.2" y="241.4" width="7.8" height="8.1" class="asm"><title>func_088F2DA4 156 B, Assembly</title></rect>
+<rect x="1164.2" y="241.4" width="7.8" height="8.1" class="c"><title>func_088F2DA4 156 B, C, names left to find</title></rect>
 <rect x="1098.8" y="249.5" width="8.0" height="7.7" class="c"><title>func_088FD73C 152 B, C, names left to find</title></rect>
 <rect x="1098.8" y="257.2" width="8.0" height="7.7" class="c"><title>func_088FF44C 152 B, C, names left to find</title></rect>
 <rect x="1098.8" y="264.9" width="8.0" height="7.5" class="c"><title>func_088F920C 148 B, C, names left to find</title></rect>
@@ -6878,10 +6878,10 @@
 <rect x="882.9" y="428.6" width="7.8" height="8.6" class="asm"><title>func_08912114 164 B, Assembly</title></rect>
 <rect x="808.3" y="437.2" width="8.3" height="8.1" class="asm"><title>func_0891831C 164 B, Assembly</title></rect>
 <rect x="808.3" y="445.3" width="8.3" height="8.1" class="asm"><title>func_0891AAAC 164 B, Assembly</title></rect>
-<rect x="808.3" y="453.4" width="8.3" height="7.9" class="asm"><title>func_089140C0 160 B, Assembly</title></rect>
-<rect x="808.3" y="461.2" width="8.3" height="7.7" class="asm"><title>func_08911DA0 156 B, Assembly</title></rect>
-<rect x="808.3" y="468.9" width="8.3" height="7.7" class="asm"><title>func_08914654 156 B, Assembly</title></rect>
-<rect x="808.3" y="476.6" width="8.3" height="7.7" class="asm"><title>func_089148E8 156 B, Assembly</title></rect>
+<rect x="808.3" y="453.4" width="8.3" height="7.9" class="c"><title>func_089140C0 160 B, C, names left to find</title></rect>
+<rect x="808.3" y="461.2" width="8.3" height="7.7" class="c"><title>func_08911DA0 156 B, C, names left to find</title></rect>
+<rect x="808.3" y="468.9" width="8.3" height="7.7" class="c"><title>func_08914654 156 B, C, names left to find</title></rect>
+<rect x="808.3" y="476.6" width="8.3" height="7.7" class="c"><title>func_089148E8 156 B, C, names left to find</title></rect>
 <rect x="808.3" y="484.2" width="8.3" height="7.5" class="asm"><title>func_08919450 152 B, Assembly</title></rect>
 <rect x="808.3" y="491.7" width="8.3" height="7.5" class="asm"><title>func_0891B138 152 B, Assembly</title></rect>
 <rect x="808.3" y="499.2" width="8.3" height="7.5" class="asm"><title>func_0891CA24 152 B, Assembly</title></rect>
@@ -7755,8 +7755,8 @@
 <rect x="1006.5" y="419.2" width="8.4" height="7.8" class="asm"><title>func_0896C61C 160 B, Assembly</title></rect>
 <rect x="1014.9" y="419.2" width="8.4" height="7.8" class="asm"><title>func_0896F660 160 B, Assembly</title></rect>
 <rect x="1023.3" y="419.2" width="8.2" height="7.8" class="asm"><title>func_0896728C 156 B, Assembly</title></rect>
-<rect x="954.6" y="427.0" width="8.0" height="7.9" class="asm"><title>func_08967630 156 B, Assembly</title></rect>
-<rect x="962.6" y="427.0" width="8.0" height="7.9" class="asm"><title>func_0896CAB8 156 B, Assembly</title></rect>
+<rect x="954.6" y="427.0" width="8.0" height="7.9" class="c"><title>func_08967630 156 B, C, names left to find</title></rect>
+<rect x="962.6" y="427.0" width="8.0" height="7.9" class="c"><title>func_0896CAB8 156 B, C, names left to find</title></rect>
 <rect x="970.6" y="427.0" width="8.0" height="7.9" class="asm"><title>func_0896FFC4 156 B, Assembly</title></rect>
 <rect x="978.6" y="427.0" width="7.6" height="7.9" class="c"><title>func_08962C50 148 B, C, names left to find</title></rect>
 <rect x="986.1" y="427.0" width="7.6" height="7.9" class="c"><title>func_089692D8 148 B, C, names left to find</title></rect>
@@ -8163,13 +8163,13 @@
 <rect x="1164.3" y="426.9" width="7.7" height="8.9" class="asm"><title>func_088B47F4 168 B, Assembly</title></rect>
 <rect x="1104.3" y="435.8" width="7.7" height="8.5" class="asm"><title>func_088B7284 160 B, Assembly</title></rect>
 <rect x="1112.0" y="435.8" width="7.5" height="8.5" class="asm"><title>func_088B3504 156 B, Assembly</title></rect>
-<rect x="1119.5" y="435.8" width="7.5" height="8.5" class="asm"><title>func_088B4A74 156 B, Assembly</title></rect>
-<rect x="1127.0" y="435.8" width="7.5" height="8.5" class="asm"><title>func_088B4C40 156 B, Assembly</title></rect>
+<rect x="1119.5" y="435.8" width="7.5" height="8.5" class="c"><title>func_088B4A74 156 B, C, names left to find</title></rect>
+<rect x="1127.0" y="435.8" width="7.5" height="8.5" class="c"><title>func_088B4C40 156 B, C, names left to find</title></rect>
 <rect x="1134.5" y="435.8" width="7.5" height="8.5" class="asm"><title>func_088B4D74 156 B, Assembly</title></rect>
-<rect x="1142.0" y="435.8" width="7.5" height="8.5" class="asm"><title>func_088B6BF0 156 B, Assembly</title></rect>
+<rect x="1142.0" y="435.8" width="7.5" height="8.5" class="c"><title>func_088B6BF0 156 B, C, names left to find</title></rect>
 <rect x="1149.5" y="435.8" width="7.5" height="8.5" class="asm"><title>func_088B71D0 156 B, Assembly</title></rect>
-<rect x="1157.0" y="435.8" width="7.5" height="8.5" class="asm"><title>func_088B9290 156 B, Assembly</title></rect>
-<rect x="1164.5" y="435.8" width="7.5" height="8.5" class="asm"><title>func_088BD498 156 B, Assembly</title></rect>
+<rect x="1157.0" y="435.8" width="7.5" height="8.5" class="c"><title>func_088B9290 156 B, C, names left to find</title></rect>
+<rect x="1164.5" y="435.8" width="7.5" height="8.5" class="c"><title>func_088BD498 156 B, C, names left to find</title></rect>
 <rect x="1104.3" y="444.2" width="8.2" height="7.6" class="asm"><title>func_088B4B10 152 B, Assembly</title></rect>
 <rect x="1104.3" y="451.8" width="8.2" height="7.6" class="asm"><title>func_088B4BA8 152 B, Assembly</title></rect>
 <rect x="1104.3" y="459.4" width="8.2" height="7.6" class="asm"><title>func_088B4CDC 152 B, Assembly</title></rect>
@@ -8479,7 +8479,7 @@
 <rect x="955.7" y="647.7" width="7.9" height="8.3" class="asm"><title>func_089A78D8 160 B, Assembly</title></rect>
 <rect x="963.6" y="647.7" width="7.9" height="8.3" class="asm"><title>func_089ACA30 160 B, Assembly</title></rect>
 <rect x="971.5" y="647.7" width="7.9" height="8.3" class="asm"><title>func_089ACAD0 160 B, Assembly</title></rect>
-<rect x="979.3" y="647.7" width="7.7" height="8.3" class="asm"><title>func_089A8DD8 156 B, Assembly</title></rect>
+<rect x="979.3" y="647.7" width="7.7" height="8.3" class="c"><title>func_089A8DD8 156 B, C, names left to find</title></rect>
 <rect x="987.0" y="647.7" width="7.7" height="8.3" class="asm"><title>func_089AE65C 156 B, Assembly</title></rect>
 <rect x="994.7" y="647.7" width="7.5" height="8.3" class="c"><title>func_089A7A5C 152 B, C, names left to find</title></rect>
 <rect x="1002.2" y="647.7" width="7.3" height="8.3" class="asm"><title>func_089A7EB0 148 B, Assembly</title></rect>
@@ -9206,7 +9206,7 @@
 <rect x="1131.0" y="654.1" width="8.6" height="7.8" class="asm"><title>func_089D6168 164 B, Assembly</title></rect>
 <rect x="1139.6" y="654.1" width="8.4" height="7.8" class="asm"><title>func_089D1D40 160 B, Assembly</title></rect>
 <rect x="1147.9" y="654.1" width="8.2" height="7.8" class="asm"><title>func_089D1CA4 156 B, Assembly</title></rect>
-<rect x="1156.1" y="654.1" width="8.2" height="7.8" class="asm"><title>func_089D5D80 156 B, Assembly</title></rect>
+<rect x="1156.1" y="654.1" width="8.2" height="7.8" class="c"><title>func_089D5D80 156 B, C, names left to find</title></rect>
 <rect x="1164.3" y="654.1" width="7.7" height="7.8" class="c"><title>func_089D0D04 148 B, C, names left to find</title></rect>
 <rect x="1122.2" y="661.8" width="7.5" height="7.8" class="c"><title>func_089D6684 144 B, C, names left to find</title></rect>
 <rect x="1129.7" y="661.8" width="7.5" height="7.8" class="c"><title>func_089D6714 144 B, C, names left to find</title></rect>
@@ -9220,17 +9220,17 @@
 <rect x="1122.2" y="684.0" width="7.3" height="7.2" class="asm"><title>func_089D6C60 128 B, Assembly</title></rect>
 <rect x="1122.2" y="691.2" width="7.3" height="7.2" class="asm"><title>func_089D6E74 128 B, Assembly</title></rect>
 <rect x="1122.2" y="698.3" width="7.3" height="6.9" class="asm"><title>func_089D750C 124 B, Assembly</title></rect>
-<rect x="1122.2" y="705.3" width="7.3" height="6.7" class="asm"><title>func_089D53A8 120 B, Assembly</title></rect>
+<rect x="1122.2" y="705.3" width="7.3" height="6.7" class="c"><title>func_089D53A8 120 B, C, names left to find</title></rect>
 <rect x="1129.5" y="669.7" width="6.1" height="7.2" class="asm"><title>func_089D47D4 108 B, Assembly</title></rect>
 <rect x="1129.5" y="676.9" width="6.1" height="7.2" class="asm"><title>func_089D5ADC 108 B, Assembly</title></rect>
-<rect x="1129.5" y="684.1" width="6.1" height="7.0" class="asm"><title>func_089D0408 104 B, Assembly</title></rect>
+<rect x="1129.5" y="684.1" width="6.1" height="7.0" class="c"><title>func_089D0408 104 B, C, names left to find</title></rect>
 <rect x="1129.5" y="691.1" width="6.1" height="7.0" class="asm"><title>func_089D50D0 104 B, Assembly</title></rect>
 <rect x="1129.5" y="698.1" width="6.1" height="7.0" class="asm"><title>func_089D59A0 104 B, Assembly</title></rect>
 <rect x="1129.5" y="705.0" width="6.1" height="7.0" class="asm"><title>func_089D6D00 104 B, Assembly</title></rect>
-<rect x="1135.5" y="669.7" width="6.3" height="6.4" class="asm"><title>func_089D0A5C 100 B, Assembly</title></rect>
-<rect x="1141.9" y="669.7" width="6.3" height="6.4" class="asm"><title>func_089D1AEC 100 B, Assembly</title></rect>
+<rect x="1135.5" y="669.7" width="6.3" height="6.4" class="c"><title>func_089D0A5C 100 B, C, names left to find</title></rect>
+<rect x="1141.9" y="669.7" width="6.3" height="6.4" class="c"><title>func_089D1AEC 100 B, C, names left to find</title></rect>
 <rect x="1148.2" y="669.7" width="6.1" height="6.4" class="asm"></rect>
-<rect x="1154.3" y="669.7" width="6.1" height="6.4" class="asm"></rect>
+<rect x="1154.3" y="669.7" width="6.1" height="6.4" class="c"></rect>
 <rect x="1160.4" y="669.7" width="5.8" height="6.4" class="asm"></rect>
 <rect x="1166.2" y="669.7" width="5.8" height="6.4" class="asm"></rect>
 <rect x="1135.5" y="676.1" width="6.3" height="6.0" class="asm"></rect>
@@ -9239,96 +9239,96 @@
 <rect x="1135.5" y="694.0" width="6.3" height="6.0" class="asm"></rect>
 <rect x="1135.5" y="700.0" width="6.3" height="6.0" class="asm"></rect>
 <rect x="1135.5" y="706.0" width="6.3" height="6.0" class="asm"></rect>
-<rect x="1141.8" y="676.1" width="6.5" height="5.2" class="asm"></rect>
+<rect x="1141.8" y="676.1" width="6.5" height="5.2" class="c"></rect>
 <rect x="1148.3" y="676.1" width="6.2" height="5.2" class="asm"></rect>
 <rect x="1154.6" y="676.1" width="5.9" height="5.2" class="asm"></rect>
 <rect x="1160.5" y="676.1" width="5.9" height="5.2" class="asm"></rect>
 <rect x="1166.4" y="676.1" width="5.6" height="5.2" class="asm"></rect>
-<rect x="1141.8" y="681.3" width="5.3" height="5.5" class="asm"></rect>
+<rect x="1141.8" y="681.3" width="5.3" height="5.5" class="c"></rect>
 <rect x="1147.1" y="681.3" width="5.0" height="5.5" class="asm"></rect>
 <rect x="1152.2" y="681.3" width="5.0" height="5.5" class="asm"></rect>
 <rect x="1157.2" y="681.3" width="5.0" height="5.5" class="asm"></rect>
-<rect x="1162.2" y="681.3" width="5.0" height="5.5" class="asm"></rect>
-<rect x="1167.3" y="681.3" width="4.7" height="5.5" class="asm"></rect>
-<rect x="1141.8" y="686.8" width="5.0" height="5.2" class="asm"></rect>
-<rect x="1141.8" y="692.0" width="5.0" height="5.2" class="asm"></rect>
+<rect x="1162.2" y="681.3" width="5.0" height="5.5" class="c"></rect>
+<rect x="1167.3" y="681.3" width="4.7" height="5.5" class="c"></rect>
+<rect x="1141.8" y="686.8" width="5.0" height="5.2" class="c"></rect>
+<rect x="1141.8" y="692.0" width="5.0" height="5.2" class="c"></rect>
 <rect x="1141.8" y="697.2" width="5.0" height="5.2" class="asm"></rect>
-<rect x="1141.8" y="702.3" width="5.0" height="4.8" class="asm"></rect>
-<rect x="1141.8" y="707.2" width="5.0" height="4.8" class="asm"></rect>
-<rect x="1146.8" y="686.8" width="5.3" height="4.6" class="asm"></rect>
-<rect x="1152.2" y="686.8" width="5.0" height="4.6" class="asm"></rect>
-<rect x="1157.1" y="686.8" width="5.0" height="4.6" class="asm"></rect>
-<rect x="1162.1" y="686.8" width="5.0" height="4.6" class="asm"></rect>
+<rect x="1141.8" y="702.3" width="5.0" height="4.8" class="c"></rect>
+<rect x="1141.8" y="707.2" width="5.0" height="4.8" class="c"></rect>
+<rect x="1146.8" y="686.8" width="5.3" height="4.6" class="c"></rect>
+<rect x="1152.2" y="686.8" width="5.0" height="4.6" class="c"></rect>
+<rect x="1157.1" y="686.8" width="5.0" height="4.6" class="c"></rect>
+<rect x="1162.1" y="686.8" width="5.0" height="4.6" class="c"></rect>
 <rect x="1167.0" y="686.8" width="5.0" height="4.6" class="asm"></rect>
 <rect x="1146.8" y="691.4" width="4.3" height="5.3" class="asm"></rect>
 <rect x="1146.8" y="696.8" width="4.3" height="5.3" class="asm"></rect>
 <rect x="1146.8" y="702.1" width="4.3" height="5.0" class="asm"></rect>
 <rect x="1146.8" y="707.0" width="4.3" height="5.0" class="asm"></rect>
-<rect x="1151.1" y="691.4" width="4.3" height="4.6" class="asm"></rect>
+<rect x="1151.1" y="691.4" width="4.3" height="4.6" class="c"></rect>
 <rect x="1151.1" y="696.0" width="4.3" height="4.2" class="asm"></rect>
-<rect x="1151.1" y="700.2" width="4.3" height="4.2" class="asm"></rect>
-<rect x="1151.1" y="704.4" width="4.3" height="3.8" class="asm"></rect>
-<rect x="1151.1" y="708.2" width="4.3" height="3.8" class="asm"></rect>
-<rect x="1155.4" y="691.4" width="4.4" height="3.7" class="asm"></rect>
-<rect x="1159.8" y="691.4" width="4.4" height="3.7" class="asm"></rect>
-<rect x="1164.1" y="691.4" width="3.9" height="3.7" class="asm"></rect>
+<rect x="1151.1" y="700.2" width="4.3" height="4.2" class="c"></rect>
+<rect x="1151.1" y="704.4" width="4.3" height="3.8" class="c"></rect>
+<rect x="1151.1" y="708.2" width="4.3" height="3.8" class="c"></rect>
+<rect x="1155.4" y="691.4" width="4.4" height="3.7" class="c"></rect>
+<rect x="1159.8" y="691.4" width="4.4" height="3.7" class="c"></rect>
+<rect x="1164.1" y="691.4" width="3.9" height="3.7" class="c"></rect>
 <rect x="1168.1" y="691.4" width="3.9" height="3.7" class="asm"></rect>
-<rect x="1155.4" y="695.1" width="3.6" height="3.1" class="asm"></rect>
-<rect x="1159.0" y="695.1" width="3.6" height="3.1" class="asm"></rect>
+<rect x="1155.4" y="695.1" width="3.6" height="3.1" class="c"></rect>
+<rect x="1159.0" y="695.1" width="3.6" height="3.1" class="c"></rect>
 <rect x="1162.7" y="695.1" width="3.6" height="3.1" class="asm"></rect>
 <rect x="1166.3" y="695.1" width="3.1" height="3.1" class="asm"></rect>
-<rect x="1169.4" y="695.1" width="2.6" height="3.1" class="asm"></rect>
-<rect x="1155.4" y="698.3" width="3.0" height="2.7" class="asm"></rect>
+<rect x="1169.4" y="695.1" width="2.6" height="3.1" class="c"></rect>
+<rect x="1155.4" y="698.3" width="3.0" height="2.7" class="c"></rect>
 <rect x="1155.4" y="701.0" width="3.0" height="2.7" class="asm"></rect>
 <rect x="1155.4" y="703.8" width="3.0" height="2.7" class="asm"></rect>
-<rect x="1155.4" y="706.5" width="3.0" height="2.7" class="asm"></rect>
+<rect x="1155.4" y="706.5" width="3.0" height="2.7" class="c"></rect>
 <rect x="1155.4" y="709.3" width="3.0" height="2.7" class="asm"></rect>
-<rect x="1158.4" y="698.3" width="3.1" height="2.6" class="asm"></rect>
-<rect x="1161.5" y="698.3" width="3.1" height="2.6" class="asm"></rect>
-<rect x="1164.6" y="698.3" width="2.5" height="2.6" class="asm"></rect>
-<rect x="1167.0" y="698.3" width="2.5" height="2.6" class="asm"></rect>
-<rect x="1169.5" y="698.3" width="2.5" height="2.6" class="asm"></rect>
-<rect x="1158.4" y="700.9" width="2.5" height="2.6" class="asm"></rect>
-<rect x="1158.4" y="703.5" width="2.5" height="2.6" class="asm"></rect>
+<rect x="1158.4" y="698.3" width="3.1" height="2.6" class="c"></rect>
+<rect x="1161.5" y="698.3" width="3.1" height="2.6" class="c"></rect>
+<rect x="1164.6" y="698.3" width="2.5" height="2.6" class="c"></rect>
+<rect x="1167.0" y="698.3" width="2.5" height="2.6" class="c"></rect>
+<rect x="1169.5" y="698.3" width="2.5" height="2.6" class="c"></rect>
+<rect x="1158.4" y="700.9" width="2.5" height="2.6" class="c"></rect>
+<rect x="1158.4" y="703.5" width="2.5" height="2.6" class="c"></rect>
 <rect x="1158.4" y="706.1" width="2.5" height="2.0" class="asm"></rect>
-<rect x="1158.4" y="708.1" width="2.5" height="2.0" class="asm"></rect>
-<rect x="1158.4" y="710.0" width="2.5" height="2.0" class="asm"></rect>
-<rect x="1160.8" y="700.9" width="1.9" height="2.6" class="asm"></rect>
+<rect x="1158.4" y="708.1" width="2.5" height="2.0" class="c"></rect>
+<rect x="1158.4" y="710.0" width="2.5" height="2.0" class="c"></rect>
+<rect x="1160.8" y="700.9" width="1.9" height="2.6" class="c"></rect>
 <rect x="1160.8" y="703.5" width="1.9" height="2.6" class="asm"></rect>
 <rect x="1160.8" y="706.0" width="1.9" height="2.6" class="asm"></rect>
-<rect x="1160.8" y="708.6" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1160.8" y="710.3" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1162.8" y="700.9" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1164.6" y="700.9" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1166.5" y="700.9" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1168.3" y="700.9" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1170.2" y="700.9" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1162.8" y="702.7" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1164.6" y="702.7" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1166.5" y="702.7" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1168.3" y="702.7" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1170.2" y="702.7" width="1.8" height="1.8" class="asm"></rect>
-<rect x="1162.8" y="704.4" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1162.8" y="706.3" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1162.8" y="708.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1162.8" y="710.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1164.5" y="704.4" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1166.4" y="704.4" width="1.9" height="1.7" class="asm"></rect>
-<rect x="1168.2" y="704.4" width="1.9" height="1.7" class="asm"></rect>
+<rect x="1160.8" y="708.6" width="1.9" height="1.7" class="c"></rect>
+<rect x="1160.8" y="710.3" width="1.9" height="1.7" class="c"></rect>
+<rect x="1162.8" y="700.9" width="1.8" height="1.8" class="c"></rect>
+<rect x="1164.6" y="700.9" width="1.8" height="1.8" class="c"></rect>
+<rect x="1166.5" y="700.9" width="1.8" height="1.8" class="c"></rect>
+<rect x="1168.3" y="700.9" width="1.8" height="1.8" class="c"></rect>
+<rect x="1170.2" y="700.9" width="1.8" height="1.8" class="c"></rect>
+<rect x="1162.8" y="702.7" width="1.8" height="1.8" class="c"></rect>
+<rect x="1164.6" y="702.7" width="1.8" height="1.8" class="c"></rect>
+<rect x="1166.5" y="702.7" width="1.8" height="1.8" class="c"></rect>
+<rect x="1168.3" y="702.7" width="1.8" height="1.8" class="c"></rect>
+<rect x="1170.2" y="702.7" width="1.8" height="1.8" class="c"></rect>
+<rect x="1162.8" y="704.4" width="1.7" height="1.9" class="c"></rect>
+<rect x="1162.8" y="706.3" width="1.7" height="1.9" class="c"></rect>
+<rect x="1162.8" y="708.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="1162.8" y="710.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="1164.5" y="704.4" width="1.9" height="1.7" class="c"></rect>
+<rect x="1166.4" y="704.4" width="1.9" height="1.7" class="c"></rect>
+<rect x="1168.2" y="704.4" width="1.9" height="1.7" class="c"></rect>
 <rect x="1170.1" y="704.4" width="1.9" height="1.7" class="asm"></rect>
 <rect x="1164.5" y="706.2" width="1.7" height="1.9" class="asm"></rect>
 <rect x="1164.5" y="708.1" width="1.7" height="1.9" class="asm"></rect>
 <rect x="1164.5" y="710.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1166.1" y="706.2" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1166.1" y="708.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1166.1" y="710.1" width="1.7" height="1.9" class="asm"></rect>
-<rect x="1167.8" y="706.2" width="2.1" height="1.6" class="asm"></rect>
+<rect x="1166.1" y="706.2" width="1.7" height="1.9" class="c"></rect>
+<rect x="1166.1" y="708.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="1166.1" y="710.1" width="1.7" height="1.9" class="c"></rect>
+<rect x="1167.8" y="706.2" width="2.1" height="1.6" class="c"></rect>
 <rect x="1169.9" y="706.2" width="2.1" height="1.6" class="asm"></rect>
-<rect x="1167.8" y="707.7" width="2.1" height="1.6" class="asm"></rect>
-<rect x="1169.9" y="707.7" width="2.1" height="1.6" class="asm"></rect>
-<rect x="1167.8" y="709.3" width="2.4" height="1.4" class="asm"></rect>
-<rect x="1167.8" y="710.6" width="2.4" height="1.4" class="asm"></rect>
-<rect x="1170.2" y="709.3" width="1.8" height="1.8" class="asm"></rect>
+<rect x="1167.8" y="707.7" width="2.1" height="1.6" class="c"></rect>
+<rect x="1169.9" y="707.7" width="2.1" height="1.6" class="c"></rect>
+<rect x="1167.8" y="709.3" width="2.4" height="1.4" class="c"></rect>
+<rect x="1167.8" y="710.6" width="2.4" height="1.4" class="c"></rect>
+<rect x="1170.2" y="709.3" width="1.8" height="1.8" class="c"></rect>
 <rect x="1170.2" y="711.1" width="1.8" height="0.9" class="asm"></rect>
 <rect x="1016.5" y="634.1" width="155.5" height="77.9" fill="none" stroke="#1a1a19" stroke-width="2.5"/>
 <rect x="33.0" y="129.0" width="90" height="21" rx="4" fill="#1a1a19" fill-opacity="0.82"/>
@@ -9384,8 +9384,8 @@
 <rect x="1021.5" y="639.1" width="90" height="21" rx="4" fill="#1a1a19" fill-opacity="0.82"/>
 <text x="1028.5" y="654.1" font-size="12.5" fill="#f0efec">0x089D0000</text>
 <text x="28" y="737" font-size="13" fill="#c3c2b7">All the code of BOOT.BIN</text>
-<rect x="28.00" y="746" width="74.44" height="30" fill="#3fa35a"/>
-<rect x="102.44" y="746" width="910.74" height="30" fill="#4a4f57"/>
+<rect x="28.00" y="746" width="81.48" height="30" fill="#3fa35a"/>
+<rect x="109.48" y="746" width="903.70" height="30" fill="#4a4f57"/>
 <rect x="34" y="751" width="214" height="20" rx="3" fill="#1a1a19" fill-opacity="0.82"/>
 <text x="41" y="766" font-size="13" fill="#f0efec">Game code 86%: mapped above</text>
 <rect x="1017.18" y="746" width="154.82" height="30" rx="4" fill="url(#hatch)"><title>Sony libraries, 0x08820000-0x0885FFFF</title></rect>

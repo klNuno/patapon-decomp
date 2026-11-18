@@ -65,6 +65,10 @@ def main():
     # resumable: functions already written or recorded as tried in OUT/tried.tsv are skipped
     tried_path = Path(a.out, "tried.tsv")
     tried = {l.split("\t")[0] for l in tried_path.read_text().splitlines()} if tried_path.exists() else set()
+    # functions already in C, or handed to a matcher batch of a wave (work/wave*/b*.txt), are left alone
+    tried |= {p.stem for p in (ROOT / "src").rglob("*.c*")}
+    for b in (ROOT / "work").glob("wave*/b*.txt"):
+        tried |= set(b.read_text().split())
     todo = [f for f in funcs if bu.eligible(f, cfg, a) and f["name"] not in tried]
     print(f"{len(todo)} functions to try, {a.jobs} workers", flush=True)
     states = {}
