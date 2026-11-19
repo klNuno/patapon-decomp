@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "commit": "ca21cd8",
+ "commit": "c93ccbd",
  "tracked_tree_dirty": true,
  "metric": "Code bytes of each function of BOOT.BIN .text (config/<VERSION>/functions.tsv). asm: still assembly; c: matching C with names left to find; read: every name ours.",
  "totals": {
@@ -8,12 +8,12 @@
   "game_bytes": 1717912,
   "levels": {
    "asm": {
-    "functions": 1292,
-    "bytes": 544496
+    "functions": 1291,
+    "bytes": 544388
    },
    "c": {
-    "functions": 8463,
-    "bytes": 1173416
+    "functions": 8464,
+    "bytes": 1173524
    },
    "read": {
     "functions": 0,
@@ -21,10 +21,10 @@
    }
   },
   "unknowns": {
-   "unk_fields": 27846,
-   "m2c_names": 15627,
+   "unk_fields": 27847,
+   "m2c_names": 15628,
    "d_globals": 4501,
-   "func_calls": 16500
+   "func_calls": 16501
   },
   "sony_functions": 1313,
   "sony_bytes": 196584,
@@ -4489,6 +4489,7 @@
   ["func_0890E830","0x0890E830",144,"src/f/func_0890E830.c",5,3,0,0,"c"],
   ["func_0890E9B0","0x0890E9B0",72,"src/f/func_0890E9B0.c",3,2,0,0,"c"],
   ["func_0890EB38","0x0890EB38",560,"src/f/func_0890EB38.cpp",12,1,0,9,"c"],
+  ["func_0890EEAC","0x0890EEAC",108,"src/f/func_0890EEAC.c",1,1,0,1,"c"],
   ["func_0890EF18","0x0890EF18",16,"src/f/func_0890EF18.c",1,1,0,0,"c"],
   ["func_0890EF28","0x0890EF28",8,"src/f/func_0890EF28.c",0,0,0,0,"c"],
   ["func_0890F438","0x0890F438",32,"src/f/func_0890F438.c",0,1,0,1,"c"],

@@ -4886,6 +4886,7 @@ segments:
       - [0x10AA4C, asm, text_0890E9F8]
       - [0x10AB8C, cpp, f/func_0890EB38]
       - [0x10ADBC, asm, text_0890ED68]
+      - [0x10AF00, c, f/func_0890EEAC]
       - [0x10AF6C, c, f/func_0890EF18]
       - [0x10AF7C, c, f/func_0890EF28]
       - [0x10AF84, asm, text_0890EF30]
