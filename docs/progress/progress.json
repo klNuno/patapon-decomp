@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "commit": "07ea72b",
+ "commit": "3d546a4",
  "tracked_tree_dirty": true,
  "metric": "Code bytes of each function of BOOT.BIN .text (config/<VERSION>/functions.tsv). asm: still assembly; c: matching C with names left to find; read: every name ours.",
  "totals": {
@@ -8,12 +8,12 @@
   "game_bytes": 1717912,
   "levels": {
    "asm": {
-    "functions": 1307,
-    "bytes": 551780
+    "functions": 1301,
+    "bytes": 549032
    },
    "c": {
-    "functions": 8448,
-    "bytes": 1166132
+    "functions": 8454,
+    "bytes": 1168880
    },
    "read": {
     "functions": 0,
@@ -21,10 +21,10 @@
    }
   },
   "unknowns": {
-   "unk_fields": 27672,
-   "m2c_names": 15586,
-   "d_globals": 4470,
-   "func_calls": 16436
+   "unk_fields": 27736,
+   "m2c_names": 15600,
+   "d_globals": 4476,
+   "func_calls": 16466
   },
   "sony_functions": 1313,
   "sony_bytes": 196584,
@@ -4199,6 +4199,7 @@
   ["func_088FDA48","0x088FDA48",128,"src/f/func_088FDA48.c",2,2,1,4,"c"],
   ["func_088FDAC8","0x088FDAC8",144,"src/f/func_088FDAC8.c",3,2,1,4,"c"],
   ["func_088FDB58","0x088FDB58",196,"src/f/func_088FDB58.c",1,4,3,4,"c"],
+  ["func_088FDC1C","0x088FDC1C",768,"src/f/func_088FDC1C.c",9,2,0,6,"c"],
   ["func_088FDF1C","0x088FDF1C",140,"src/f/func_088FDF1C.c",2,2,0,4,"c"],
   ["func_088FDFA8","0x088FDFA8",496,"src/f/func_088FDFA8.cpp",2,2,0,8,"c"],
   ["func_088FE198","0x088FE198",348,"src/f/func_088FE198.c",2,2,1,6,"c"],
@@ -6048,6 +6049,7 @@
   ["func_08951BCC","0x08951BCC",52,"src/f/func_08951BCC.c",1,3,0,0,"c"],
   ["func_08951C00","0x08951C00",56,"src/f/func_08951C00.c",2,3,0,0,"c"],
   ["func_08951C38","0x08951C38",80,"src/f/func_08951C38.c",2,3,0,0,"c"],
+  ["func_08951F40","0x08951F40",1040,"src/f/func_08951F40.cpp",23,2,1,18,"c"],
   ["func_08952574","0x08952574",8,"src/f/func_08952574.c",1,1,0,0,"c"],
   ["func_0895257C","0x0895257C",8,"src/f/func_0895257C.c",1,1,0,0,"c"],
   ["func_08952584","0x08952584",48,"src/f/func_08952584.c",1,1,0,2,"c"],
@@ -6116,6 +6118,7 @@
   ["func_08956920","0x08956920",228,"src/f/func_08956920.c",6,2,4,2,"c"],
   ["func_08956A04","0x08956A04",184,"src/f/func_08956A04.c",4,4,0,1,"c"],
   ["func_08956ABC","0x08956ABC",144,"src/f/func_08956ABC.cpp",3,1,0,4,"c"],
+  ["func_08956DF0","0x08956DF0",96,"src/f/func_08956DF0.c",2,2,0,0,"c"],
   ["func_08956E50","0x08956E50",88,"src/f/func_08956E50.c",4,2,0,2,"c"],
   ["func_08956EA8","0x08956EA8",112,"src/f/func_08956EA8.c",7,2,0,4,"c"],
   ["func_08956F18","0x08956F18",8,"src/f/func_08956F18.c",0,2,0,1,"c"],
@@ -7163,6 +7166,7 @@
   ["func_08987B08","0x08987B08",136,"src/f/func_08987B08.c",3,2,2,4,"c"],
   ["func_08987B90","0x08987B90",8,"src/f/func_08987B90.c",1,1,0,0,"c"],
   ["func_08987B98","0x08987B98",8,"src/f/func_08987B98.c",0,0,0,0,"c"],
+  ["func_08987BA0","0x08987BA0",312,"src/f/func_08987BA0.cpp",9,2,1,2,"c"],
   ["func_08987CD8","0x08987CD8",92,"src/f/func_08987CD8.c",1,2,1,2,"c"],
   ["func_08987D34","0x08987D34",32,"src/f/func_08987D34.c",4,2,0,0,"c"],
   ["func_08987D54","0x08987D54",8,"src/f/func_08987D54.c",0,0,0,0,"c"],
@@ -7569,6 +7573,7 @@
   ["func_0899EC54","0x0899EC54",112,"src/f/func_0899EC54.c",12,3,0,1,"c"],
   ["func_0899ECC4","0x0899ECC4",216,"src/f/func_0899ECC4.cpp",2,2,0,0,"c"],
   ["func_0899ED9C","0x0899ED9C",76,"src/f/func_0899ED9C.c",0,3,0,1,"c"],
+  ["func_0899EDE8","0x0899EDE8",396,"src/f/func_0899EDE8.cpp",9,3,2,3,"c"],
   ["func_0899F044","0x0899F044",252,"src/f/func_0899F044.cpp",10,2,3,2,"c"],
   ["func_0899F140","0x0899F140",8,"src/f/func_0899F140.c",0,1,0,0,"c"],
   ["func_0899F148","0x0899F148",36,"src/f/func_0899F148.c",1,3,0,0,"c"],
@@ -8290,6 +8295,7 @@
   ["func_089CC1D0","0x089CC1D0",168,"src/f/func_089CC1D0.cpp",5,1,0,1,"c"],
   ["func_089CC278","0x089CC278",628,"src/f/func_089CC278.cpp",7,1,0,13,"c"],
   ["func_089CC4EC","0x089CC4EC",12,"src/f/func_089CC4EC.c",1,2,0,0,"c"],
+  ["func_089CC4F8","0x089CC4F8",136,"src/f/func_089CC4F8.cpp",12,3,2,1,"c"],
   ["func_089CC580","0x089CC580",112,"src/f/func_089CC580.c",4,2,1,2,"c"],
   ["func_089CC5F0","0x089CC5F0",300,"src/f/func_089CC5F0.c",4,2,0,1,"c"],
   ["func_089CC868","0x089CC868",284,"src/f/func_089CC868.c",4,1,0,0,"c"],
