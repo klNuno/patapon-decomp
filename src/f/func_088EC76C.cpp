@@ -1,0 +1,11 @@
+#include "common.h"
+extern "C" {
+typedef struct S088A88C0 S088A88C0;
+void func_08852F00(void *, s32);
+void func_088A8A68(S088A88C0 *);
+void *func_088A88C0(void);
+void func_088EC76C(void *arg0, void *arg1) {
+    func_088A8A68((S088A88C0 *)func_088A88C0());
+    func_08852F00(arg1, 0);
+}
+}
