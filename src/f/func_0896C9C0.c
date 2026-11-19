@@ -1,0 +1,22 @@
+#include "common.h"
+
+extern u8 D_08A44BE0[];
+
+typedef struct {
+    s32 unk_00;
+    s32 unk_04;
+    s32 unk_08;
+    s32 unk_0C;
+    u8 pad_10[0xC];
+    u8 *unk_1C;
+} S;
+
+S *func_0896C9C0(S *arg0, s32 arg1)
+{
+    arg0->unk_1C = D_08A44BE0;
+    arg0->unk_00 = 0;
+    arg0->unk_04 = 0;
+    arg0->unk_08 = arg1;
+    arg0->unk_0C = 0;
+    return arg0;
+}
