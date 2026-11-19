@@ -6,9 +6,9 @@
 <rect width="1200" height="820" rx="16" fill="#1a1a19"/>
 <g font-family="system-ui, -apple-system, Segoe UI, sans-serif">
 <text x="28" y="44" font-size="25" font-weight="700" fill="#f0efec">Patapon (PSP, UCES-00995) · decompilation</text>
-<text x="28" y="72" font-size="14" fill="#c3c2b7">BOOT.BIN rebuilt byte for byte · f352893 + edits · 9,755 game functions, 1,717,912 code bytes</text>
+<text x="28" y="72" font-size="14" fill="#c3c2b7">BOOT.BIN rebuilt byte for byte · ca21cd8 + edits · 9,755 game functions, 1,717,912 code bytes</text>
 <text x="1172" y="44" text-anchor="end" font-size="30" font-weight="700" fill="#f0efec">68.3% in C · 0.0% read</text>
-<text x="1172" y="72" text-anchor="end" font-size="14" fill="#c3c2b7">8,461 of 9,755 functions are C</text>
+<text x="1172" y="72" text-anchor="end" font-size="14" fill="#c3c2b7">8,463 of 9,755 functions are C</text>
 <rect x="28" y="92" width="12" height="12" rx="2" fill="#4a4f57"/>
 <text x="47" y="103" font-size="14" fill="#f0efec">Assembly 31.7%</text>
 <rect x="179.39999999999998" y="92" width="12" height="12" rx="2" fill="#3fa35a"/>
@@ -944,7 +944,7 @@
 <rect x="101.4" y="565.6" width="15.8" height="15.5" class="c"><title>func_08958448 624 B, C, names left to find</title></rect>
 <rect x="117.2" y="565.6" width="15.4" height="15.5" class="c"><title>func_0895ACD8 608 B, C, names left to find</title></rect>
 <rect x="132.6" y="565.6" width="14.9" height="15.5" class="c"><title>func_08952E30 588 B, C, names left to find</title></rect>
-<rect x="147.5" y="565.6" width="14.8" height="15.5" class="asm"><title>func_089529D8 584 B, Assembly</title></rect>
+<rect x="147.5" y="565.6" width="14.8" height="15.5" class="c"><title>func_089529D8 584 B, C, names left to find</title></rect>
 <rect x="162.2" y="565.6" width="14.7" height="15.5" class="asm"><title>func_0895A064 580 B, Assembly</title></rect>
 <rect x="176.9" y="565.6" width="13.9" height="15.5" class="asm"><title>func_08952350 548 B, Assembly</title></rect>
 <rect x="190.7" y="565.6" width="13.7" height="15.5" class="asm"><title>func_08953CF0 540 B, Assembly</title></rect>
@@ -8652,7 +8652,7 @@
 <rect x="952.9" y="555.2" width="13.1" height="13.5" class="asm"><title>func_08804D24 452 B, Assembly</title></rect>
 <rect x="952.9" y="568.7" width="13.1" height="12.1" class="c"><title>func_08805B40 404 B, C, names left to find</title></rect>
 <rect x="952.9" y="580.8" width="13.1" height="11.2" class="c"><title>func_08805FA8 376 B, C, names left to find</title></rect>
-<rect x="952.9" y="592.0" width="13.1" height="10.6" class="asm"><title>func_088048E8 356 B, Assembly</title></rect>
+<rect x="952.9" y="592.0" width="13.1" height="10.6" class="c"><title>func_088048E8 356 B, C, names left to find</title></rect>
 <rect x="966.0" y="492.3" width="11.9" height="11.4" class="c"><title>func_088080B8 348 B, C, names left to find</title></rect>
 <rect x="966.0" y="503.7" width="11.9" height="11.4" class="c"><title>func_0880B120 348 B, C, names left to find</title></rect>
 <rect x="966.0" y="515.1" width="11.9" height="11.3" class="c"><title>func_0880CB18 344 B, C, names left to find</title></rect>
@@ -9852,8 +9852,8 @@
 <rect x="918.0" y="607.6" width="90" height="21" rx="4" fill="#1a1a19" fill-opacity="0.82"/>
 <text x="925.0" y="622.6" font-size="12.5" fill="#f0efec">0x08850000</text>
 <text x="28" y="737" font-size="13" fill="#c3c2b7">All the code of BOOT.BIN</text>
-<rect x="28.00" y="746" width="699.24" height="30" fill="#3fa35a"/>
-<rect x="727.24" y="746" width="325.29" height="30" fill="#4a4f57"/>
+<rect x="28.00" y="746" width="699.80" height="30" fill="#3fa35a"/>
+<rect x="727.80" y="746" width="324.73" height="30" fill="#4a4f57"/>
 <rect x="34" y="751" width="214" height="20" rx="3" fill="#1a1a19" fill-opacity="0.82"/>
 <text x="41" y="766" font-size="13" fill="#f0efec">Game code 90%: mapped above</text>
 <rect x="1056.53" y="746" width="115.47" height="30" rx="4" fill="url(#hatch)"><title>Sony libraries, 0x08820000-0x08826FFF, 0x08829000-0x0884DFFF and 0x08854000-0x08857FFF</title></rect>

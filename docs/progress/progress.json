@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "commit": "f352893",
+ "commit": "ca21cd8",
  "tracked_tree_dirty": true,
  "metric": "Code bytes of each function of BOOT.BIN .text (config/<VERSION>/functions.tsv). asm: still assembly; c: matching C with names left to find; read: every name ours.",
  "totals": {
@@ -8,12 +8,12 @@
   "game_bytes": 1717912,
   "levels": {
    "asm": {
-    "functions": 1294,
-    "bytes": 545436
+    "functions": 1292,
+    "bytes": 544496
    },
    "c": {
-    "functions": 8461,
-    "bytes": 1172476
+    "functions": 8463,
+    "bytes": 1173416
    },
    "read": {
     "functions": 0,
@@ -21,10 +21,10 @@
    }
   },
   "unknowns": {
-   "unk_fields": 27832,
-   "m2c_names": 15619,
+   "unk_fields": 27846,
+   "m2c_names": 15627,
    "d_globals": 4501,
-   "func_calls": 16489
+   "func_calls": 16500
   },
   "sony_functions": 1313,
   "sony_bytes": 196584,
@@ -59,6 +59,7 @@
   ["func_088046B4","0x088046B4",116,"src/f/func_088046B4.cpp",0,4,0,1,"c"],
   ["func_08804778","0x08804778",156,"src/f/func_08804778.c",0,2,0,0,"c"],
   ["func_08804814","0x08804814",156,"src/f/func_08804814.c",0,2,0,0,"c"],
+  ["func_088048E8","0x088048E8",356,"src/f/func_088048E8.c",10,1,0,9,"c"],
   ["func_08804A4C","0x08804A4C",728,"src/f/func_08804A4C.cpp",18,3,0,7,"c"],
   ["func_08804EE8","0x08804EE8",92,"src/f/func_08804EE8.c",0,2,2,1,"c"],
   ["func_08804F44","0x08804F44",340,"src/f/func_08804F44.c",18,2,0,3,"c"],
@@ -6068,6 +6069,7 @@
   ["func_089528BC","0x089528BC",80,"src/f/func_089528BC.c",12,2,0,0,"c"],
   ["func_0895290C","0x0895290C",80,"src/f/func_0895290C.c",12,2,0,0,"c"],
   ["func_0895295C","0x0895295C",124,"src/f/func_0895295C.c",2,2,2,1,"c"],
+  ["func_089529D8","0x089529D8",584,"src/f/func_089529D8.cpp",4,7,0,2,"c"],
   ["func_08952C20","0x08952C20",76,"src/f/func_08952C20.c",0,3,0,0,"c"],
   ["func_08952C6C","0x08952C6C",116,"src/f/func_08952C6C.c",8,1,2,3,"c"],
   ["func_08952CE0","0x08952CE0",92,"src/f/func_08952CE0.c",1,2,1,2,"c"],
