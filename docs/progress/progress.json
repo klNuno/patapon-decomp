@@ -1,6 +1,6 @@
 {
  "schema_version": 2,
- "commit": "3d546a4",
+ "commit": "f352893",
  "tracked_tree_dirty": true,
  "metric": "Code bytes of each function of BOOT.BIN .text (config/<VERSION>/functions.tsv). asm: still assembly; c: matching C with names left to find; read: every name ours.",
  "totals": {
@@ -8,12 +8,12 @@
   "game_bytes": 1717912,
   "levels": {
    "asm": {
-    "functions": 1301,
-    "bytes": 549032
+    "functions": 1294,
+    "bytes": 545436
    },
    "c": {
-    "functions": 8454,
-    "bytes": 1168880
+    "functions": 8461,
+    "bytes": 1172476
    },
    "read": {
     "functions": 0,
@@ -21,10 +21,10 @@
    }
   },
   "unknowns": {
-   "unk_fields": 27736,
-   "m2c_names": 15600,
-   "d_globals": 4476,
-   "func_calls": 16466
+   "unk_fields": 27832,
+   "m2c_names": 15619,
+   "d_globals": 4501,
+   "func_calls": 16489
   },
   "sony_functions": 1313,
   "sony_bytes": 196584,
@@ -1865,6 +1865,7 @@
   ["func_0887F0B4","0x0887F0B4",80,"src/f/func_0887F0B4.c",1,3,0,1,"c"],
   ["func_0887F104","0x0887F104",192,"src/f/func_0887F104.c",4,2,0,2,"c"],
   ["func_0887F1C4","0x0887F1C4",8,"src/f/func_0887F1C4.c",0,0,0,1,"c"],
+  ["func_0887F1CC","0x0887F1CC",140,"src/f/func_0887F1CC.cpp",9,1,2,0,"c"],
   ["func_0887F258","0x0887F258",120,"src/f/func_0887F258.cpp",2,2,2,1,"c"],
   ["func_0887F5AC","0x0887F5AC",300,"src/f/func_0887F5AC.c",32,2,4,1,"c"],
   ["func_0887F6D8","0x0887F6D8",120,"src/f/func_0887F6D8.cpp",2,2,2,1,"c"],
@@ -2923,6 +2924,7 @@
   ["func_088B71D0","0x088B71D0",156,"src/f/func_088B71D0.c",0,2,0,2,"c"],
   ["func_088B726C","0x088B726C",24,"src/f/func_088B726C.c",2,2,0,0,"c"],
   ["func_088B7324","0x088B7324",200,"src/f/func_088B7324.cpp",4,3,0,0,"c"],
+  ["func_088B73EC","0x088B73EC",452,"src/f/func_088B73EC.cpp",13,5,0,3,"c"],
   ["func_088B75B0","0x088B75B0",220,"src/f/func_088B75B0.cpp",14,1,0,1,"c"],
   ["func_088B768C","0x088B768C",52,"src/f/func_088B768C.c",2,2,0,1,"c"],
   ["func_088B76C0","0x088B76C0",20,"src/f/func_088B76C0.c",3,1,0,0,"c"],
@@ -2993,6 +2995,7 @@
   ["func_088BA438","0x088BA438",228,"src/f/func_088BA438.cpp",2,1,0,0,"c"],
   ["func_088BA51C","0x088BA51C",4012,"src/f/func_088BA51C.cpp",7,22,0,13,"c"],
   ["func_088BB9E4","0x088BB9E4",148,"src/f/func_088BB9E4.c",2,1,0,2,"c"],
+  ["func_088BBC18","0x088BBC18",308,"src/f/func_088BBC18.cpp",8,1,0,0,"c"],
   ["func_088BBD4C","0x088BBD4C",80,"src/f/func_088BBD4C.c",3,5,0,0,"c"],
   ["func_088BBD9C","0x088BBD9C",84,"src/f/func_088BBD9C.cpp",2,2,0,0,"c"],
   ["func_088BBDF0","0x088BBDF0",84,"src/f/func_088BBDF0.cpp",2,2,0,0,"c"],
@@ -3207,6 +3210,7 @@
   ["func_088CBB58","0x088CBB58",524,"src/f/func_088CBB58.c",10,3,0,2,"c"],
   ["func_088CBD64","0x088CBD64",476,"src/f/func_088CBD64.c",0,3,0,4,"c"],
   ["func_088CBF40","0x088CBF40",52,"src/f/func_088CBF40.c",0,2,1,0,"c"],
+  ["func_088CBF74","0x088CBF74",336,"src/f/func_088CBF74.c",4,3,1,0,"c"],
   ["func_088CC89C","0x088CC89C",380,"src/f/func_088CC89C.c",7,2,3,10,"c"],
   ["func_088CCA18","0x088CCA18",216,"src/f/func_088CCA18.c",5,2,2,7,"c"],
   ["func_088CCAF0","0x088CCAF0",84,"src/f/func_088CCAF0.c",0,5,0,0,"c"],
@@ -4521,6 +4525,7 @@
   ["func_08911028","0x08911028",68,"src/f/func_08911028.c",0,2,0,2,"c"],
   ["func_0891106C","0x0891106C",16,"src/f/func_0891106C.c",1,1,0,0,"c"],
   ["func_0891107C","0x0891107C",72,"src/f/func_0891107C.c",1,2,0,0,"c"],
+  ["func_089110C4","0x089110C4",72,"src/f/func_089110C4.c",5,1,0,0,"c"],
   ["func_0891110C","0x0891110C",952,"src/f/func_0891110C.cpp",10,3,1,18,"c"],
   ["func_089114C4","0x089114C4",352,"src/f/func_089114C4.cpp",12,1,3,11,"c"],
   ["func_08911768","0x08911768",8,"src/f/func_08911768.c",0,0,0,0,"c"],
@@ -7237,6 +7242,7 @@
   ["func_0898A9D0","0x0898A9D0",156,"src/f/func_0898A9D0.c",5,2,2,5,"c"],
   ["func_0898AA6C","0x0898AA6C",8,"src/f/func_0898AA6C.c",0,1,0,1,"c"],
   ["func_0898AA74","0x0898AA74",324,"src/f/func_0898AA74.cpp",7,2,0,3,"c"],
+  ["func_0898ABB8","0x0898ABB8",328,"src/f/func_0898ABB8.c",10,4,0,4,"c"],
   ["func_0898AD4C","0x0898AD4C",8,"src/f/func_0898AD4C.c",1,1,0,0,"c"],
   ["func_0898AD54","0x0898AD54",8,"src/f/func_0898AD54.c",0,0,0,0,"c"],
   ["func_0898AD5C","0x0898AD5C",8,"src/f/func_0898AD5C.c",0,0,0,0,"c"],
@@ -7608,6 +7614,7 @@
   ["func_089A1698","0x089A1698",272,"src/f/func_089A1698.cpp",9,1,0,2,"c"],
   ["func_089A17A8","0x089A17A8",344,"src/f/func_089A17A8.cpp",7,2,0,1,"c"],
   ["func_089A2BD8","0x089A2BD8",100,"src/f/func_089A2BD8.cpp",0,2,0,1,"c"],
+  ["func_089A2C3C","0x089A2C3C",1960,"src/f/func_089A2C3C.c",47,4,22,16,"c"],
   ["func_089A33E4","0x089A33E4",492,"src/f/func_089A33E4.cpp",26,2,2,11,"c"],
   ["func_089A35D0","0x089A35D0",60,"src/f/func_089A35D0.c",2,1,0,2,"c"],
   ["func_089A360C","0x089A360C",144,"src/f/func_089A360C.c",0,1,0,4,"c"],
