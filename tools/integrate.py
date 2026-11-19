@@ -27,7 +27,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 TEXT_VRAM, TEXT_OFF = 0x08804000, 0x54
 FIRST = "      - [0x54, asm, text]\n"
-DEF = re.compile(r"^[A-Za-z_][\w \t\*]*?\b(func_[0-9A-F]{8})\s*\([^;{]*\)\s*\{", re.M)
+DEF = re.compile(r"^(?:extern[ \t]+\"C\"[ \t]+)?[A-Za-z_][\w \t\*]*?\b(func_[0-9A-F]{8})\s*\([^;{]*\)\s*\{", re.M)
 
 
 def version():
