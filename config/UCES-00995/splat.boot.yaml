@@ -1494,7 +1494,7 @@ segments:
       - [0x67A20, asm, text_0886B9CC]
       - [0x67FD8, cpp, f/func_0886BF84]
       - [0x68020, c, f/func_0886BFCC]
-      - [0x6806C, asm, text_0886C018]
+      - [0x6806C, cpp, f/func_0886C018]
       - [0x68BAC, c, f/func_0886CB58]
       - [0x68C48, c, f/func_0886CBF4]
       - [0x68C60, asm, text_0886CC0C]
@@ -1660,11 +1660,11 @@ segments:
       - [0x6D0FC, c, f/func_088710A8]
       - [0x6D114, asm, text_088710C0]
       - [0x6D29C, c, f/func_08871248]
-      - [0x6D358, asm, text_08871304]
+      - [0x6D358, cpp, f/func_08871304]
       - [0x6DA20, cpp, f/func_088719CC]
       - [0x6DAD8, cpp, f/func_08871A84]
       - [0x6DBCC, c, f/func_08871B78]
-      - [0x6DC30, asm, text_08871BDC]
+      - [0x6DC30, cpp, f/func_08871BDC]
       - [0x6E5FC, c, f/func_088725A8]
       - [0x6E60C, asm, text_088725B8]
       - [0x6E99C, c, f/func_08872948]
@@ -1926,7 +1926,7 @@ segments:
       - [0x78780, c, f/func_0887C72C]
       - [0x78788, asm, text_0887C734]
       - [0x78CE8, c, f/func_0887CC94]
-      - [0x78EA8, asm, text_0887CE54]
+      - [0x78EA8, cpp, f/func_0887CE54]
       - [0x794C4, c, f/func_0887D470]
       - [0x7991C, c, f/func_0887D8C8]
       - [0x79A60, c, f/func_0887DA0C]
@@ -5234,6 +5234,7 @@ segments:
       - [0x11CDA8, c, f/func_08920D54]
       - [0x11CDB0, c, f/func_08920D5C]
       - [0x11CDB8, asm, text_08920D64]
+      - [0x11CDC0, c, f/func_08920D6C]
       - [0x11D4A0, cpp, f/func_0892144C]
       - [0x11D5F8, asm, text_089215A4]
       - [0x11EBE8, c, f/func_08922B94]
@@ -6526,7 +6527,7 @@ segments:
       - [0x1538CC, c, f/func_08957878]
       - [0x1538FC, cpp, f/func_089578A8]
       - [0x153A2C, c, f/func_089579D8]
-      - [0x153A3C, asm, text_089579E8]
+      - [0x153A3C, cpp, f/func_089579E8]
       - [0x154324, c, f/func_089582D0]
       - [0x15436C, c, f/func_08958318]
       - [0x1543B0, c, f/func_0895835C]
@@ -7509,7 +7510,7 @@ segments:
       - [0x17E3B4, asm, text_08982360]
       - [0x17E3E8, cpp, f/func_08982394]
       - [0x17E640, cpp, f/func_089825EC]
-      - [0x17E734, asm, text_089826E0]
+      - [0x17E734, cpp, f/func_089826E0]
       - [0x17F0B8, cpp, f/func_08983064]
       - [0x17F294, cpp, f/func_08983240]
       - [0x17F39C, c, f/func_08983348]
@@ -8637,7 +8638,8 @@ segments:
       - [0x1BCC08, asm, text_089C0BB4]
       - [0x1BCC20, c, f/func_089C0BCC]
       - [0x1BCCB8, c, f/func_089C0C64]
-      - [0x1BCCF8, asm, text_089C0CA4]
+      - [0x1BCCF8, cpp, f/func_089C0CA4]
+      - [0x1BD314, asm, text_089C12C0]
       - [0x1BD930, c, f/func_089C18DC]
       - [0x1BD978, c, f/func_089C1924]
       - [0x1BDA88, c, f/func_089C1A34]
@@ -8748,11 +8750,11 @@ segments:
       - [0x1C2A7C, c, f/func_089C6A28]
       - [0x1C2AAC, c, f/func_089C6A58]
       - [0x1C2BB8, cpp, f/func_089C6B64]
-      - [0x1C2CA0, asm, text_089C6C4C]
+      - [0x1C2CA0, cpp, f/func_089C6C4C]
       - [0x1C3670, cpp, f/func_089C761C]
       - [0x1C3714, asm, text_089C76C0]
       - [0x1C372C, c, f/func_089C76D8]
-      - [0x1C3800, asm, text_089C77AC]
+      - [0x1C3800, cpp, f/func_089C77AC]
       - [0x1C4040, c, f/func_089C7FEC]
       - [0x1C4094, cpp, f/func_089C8040]
       - [0x1C4184, cpp, f/func_089C8130]
@@ -8869,7 +8871,8 @@ segments:
       - [0x1CA49C, c, f/func_089CE448]
       - [0x1CA4A4, c, f/func_089CE450]
       - [0x1CA5E4, c, f/func_089CE590]
-      - [0x1CA5F4, asm, text_089CE5A0]
+      - [0x1CA5F4, cpp, f/func_089CE5A0]
+      - [0x1CB170, asm, text_089CF11C]
       - [0x1CB208, c, f/func_089CF1B4]
       - [0x1CB25C, c, f/func_089CF208]
       - [0x1CB370, c, f/func_089CF31C]
@@ -9045,12 +9048,16 @@ segments:
       - [0x1D5168, data, data]
       - {start: 0x1D51E8, type: .rodata, name: f/func_08804F44, linker_section_order: .data}
       - [0x1D5228, data, data_089D91D4]
+      - {start: 0x1D91FC, type: .rodata, name: f/func_0886C018, linker_section_order: .data}
+      - [0x1D9228, data, data_089DD1D4]
       - {start: 0x1D93B0, type: .rodata, name: f/func_0887340C, linker_section_order: .data}
       - [0x1D93DC, data, data_089DD388]
       - {start: 0x1D9B2C, type: .rodata, name: f/func_0887A4BC, linker_section_order: .data}
       - [0x1D9B44, data, data_089DDAF0]
       - {start: 0x1D9B44, type: .rodata, name: f/func_0887A59C, linker_section_order: .data}
       - [0x1D9B5C, data, data_089DDB08]
+      - {start: 0x1D9CB8, type: .rodata, name: f/func_0887CE54, linker_section_order: .data}
+      - [0x1D9CE4, data, data_089DDC90]
       - {start: 0x1DA9DC, type: .rodata, name: f/func_08898574, linker_section_order: .data}
       - [0x1DAA0C, data, data_089DE9B8]
       - {start: 0x1DAC48, type: .rodata, name: f/func_0889C58C, linker_section_order: .data}
@@ -9081,6 +9088,8 @@ segments:
       - [0x1E34B4, data, data_089E7460]
       - {start: 0x1E4D2C, type: .rodata, name: f/func_08941720, linker_section_order: .data}
       - [0x1E4D4C, data, data_089E8CF8]
+      - {start: 0x1E762C, type: .rodata, name: f/func_089579E8, linker_section_order: .data}
+      - [0x1E764C, data, data_089EB5F8]
       - {start: 0x1E764C, type: .rodata, name: f/func_08958374, linker_section_order: .data}
       - [0x1E766C, data, data_089EB618]
       - {start: 0x1E7774, type: .rodata, name: f/func_0895DE68, linker_section_order: .data}
@@ -9133,6 +9142,8 @@ segments:
       - [0x1EFFB4, data, data_089F3F60]
       - {start: 0x1F0334, type: .rodata, name: f/func_089CC1D0, linker_section_order: .data}
       - [0x1F0350, data, data_089F42FC]
+      - {start: 0x1F0718, type: .rodata, name: f/func_089CE5A0, linker_section_order: .data}
+      - [0x1F0798, data, data_089F4744]
       - {start: 0x1F0798, type: .rodata, name: f/func_089CFED4, linker_section_order: .data}
       - [0x1F0818, data, data_089F47C4]
       - {start: 0x1F0818, type: .rodata, name: f/func_089D1670, linker_section_order: .data}
