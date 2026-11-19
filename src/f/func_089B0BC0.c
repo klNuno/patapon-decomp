@@ -1,0 +1,21 @@
+#include "common.h"
+
+typedef struct {
+    u8 pad_00[0x58];
+    void *unk_58;
+} T;
+
+extern u8 D_08A48928[];
+void func_089B18B4(void *, s16);
+void func_0880416C(void *);
+
+T *func_089B0BC0(T *arg0, s16 arg1) {
+    if (arg0 != NULL) {
+        arg0->unk_58 = D_08A48928;
+        func_089B18B4(arg0, 0);
+        if (arg1 > 0) {
+            func_0880416C(arg0);
+        }
+    }
+    return arg0;
+}
