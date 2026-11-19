@@ -1,0 +1,7 @@
+#include "common.h"
+
+void *func_088B3A8C(void *, s16);
+
+void *func_088B4928(u8 *arg0, s16 arg1) {
+    return func_088B3A8C(arg0 - 0x30, arg1);
+}
