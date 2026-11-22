@@ -1,103 +1,66 @@
 # patapon-decomp
 
-A matching decompilation of Patapon (PlayStation Portable, SCE Japan Studio and Pyramid): C and C++ source that rebuilds the retail executable byte for byte. The target is Patapon (Europe), UCES-00995, disc 1.00 (redump 18807). Functions not yet written in C are built from their disassembly, so the whole executable rebuilds at every step.
+A matching decompilation of **Patapon** (PlayStation Portable, Pyramid and SCE Japan Studio, 2007), European retail release UCES-00995, disc 1.00 (redump 18807). The game code is being rewritten as C and C++ that rebuild the retail executable `BOOT.BIN` byte for byte. Functions not yet in C build from their disassembly, so the whole executable rebuilds at every step. The point is to understand how the game works and to answer, from the code, the questions players still ask about the series: how the debug menus open, what was cut, and what the beta and the trial left behind. Each finding is written for players, with the function and address that prove it.
 
-**UCES-00995** · **8,464 of 9,755** game functions in C · **68.31 %** of game code bytes in C · **byte-for-byte** rebuild of `BOOT.BIN`
+## At a glance
 
-> [!NOTE]
-> No game data is in this repository. You need an image of your own UMD.
+- **8,464 of 9,755 game functions in C** (86.8 %), **68.31 % of game code bytes** (1,173,524 of 1,717,912); `make check` compares the SHA-1 of the rebuilt `BOOT.BIN` with the retail one in [config/UCES-00995/BOOT.BIN.sha1](config/UCES-00995/BOOT.BIN.sha1).
+- **11,068 functions in `BOOT.BIN`**, a plain ELF of 2,381,348 bytes that needs no decryption: 9,755 of the game and 1,313 in Sony's libraries.
+- **One compiler, measured on the game's own functions**: Metrowerks CodeWarrior for PSP, `mwccpsp` 3.0.1 build 219 at `-O4,p`; builds 180 to 219 give the same code, 121 to 151 do not.
+- **6,333 C and 2,131 C++ units** in `src/f/`, one file per unit, named after its first function.
+- **4 findings** in [docs/discoveries.md](docs/discoveries.md), read in the code or measured on the disc files (there is no emulator run yet), and **24 open questions** about the three games in [docs/mysteries.md](docs/mysteries.md), none answered yet.
 
-## Contents
-
-- [Status](#status)
-- [Quick start](#quick-start)
-- [Matching one function](#matching-one-function)
-- [Repository layout](#repository-layout)
-- [Documentation](#documentation)
-- [Game data and legal note](#game-data-and-legal-note)
-
-## Status
-
-| | |
-|---|---|
-| Target | Patapon (Europe), UCES-00995, disc 1.00, [redump](config/redump.tsv) disc 18807 |
-| Executable | `PSP_GAME/SYSDIR/BOOT.BIN`: plain ELF, 2,381,348 bytes, 11,068 functions (9,755 game, 1,313 in Sony's libraries) |
-| Compiler | Metrowerks CodeWarrior for PSP, `mwccpsp` 3.0.1 build 219 (builds 180 to 219 give the same code), `-O4,p`, measured on the game's own functions |
-| Functions in C | 8,464 of 9,755 game functions (86.8 %) |
-| Code bytes in C | 1,173,524 of 1,717,912 game code bytes (68.31 %) |
-| Sony libraries | 1,313 functions, 196,584 bytes, built with another compiler, still assembly |
-| Rebuild check | `make check` compares the SHA-1 of the rebuilt `BOOT.BIN` with [config/UCES-00995/BOOT.BIN.sha1](config/UCES-00995/BOOT.BIN.sha1) |
-
-The figures come from [docs/progress/progress.json](docs/progress/progress.json), which `tools/progress_map.py` regenerates with the map below after a green `make check`.
+## Progress
 
 [![Progress map: one rectangle per function of BOOT.BIN, sized by its code bytes](docs/progress/treemap.svg)](docs/progress/treemap.svg)
 
-One rectangle per function, sized by its code bytes and grouped by 64 KB of address:
+One rectangle per game function, sized by its code bytes and grouped by 64 KB of address. Grey is still assembly. Mid green is matching C whose body still uses names we did not choose (`unk_` fields, m2c locals, `D_` globals, calls to `func_`). Light green is C where every name is ours: no function has reached it yet, and `progress.json` still counts 27,847 `unk_` fields, 15,628 m2c names, 4,501 `D_` globals and 16,501 `func_` calls in the C. Open the map to hover each function. [docs/progress/progress.json](docs/progress/progress.json) holds the totals and one row per C function under `c_functions` (columns named in `c_columns`); `tools/progress_map.py` regenerates both after a green `make check`.
 
-| Colour | Meaning |
-|---|---|
-| Grey | Still assembly |
-| Mid green | Matching C whose body still uses names we did not choose (`unk_` fields, m2c locals, `D_` globals, calls to `func_`) |
-| Light green | C where every name is ours |
+The bar under the map is the whole executable's code. About 10 % of it is Sony's libraries: 1,313 functions and 196,584 bytes in 0x08820000-0x08826FFF, 0x08829000-0x0884DFFF and 0x08854000-0x08857FFF. They were built with another compiler than the game's, they stay in assembly, and they are not part of Patapon's own figures above.
 
-The bar under the map places the game code beside Sony's libraries (0x08820000-0x08826FFF, 0x08829000-0x0884DFFF and 0x08854000-0x08857FFF). Open the map to hover each function. `progress.json` holds the totals and the list of C functions, one row each under `c_columns`.
+## Highlights from the findings
 
-## Quick start
+- [The US trial is almost the final game, the beta is a third different](docs/discoveries.md#-the-us-trial-is-almost-the-final-game-the-beta-is-a-third-different): 94.0 % of the retail code bytes are in the trial, 63.7 % in the Japanese beta.
+- [The beta's colony messages were emptied, but retail still loads them](docs/discoveries.md#-the-betas-colony-messages-were-emptied-but-retail-still-loads-them): the beta disc holds Japanese and English messages that retail ships as an empty file it still opens.
+- [Thirteen modules on the beta disc that nothing loads](docs/discoveries.md#-thirteen-modules-on-the-beta-disc-that-nothing-loads): SDK libraries and network samples that the beta never loads.
+- [Twelve developer test scenes in every build](docs/discoveries.md#-twelve-developer-test-scenes-in-every-build): Sound Test, Rhythm Test, MoviePlayer Test and nine more, with no known way in yet.
 
-Linux on x86-64 with `bash`, `curl`, `git`, `ar`, `tar` and `python3` (with `venv`). `tools/setup.sh` needs no root: it downloads the rest, checks each download against `tools/toolchain.sha256` and installs it inside the checkout.
+## Where to read
+
+| Page | What it holds |
+| --- | --- |
+| [docs/discoveries.md](docs/discoveries.md) | The findings, for players first, with the proof folded under each one |
+| [docs/mysteries.md](docs/mysteries.md) | The 24 questions about Patapon 1, 2 and 3 that the code can answer: none answered yet, 2 with a lead |
+| [docs/community-knowledge.md](docs/community-knowledge.md) | What players, wikis and earlier projects knew before, with sources |
+| [docs/how-it-works.md](docs/how-it-works.md) | The build pipeline, the compiler settings, how one function is matched, the tools, the repository layout and its checks |
+| [disks/README.md](disks/README.md) | Where your own dump goes and what `make check-disk` does with it |
+
+## Building
+
+You need Linux x86-64 with `bash`, `curl`, `git`, `ar`, `tar` and Python 3 with `venv`, plus an image of your own Patapon UMD (`.iso` or `.cso`). `tools/setup.sh` needs no root: it downloads the rest, checks each download against `tools/toolchain.sha256` and installs it inside the checkout. No game file is provided here.
 
 ```sh
 tools/setup.sh                          # pinned toolchain into tools/ and .venv/
 git config core.hooksPath tools/hooks   # the commit and push checks
 cp /path/to/your/umd.iso disks/         # or a .cso, see disks/README.md
-make check-disk                         # ids, executable format, redump match
-make check                              # split, assemble, link, compare the sha1 of BOOT.BIN
+make check-disk                         # extracts the UMD, prints its ids and redump match, checks BOOT.BIN
+make check                              # splits, assembles, compiles, links, compares the SHA-1 of BOOT.BIN
 ```
 
-`make check` ends with `build/UCES-00995/BOOT.BIN: OK` when the rebuild matches. `make clean` removes `build/UCES-00995/`; `make distclean` also removes `extract/`, `asm/` and `orig/`.
+`make check-disk` must print `extract/PSP_GAME/SYSDIR/BOOT.BIN: OK` and `make check` must print `build/UCES-00995/BOOT.BIN: OK`. `make clean` removes `build/UCES-00995/`; `make distclean` also removes `extract/`, `asm/` and `orig/`. How to match one function is in [docs/how-it-works.md](docs/how-it-works.md#matching-a-function).
 
-## Matching one function
+## How it was made
 
-```sh
-.venv/bin/python -I tools/fmatch.py asm func_089506BC          # the original
-.venv/bin/python -I tools/fmatch.py m2c func_089506BC          # a first draft
-.venv/bin/python -I tools/fmatch.py decls func_089506BC        # declarations already in src/ for its symbols
-.venv/bin/python -I tools/fmatch.py diff func_089506BC my.c    # MATCH, or the rows that differ
-.venv/bin/python -I tools/integrate.py my.c && make split && make check
-```
+The C, the names and the docs were written by AI agents, Claude Opus 5.5 and GPT-6.2 Sol, with Sol doing most of the later batches; the smallest functions first came from m2c output. A change was kept only when `make check` still matched.
 
-1. `asm` prints the original instructions, `m2c` a first C draft to start from.
-2. `diff` compiles the file with the game's compiler and flags, links it at the function's address and compares the bytes with the retail executable. It prints `MATCH func_089506BC 100%` or the differing rows marked `!!`.
-3. `integrate.py` checks the file again, copies it to `src/f/` and rewrites the splat config so the function is built from C.
-4. `make check` decides: a match in isolation is necessary, not sufficient.
+## Legal
 
-The build pipeline, the compiler settings and the rules for source files are in [How it works](docs/how-it-works.md).
+This project is not affiliated with or endorsed by Sony Interactive Entertainment. The repository holds source code, configuration, tools and notes only: no executable, no disc image and no assets. The build reads everything else from a dump you make of a UMD you own. `.gitignore` and the pre-commit hook in `tools/hooks/` refuse disc images, executables and extracted files.
 
-## Repository layout
+Licensing: the original tooling is under the MIT licence; the reconstructed game code, the data and the documentation are not. See [LICENSING.md](LICENSING.md) for the exact paths.
 
-| Path | What it holds |
-|---|---|
-| [`src/f/`](src/f) | Matched units, one file per unit named after its first function (6,333 `.c`, 2,131 `.cpp`) |
-| [`include/`](include) | Shared types (`common.h`), the `INCLUDE_ASM` macros and assembler includes |
-| [`config/UCES-00995/`](config/UCES-00995) | splat config, symbol addresses, the list of every function, jump tables, target SHA-1 |
-| [`config/VERSION`](config/VERSION) | Serial of the dump being built |
-| [`config/redump.tsv`](config/redump.tsv) | Known retail dumps of the three games, for `make check-disk` |
-| [`tools/`](tools) | Setup, disc reader, matching and progress tools, git hooks |
-| [`docs/`](docs) | Findings, open questions, community knowledge, progress map |
-| [`disks/`](disks/README.md) | Your own dump (never tracked) |
-| `extract/`, `orig/`, `asm/`, `build/` | Generated by `make`, never tracked |
+## Credits
 
-## Documentation
+Game knowledge from The Cutting Room Floor (TCRF) and Patapedia; what efonte's patapon-re documents about cheat codes, file lists and the game's scripts; other earlier work by Nemoumbra's PacDecompiler, wizardengineer's psprecomp, idrgn's PBundle and PPEditor, and Pataport ([docs/community-knowledge.md](docs/community-knowledge.md) cites each claim). Disc ids from redump.
 
-| Page | What it covers |
-|---|---|
-| [How it works](docs/how-it-works.md) | Build pipeline, compiler, matching tools, repository checks |
-| [Discoveries](docs/discoveries.md) | What the code shows, with the functions and data each finding comes from |
-| [Open questions](docs/mysteries.md) | Questions about the three games that the code can answer |
-| [What the community already knows](docs/community-knowledge.md) | Claims from wikis and earlier projects, with sources, before this project checks them |
-
-## Game data and legal note
-
-This repository holds source code, configuration, tools and notes only: no executable, no disc image and no assets. The build reads everything else from a dump you make of a UMD you own. `.gitignore` and the pre-commit hook in `tools/hooks/` refuse disc images, executables and extracted files.
-
-This project is not affiliated with or endorsed by Sony Interactive Entertainment.
+Built with splat and spimdisasm, m2c, GNU binutils, wibo, psp-decomp-tools and pycdlib, with the Metrowerks `mwccpsp` compiler from decomp.me's compiler kits; `tools/setup.sh` also installs objdiff, decomp-permuter and asm-differ.

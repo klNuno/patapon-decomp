@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 # Settings read by psp-decomp-tools (tools/src/psp-decomp-tools/project.py).
 title = "Patapon"
 versions = ["UCES-00995"]

@@ -1,30 +1,6 @@
 # What the community already knows
 
-[Back to the README](../README.md) · [Discoveries](discoveries.md) · [Open questions](mysteries.md)
-
-What players, wikis and earlier technical projects said about Patapon 1, 2 and 3 (PSP, SCE Japan Studio and Pyramid, 2007 to 2011) before this project read the code for itself, gathered on 2026-11-17. A claim goes in only when its source could be opened. Nothing here is trusted until this project's own reading confirms it. The open questions drawn from the gaps are in [Open questions](mysteries.md).
-
-## Contents
-
-- [How to read the tables](#how-to-read-the-tables)
-- [Patapon 1](#patapon-1)
-- [Patapon 2](#patapon-2)
-- [Patapon 3](#patapon-3)
-
-## How to read the tables
-
-| Status | Meaning |
-|---|---|
-| data | Read in the game files or memory by an earlier project (cheat codes, file dumps, symbol maps) |
-| observed | Players report seeing it in play |
-| rumour | Told without proof |
-| official | The developer or publisher said it |
-
-Sources:
-
-- TCRF pages read through the Wayback Machine: [Patapon](https://tcrf.net/Patapon) (snapshot 2026-10-02), [Patapon 2](https://tcrf.net/Patapon_2) (2026-09-26), [Patapon 3](https://tcrf.net/Patapon_3) (2025-09-28), [Patapon/Items](https://tcrf.net/Patapon/Items) (2025-01-30).
-- Patapedia (patapon.fandom.com) pages [Debug Mode](https://patapon.fandom.com/wiki/Debug_Mode), [Patapon Debug](https://patapon.fandom.com/wiki/Patapon_Debug), "Masks and Eggs" and [Glitches and Easter Eggs](https://patapon.fandom.com/wiki/Glitches_and_Easter_Eggs), read 2026-11-17.
-- efonte/patapon-re (MIT): CWCheats and file lists.
+What players, wikis and earlier technical projects said about Patapon 1, 2 and 3 (PSP, SCE Japan Studio and Pyramid, 2007 to 2011) before this project read the code for itself, gathered on 2026-11-17, with our own check added where we made one. A claim goes in only when its source could be opened. "Data" means read in the game files or memory by an earlier project (cheat codes, file dumps, symbol maps); "observed" means players report seeing it in play; "rumour" means told without proof; "official" means the developer or publisher said it. Nothing here is trusted until this project's own reading confirms it. The open questions drawn from the gaps are in [mysteries.md](mysteries.md), our findings in [discoveries.md](discoveries.md), and the project itself in the [README](../README.md).
 
 ## Patapon 1
 
@@ -44,10 +20,10 @@ Sources:
 | Citizens sheet | Half of the Patapolis citizen sheet is never drawn, including a miner and a Patapon with a moustache | data | TCRF Patapon |
 | Unused items | Leaf (tier 1 wood meant, counted as a tier 5 stone, a tier that only Patapon 2 introduces, with its own Mater message); 11 unused spears, the late Tatepon's sword and late Yumipon's bow, shields marked 仮 ("temporary"), 14 helmets named 亜種ヘルム / めがポンヘルム / でかポンヘルム with "（※翻訳不要）" ("no translation needed") | data | [TCRF Patapon/Items](https://tcrf.net/Patapon/Items) |
 | Regional differences | JP has a tutorial video before the title, removed abroad; EU title adds a LANGUAGE option; JP and US backgrounds differ in text outline and copyright year | observed | TCRF Patapon |
-| Debug mode | Present in every Patapon 1 version, demos included; a cheat patches one call (US address 0x08853148) to a stub that sets it, then Square in Patapolis or Square + L in a mission opens it | data | efonte/patapon-re CWCheats "Universal Debug Mode Unlocker [P1]" (by Madwig) |
+| Debug mode | Present in every Patapon 1 version, demos included; a cheat patches one call (US address 0x08853148) to a stub that sets it, then Square in Patapolis or Square + L in a mission opens it. Our check: every build, retail included, registers twelve developer test scenes from a vtable slot whose caller is not found yet; whether this list belongs to the debug menu is open ([the test scenes](discoveries.md#-twelve-developer-test-scenes-in-every-build), [question 1](mysteries.md#patapon-1)) | data | efonte/patapon-re CWCheats "Universal Debug Mode Unlocker [P1]" (by Madwig) |
 | Debug menu items | English and Japanese variants: SOUND GAME TRENT / BEAN / BLACK SMITH / COOK / ROCK (minigames), MIRACLE 1 to 4, SONG PATA PATA / PON PON / PON PATA / PON CHAKA, CHARIN +/- 10000, ALL ITEM, ALL UNIT, GOTO MISSION, GOTO ENDING, SET MISSION FLAG, GOTO TITLE; Patapedia says it comes from developer builds | data | [Patapedia "Patapon Debug"](https://patapon.fandom.com/wiki/Patapon_Debug) |
 | Script engine | Game logic runs in "PAC" bytecode files with their own instruction set, plus Lua (39 named Lua functions in the symbol map) | data | efonte/patapon-re (PAC dumps, `ppsspp_p1_*_lua*.sym`), Nemoumbra/PacDecompiler |
-| Executable | US `BOOT.BIN` is a plain `ET_EXEC`; a static recompiler finds about 9,700 to 14,104 functions in it | data | wizardengineer/psprecomp README |
+| Executable | US `BOOT.BIN` is a plain `ET_EXEC`; a static recompiler finds about 9,700 to 14,104 functions in it. Our check, on the EU `BOOT.BIN`: plain too, 11,068 functions, 9,755 of the game and 1,313 in Sony's libraries | data | wizardengineer/psprecomp README |
 
 ## Patapon 2
 
@@ -85,4 +61,16 @@ Sources:
 | Leftovers | Every item of Patapon 1 and 2 is still present, mostly unused | data | TCRF Patapon 3 |
 | Code overlays | Every Patapon 3 code overlay puts constructors after its data | data | Pataport README |
 
-[Back to the README](../README.md)
+## Earlier projects
+
+- efonte/patapon-re (MIT): CWCheats for the three games, file lists, PAC dumps, `ppsspp_p1_*_lua*.sym` symbol maps and `Tools/patapon3-enc`, cited in the tables above.
+- Nemoumbra/PacDecompiler: cited for the PAC bytecode of Patapon 1.
+- idrgn/PBundle and idrgn/PPEditor: cited for the scripts, BND bundles and param files of Patapon 2.
+- wizardengineer/psprecomp: a static recompiler; its README is cited for the US `BOOT.BIN` of Patapon 1.
+- Pataport: its README is cited for the Patapon 3 code overlays.
+
+## Sources
+
+- TCRF pages read through the Wayback Machine: [Patapon](https://tcrf.net/Patapon) (snapshot 2026-10-02), [Patapon 2](https://tcrf.net/Patapon_2) (2026-09-26), [Patapon 3](https://tcrf.net/Patapon_3) (2025-09-28), [Patapon/Items](https://tcrf.net/Patapon/Items) (2025-01-30).
+- Patapedia (patapon.fandom.com) pages [Debug Mode](https://patapon.fandom.com/wiki/Debug_Mode), [Patapon Debug](https://patapon.fandom.com/wiki/Patapon_Debug), "Masks and Eggs" and [Glitches and Easter Eggs](https://patapon.fandom.com/wiki/Glitches_and_Easter_Eggs), read 2026-11-17.
+- The earlier projects above, as cited in each row.

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Count compiler fingerprints in splat asm: register move and zero encodings, prologue store order,
 branch-likely and movz/movn rates, sibling calls, bit-field clears; over the whole text and per window.
 

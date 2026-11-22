@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Read a Patapon UMD dump: CSO to ISO, file extraction, and the facts phase 1 needs.
 
   disc.py iso <in.cso|in.iso> <out.iso>     decompress a CSO (v1, zlib) or copy an ISO

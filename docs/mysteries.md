@@ -1,18 +1,10 @@
 # Open questions
 
-[Back to the README](../README.md) · [Discoveries](discoveries.md) · [What the community already knows](community-knowledge.md)
-
-Questions about how the three games work that the community has not settled and that the code can answer. A box is checked once the code has answered it, with the answer in [Discoveries](discoveries.md). What the community already believes, with sources, is in [What the community already knows](community-knowledge.md).
-
-| Game | Questions | Answered |
-|---|---|---|
-| [Patapon 1](#patapon-1) | 1 to 9, 24 | 0 of 10 |
-| [Patapon 2](#patapon-2) | 10 to 15 | 0 of 6 |
-| [Patapon 3](#patapon-3) | 16 to 23 | 0 of 8 |
+The 24 questions about how the three games work that the community has not settled and that the code can answer, 10 on Patapon 1 (1 to 9 and 24), 6 on Patapon 2 (10 to 15) and 8 on Patapon 3 (16 to 23): none is answered yet, and 2 (questions 1 and 24) have a lead. A box is checked once the code has answered it, and each answer links to an entry in [discoveries.md](discoveries.md) that cites its function and address. This project builds only Patapon 1 (UCES-00995) so far, so questions 10 to 23 wait for the executables of Patapon 2 and 3. What the community already believes, with sources: [community-knowledge.md](community-knowledge.md). The project itself: the [README](../README.md).
 
 ## Patapon 1
 
-- [ ] 1. The debug menu exists in every version, demos included, but nothing reaches it: is there a dead check (a button sequence, a build flag, a save flag) that once opened it, and does the code still hold both the English and Japanese menus? Lead: [a test-scene menu in every build](discoveries.md#a-test-scene-menu-in-every-build).
+- [ ] 1. The debug menu exists in every version, demos included, but nothing reaches it: is there a dead check (a button sequence, a build flag, a save flag) that once opened it, and does the code still hold both the English and Japanese menus? Lead: every build registers twelve test scenes from a vtable slot whose caller is not found yet ([the test scenes](discoveries.md#-twelve-developer-test-scenes-in-every-build)).
 - [ ] 2. Is the mining minigame really gone from the executable, as TCRF says, or does a code path still load `cln325`?
 - [ ] 3. The "retry" texture beside "Mission Completed" and "Mission Failed": does any code index that part of the sheet, or was retry cut before code existed?
 - [ ] 4. Why does Meden's rescue-mission line never play: no trigger, a wrong sound id, or a removed event?
@@ -21,7 +13,7 @@ Questions about how the three games work that the community has not settled and 
 - [ ] 7. Which textures hide inside other textures: which parts of each sheet does the code never reference in its sprite tables?
 - [ ] 8. Leaf counts as a tier 5 stone, a tier the game has no use for: a wrong table entry, or a leftover of a five-tier design?
 - [ ] 9. The Japanese tutorial video before the title: removed by a region check in one shared executable, or a different executable per region?
-- [ ] 24. The beta's `DATA_TLK.BND` holds colony messages in Japanese and English; retail ships the file empty but still loads it (`func_088769F4`). What were these messages, where would they show, and what does retail do with the empty bank? Lead: [the beta's talk archive](discoveries.md#the-betas-talk-archive).
+- [ ] 24. The beta's `DATA_TLK.BND` holds colony messages in Japanese and English; retail ships the file empty but still loads it (`func_088769F4`). What were these messages, where would they show, and what does retail do with the empty bank? Lead: [the colony messages](discoveries.md#-the-betas-colony-messages-were-emptied-but-retail-still-loads-them).
 
 ## Patapon 2
 
@@ -42,5 +34,3 @@ Questions about how the three games work that the community has not settled and 
 - [ ] 21. Which developer names give special hairstyles: the full list from the code, and is the comparison exact or by prefix?
 - [ ] 22. The invisible unused classes (DUMMY, Hatapon, Dekapon, Megapon, Mahopon, Chakapon): imported tables from Patapon 1 and 2 only, or code paths left for them?
 - [ ] 23. How much of Patapon 1 and 2 code, not only data ("Labo", "Labo2"), still ships inside Patapon 3?
-
-[Back to the README](../README.md)

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Put matched C files into the build: src/f/<FUNC>.c plus a `c` subsegment in the splat config.
 
   tools/integrate.py FILE.c [FILE.c ...] [--no-check]

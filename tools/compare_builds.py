@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Find each retail function in another build of the executable by masked instruction words.
 
   tools/compare_builds.py . <other BOOT.BIN> <out.tsv>    (for example the beta or trial executable, outside the repo)

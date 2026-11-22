@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Run psp-decomp-tools' batch_units.py (m2c drafts and their mechanical variants, compiled and compared)
 over the functions still in assembly, and write each matching source to OUT/<FUNC>.c or .cpp, one
 function per file, for tools/integrate.py (which checks each again with fmatch.py before taking it).

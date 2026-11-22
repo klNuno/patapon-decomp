@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Progress map: one rectangle per function of BOOT.BIN, sized by its code bytes, grouped by 64 KB of address.
 
   tools/progress_map.py [--output docs/progress]

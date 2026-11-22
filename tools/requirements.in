@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 # Top-level Python tools. The exact set is pinned in requirements.lock.
 splat64[mips]
 pycdlib

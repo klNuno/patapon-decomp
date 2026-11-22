@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """Match one function in isolation, built exactly like the game (compiler and flags come from the Makefile).
 
   tools/fmatch.py diff FUNC FILE.c [--flags "-O4,p"] [--kit mwccpsp_3.0.1_219]
