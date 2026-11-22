@@ -1,8 +1,30 @@
 # What the community already knows
 
-What players, wikis and earlier technical projects said about Patapon 1, 2 and 3 (PSP, SCE Japan Studio and Pyramid, 2007 to 2011) before this project read the code for itself, gathered on 2026-11-17. Status: "data" means read in the game files or memory by an earlier project (cheat codes, file dumps, symbol maps); "observed" means players report seeing it in play; "rumour" means told without proof; "official" means the developer or publisher said it. A claim goes in only when its source could be opened. Nothing here is trusted until this project's own reading confirms it. Open questions drawn from the gaps: [mysteries.md](mysteries.md).
+[Back to the README](../README.md) · [Discoveries](discoveries.md) · [Open questions](mysteries.md)
 
-Sources: TCRF pages read through the Wayback Machine (Patapon snapshot 2026-10-02, Patapon 2 2026-09-26, Patapon 3 2025-09-28, Patapon/Items 2025-01-30); Patapedia (patapon.fandom.com) pages "Debug Mode", "Patapon Debug", "Masks and Eggs", "Glitches and Easter Eggs" read 2026-11-17; efonte/patapon-re (MIT) CWCheats and file lists.
+What players, wikis and earlier technical projects said about Patapon 1, 2 and 3 (PSP, SCE Japan Studio and Pyramid, 2007 to 2011) before this project read the code for itself, gathered on 2026-11-17. A claim goes in only when its source could be opened. Nothing here is trusted until this project's own reading confirms it. The open questions drawn from the gaps are in [Open questions](mysteries.md).
+
+## Contents
+
+- [How to read the tables](#how-to-read-the-tables)
+- [Patapon 1](#patapon-1)
+- [Patapon 2](#patapon-2)
+- [Patapon 3](#patapon-3)
+
+## How to read the tables
+
+| Status | Meaning |
+|---|---|
+| data | Read in the game files or memory by an earlier project (cheat codes, file dumps, symbol maps) |
+| observed | Players report seeing it in play |
+| rumour | Told without proof |
+| official | The developer or publisher said it |
+
+Sources:
+
+- TCRF pages read through the Wayback Machine: [Patapon](https://tcrf.net/Patapon) (snapshot 2026-10-02), [Patapon 2](https://tcrf.net/Patapon_2) (2026-09-26), [Patapon 3](https://tcrf.net/Patapon_3) (2025-09-28), [Patapon/Items](https://tcrf.net/Patapon/Items) (2025-01-30).
+- Patapedia (patapon.fandom.com) pages [Debug Mode](https://patapon.fandom.com/wiki/Debug_Mode), [Patapon Debug](https://patapon.fandom.com/wiki/Patapon_Debug), "Masks and Eggs" and [Glitches and Easter Eggs](https://patapon.fandom.com/wiki/Glitches_and_Easter_Eggs), read 2026-11-17.
+- efonte/patapon-re (MIT): CWCheats and file lists.
 
 ## Patapon 1
 
@@ -62,3 +84,5 @@ Sources: TCRF pages read through the Wayback Machine (Patapon snapshot 2026-10-0
 | Developer names | Naming the Uberhero after certain developers gives special hairstyles | data | TCRF Patapon 3 |
 | Leftovers | Every item of Patapon 1 and 2 is still present, mostly unused | data | TCRF Patapon 3 |
 | Code overlays | Every Patapon 3 code overlay puts constructors after its data | data | Pataport README |
+
+[Back to the README](../README.md)

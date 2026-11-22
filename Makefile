@@ -30,7 +30,7 @@ PSPTOOLS := tools/src/psp-decomp-tools
 ASFLAGS  := -march=allegrex -mabi=32 -EL -G0 -no-pad-sections -Iinclude
 
 # Metrowerks CodeWarrior for PSP, run by wibo. Builds 180 to 219 of mwccpsp 3.0.1 give the same code on every
-# calibration function (.agents/research/compiler.md); 121 to 151 do not. The linker, not the compiler, writes the
+# calibration function; 121 to 151 do not. The linker, not the compiler, writes the
 # "MW MIPS C Compiler (2.4.1.01)" of the retail .comment. -O4,p is the runtime's level (loop rotation with
 # branch-likely); a unit can override it with MWCCFLAGS_<unit file name> in this Makefile.
 MWCC_VER  ?= mwccpsp_3.0.1_219
